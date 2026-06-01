@@ -1180,8 +1180,8 @@ function authSubmit() {
   // Ak nie je v lokálnych kódoch, skontroluj Supabase (Stripe kódy)
   fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/rest/v1/access_codes?code=eq.' + encodeURIComponent(codeInput) + '&select=email,tier,valid_until', {
     headers: {
-      'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzM0MDYsImV4cCI6MjA2Mzg0OTQwNn0.pBOqGD4E4bQkGgDCfGl6NVFQ6AJJMVjmBCKfAHBHaRE',
-      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzM0MDYsImV4cCI6MjA2Mzg0OTQwNn0.pBOqGD4E4bQkGgDCfGl6NVFQ6AJJMVjmBCKfAHBHaRE'
+      'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMzk3NjgsImV4cCI6MjA5NTgxNTc2OH0.XFveqebjISScFY9-8MCbNFtx0uj6iMz62V6F5JhMk_I',
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMzk3NjgsImV4cCI6MjA5NTgxNTc2OH0.XFveqebjISScFY9-8MCbNFtx0uj6iMz62V6F5JhMk_I'
     }
   })
   .then(function(r) { return r.json(); })
