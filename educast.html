@@ -1157,43 +1157,69 @@ function authSubmit() {
   btn.disabled = true;
   btn.textContent = 'Overujem...';
 
-  // Simuluj malé oneskorenie (zabrání brute-force)
-  setTimeout(function() {
-    var record = VALID_CODES[codeInput];
-
-    // Kód neexistuje
-    if (!record) {
-      showAuthError('Neplatný kód. Skontroluj email od Educast/HeroHero.');
-      elSet('auth-code-input','className','auth-input error');
-      var ci = el('auth-code-input'); if(ci){ci.value='';ci.focus();}
-      btn.disabled = false;
-      btn.textContent = 'Odomknúť prístup →';
-      return;
-    }
-
-    // Email sa nezhoduje
-    if (record.email.toLowerCase() !== emailInput) {
-      showAuthError('Email sa nezhoduje s kódom. Použi email z HeroHero platby.');
+  // Najprv skontroluj lokálne VALID_CODES (HeroHero + admin kódy)
+  var localRecord = VALID_CODES[codeInput];
+  if (localRecord) {
+    if (localRecord.email.toLowerCase() !== emailInput) {
+      showAuthError('Email sa nezhoduje s kódom. Použi email z platby.');
       elSet('auth-email-input','className','auth-input error');
       var ei = el('auth-email-input'); if(ei){ei.value='';ei.focus();}
       btn.disabled = false;
       btn.textContent = 'Odomknúť prístup →';
       return;
     }
-
-    // ✅ Správny kód + email — ulož a odomkni
-    authSave(emailInput, record.tier);
+    authSave(emailInput, localRecord.tier);
     btn.disabled = false;
     btn.textContent = 'Odomknúť prístup →';
     successEl.textContent = '✅ Prístup odomknutý! Vitaj, ' + emailInput;
     successEl.className = 'auth-success show';
+    setTimeout(function() { updateAuthUI(); renderPortal(); closeAuth(); }, 1500);
+    return;
+  }
 
-    setTimeout(function() {
-      updateAuthUI();
-      renderPortal();
-      closeAuth();
-    }, 1500);
-  }, 800);
+  // Ak nie je v lokálnych kódoch, skontroluj Supabase (Stripe kódy)
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/rest/v1/access_codes?code=eq.' + encodeURIComponent(codeInput) + '&select=email,tier,valid_until', {
+    headers: {
+      'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzM0MDYsImV4cCI6MjA2Mzg0OTQwNn0.pBOqGD4E4bQkGgDCfGl6NVFQ6AJJMVjmBCKfAHBHaRE',
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNzM0MDYsImV4cCI6MjA2Mzg0OTQwNn0.pBOqGD4E4bQkGgDCfGl6NVFQ6AJJMVjmBCKfAHBHaRE'
+    }
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    btn.disabled = false;
+    btn.textContent = 'Odomknúť prístup →';
+
+    if (!data || data.length === 0) {
+      showAuthError('Neplatný kód. Skontroluj email od Educast.');
+      elSet('auth-code-input','className','auth-input error');
+      var ci = el('auth-code-input'); if(ci){ci.value='';ci.focus();}
+      return;
+    }
+
+    var record = data[0];
+
+    if (record.email.toLowerCase() !== emailInput) {
+      showAuthError('Email sa nezhoduje s kódom. Použi email zo Stripe platby.');
+      elSet('auth-email-input','className','auth-input error');
+      var ei = el('auth-email-input'); if(ei){ei.value='';ei.focus();}
+      return;
+    }
+
+    if (record.valid_until && Date.now() > new Date(record.valid_until).getTime()) {
+      showAuthError('Kód expiroval. Obnov predplatné.');
+      return;
+    }
+
+    authSave(emailInput, record.tier);
+    successEl.textContent = '✅ Prístup odomknutý! Vitaj, ' + emailInput;
+    successEl.className = 'auth-success show';
+    setTimeout(function() { updateAuthUI(); renderPortal(); closeAuth(); }, 1500);
+  })
+  .catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Odomknúť prístup →';
+    showAuthError('Chyba pripojenia. Skús znova.');
+  });
 }
 
 function showAuthError(msg) {
