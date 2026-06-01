@@ -165,7 +165,6 @@ button{font-family:var(--font);cursor:pointer}
 .sc-v{background:#04342C;border-color:#0F6E56}.sc-v::before{background:#1D9E75}.sc-v:hover{border-color:#1D9E75;transform:translateY(-1px)}
 .sc-m{background:#1a1a1a;border-color:#2a2a2a}.sc-m::before{background:#2a2a2a}.sc-m:hover{border-color:#888888;transform:translateY(-1px)}
 .sub-card.locked{opacity:0.55;cursor:default}.sub-card.locked:hover{transform:none}
-.sub-card.sub-sel{outline:2px solid #1D9E75;outline-offset:2px;box-shadow:0 0 0 4px #1D9E7522;transform:translateY(-3px)!important}
 .sub-icon{font-size:22px;margin-bottom:7px}
 .sub-name{font-size:12px;font-weight:500;margin-bottom:2px}
 .snr{color:#9FE1CB}.snv{color:#9FE1CB}.snm{color:#e8e8e8}
@@ -284,76 +283,6 @@ button{font-family:var(--font);cursor:pointer}
 .pr{background:#0F6E56;border-color:#0F6E56}.pr.d{background:#0F6E56;border-color:#0F6E56}.pr.c{background:#0F6E56;border-color:#9FE1CB}
 .pv{background:#1a1a2e;border-color:#0F6E56}.pv.d{background:#0F6E56;border-color:#1D9E75}.pv.c{background:#1D9E75;border-color:#1D9E75}
 .pm2{background:#1a1a1a;border-color:#2a2a2a}.pm2.d{background:#2a2a2a;border-color:#888888}.pm2.c{background:#888888;border-color:#e8e8e8}
-
-/* ── MAT PICKER OVERLAY ── */
-.mat-pick-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.82);z-index:1400;align-items:flex-end;justify-content:center;backdrop-filter:blur(6px)}
-.mat-pick-overlay.show{display:flex;animation:qswIn 0.2s ease}
-.mat-pick-sheet{background:#161616;border-radius:20px 20px 0 0;padding:20px 16px 32px;width:100%;max-width:520px;border-top:0.5px solid #2a2a2a}
-.mat-pick-handle{width:36px;height:4px;border-radius:2px;background:#333;margin:0 auto 14px}
-.mat-pick-title{font-size:14px;font-weight:600;color:#e8e8e8;margin-bottom:4px}
-.mat-pick-sub{font-size:11px;color:#555;margin-bottom:14px}
-.mat-pick-preds{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
-.mat-pick-pred{background:#1a1a1a;border:1.5px solid #2a2a2a;border-radius:10px;padding:8px 14px;cursor:pointer;font-size:12px;font-weight:500;color:#aaa;font-family:inherit;transition:all 0.13s}
-.mat-pick-pred:hover{border-color:#7F77DD;color:#CECBF6}
-.mat-pick-pred.sel{border-color:#7F77DD;background:#1a1528;color:#CECBF6}
-.mat-pick-years{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-height:180px;overflow-y:auto;margin-bottom:14px}
-.mat-pick-year{background:#1a1a1a;border:1.5px solid #2a2a2a;border-radius:8px;padding:8px 4px;cursor:pointer;font-size:11px;font-weight:500;color:#aaa;text-align:center;font-family:inherit;transition:all 0.13s}
-.mat-pick-year:hover{border-color:#7F77DD;color:#CECBF6}
-.mat-pick-year.sel{border-color:#7F77DD;background:#1a1528;color:#CECBF6}
-.mat-pick-start{width:100%;padding:12px;border-radius:12px;border:none;background:linear-gradient(135deg,#534AB7,#7F77DD);color:#fff;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;display:none}
-.mat-pick-start.vis{display:block}
-.mat-pick-cancel{display:block;text-align:center;font-size:11px;color:#555;background:transparent;border:none;cursor:pointer;font-family:inherit;padding:8px;margin-top:4px;width:100%}
-
-/* ── ROC PICKER OVERLAY ── */
-.roc-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:1400;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(6px)}
-.roc-overlay.show{display:flex;animation:rocIn 0.18s ease}
-@keyframes rocIn{from{opacity:0;transform:scale(0.94)}to{opacity:1;transform:scale(1)}}
-.roc-box{background:#1a1a1a;border:0.5px solid #2a2a2a;border-radius:18px;padding:28px 24px;max-width:340px;width:100%;text-align:center}
-.roc-title{font-size:16px;font-weight:700;color:#e8e8e8;margin-bottom:6px}
-.roc-sub{font-size:12px;color:#666;margin-bottom:22px}
-.roc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
-.roc-card{background:#111;border:1.5px solid #2a2a2a;border-radius:12px;padding:18px 12px;cursor:pointer;transition:all 0.14s;font-family:inherit}
-.roc-card:hover{border-color:#1D9E75;background:#0a2a1e;transform:translateY(-2px)}
-.roc-card-num{font-size:26px;font-weight:800;color:#e8e8e8;line-height:1}
-.roc-card-label{font-size:11px;color:#666;margin-top:4px}
-.roc-cancel{font-size:12px;color:#555;background:transparent;border:none;cursor:pointer;font-family:inherit;padding:4px 8px}
-.roc-cancel:hover{color:#999}
-
-/* ── CONFIRM END QUIZ DIALOG ── */
-.ceq-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.75);z-index:1500;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
-.ceq-overlay.show{display:flex;animation:ceqIn 0.15s ease}
-@keyframes ceqIn{from{opacity:0;transform:scale(0.96)}to{opacity:1;transform:scale(1)}}
-.ceq-box{background:#1a1a1a;border:0.5px solid #2a2a2a;border-radius:16px;padding:24px 20px;max-width:320px;width:100%;text-align:center}
-.ceq-icon{font-size:28px;margin-bottom:10px}
-.ceq-title{font-size:15px;font-weight:600;color:#e8e8e8;margin-bottom:6px}
-.ceq-sub{font-size:12px;color:#888;margin-bottom:20px;line-height:1.5}
-.ceq-btns{display:flex;gap:8px}
-.ceq-cancel{flex:1;padding:11px;border-radius:10px;border:0.5px solid #2a2a2a;background:transparent;color:#888;font-size:13px;cursor:pointer;font-family:inherit;transition:all 0.12s}
-.ceq-cancel:hover{border-color:#555;color:#e8e8e8}
-.ceq-confirm{flex:1;padding:11px;border-radius:10px;border:none;background:#791F1F;color:#F7C1C1;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:all 0.12s}
-.ceq-confirm:hover{background:#A32D2D}
-
-/* ── QUICK SWITCH MODAL ── */
-.qsw-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.82);z-index:1500;align-items:flex-end;justify-content:center;padding:0;backdrop-filter:blur(6px)}
-.qsw-overlay.show{display:flex;animation:qswIn 0.2s ease}
-@keyframes qswIn{from{opacity:0}to{opacity:1}}
-.qsw-sheet{background:#161616;border-radius:20px 20px 0 0;padding:20px 16px 32px;width:100%;max-width:520px;border-top:0.5px solid #2a2a2a;animation:qswUp 0.22s cubic-bezier(0.34,1.2,0.64,1)}
-@keyframes qswUp{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
-.qsw-handle{width:36px;height:4px;border-radius:2px;background:#333;margin:0 auto 16px}
-.qsw-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
-.qsw-title{font-size:14px;font-weight:600;color:#e8e8e8}
-.qsw-close{background:transparent;border:none;color:#666;font-size:20px;cursor:pointer;line-height:1;padding:2px 6px}
-.qsw-sub{font-size:11px;color:#555;margin-bottom:16px}
-.qsw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.qsw-card{background:#1a1a1a;border:0.5px solid #2a2a2a;border-radius:12px;padding:12px 8px;text-align:center;cursor:pointer;transition:all 0.14s}
-.qsw-card:hover{border-color:#1D9E75;background:#0a1a12;transform:translateY(-1px)}
-.qsw-card.active-sub{border-color:#0F6E56;background:#0a1a12}
-.qsw-card.locked{opacity:0.4;cursor:default}
-.qsw-card.locked:hover{transform:none;border-color:#2a2a2a;background:#1a1a1a}
-.qsw-icon{font-size:22px;margin-bottom:6px}
-.qsw-name{font-size:10px;font-weight:500;color:#ccc;line-height:1.3}
-.qsw-confirm{margin-top:14px;width:100%;padding:12px;border-radius:12px;border:none;background:linear-gradient(135deg,#0F6E56,#1D9E75);color:#fff;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;display:none}
-.qsw-confirm.vis{display:block}
 
 /* ── PAYWALL MODAL ── */
 .modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
@@ -650,16 +579,15 @@ html,body{background:#0f0f0f}
 .wiz-step.done .wiz-num{background:#085041;color:#9FE1CB}
 .wiz-sep{flex:1;height:1px;background:var(--border);margin:0 6px}
 .wiz-subj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
-.wiz-subj-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;transition:all 0.15s}
+.wiz-subj-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;transition:all 0.12s}
 .wiz-subj-card:hover{border-color:#1D9E75;transform:translateY(-1px)}
-.wiz-subj-card.sel{background:#0a3d2a;border:2px solid #1D9E75;transform:translateY(-2px);box-shadow:0 0 0 3px #1D9E7533}
+.wiz-subj-card.sel{background:#085041;border-color:#1D9E75}
 .wiz-subj-icon{font-size:22px;margin-bottom:4px}
 .wiz-subj-name{font-size:11px;font-weight:500;color:var(--text2)}
-.wiz-subj-card.sel .wiz-subj-name{color:#9FE1CB;font-weight:600}
-.wiz-subj-card.sel .wiz-subj-icon{filter:drop-shadow(0 0 6px #1D9E7566)}
+.wiz-subj-card.sel .wiz-subj-name{color:#9FE1CB}
 .wiz-subj-card.v-mode{border-color:#534AB755;background:#13101f}
 .wiz-subj-card.v-mode:hover{border-color:#7F77DD;transform:translateY(-1px)}
-.wiz-subj-card.v-mode.sel{background:#1a1528;border:2px solid #7F77DD;transform:translateY(-2px);box-shadow:0 0 0 3px #7F77DD33}
+.wiz-subj-card.v-mode.sel{background:#1a1528;border-color:#7F77DD}
 .wiz-subj-card.v-mode.sel .wiz-subj-name{color:#CECBF6}
 .wiz-subj-grid.v-grid{border:1px solid #534AB755;border-radius:12px;padding:8px;background:#0d0b1a}
 .wiz-roc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
@@ -752,9 +680,9 @@ html,body{background:#0f0f0f}
       <!-- Tab: Login s kódom -->
       <div id="tab-login-content">
         <label class="auth-label">Emailová adresa (z HeroHero)</label>
-        <input class="auth-input" id="auth-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email" onkeydown="if(event.key==='Enter')authSubmit()">
+        <input class="auth-input" id="auth-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email">
         <label class="auth-label">Prístupový kód</label>
-        <input class="auth-input" id="auth-code-input" type="text" placeholder="napr. EDU-P-2025-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:0.05em" onkeydown="if(event.key==='Enter')authSubmit()">
+        <input class="auth-input" id="auth-code-input" type="text" placeholder="napr. EDU-P-2025-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:0.05em">
         <div class="auth-error" id="auth-error"></div>
         <div class="auth-success" id="auth-success-msg"></div>
         <button class="auth-btn" id="auth-submit-btn" onclick="authSubmit()">Odomknúť prístup →</button>
@@ -825,8 +753,8 @@ html,body{background:#0f0f0f}
   <!-- Wizard priamo na úvodnej strane -->
   <div style="max-width:680px;margin:0 auto;padding:20px 16px 40px">
 
-    <!-- Hero — mení sa po výbere úrovne -->
-    <div id="lw-hero" style="text-align:center;margin-bottom:24px;padding-top:8px">
+    <!-- Hero mini -->
+    <div style="text-align:center;margin-bottom:24px;padding-top:8px">
       <div style="font-size:11px;color:#1D9E75;font-weight:600;letter-spacing:0.05em;margin-bottom:6px">PRE SLOVENSKÉ STREDNÉ ŠKOLY</div>
       <h1 style="font-size:clamp(22px,5vw,32px);font-weight:700;color:#e8e8e8;margin:0 0 6px;line-height:1.2">Priprav sa na <span style="color:#1D9E75">maturitu</span> hravejšie</h1>
       <p style="font-size:12px;color:#888;margin:0">96 kvízov · 768 otázok · všetky predmety</p>
@@ -855,31 +783,55 @@ html,body{background:#0f0f0f}
       <!-- Top bar: späť + úroveň + režim -->
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap">
         <button onclick="navBack()" style="font-size:11px;color:#555;background:transparent;border:none;cursor:pointer;padding:0;font-family:inherit;flex-shrink:0">←</button>
-        <div class="wiz-level-bar" id="lw-level-bar" style="flex:0 0 auto;margin:0"></div>
+        <div class="wiz-level-bar" id="lw-level-bar" style="flex:1;min-width:40px;margin:0"></div>
         <div class="wiz-toggle" style="flex-shrink:0">
           <button class="wiz-tog-btn active" id="lmd-t" onclick="lwSetMode('t')">📋 Test</button>
           <button class="wiz-tog-btn" id="lmd-s" onclick="lwSetMode('s')">⚔️ Súťaž</button>
         </div>
       </div>
 
-      <!-- Skryté pre JS kompatibilitu -->
+      <!-- Promo pre FREE -->
+      <div id="lw-plus-promo" style="display:none;background:#13101f;border:0.5px solid #534AB755;border-radius:10px;padding:10px 14px;margin-bottom:12px;cursor:pointer" onclick="openAuth()">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+          <div>
+            <div style="font-size:11px;font-weight:600;color:#CECBF6;margin-bottom:2px">🎓 EDUCAST+ ponúka viac</div>
+            <div style="font-size:10px;color:#7F77DD;line-height:1.5">96 kvízov · oficiálne Maturitné testy 2010–2026 · SJL, ANG, MAT</div>
+          </div>
+          <div style="font-size:10px;font-weight:600;color:#CECBF6;background:#1a1528;border:0.5px solid #534AB7;border-radius:20px;padding:4px 10px;white-space:nowrap">Získať →</div>
+        </div>
+      </div>
+
+      <!-- Kroky -->
+      <div class="wiz-steps" style="margin-bottom:14px">
+        <div class="wiz-step active" id="lw-s1"><div class="wiz-num">1</div><span>Predmet</span></div>
+        <div class="wiz-sep"></div>
+        <div class="wiz-step" id="lw-s2"><div class="wiz-num">2</div><span>Ročník</span></div>
+        <div class="wiz-sep"></div>
+        <div class="wiz-step" id="lw-s3"><div class="wiz-num">3</div><span>Štart</span></div>
+      </div>
+
+      <!-- Skryté level tlačidlá pre JS kompatibilitu -->
       <div style="display:none">
         <button id="llv-r" onclick="lwSetLv('r')"></button>
         <button id="llv-v" onclick="lwSetLv('v')"></button>
-        <div id="lw-step1"></div>
-        <div id="lw-step2"></div>
-        <span id="lw-subj-label"></span>
-        <div id="lw-s1"></div><div id="lw-s2"></div><div id="lw-s3"></div>
-        <button id="lr-1" onclick="lwSetRoc(1)"></button>
-        <button id="lr-2" onclick="lwSetRoc(2)"></button>
-        <button id="lr-3" onclick="lwSetRoc(3)"></button>
-        <button id="lr-4" onclick="lwSetRoc(4)"></button>
       </div>
 
-      <!-- Predmety priamo -->
-      <div class="wiz-subj-grid" id="lw-subj-grid"></div>
+      <!-- Krok 1: Predmet -->
+      <div id="lw-step1">
+        <p style="font-size:11px;color:#888;margin:0 0 10px">Vyber predmet:</p>
+        <div class="wiz-subj-grid" id="lw-subj-grid"></div>
+      </div>
 
-      <!-- Maturitný wizard (dynamicky) -->
+      <!-- Krok 2: Ročník -->
+      <div id="lw-step2" style="display:none">
+        <p style="font-size:11px;color:#888;margin:0 0 10px">Vyber ročník — <span id="lw-subj-label" style="color:#e8e8e8;font-weight:500"></span>:</p>
+        <div class="wiz-roc-grid">
+          <div class="wiz-roc-btn" id="lr-1" onclick="lwSetRoc(1)">1. ročník</div>
+          <div class="wiz-roc-btn" id="lr-2" onclick="lwSetRoc(2)">2. ročník</div>
+          <div class="wiz-roc-btn" id="lr-3" onclick="lwSetRoc(3)">3. ročník</div>
+          <div class="wiz-roc-btn" id="lr-4" onclick="lwSetRoc(4)">4. ročník</div>
+        </div>
+      </div>
 
       <!-- Spustiť -->
       <button class="wiz-start-btn" id="lw-start-btn" onclick="lwStart()">Spustiť kvíz →</button>
@@ -908,7 +860,10 @@ html,body{background:#0f0f0f}
 
 
 
-    <div id="hist-section-wrap" style="display:none">
+    <!-- Spaced repetition reminders -->
+    <div id="reminders-section"></div>
+
+    <div id="hist-section-wrap">
       <div style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:10px 0;border-bottom:0.5px solid var(--border);margin-bottom:12px" onclick="toggleHistSection()">
         <span style="font-size:14px">📊</span>
         <span style="font-size:12px;font-weight:600;color:var(--text)">História kvízov</span>
@@ -919,37 +874,55 @@ html,body{background:#0f0f0f}
         <div class="hist-empty">Zatiaľ žiadne dokončené kvízy. Vyskúšaj prvý kvíz!</div>
       </div>
     </div>
-    <!-- WIZARD — kompaktné flatové rozloženie -->
+    <!-- WIZARD A -->
     <div id="wizard-wrap">
 
-      <!-- Riadok: Úroveň + Režim -->
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;padding:10px 12px;background:var(--bg2);border-radius:12px;border:0.5px solid var(--border)">
+      <!-- Kroky -->
+      <div class="wiz-steps">
+        <div class="wiz-step active" id="wiz-s1"><div class="wiz-num">1</div><span>Predmet</span></div>
+        <div class="wiz-sep"></div>
+        <div class="wiz-step" id="wiz-s2"><div class="wiz-num">2</div><span>Ročník</span></div>
+        <div class="wiz-sep"></div>
+        <div class="wiz-step" id="wiz-s3"><div class="wiz-num">3</div><span>Štart</span></div>
+      </div>
+
+      <!-- Nastavenia (Úroveň + Režim) — vždy viditeľné, kompaktné -->
+      <div class="wiz-settings">
+        <span style="font-size:10px;color:var(--text2)">Úroveň:</span>
         <div class="wiz-toggle" id="wiz-lv-toggle">
-          <button class="wiz-tog-btn active" id="wlv-r" onclick="wizSetLv('r')">🆓 Free</button>
+          <button class="wiz-tog-btn active" id="wlv-r" onclick="wizSetLv('r')">🆓 EDUCAST free</button>
           <button class="wiz-tog-btn wiz-tog-btn-v" id="wlv-v" onclick="wizSetLv('v')">🎓 EDUCAST+</button>
         </div>
-        <div style="width:1px;height:16px;background:var(--border)"></div>
+        <span style="font-size:10px;color:var(--text2);margin-left:6px">Režim:</span>
         <div class="wiz-toggle">
           <button class="wiz-tog-btn active" id="wmd-t" onclick="wizSetMode('t')">📋 Test</button>
           <button class="wiz-tog-btn" id="wmd-s" onclick="wizSetMode('s')">⚔️ Súťaž</button>
         </div>
       </div>
 
-      <!-- Skryté pre JS kompatibilitu -->
+      <!-- Skryté level tlačidlá pre JS kompatibilitu -->
       <div style="display:none">
         <button id="llv-r" onclick="lwSetLv('r')"></button>
         <button id="llv-v" onclick="lwSetLv('v')"></button>
-        <div id="wiz-step1"></div>
-        <div id="wiz-step2"></div>
-        <span id="wiz-subj-label"></span>
-        <button id="wr-1" onclick="wizSetRoc(1)"></button>
-        <button id="wr-2" onclick="wizSetRoc(2)"></button>
-        <button id="wr-3" onclick="wizSetRoc(3)"></button>
-        <button id="wr-4" onclick="wizSetRoc(4)"></button>
       </div>
 
-      <!-- Predmety priamo -->
-      <div class="wiz-subj-grid" id="wiz-subj-grid"></div>
+      <!-- Krok 1: Predmet -->
+      <div id="wiz-step1">
+        <p style="font-size:11px;color:var(--text2);margin:0 0 10px">Vyber predmet:</p>
+        <div class="wiz-subj-grid" id="wiz-subj-grid"></div>
+      </div>
+
+      <!-- Krok 2: Ročník -->
+      <div id="wiz-step2" style="display:none">
+        <p style="font-size:11px;color:var(--text2);margin:0 0 10px">Vyber ročník — <span id="wiz-subj-label" style="color:var(--text);font-weight:500"></span>:</p>
+        <div class="wiz-roc-grid">
+          <div class="wiz-roc-btn" id="wr-1" onclick="wizSetRoc(1)">1. ročník</div>
+          <div class="wiz-roc-btn" id="wr-2" onclick="wizSetRoc(2)">2. ročník</div>
+          <div class="wiz-roc-btn" id="wr-3" onclick="wizSetRoc(3)">3. ročník</div>
+          <div class="wiz-roc-btn" id="wr-4" onclick="wizSetRoc(4)">4. ročník</div>
+        </div>
+        <button id="wiz-back-btn" style="font-size:11px;font-weight:500;color:#1D9E75;background:#0a2a1e;border:0.5px solid #1D9E7555;border-radius:20px;cursor:pointer;padding:5px 12px;font-family:inherit;margin-bottom:12px;transition:all 0.15s" onmouseover="this.style.background='#0d3a28'" onmouseout="this.style.background='#0a2a1e'" onclick="wizBack()">← Späť na predmety</button>
+      </div>
 
       <!-- Spustiť -->
       <button class="wiz-start-btn" id="wiz-start-btn" onclick="wizStart()">Spustiť kvíz →</button>
@@ -960,6 +933,10 @@ html,body{background:#0f0f0f}
     <div id="sg" style="display:none"></div>
     <div id="subj-title" style="display:none"></div>
 
+    <div class="hhero-banner" id="hhero-wrap" style="display:none">
+      <div class="hhero-text"><h3>Odomkni EDUCAST+ plný prístup</h3><p>Všetkých 96 kvízov · 6 €/mes alebo 49 €/rok</p></div>
+      <button class="hhero-btn" onclick="openAuth()">Zadať kód →</button>
+    </div>
   </div>
 </div>
 
@@ -1010,7 +987,7 @@ html,body{background:#0f0f0f}
       </div>
     </div>
     <div class="ctrls">
-      <button class="ctb" onclick="confirmEndQuiz()">← Predmety</button>
+      <button class="ctb" onclick="goToPortal()">← Predmety</button>
       <div class="pips" id="pips"></div>
       <div style="font-size:10px;color:var(--text2)" id="ci"></div>
     </div>
@@ -1026,61 +1003,6 @@ html,body{background:#0f0f0f}
     </div>
     <div class="detail-summary" id="detail-summary"></div>
     <div id="detail-questions"></div>
-  </div>
-</div>
-
-<!-- ══ MAT PICKER ══ -->
-<div class="mat-pick-overlay" id="mat-pick-overlay" onclick="if(event.target===this)closeMatPicker()">
-  <div class="mat-pick-sheet">
-    <div class="mat-pick-handle"></div>
-    <div class="mat-pick-title">🎓 Maturitné testy</div>
-    <div class="mat-pick-sub">Vyber predmet a rok</div>
-    <div class="mat-pick-preds" id="mat-pick-preds"></div>
-    <div class="mat-pick-years" id="mat-pick-years"></div>
-    <button class="mat-pick-start" id="mat-pick-start" onclick="matPickerLaunch()">Spustiť test →</button>
-    <button class="mat-pick-cancel" onclick="closeMatPicker()">Zrušiť</button>
-  </div>
-</div>
-
-<!-- ══ ROC PICKER ══ -->
-<div class="roc-overlay" id="roc-overlay">
-  <div class="roc-box">
-    <div class="roc-title">Vyber ročník</div>
-    <div class="roc-sub" id="roc-subj-label">Aký ročník navštevuješ?</div>
-    <div class="roc-grid">
-      <button class="roc-card" onclick="rocPickerSelect(1)"><div class="roc-card-num">1.</div><div class="roc-card-label">ročník</div></button>
-      <button class="roc-card" onclick="rocPickerSelect(2)"><div class="roc-card-num">2.</div><div class="roc-card-label">ročník</div></button>
-      <button class="roc-card" onclick="rocPickerSelect(3)"><div class="roc-card-num">3.</div><div class="roc-card-label">ročník</div></button>
-      <button class="roc-card" onclick="rocPickerSelect(4)"><div class="roc-card-num">4.</div><div class="roc-card-label">ročník</div></button>
-    </div>
-    <button class="roc-cancel" onclick="closeRocPicker()">Zrušiť</button>
-  </div>
-</div>
-
-<!-- ══ CONFIRM END QUIZ ══ -->
-<div class="ceq-overlay" id="ceq-overlay" onclick="ceqBgClick(event)">
-  <div class="ceq-box">
-    <div class="ceq-icon">⚠️</div>
-    <div class="ceq-title">Ukončiť kvíz?</div>
-    <div class="ceq-sub">Tvoj postup v tomto kvíze nebude uložený.</div>
-    <div class="ceq-btns">
-      <button class="ceq-cancel" onclick="ceqClose()">Pokračovať</button>
-      <button class="ceq-confirm" onclick="ceqEnd()">Ukončiť</button>
-    </div>
-  </div>
-</div>
-
-<!-- ══ QUICK SWITCH PREDMETY MODAL ══ -->
-<div class="qsw-overlay" id="qsw-overlay" onclick="qswBgClick(event)">
-  <div class="qsw-sheet" id="qsw-sheet">
-    <div class="qsw-handle"></div>
-    <div class="qsw-header">
-      <div class="qsw-title">Vyber predmet</div>
-      <button class="qsw-close" onclick="closeQSW()">×</button>
-    </div>
-    <div class="qsw-sub" id="qsw-sub">Aktuálny kvíz bude ukončený</div>
-    <div class="qsw-grid" id="qsw-grid"></div>
-    <button class="qsw-confirm" id="qsw-confirm" onclick="qswLaunch()">Spustiť kvíz →</button>
   </div>
 </div>
 
@@ -1127,7 +1049,6 @@ var VALID_CODES = {
   // Platitelia — pridávaj po každej platbe:
   'EDU-P-2025-DEMO1': { email: 'demo1@educast.sk', tier: 'p' },
   'EDU-P-2025-DEMO2': { email: 'demo2@educast.sk', tier: 'p' },
-  'K7M2P9X4LQ': { email: 'dvdtrlk@proton.me', tier: 'p' },
   // 'EDU-P-2025-XXXX': { email: 'student@email.sk', tier: 'p' },
 };
 
@@ -2675,19 +2596,12 @@ var WIZ_SUBS = [
 ];
 
 function renderWizard(){
+  // Synchnizuj wiz s globalnym stavom
   wizLv = lv;
   wizMd = md;
   renderWizSubjects();
+  wizUpdateSteps(1);
   wizUpdateSettings();
-  // Sync ročník
-  ['1','2','3','4'].forEach(function(n){
-    var btn = el('wr-'+n);
-    if(btn) btn.className = 'wiz-tog-btn'+(parseInt(n)===roc?' active':'');
-  });
-  if(wizRoc){
-    var sb = el('wiz-start-btn');
-    if(sb) sb.className = wizSubj ? 'wiz-start-btn visible' : 'wiz-start-btn';
-  }
 }
 
 function renderWizSubjects(){
@@ -2722,26 +2636,34 @@ function wizSelectMaturita(){
 function wizSelectSubj(id){
   wizSubj = id;
   wizRoc = null;
-  document.querySelectorAll('.wiz-subj-card').forEach(function(c){ c.classList.remove('sel'); });
-  var cards = document.querySelectorAll('.wiz-subj-card');
-  WIZ_SUBS.forEach(function(s, i){ if(s.id === id && cards[i]) cards[i].classList.add('sel'); });
+  // Zobraz krok 2
+  elStyle('wiz-step1','display','none');
+  elStyle('wiz-step2','display','block');
+  var lbl = el('wiz-subj-label');
+  var sub = WIZ_SUBS.filter(function(s){return s.id===id;})[0];
+  if(lbl && sub) lbl.textContent = sub.icon+' '+sub.name;
+  // Reset roc buttons
+  ['1','2','3','4'].forEach(function(r){
+    var btn = el('wr-'+r);
+    if(btn) btn.className = 'wiz-roc-btn';
+  });
+  // Skry start
   var sb = el('wiz-start-btn');
-  if(sb) sb.className = 'wiz-start-btn visible';
+  if(sb) sb.className = 'wiz-start-btn';
+  wizUpdateSteps(2);
 }
 
 function wizSetRoc(r){
   wizRoc = r;
-  roc = r;
   // Highlight vybratý ročník
   ['1','2','3','4'].forEach(function(n){
     var btn = el('wr-'+n);
-    if(btn) btn.className = 'wiz-tog-btn'+(parseInt(n)===r?' active':'');
+    if(btn) btn.className = 'wiz-roc-btn'+(parseInt(n)===r?' sel':'');
   });
-  // Zobraz start button ak je aj predmet vybraný
-  if(wizSubj){
-    var sb = el('wiz-start-btn');
-    if(sb) sb.className = 'wiz-start-btn visible';
-  }
+  // Zobraz start button
+  var sb = el('wiz-start-btn');
+  if(sb) sb.className = 'wiz-start-btn visible';
+  wizUpdateSteps(3);
 }
 
 function wizBack(){
@@ -2795,11 +2717,13 @@ function wizUpdateSteps(active){
 }
 
 function wizStart(){
-  if(!wizSubj) return;
-  openRocPicker(function(r){
-    wizRoc = r; roc = r; lv = wizLv; md = wizMd;
-    launchQuiz(wizSubj);
-  });
+  if(!wizSubj || !wizRoc) return;
+  // Nastav globálny stav
+  roc = wizRoc;
+  lv = wizLv;
+  md = wizMd;
+  // Spusti kvíz
+  launchQuiz(wizSubj);
 }
 
 function renderPortal(){
@@ -2840,38 +2764,14 @@ function renderPortal(){
       +'<div class="sub-pct">'+(pct>0?pct+'% dokončené':'Nezačaté')+'</div>';
     card.addEventListener('click',function(){
       if(isLocked){showPaywall();}
-      else{
-        document.querySelectorAll('.sub-card').forEach(function(c){ c.classList.remove('sub-sel'); });
-        card.classList.add('sub-sel');
-        openRocPicker(function(r){
-          roc = r;
-          launchQuiz(s.id);
-        });
-      }
+      else{launchQuiz(s.id);}
     });
     grid.appendChild(card);
   });
-
-  // Pridaj Maturitné testy kartu (EDUCAST+)
-  if(hasAccess('v') || true){
-    var matCard = document.createElement('div');
-    var matLocked = !hasAccess('v');
-    matCard.className = 'sub-card sc-v' + (matLocked ? ' locked' : '');
-    matCard.style.position = 'relative';
-    matCard.innerHTML = (matLocked ? '<div style="position:absolute;top:6px;right:8px;font-size:11px">🔒</div>' : '')
-      + '<div class="sub-icon">🎓</div>'
-      + '<div class="sub-name snv">Maturitné testy</div>'
-      + '<div class="sub-meta smv">Oficiálne testy 2010–2026</div>'
-      + (matLocked ? '<span class="sub-lock-badge">🔒 Vyžaduje EDUCAST+</span>' : '<span class="sub-tag stv">⭐ EDUCAST+</span>');
-    matCard.addEventListener('click', function(){
-      if(matLocked){ showPaywall(); return; }
-      document.querySelectorAll('.sub-card').forEach(function(c){ c.classList.remove('sub-sel'); });
-      matCard.classList.add('sub-sel');
-      openMatPicker();
-    });
-    grid.appendChild(matCard);
-  }
 }
+
+
+
 function showPaywall(){var m=el('modal');if(m)m.classList.add('show');}
 function hidePaywall(){var m=el('modal');if(m)m.classList.remove('show');}
 function closeModal(e){if(e.target===el('modal'))hidePaywall();}
@@ -3363,14 +3263,18 @@ function navBack(){
       lwGoBackToLevelSelect();
       break;
     case 'subj-select':
+      // Vráť na výber predmetu
       lwSubj=null; lwRoc=null;
+      var s1=document.getElementById('lw-step1');
+      var s2=document.getElementById('lw-step2');
       var mw=document.getElementById('lw-mat-wiz');
-      var sg=document.getElementById('lw-subj-grid');
       var sb=document.getElementById('lw-start-btn');
+      if(s1)s1.style.display='block';
+      if(s2)s2.style.display='none';
       if(mw)mw.style.display='none';
-      if(sg)sg.style.display='';
       if(sb)sb.className='wiz-start-btn';
       renderLandingWizard();
+      lwUpdateSteps(1);
       break;
     case 'rok-select':
       // Vráť na výber ročníka
@@ -3411,20 +3315,6 @@ function lwChooseLevel(l){
   if(bar) bar.className = 'wiz-level-bar ' + (l === 'v' ? 'plus' : 'free');
   var promo = document.getElementById('lw-plus-promo');
   if(promo) promo.style.display = l === 'r' ? 'block' : 'none';
-  // Aktualizuj hero
-  var hero = document.getElementById('lw-hero');
-  if(hero){
-    var isPlus = l === 'v';
-    hero.innerHTML = '<div style="display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap">'
-      + '<span style="font-size:22px">' + (isPlus ? '🎓' : '🆓') + '</span>'
-      + '<div style="text-align:left">'
-      + '<div style="font-size:15px;font-weight:700;color:#e8e8e8">' + (isPlus ? 'EDUCAST+' : 'EDUCAST free') + '</div>'
-      + '<div style="font-size:11px;color:#666">' + (isPlus ? '96 kvízov · maturitné testy · všetky predmety' : '32 kvízov · 256 otázok · bez registrácie') + '</div>'
-      + '</div>'
-      + '<button onclick="lwGoBackToLevelSelect()" style="margin-left:8px;font-size:10px;color:#555;background:transparent;border:0.5px solid #2a2a2a;border-radius:20px;padding:4px 10px;cursor:pointer;font-family:inherit">Zmeniť</button>'
-      + '</div>';
-    hero.style.marginBottom = '16px';
-  }
   lwUpdateSettings();
   renderLandingWizard();
 }
@@ -3438,14 +3328,6 @@ function lwGoBackToLevelSelect(){
   if(ws) ws.style.display = 'none';
   var sb = document.getElementById('lw-start-btn');
   if(sb) sb.className = 'wiz-start-btn';
-  // Obnov pôvodný hero
-  var hero = document.getElementById('lw-hero');
-  if(hero){
-    hero.style.marginBottom = '24px';
-    hero.innerHTML = '<div style="font-size:11px;color:#1D9E75;font-weight:600;letter-spacing:0.05em;margin-bottom:6px">PRE SLOVENSKÉ STREDNÉ ŠKOLY</div>'
-      + '<h1 style="font-size:clamp(22px,5vw,32px);font-weight:700;color:#e8e8e8;margin:0 0 6px;line-height:1.2">Priprav sa na <span style="color:#1D9E75">maturitu</span> hravejšie</h1>'
-      + '<p style="font-size:12px;color:#888;margin:0">96 kvízov · 768 otázok · všetky predmety</p>';
-  }
   lwUpdateSteps(1);
 }
 
@@ -3537,43 +3419,51 @@ function lwSetMode(m){
 }
 
 function lwSelectSubj(id){
-  lwSubj = id;
-  lwRoc = null;
-  document.querySelectorAll('#lw-subj-grid .wiz-subj-card').forEach(function(c){ c.classList.remove('sel'); });
-  var cards = document.querySelectorAll('#lw-subj-grid .wiz-subj-card');
-  var idx = 0;
-  WIZ_SUBS.forEach(function(s, i){ if(s.id === id) idx = i; });
-  if(cards[idx]) cards[idx].classList.add('sel');
+  navPush('subj-select');
+  lwSubj = id; lwRoc = null;
+  document.getElementById('lw-step1').style.display = 'none';
+  document.getElementById('lw-step2').style.display = 'block';
+  var lbl = document.getElementById('lw-subj-label');
+  var icons = {slj:'📝',lit:'📚',mat:'🔢',dej:'🌍',bio:'🔬',che:'⚗️',fyz:'⚡',ang:'🇬🇧'};
+  if(lbl) lbl.textContent = (icons[id]||'') + ' ' + id.toUpperCase();
+  ['1','2','3','4'].forEach(function(r){
+    var b = document.getElementById('lr-'+r);
+    if(b) b.className = 'wiz-roc-btn';
+  });
   var sb = document.getElementById('lw-start-btn');
-  if(sb) sb.className = 'wiz-start-btn visible';
+  if(sb) sb.className = 'wiz-start-btn';
+  lwUpdateSteps(2);
 }
 
 function lwSetRoc(r){
+  if(lwRoc === null) navPush('rok-select');
   lwRoc = r;
-  roc = r;
   ['1','2','3','4'].forEach(function(n){
     var b = document.getElementById('lr-'+n);
-    if(b) b.className = 'wiz-tog-btn'+(parseInt(n)===r?' active':'');
+    if(b) b.className = 'wiz-roc-btn'+(parseInt(n)===r?' sel':'');
   });
-  if(lwSubj){
-    var sb = document.getElementById('lw-start-btn');
-    if(sb) sb.className = 'wiz-start-btn visible';
-  }
+  var sb = document.getElementById('lw-start-btn');
+  if(sb) sb.className = 'wiz-start-btn visible';
+  lwUpdateSteps(3);
 }
 
 function lwSelectMaturita(){
-  navPush('subj-select');
-  var sg = document.getElementById('lw-subj-grid');
-  if(sg) sg.style.display = 'none';
+  // Zobraz wizard aj pre FREE - obsah bude zamknutý
+  // Zobraz maturitny wizard priamo na landing
+  document.getElementById('lw-step1').style.display = 'none';
+  document.getElementById('lw-step2').style.display = 'none';
   var mw = document.getElementById('lw-mat-wiz');
-  if(mw){ mw.style.display = 'block'; renderLwMatWiz(); return; }
-  var wrap = document.getElementById('lv-wizard-screen');
-  var div = document.createElement('div');
-  div.id = 'lw-mat-wiz';
-  div.innerHTML = lwMatWizHTML();
-  var startBtn = document.getElementById('lw-start-btn');
-  wrap.insertBefore(div, startBtn);
+  if(mw){ mw.style.display = 'block'; }
+  else {
+    // Vytvor maturitny wizard dynamicky
+    var wrap = document.getElementById('lw-step1').parentNode;
+    var div = document.createElement('div');
+    div.id = 'lw-mat-wiz';
+    div.innerHTML = lwMatWizHTML();
+    wrap.insertBefore(div, document.getElementById('lw-start-btn'));
+  }
   lwMatPred = null; lwMatRok = null;
+  lwUpdateSteps(2);
   renderLwMatWiz();
 }
 
@@ -3681,14 +3571,14 @@ function lwMatBack(){
 
 function lwBack(){
   lwSubj = null; lwRoc = null; lwMatPred = null; lwMatRok = null;
-  // Zobraz subj grid, skry maturitny wizard
-  var sg = document.getElementById('lw-subj-grid');
-  if(sg) sg.style.display = '';
+  document.getElementById('lw-step1').style.display = 'block';
+  document.getElementById('lw-step2').style.display = 'none';
   var mw = document.getElementById('lw-mat-wiz');
   if(mw) mw.style.display = 'none';
   var sb = document.getElementById('lw-start-btn');
   if(sb) sb.className = 'wiz-start-btn';
   renderLandingWizard();
+  lwUpdateSteps(1);
 }
 
 function lwUpdateSteps(active){
@@ -3709,149 +3599,18 @@ function lwStart(){
     setTimeout(function(){ renderWizard(); launchMatTest(lwMatPred, lwMatRok); }, 50);
     return;
   }
-  if(!lwSubj) return;
-  openRocPicker(function(r){
-    lwRoc = r; roc = r; lv = lwLv; md = lwMd;
-    showPage('page-portal');
-    renderPortal(); renderHistory(); renderReminders();
-    var ms = document.getElementById('mat-section');
-    if(ms) ms.style.display = hasAccess('v') ? 'block' : 'none';
-    setTimeout(function(){ renderWizard(); launchQuiz(lwSubj); }, 50);
-  });
+  if(!lwSubj || !lwRoc) return;
+  roc = lwRoc; lv = lwLv; md = lwMd;
+  showPage('page-portal');
+  renderPortal(); renderHistory(); renderReminders();
+  var ms = document.getElementById('mat-section');
+  if(ms) ms.style.display = hasAccess('v') ? 'block' : 'none';
+  setTimeout(function(){ renderWizard(); launchQuiz(lwSubj); }, 50);
 }
 
 function showLandingInfo(){
   // Otvor auth modal alebo info
   openAuth();
-}
-
-// ── MAT PICKER ──
-var _matPickPred = null, _matPickYear = null;
-function openMatPicker(){
-  _matPickPred = null; _matPickYear = null;
-  var o = document.getElementById('mat-pick-overlay');
-  if(o) o.classList.add('show');
-  var preds = Object.keys(MAT_DB);
-  var nm = {sjl:'SJL',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'};
-  var pp = document.getElementById('mat-pick-preds');
-  if(pp) pp.innerHTML = preds.map(function(p){
-    return '<button class="mat-pick-pred" onclick="matPickSetPred(\''+p+'\')">'+(nm[p]||p.toUpperCase())+'</button>';
-  }).join('');
-  document.getElementById('mat-pick-years').innerHTML = '';
-  document.getElementById('mat-pick-start').className = 'mat-pick-start';
-}
-function matPickSetPred(p){
-  _matPickPred = p; _matPickYear = null;
-  document.querySelectorAll('.mat-pick-pred').forEach(function(b){ b.classList.toggle('sel', b.textContent === ({sjl:'SJL',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'}[p]||p.toUpperCase())); });
-  var roky = Object.keys(MAT_DB[p]).sort(function(a,b){return b-a;});
-  var yg = document.getElementById('mat-pick-years');
-  if(yg) yg.innerHTML = roky.map(function(r){
-    return '<button class="mat-pick-year" onclick="matPickSetYear('+r+')">'+ r +'</button>';
-  }).join('');
-  document.getElementById('mat-pick-start').className = 'mat-pick-start';
-}
-function matPickSetYear(y){
-  _matPickYear = y;
-  document.querySelectorAll('.mat-pick-year').forEach(function(b){ b.classList.toggle('sel', parseInt(b.textContent)===y); });
-  if(_matPickPred) document.getElementById('mat-pick-start').className = 'mat-pick-start vis';
-}
-function matPickerLaunch(){
-  if(!_matPickPred || !_matPickYear) return;
-  closeMatPicker();
-  launchMatTest(_matPickPred, _matPickYear);
-}
-function closeMatPicker(){
-  var o = document.getElementById('mat-pick-overlay');
-  if(o) o.classList.remove('show');
-}
-
-// ── ROC PICKER ──
-var _rocPickerCb = null;
-function openRocPicker(cb){
-  _rocPickerCb = cb;
-  var overlay = document.getElementById('roc-overlay');
-  if(overlay) overlay.classList.add('show');
-}
-function rocPickerSelect(r){
-  closeRocPicker();
-  if(_rocPickerCb){ _rocPickerCb(r); _rocPickerCb = null; }
-}
-function closeRocPicker(){
-  var overlay = document.getElementById('roc-overlay');
-  if(overlay) overlay.classList.remove('show');
-}
-
-// ── CONFIRM END QUIZ ──
-function confirmEndQuiz(){
-  var overlay = document.getElementById('ceq-overlay');
-  if(overlay) overlay.classList.add('show');
-}
-function ceqClose(){
-  var overlay = document.getElementById('ceq-overlay');
-  if(overlay) overlay.classList.remove('show');
-}
-function ceqBgClick(e){
-  if(e.target === document.getElementById('ceq-overlay')) ceqClose();
-}
-function ceqEnd(){
-  ceqClose();
-  goToPortal();
-}
-
-// ═══════════════════════════════════════════
-// QUICK SWITCH PREDMETY MODAL
-// ═══════════════════════════════════════════
-var qswSelected = null;
-
-function openQSW(){
-  qswSelected = null;
-  var overlay = document.getElementById('qsw-overlay');
-  var grid = document.getElementById('qsw-grid');
-  var subEl = document.getElementById('qsw-sub');
-  var conf = document.getElementById('qsw-confirm');
-  if(!overlay || !grid) return;
-  // Pause timers
-  clearInterval(tT); clearInterval(tTot); tck = false;
-  // Sub label
-  if(subEl) subEl.textContent = (sub && sub.name ? 'Práve hráš: ' + sub.name : 'Aktuálny kvíz bude ukončený');
-  // Render grid
-  grid.innerHTML = '';
-  SUBS.forEach(function(s){
-    var isLocked = !hasAccess(lv);
-    var isActive = sub && sub.id === s.id;
-    var card = document.createElement('div');
-    card.className = 'qsw-card' + (isActive ? ' active-sub' : '') + (isLocked ? ' locked' : '');
-    card.innerHTML = '<div class="qsw-icon">' + s.icon + '</div><div class="qsw-name">' + s.name + '</div>';
-    if(!isLocked){
-      card.addEventListener('click', function(){
-        qswSelected = s.id;
-        document.querySelectorAll('.qsw-card').forEach(function(c){ c.classList.remove('active-sub'); });
-        card.classList.add('active-sub');
-        if(conf) conf.className = 'qsw-confirm vis';
-      });
-    } else {
-      card.addEventListener('click', function(){ showPaywall(); closeQSW(); });
-    }
-    grid.appendChild(card);
-  });
-  if(conf) conf.className = 'qsw-confirm';
-  overlay.classList.add('show');
-}
-
-function closeQSW(){
-  var overlay = document.getElementById('qsw-overlay');
-  if(overlay) overlay.classList.remove('show');
-  qswSelected = null;
-}
-
-function qswBgClick(e){
-  if(e.target === document.getElementById('qsw-overlay')) closeQSW();
-}
-
-function qswLaunch(){
-  if(!qswSelected) return;
-  closeQSW();
-  launchQuiz(qswSelected);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
