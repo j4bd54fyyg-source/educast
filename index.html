@@ -694,31 +694,50 @@ html,body{background:#0f0f0f}
 
       <!-- Tab: Kúpiť -->
       <div id="tab-buy-content" style="display:none">
-        <div style="background:linear-gradient(135deg,#1a1520,#04342C);border:1.5px solid #1D9E75;border-radius:12px;padding:16px;margin-bottom:10px">
+
+        <!-- Mesačný plán -->
+        <div onclick="startCheckout('monthly')" style="background:linear-gradient(135deg,#1a1520,#04342C);border:1.5px solid #1D9E75;border-radius:12px;padding:16px;margin-bottom:10px;cursor:pointer;transition:all 0.12s" onmouseover="this.style.borderColor='#CECBF6'" onmouseout="this.style.borderColor='#1D9E75'">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
-            <div style="font-size:11px;color:#9FE1CB;font-weight:600">🎓 Educast Pro</div>
-            <div style="font-size:10px;background:#04342C;color:#1D9E75;padding:2px 8px;border-radius:10px">Mesačné</div>
+            <div style="font-size:11px;color:#7F77DD;font-weight:500">🎓 EDUCAST+ Mesačný</div>
+            <div style="font-size:10px;background:#04342C;color:#1D9E75;padding:2px 8px;border-radius:10px">Flexibilný</div>
           </div>
           <div style="font-size:28px;font-weight:700;color:#9FE1CB;margin-bottom:2px">4,99 €<span style="font-size:13px;font-weight:400;color:#1D9E75"> / mesiac</span></div>
           <div style="font-size:10px;color:#1D9E75;margin-bottom:10px">Zruš kedykoľvek</div>
           <div style="font-size:10px;color:#1D9E75;display:flex;flex-direction:column;gap:3px;margin-bottom:12px">
-            <span>✓ Všetkých 96 kvízov · 768 otázok</span>
-            <span>✓ Maturitné testy</span>
-            <span>✓ História a štatistiky</span>
-            <span>✓ Email s prihlasovacími údajmi</span>
+            <span>✓ Všetkých 96 kvízov</span>
+            <span>✓ 768 odborných otázok</span>
+            <span>✓ História a detail chýb</span>
           </div>
-          <div style="margin-bottom:10px">
-            <label class="auth-label">Tvoja emailová adresa</label>
-            <input class="auth-input" id="buy-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email" style="margin-bottom:0" onkeydown="if(event.key==='Enter')startCheckout()">
-          </div>
-          <div class="auth-error" id="buy-error" style="margin-bottom:8px"></div>
-          <button class="auth-btn" id="buy-submit-btn" onclick="startCheckout()" style="margin-bottom:0">Zaplatiť kartou →</button>
+          <div style="width:100%;padding:9px;border-radius:8px;background:#1D9E75;color:#fff;font-size:12px;font-weight:600;text-align:center">Získať mesačný →</div>
         </div>
+
+        <!-- Ročný plán -->
+        <div onclick="startCheckout('monthly')" style="background:linear-gradient(135deg,#04342C,#04342C);border:1.5px solid #2ecc71;border-radius:12px;padding:16px;margin-bottom:12px;cursor:pointer;transition:all 0.12s;position:relative" onmouseover="this.style.borderColor='#5DF5A0'" onmouseout="this.style.borderColor='#2ecc71'">
+          <div style="position:absolute;top:-1px;right:12px;background:#2ecc71;color:#0a3d1f;font-size:9px;font-weight:700;padding:3px 10px;border-radius:0 0 8px 8px">NAJLEPŠIA HODNOTA</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+            <div style="font-size:11px;color:#7F77DD;font-weight:500">🎓 EDUCAST+ Ročný</div>
+            <div style="font-size:10px;background:#0a3d1f;color:#2ecc71;padding:2px 8px;border-radius:10px">Ušetríš 23 €</div>
+          </div>
+          <div style="font-size:28px;font-weight:700;color:#fff;margin-bottom:2px"><span style="font-size:13px;font-weight:400;color:#1D9E75"> / rok</span></div>
+          <div style="font-size:10px;color:#1D9E75;margin-bottom:10px">= 4,08 € / mesiac · účtuje sa raz ročne</div>
+          <div style="font-size:10px;color:#1D9E75;display:flex;flex-direction:column;gap:3px;margin-bottom:12px">
+            <span>✓ Všetkých 96 kvízov</span>
+            <span>✓ 768 odborných otázok</span>
+            <span>✓ História a detail chýb</span>
+          </div>
+          <div style="width:100%;padding:9px;border-radius:8px;background:linear-gradient(135deg,#0F6E56,#2ecc71);color:#0a3d1f;font-size:12px;font-weight:700;text-align:center">Získať ročný →</div>
+        </div>
+
         <div class="auth-note">
-          Po zaplatení dostaneš email s prihlasovacími údajmi do 1 minúty.<br>
-          Platba prebieha cez zabezpečený Stripe. 🔒
+          Po zaplatení dostaneš email s prístupovým kódom a návodom.<br>
+          🆓 EDUCAST free kvízy sú zadarmo — bez registrácie.
         </div>
       </div>
+    </div>
+
+    <button onclick="closeAuth()" style="display:block;margin:14px auto 0;background:transparent;border:1.5px solid #e74c3c;color:#e74c3c;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;padding:9px 32px;border-radius:8px;transition:all 0.12s" onmouseover="this.style.background='#e74c3c';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#e74c3c'">✕ Zavrieť</button>
+  </div>
+</div>
 
 <!-- ══ LANDING PAGE ══ -->
 <div id="page-landing" class="page active">
