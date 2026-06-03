@@ -3379,10 +3379,22 @@ function lwUpdateNav(){
   var btn = document.getElementById('nav-auth-btn');
   var lbl = document.getElementById('nav-auth-label');
   if(authState.loggedIn){
-    if(btn) btn.textContent = '🎓 ' + authState.email.split('@')[0];
-    if(lbl) lbl.textContent = 'EDUCAST+';
+    if(btn){
+      btn.textContent = '🚪 Odhlásiť sa';
+      btn.onclick = authLogout;
+      btn.style.cssText = 'font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;border:1.5px solid #e74c3c;background:transparent;color:#e74c3c;cursor:pointer;font-family:inherit;transition:all 0.12s';
+      btn.onmouseover = function(){ this.style.background='#e74c3c'; this.style.color='#fff'; };
+      btn.onmouseout = function(){ this.style.background='transparent'; this.style.color='#e74c3c'; };
+    }
+    if(lbl) lbl.textContent = '🎓 ' + authState.email.split('@')[0];
   } else {
-    if(btn) btn.textContent = '🔑 Prihlásiť sa';
+    if(btn){
+      btn.textContent = '🔑 Prihlásiť sa';
+      btn.onclick = openAuth;
+      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit';
+      btn.onmouseover = null;
+      btn.onmouseout = null;
+    }
     if(lbl) lbl.textContent = '';
   }
 }
