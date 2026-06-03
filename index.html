@@ -1867,7 +1867,22 @@ function qswLaunch(){
   launchQuiz(qswSelected);
 }
 
+// Pomocná funkcia na načítanie z localStorage
+function gLoad(key, def) {
+  try { var v = localStorage.getItem(key); return v ? JSON.parse(v) : def; } catch(e) { return def; }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Zobraz hlášku po úspešnej platbe
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('success') === '1') {
+    var banner = document.createElement('div');
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#0F6E56;color:#fff;text-align:center;padding:14px;font-size:14px;font-weight:500;z-index:9999;';
+    banner.innerHTML = '🎉 Platba prebehla úspešne! Prihlasovacie údaje ti prídu na email do pár minút.';
+    document.body.appendChild(banner);
+    setTimeout(function(){ banner.style.display='none'; }, 8000);
+    window.history.replaceState({}, '', window.location.pathname);
+  }
   authLoad();
   updateAuthUI();
   lastPlayed = gLoad('lastPlayed', {});
