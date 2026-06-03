@@ -1157,7 +1157,7 @@ function authSubmit() {
     btn.textContent = 'Odomknúť prístup →';
     successEl.textContent = '✅ Prístup odomknutý! Vitaj, ' + emailInput;
     successEl.className = 'auth-success show';
-    setTimeout(function() { updateAuthUI(); renderPortal(); closeAuth(); }, 1500);
+    setTimeout(function() { updateAuthUI(); lwUpdateNav(); renderPortal(); closeAuth(); }, 1500);
     return;
   }
 
@@ -1197,7 +1197,7 @@ function authSubmit() {
     authSave(emailInput, record.tier);
     successEl.textContent = '✅ Prístup odomknutý! Vitaj, ' + emailInput;
     successEl.className = 'auth-success show';
-    setTimeout(function() { updateAuthUI(); renderPortal(); closeAuth(); }, 1500);
+    setTimeout(function() { updateAuthUI(); lwUpdateNav(); renderPortal(); closeAuth(); }, 1500);
   })
   .catch(function() {
     btn.disabled = false;
