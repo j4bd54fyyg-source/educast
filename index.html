@@ -3638,6 +3638,7 @@ function showLandingInfo(){
 document.addEventListener('DOMContentLoaded', function() {
   authLoad();
   updateAuthUI();
+  lwUpdateNav();
   lastPlayed = gLoad('lastPlayed', {});
   quizHistory = gLoad('quizHistoryArr', []);
   // Renderuj len level select screen pri štarte
