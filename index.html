@@ -679,7 +679,7 @@ html,body{background:#0f0f0f}
 
       <!-- Tab: Login s kódom -->
       <div id="tab-login-content">
-        <label class="auth-label">Emailová adresa (z HeroHero)</label>
+        <label class="auth-label">Emailová adresa</label>
         <input class="auth-input" id="auth-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email">
         <label class="auth-label">Prístupový kód</label>
         <input class="auth-input" id="auth-code-input" type="text" placeholder="napr. EDU-P-2025-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:0.05em">
@@ -687,7 +687,7 @@ html,body{background:#0f0f0f}
         <div class="auth-success" id="auth-success-msg"></div>
         <button class="auth-btn" id="auth-submit-btn" onclick="authSubmit()">Odomknúť prístup →</button>
         <div class="auth-note">
-          Kód dostaneš emailom po zaplatení na HeroHero.<br>
+          Kód dostaneš emailom po zaplatení.<br>
           Každý kód funguje iba pre jeden email a jedno zariadenie.
         </div>
       </div>
@@ -696,7 +696,7 @@ html,body{background:#0f0f0f}
       <div id="tab-buy-content" style="display:none">
 
         <!-- Mesačný plán -->
-        <div onclick="window.open('https://herohero.co/edu','_blank')" style="background:linear-gradient(135deg,#1a1520,#04342C);border:1.5px solid #1D9E75;border-radius:12px;padding:16px;margin-bottom:10px;cursor:pointer;transition:all 0.12s" onmouseover="this.style.borderColor='#CECBF6'" onmouseout="this.style.borderColor='#1D9E75'">
+        <div onclick="startCheckout('monthly')" style="background:linear-gradient(135deg,#1a1520,#04342C);border:1.5px solid #1D9E75;border-radius:12px;padding:16px;margin-bottom:10px;cursor:pointer;transition:all 0.12s" onmouseover="this.style.borderColor='#CECBF6'" onmouseout="this.style.borderColor='#1D9E75'">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
             <div style="font-size:11px;color:#7F77DD;font-weight:500">🎓 EDUCAST+ Mesačný</div>
             <div style="font-size:10px;background:#04342C;color:#1D9E75;padding:2px 8px;border-radius:10px">Flexibilný</div>
@@ -712,7 +712,7 @@ html,body{background:#0f0f0f}
         </div>
 
         <!-- Ročný plán -->
-        <div onclick="window.open('https://herohero.co/edu','_blank')" style="background:linear-gradient(135deg,#04342C,#04342C);border:1.5px solid #2ecc71;border-radius:12px;padding:16px;margin-bottom:12px;cursor:pointer;transition:all 0.12s;position:relative" onmouseover="this.style.borderColor='#5DF5A0'" onmouseout="this.style.borderColor='#2ecc71'">
+        <div onclick="startCheckout('monthly')" style="background:linear-gradient(135deg,#04342C,#04342C);border:1.5px solid #2ecc71;border-radius:12px;padding:16px;margin-bottom:12px;cursor:pointer;transition:all 0.12s;position:relative" onmouseover="this.style.borderColor='#5DF5A0'" onmouseout="this.style.borderColor='#2ecc71'">
           <div style="position:absolute;top:-1px;right:12px;background:#2ecc71;color:#0a3d1f;font-size:9px;font-weight:700;padding:3px 10px;border-radius:0 0 8px 8px">NAJLEPŠIA HODNOTA</div>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
             <div style="font-size:11px;color:#7F77DD;font-weight:500">🎓 EDUCAST+ Ročný</div>
@@ -1012,7 +1012,7 @@ html,body{background:#0f0f0f}
     <button class="modal-close" onclick="hidePaywall()">✕</button>
     <div class="modal-icon">🔒</div>
     <div class="modal-title">🎓 EDUCAST+ prístup</div>
-    <div class="modal-sub">Odomkni všetkých 96 kvízov cez EDUCAST+. Zaplať na HeroHero a zadaj kód.</div>
+    <div class="modal-sub">Odomkni všetkých 96 kvízov cez EDUCAST+. Zaplať kartou a zadaj kód.</div>
     <div style="background:linear-gradient(135deg,#04342C,#04342C);border:1px solid #0F6E56;border-radius:12px;padding:16px;text-align:center;margin-bottom:14px">
       <div style="font-size:10px;color:#7F77DD;margin-bottom:6px">🎓 EDUCAST+ — plný prístup</div>
       <div style="font-size:28px;font-weight:700;color:#9FE1CB;margin-bottom:2px">6 €<span style="font-size:13px;font-weight:400;color:#1D9E75">/mesiac</span></div>
@@ -1025,7 +1025,7 @@ html,body{background:#0f0f0f}
       </div>
     </div>
     <button class="modal-btn-v" onclick="hidePaywall();openAuth()">🔑 Zadať kód (mám predplatné)</button>
-    <button class="modal-btn-v" style="background:transparent;border:1px solid #0F6E56;color:#1D9E75;margin-bottom:10px" onclick="window.open('https://herohero.co/edu','_blank')">💳 Kúpiť na HeroHero — 6 €/mes</button>
+    <button class="modal-btn-v" style="background:transparent;border:1px solid #0F6E56;color:#1D9E75;margin-bottom:10px" onclick="startCheckout('monthly')">💳 Kúpiť na HeroHero — 6 €/mes</button>
     <div class="modal-free-note">🆓 EDUCAST free zostáva vždy zadarmo</div>
   </div>
 </div>
