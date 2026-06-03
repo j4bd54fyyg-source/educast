@@ -680,9 +680,9 @@ html,body{background:#0f0f0f}
       <!-- Tab: Login s kódom -->
       <div id="tab-login-content">
         <label class="auth-label">Emailová adresa</label>
-        <input class="auth-input" id="auth-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email">
+        <input class="auth-input" id="auth-email-input" type="email" placeholder="tvoj@email.sk" autocomplete="email" onkeydown="if(event.key==='Enter')authSubmit()">
         <label class="auth-label">Prístupový kód</label>
-        <input class="auth-input" id="auth-code-input" type="text" placeholder="napr. EDU-P-2025-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:0.05em">
+        <input class="auth-input" id="auth-code-input" type="text" placeholder="napr. EDU-P-2025-XXXX" autocomplete="off" style="text-transform:uppercase;letter-spacing:0.05em" onkeydown="if(event.key==='Enter')authSubmit()">
         <div class="auth-error" id="auth-error"></div>
         <div class="auth-success" id="auth-success-msg"></div>
         <button class="auth-btn" id="auth-submit-btn" onclick="authSubmit()">Odomknúť prístup →</button>
