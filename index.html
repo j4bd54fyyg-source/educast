@@ -1122,10 +1122,7 @@ function authSave(email, tier) {
 function authLogout() {
   localStorage.removeItem(AUTH_KEY);
   authState = { loggedIn: false, email: '', tier: 'r' };
-  lv = 'r';
-  updateAuthUI();
-  renderPortal();
-  closeAuth();
+  window.location.href = '/';
 }
 
 // Hlavná funkcia overenia kódu
