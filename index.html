@@ -2851,9 +2851,11 @@ function showQ(){
   }
   var ea=el('ea');
   if(ea){if(q.en&&q.en.trim()){ea.innerHTML='<div class="qen">'+q.en+'</div>';}else{ea.innerHTML='';}}
-  // Shuffle odpovede — zachovaj správnu odpoveď
+  // Shuffle odpovede — zachovaj správnu odpoveď (pre Maturitné testy bez shuffle)
   var idxs=[0,1,2,3];
-  for(var si=idxs.length-1;si>0;si--){var sj=Math.floor(Math.random()*(si+1));var st=idxs[si];idxs[si]=idxs[sj];idxs[sj]=st;}
+  if(!sub.isMat){
+    for(var si=idxs.length-1;si>0;si--){var sj=Math.floor(Math.random()*(si+1));var st=idxs[si];idxs[si]=idxs[sj];idxs[sj]=st;}
+  }
   var shuffledOpts=idxs.map(function(i){return q.opts[i];});
   var newCorrect=idxs.indexOf(q.a);
   // Uloz shufflovanú mapu pre pick()
