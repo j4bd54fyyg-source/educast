@@ -278,8 +278,16 @@ button{font-family:var(--font);cursor:pointer}
 .quiz-back{background:transparent;border:0.5px solid var(--border);color:var(--text2);font-size:12px;padding:8px 20px;border-radius:8px;cursor:pointer;margin-top:6px;font-family:inherit}
 .ctrls{display:flex;align-items:center;justify-content:space-between;padding:8px 0 4px}
 .ctb{background:transparent;border:0.5px solid var(--border);color:var(--text2);font-size:11px;padding:4px 10px;border-radius:6px;cursor:pointer;font-family:inherit}
-.pips{display:flex;align-items:center;gap:4px;flex-wrap:wrap;max-width:280px;justify-content:center}
+.pips{display:flex;align-items:center;gap:3px;flex-wrap:wrap;max-width:600px;justify-content:center}
 .pip{width:6px;height:6px;border-radius:50%;border:1.5px solid}
+.pip-mat-empty{width:8px;height:8px;border-radius:50%;border:1.5px solid #555;background:transparent;cursor:pointer;transition:all 0.15s}
+.pip-mat-done{width:8px;height:8px;border-radius:50%;border:1.5px solid #7F77DD;background:#7F77DD;cursor:pointer;transition:all 0.15s}
+.pip-mat-cur{width:8px;height:8px;border-radius:50%;border:2px solid #CECBF6;background:#534AB7;cursor:pointer;box-shadow:0 0 4px #7F77DD;transition:all 0.15s}
+.pip-mat-num-empty{min-width:22px;height:22px;border-radius:6px;border:1.5px solid #444;background:transparent;color:#888;font-size:10px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all 0.15s;padding:0 3px}
+.pip-mat-num-done{min-width:22px;height:22px;border-radius:6px;border:1.5px solid #7F77DD;background:#1a1528;color:#CECBF6;font-size:10px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:all 0.15s;padding:0 3px}
+.pip-mat-num-cur{min-width:22px;height:22px;border-radius:6px;border:2px solid #CECBF6;background:#534AB7;color:#fff;font-size:10px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 0 6px #7F77DD;transition:all 0.15s;padding:0 3px}
+.mat-selected{background:#534AB7!important;border-color:#7F77DD!important;color:#fff!important}
+.mat-selected .ltr{background:#7F77DD!important;color:#fff!important}
 .pr{background:#0F6E56;border-color:#0F6E56}.pr.d{background:#0F6E56;border-color:#0F6E56}.pr.c{background:#0F6E56;border-color:#9FE1CB}
 .pv{background:#1a1a2e;border-color:#0F6E56}.pv.d{background:#0F6E56;border-color:#1D9E75}.pv.c{background:#1D9E75;border-color:#1D9E75}
 .pm2{background:#1a1a1a;border-color:#2a2a2a}.pm2.d{background:#2a2a2a;border-color:#888888}.pm2.c{background:#888888;border-color:#e8e8e8}
@@ -953,8 +961,8 @@ html,body{background:#0f0f0f}
           <input id="short-input" type="text" autocomplete="off" spellcheck="false"
             placeholder="Napíš odpoveď..."
             style="width:100%;padding:14px 16px;font-size:15px;border-radius:12px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-family:var(--font);box-sizing:border-box;outline:none;margin-bottom:8px"
-            onkeydown="if(event.key==='Enter')pickShort()" />
-          <button onclick="pickShort()" style="width:100%;padding:12px;border-radius:12px;border:none;background:#534AB7;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Potvrdiť →</button>
+            onkeydown="if(event.key==='Enter' && (!sub||!sub.isMat))pickShort()" oninput="if(sub&&sub.isMat)matAnswers[cur]=this.value.trim()" />
+          <button id="short-btn" onclick="if(sub&&sub.isMat){matAnswers[cur]=document.getElementById('short-input').value.trim();rPips();}else{pickShort();}" style="width:100%;padding:12px;border-radius:12px;border:none;background:#534AB7;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Potvrdiť →</button>
         </div>
         <div class="fbar" id="fb"></div>
         <button class="nxt nxr" id="nb" onclick="adv()">Ďalej →</button>
@@ -982,6 +990,7 @@ html,body{background:#0f0f0f}
     </div>
     <div class="ctrls">
       <button class="ctb" onclick="goToPortal()">← Predmety</button>
+      <button class="ctb" id="mat-prev-btn" onclick="matPrev()" style="display:none">← Späť</button>
       <div class="pips" id="pips"></div>
       <div style="font-size:10px;color:var(--text2)" id="ci"></div>
     </div>
@@ -1299,6 +1308,7 @@ function hasAccess(level) {
 // ═══════════════════════════════════════════
 var TS=15;
 var roc=1,lv='r',md='t',sub=null,cur=0,scr=0,ans=false,answers=[];
+var matAnswers={}; // {questionIndex: chosenOptionIndex or text}
 var tT=null,tTot=null,tck=false,ax=null,tot=0;
 
 var pg={};
@@ -2849,7 +2859,15 @@ function applyS(){
 
 function rPips(){
   var c=C[lv];
-  elSet('pips','innerHTML',sub.qs.map(function(_,i){return '<div class="pip '+(i<cur?c.pd:i===cur?c.pc:c.pb)+'"></div>';}).join(''));
+  if(sub && sub.isMat){
+    elSet('pips','innerHTML',sub.qs.map(function(_,i){
+      var answered = matAnswers[i]!==undefined && matAnswers[i]!=='';
+      var cls = i===cur ? 'pip-mat-num-cur' : (answered ? 'pip-mat-num-done' : 'pip-mat-num-empty');
+      return '<div class="'+cls+'" onclick="matGoto('+i+')">'+(i+1)+'</div>';
+    }).join(''));
+  } else {
+    elSet('pips','innerHTML',sub.qs.map(function(_,i){return '<div class="pip '+(i<cur?c.pd:i===cur?c.pc:c.pb)+'"></div>';}).join(''));
+  }
 }
 
 function showQ(){
@@ -2862,7 +2880,20 @@ function showQ(){
   elStyle('pbar','width',(cur/sub.qs.length*100)+'%');
   elSet('fb','className','fbar');
   elSet('fb','textContent','');
-  elStyle('nb','display','none');
+  // Maturitný test — tlačidlo vždy viditeľné
+  if(sub && sub.isMat){
+    var nbEl=el('nb');
+    if(nbEl){
+      nbEl.style.display='block';
+      nbEl.textContent=cur+1<sub.qs.length?'Ďalej →':'Dokončiť test';
+    }
+    var prevBtn=el('mat-prev-btn');
+    if(prevBtn) prevBtn.style.display=cur>0?'inline-block':'none';
+  } else {
+    elStyle('nb','display','none');
+    var prevBtn2=el('mat-prev-btn');
+    if(prevBtn2) prevBtn2.style.display='none';
+  }
   // Kontextový panel
   var ctxWrap=el('ctx-wrap');
   if(q.ctx && q.ctxText){
@@ -2883,7 +2914,15 @@ function showQ(){
   if(q.type==='short'){
     if(ogEl)ogEl.style.display='none';
     if(shortWrap)shortWrap.style.display='block';
-    var sinp=el('short-input');if(sinp){sinp.value='';setTimeout(function(){sinp.focus();},100);}
+    var sinp=el('short-input');
+    var sBtn=el('short-btn');
+    if(sub&&sub.isMat){
+      if(sinp){sinp.value=matAnswers[cur]||'';setTimeout(function(){sinp.focus();},100);}
+      if(sBtn)sBtn.style.display='none';
+    } else {
+      if(sinp){sinp.value='';setTimeout(function(){sinp.focus();},100);}
+      if(sBtn)sBtn.style.display='';
+    }
     window._shuffleMap=null;window._shuffleCorrect=undefined;
   } else {
     if(shortWrap)shortWrap.style.display='none';
@@ -2896,7 +2935,18 @@ function showQ(){
     var newCorrect=idxs.indexOf(q.a);
     window._shuffleMap=idxs;
     window._shuffleCorrect=newCorrect;
-    elSet('og','innerHTML',shuffledOpts.map(function(o,i){return '<button class="opt '+c.o+'" id="o'+i+'" onclick="pick('+i+')"><span class="ltr '+c.l+'">'+L[i]+'</span>'+o+'</button>';}).join(''));
+    elSet('og','innerHTML',shuffledOpts.map(function(o,i){return '<button class="opt '+c.o+'" id="o'+i+'" onclick="matPick('+i+')"><span class="ltr '+c.l+'">'+L[i]+'</span>'+o+'</button>';}).join(''));
+    // Obnov predchádzajúcu odpoveď pre maturitný test
+    if(sub && sub.isMat && matAnswers[cur]!==undefined){
+      var prev=matAnswers[cur];
+      var prevBtn=el('o'+prev);
+      if(prevBtn)prevBtn.classList.add('mat-selected');
+    }
+  }
+  // Obnov krátku odpoveď
+  if(q.type==='short' && sub && sub.isMat && matAnswers[cur]!==undefined){
+    var sinp2=el('short-input');
+    if(sinp2)sinp2.value=matAnswers[cur];
   }
   rPips();
   if(md==='s'&&q.type!=='short'){var cdEl=el('cd');if(cdEl){cdEl.className='cd '+c.cd+' waiting';cdEl.textContent=TS;}startCD();}
@@ -2930,6 +2980,76 @@ function timeUp(){
   }
   elStyle('nb','display','block');
   answers.push({q:q.q,opts:sm2.map(function(x){return q.opts[x];}),correct:sc2,chosen:-1,isCorrect:false,exp:q.exp});
+}
+
+// ── Maturitný výber odpovede (bez okamžitého hodnotenia) ──
+function matPrev(){
+  if(!sub || !sub.isMat || cur===0) return;
+  // Ulož krátku odpoveď
+  var sinp=el('short-input');
+  if(sinp && sub.qs[cur] && sub.qs[cur].type==='short'){
+    matAnswers[cur]=sinp.value.trim();
+  }
+  cur--;
+  showQ();
+}
+
+function matPick(i){
+  if(!sub || !sub.isMat) return pick(i);
+  // Zruš predchádzajúce zvýraznenie
+  document.querySelectorAll('.opt').forEach(function(b){b.classList.remove('mat-selected');});
+  var btn=el('o'+i);if(btn)btn.classList.add('mat-selected');
+  matAnswers[cur]=i;
+  rPips();
+}
+
+function matGoto(i){
+  if(!sub || !sub.isMat) return;
+  // Ulož krátku odpoveď ak je otvorená
+  var sinp=el('short-input');
+  if(sinp && !sinp.disabled && sub.qs[cur] && sub.qs[cur].type==='short'){
+    matAnswers[cur]=sinp.value.trim();
+  }
+  cur=i;
+  showQ();
+}
+
+function matFinish(){
+  // Spočítaj nezodpovedané
+  var total=sub.qs.length;
+  var answered=0;
+  for(var i=0;i<total;i++){
+    if(matAnswers[i]!==undefined && matAnswers[i]!=='') answered++;
+  }
+  var unanswered=total-answered;
+  var msg = unanswered>0
+    ? 'Máš '+unanswered+' nezodpovedaných otázok z '+total+'. Chceš napriek tomu vyhodnotiť test?'
+    : 'Všetky otázky sú zodpovedané. Chceš vyhodnotiť test?';
+  if(confirm(msg)){
+    matEvaluate();
+  }
+}
+
+function matEvaluate(){
+  // Vypočítaj výsledok
+  scr=0;answers=[];
+  for(var i=0;i<sub.qs.length;i++){
+    var q=sub.qs[i];
+    var chosen=matAnswers[i];
+    if(q.type==='short'){
+      var correct=Array.isArray(q.a)?q.a:[q.a];
+      var userAns=chosen||'';
+      var isOk=correct.some(function(c){return userAns.toLowerCase()===String(c).toLowerCase();});
+      if(isOk)scr++;
+      answers.push({q:q.q,type:'short',correct:correct[0],chosen:userAns,isCorrect:isOk,exp:q.exp});
+    } else {
+      var sc=q.a;
+      var isOk2=(chosen===sc);
+      if(isOk2)scr++;
+      answers.push({q:q.q,opts:q.opts,correct:sc,chosen:chosen!=null?chosen:-1,isCorrect:isOk2,exp:q.exp});
+    }
+  }
+  showScore();
 }
 
 function pickShort(){
@@ -2979,7 +3099,24 @@ function pick(i){
   }
 }
 
-function adv(){cur++;if(cur>=sub.qs.length){showScore();return;}var sinp=el('short-input');if(sinp){sinp.disabled=false;sinp.value='';var btn=sinp.nextElementSibling;if(btn)btn.disabled=false;}showQ();}
+function adv(){
+  if(sub && sub.isMat){
+    // Ulož krátku odpoveď ak je otvorená
+    var sinp=el('short-input');
+    if(sinp && sub.qs[cur] && sub.qs[cur].type==='short'){
+      matAnswers[cur]=sinp.value.trim();
+    }
+    if(cur+1>=sub.qs.length){
+      matFinish();
+    } else {
+      cur++;showQ();
+    }
+    return;
+  }
+  cur++;if(cur>=sub.qs.length){showScore();return;}
+  var sinp2=el('short-input');if(sinp2){sinp2.disabled=false;sinp2.value='';var btn=sinp2.nextElementSibling;if(btn)btn.disabled=false;}
+  showQ();
+}
 
 function launchConfetti(){
   var container = el('confetti-box');
@@ -3197,32 +3334,11 @@ function matPgGet(p,r){return matPg[p+'_'+r]||0;}
 function matPgSet(p,r,v){matPg[p+'_'+r]=v;try{localStorage.setItem('edu_matpg',JSON.stringify(matPg));}catch(e){}}
 function addMat(pred,rok,qs){if(!MAT_DB[pred])MAT_DB[pred]={};MAT_DB[pred][rok]=qs;}
 
-addMat('sjl',2010,[
-  {q:'V ktorej z možností je uvedený pravdepodobný dôkaz, že majiteľ orangutana v ukážke 1 je námorník?',a:1,opts:['Plaví sa na maltskej lodi.','Našla sa stuha na uväzovanie vlasov.','Orangutan pochádzal z Bornea.','Majiteľ je pôvodom Francúz.'],exp:'Dupin našiel stuhu na uväzovanie vlasov s uzlom typickým pre námorníkov z Malty.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Ktorý slohový útvar predstavuje zvýraznená časť ukážky 1 pod názvom NÁLEZ?',a:1,opts:['reklama','inzerát','oznámenie','pozvánka'],exp:'NÁLEZ je inzerát — oznámenie určené verejnosti s cieľom nájsť majiteľa orangutana.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'V ktorej možnosti je správne uvedený druh zámena v slovnom spojení nijaká chyba?',a:2,opts:['ukazovacie','vzťažné','vymedzovacie','osobné'],exp:'Nijaká je vymedzovacie zámeno — vymedzuje negatívnu totožnosť.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'V ktorej z možností je adresa napísaná pravopisne správne?',a:2,opts:['Ulica kapitána Rašu 20, Nitra','ulica Kapitána Rašu 20, Nitra','ulica kapitána Rašu 20, Nitra','Ulica Kapitána Rašu 20, Nitra'],exp:'Správne: ulica (malé u — všeobecné podstatné meno) + kapitána Rašu (malé k — prídavné meno od mena).',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Ktorým slovotvorným postupom vzniklo slovo žltohnedý?',a:3,opts:['kombináciou skladania a odvodzovania','odvodzovaním','skracovaním','skladaním'],exp:'Žltohnedý vzniklo skladaním (kompozíciou) dvoch základov: žlto + hnedý.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Ktorým slovným druhom je vyjadrený predmet vo vete: Ani jednej zo zavraždených patriť nemohla?',type:'short',a:'podstatné meno',opts:[],exp:'Predmet „jednej zo zavraždených" je vyjadrený podstatným menom — substantivizovaným prídavným menom.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Vypíšte z posledného odseku ukážky 1 vokalizovanú predložku.',type:'short',a:'zo',opts:[],exp:'Vokalizovaná predložka = predložka s pridanou samohláskou. „zo zavraždených" — predložka zo.',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Z vlastného podstatného mena v poslednom súvetí ukážky 1 vytvorte pravopisne správne prídavné meno.',type:'short',a:'francúzsky',opts:[],exp:'Vlastné meno Francúz → prídavné meno francúzsky (píše sa malým písmenom).',ctx:'Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue',ctxText:'A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať.'},
-  {q:'Ktorý verš by mohol nahradiť zvýraznený verš v ukážke 2 (sylabický systém)?',a:1,opts:['snívaj, snívaj, príde čas, keď sen tvoj sa naplní!','snívaj, snívaj, príde čas, sen tvoj sa vyplní!','snívaj len, príde čas a sen tvoj sa splní!','snívaj len, príde čas, keď sen tvoj sa splní!'],exp:'Sylabický systém = rovnaký počet slabík. Správna možnosť B má rovnaký počet slabík ako pôvodný verš.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'O čom sníva junák v ukážke 2 (Ján Botto: Smrť Jánošíkova)?',a:3,opts:['O mladosti.','O bohatstve.','O víťazstve.','O sláve.'],exp:'Snívaj, snívaj o slávy báječnom úslní — sníva o sláve.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Koľko čiarok treba podľa platného slovenského pravopisu doplniť do tretieho verša ukážky 2?',a:2,opts:['jednu','dve','tri','štyri'],exp:'Správne sú tri čiarky: Oj, spi, duša mladušká, spi, pekný dlhý sen — oslovenie a vsuvka.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'V ktorej možnosti nie je uvedené slovo s rovnakým významom, aký má slovo otčina?',a:3,opts:['vlasť','dedovizeň','domovina','dedičstvo'],exp:'Dedičstvo je majetok po predkoch, nie synonymum slova otčina (vlasť, domov).',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Lepšiu budúcnosť Slovákov v texte ukážky 2 ohlasuje...',a:0,opts:['ustupujúca tma.','uzdravujúci spánok.','splnený zázrak.','zmierená duša.'],exp:'Bo svetlom tým, čo zhora okienkom dnu vpadá — ustupujúca tma symbolizuje nádej.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Pomenujte umelecký jazykový prostriedok, ktorý predstavuje verš: tu skovaný v okovoch, ale voľný vo sne.',type:'short',a:'antitéza',opts:[],exp:'Antitéza = protiklad: skovaný v okovoch (väzenie) × voľný vo sne (sloboda).',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Pomenujte rým básne v ukážke 2 (Smrť Jánošíkova).',type:'short',a:'združený rým',opts:[],exp:'Združený rým: schéma aa bb — susedné verše sa rýmujú navzájom.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Koľko viet obsahujú prvé dva verše druhej strofy v ukážke 2?',type:'short',a:'2',opts:[],exp:'Prvé dva verše druhej strofy: Spí opretý na kláte... / ale na ňom... — dve vety.',ctx:'Ukážka 2 – Ján Botto: Smrť Jánošíkova',ctxText:'On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –'},
-  {q:'Dôvodom, pre ktorý rozprávač v ukážke 3 opustil Etelku, je jeho...',a:2,opts:['rozhodnutie navštíviť známeho baču zo Žúberovej.','úmysel postarať sa o lesnú zver v blízkosti koliby.','hľadanie duševnej rovnováhy pred dôležitým rozhodnutím.','túžba zmerať si sily s prírodou, zvíťaziť nad jej nástrahami.'],exp:'Rozprávač hľadal duševný pokoj pred tým, čo treba vykonať na druhý deň.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'Vzťah rozprávača k prírode v ukážke 3 najlepšie charakterizujú slová...',a:0,opts:['obdiv a pokora.','odhodlanie a radosť.','neistota a smútok.','nadšenie a túžba.'],exp:'Rozprávač sa s úžasom díva na hory — obdiv a pokora.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'V ktorej možnosti je uvedený znak naturizmu nachádzajúci sa v ukážke 3?',a:0,opts:['Prostredie — hory a vrchy vzdialené od civilizácie.','Skromnosť rozprávača — stačí mu aj koliba plná bĺch.','Vzťah k žene — dáva prednosť prírode pred ženou.','Dedinský človek — snaha človeka ovládnuť prírodné sily.'],exp:'Naturizmus: lyrizovaná próza so zasadením do prírody ďaleko od civilizácie.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'V ktorej možnosti je správny zápis priamej reči?',a:3,opts:['\"No na jednu noc\", myslel som si: \"bude i takáto dobrá\".', '\"No na jednu noc\", myslel som si, \"bude i takáto dobrá\".', '\"No na jednu noc,\" myslel som si: \"bude i takáto dobrá.\"', '\"No na jednu noc,\" myslel som si, \"bude i takáto dobrá.\"'],exp:'Správne: čiarka pred úvodzovkami pri prerušení citátu, nie dvojbodka.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'Tvorba ktorého z nasledujúcich autorov nie je ťažiskovo zaradená do medzivojnového obdobia?',a:2,opts:['J. C. Hronského','E. M. Remarqua','J. D. Salingera','D. Chrobáka'],exp:'J. D. Salinger patrí do povojnového obdobia (Kto chytá v žite — 1951).',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'Nájdite v treťom odseku ukážky 3 slovo, ktoré vyjadruje duševný stav rozprávača.',type:'short',a:'zmierený',opts:[],exp:'„zmierený s Bohom, so svetom" — slovo zmierený vyjadruje duševný stav rozprávača.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'Vypíšte z prvých troch odsekov ukážky 3 jedno expresívne sloveso.',type:'short',a:['nanosilo','vyhádzal','nalámal'],opts:[],exp:'Expresívne slovesá: nanosilo (bĺch), vyhádzal (čečinu), nalámal (čerstvú) — nespisovné, živé výrazy.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-  {q:'Vypíšte zo slova horeznačky prízvučné slabiky.',type:'short',a:'ho-zna',opts:[],exp:'Horeznačky: HO-re-ZNA-čky — prízvuk na 1. slabike každého základu: ho- a zna-.',ctx:'Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek',ctxText:'Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti.'},
-]);
+// SJL 2010 sa načítava z externého JSON súboru
+fetch('data/sjl_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('sjl',2010,qs);})
+  .catch(function(e){console.error('Chyba načítania SJL 2010:',e);});
 
 // Placeholder roky - pridávajú sa postupne
 // addMat('sjl', 2011, [...]);  // pridaj po nahraní PDF
@@ -3294,7 +3410,7 @@ function launchMatTest(predmet,rok){
   if(!qs||!qs.length)return;
   sub={id:'mat_'+predmet+'_'+rok,icon:'📝',name:'Maturita '+rok+' · '+predmet.toUpperCase(),qs:qs,isMat:true,matPredmet:predmet,matRok:rok};
   window._matTime=90*60; // 90 minút v sekundách
-  cur=0;scr=0;ans=false;tot=0;answers=[];
+  cur=0;scr=0;ans=false;tot=0;answers=[];matAnswers={};
   clearInterval(tT);clearInterval(tTot);
   window._shuffleMap=null;window._shuffleCorrect=undefined;
   showPage('page-quiz');

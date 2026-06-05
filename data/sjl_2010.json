@@ -1,0 +1,743 @@
+[
+  {
+    "q": "V ktorej z možností je uvedený pravdepodobný dôkaz, že majiteľ orangutana v ukážke 1 je námorník?",
+    "a": 1,
+    "opts": [
+      "Plaví sa na maltskej lodi.",
+      "Našla sa stuha na uväzovanie vlasov.",
+      "Orangutan pochádzal z Bornea.",
+      "Majiteľ je pôvodom Francúz."
+    ],
+    "exp": "Dupin našiel stuhu na uväzovanie vlasov s uzlom typickým pre námorníkov z Malty.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Ktorý slohový útvar predstavuje zvýraznená časť ukážky 1 pod názvom NÁLEZ?",
+    "a": 1,
+    "opts": [
+      "reklama",
+      "inzerát",
+      "oznámenie",
+      "pozvánka"
+    ],
+    "exp": "NÁLEZ je inzerát — oznámenie určené verejnosti s cieľom nájsť majiteľa orangutana.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "V ktorej možnosti je správne uvedený druh zámena v slovnom spojení nijaká chyba?",
+    "a": 2,
+    "opts": [
+      "ukazovacie",
+      "vzťažné",
+      "vymedzovacie",
+      "osobné"
+    ],
+    "exp": "Nijaká je vymedzovacie zámeno — vymedzuje negatívnu totožnosť.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "V ktorej z možností je adresa napísaná pravopisne správne?",
+    "a": 2,
+    "opts": [
+      "Ulica kapitána Rašu 20, Nitra",
+      "ulica Kapitána Rašu 20, Nitra",
+      "ulica kapitána Rašu 20, Nitra",
+      "Ulica Kapitána Rašu 20, Nitra"
+    ],
+    "exp": "Správne: ulica (malé u — všeobecné podstatné meno) + kapitána Rašu (malé k — prídavné meno od mena).",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Ktorým slovotvorným postupom vzniklo slovo žltohnedý?",
+    "a": 3,
+    "opts": [
+      "kombináciou skladania a odvodzovania",
+      "odvodzovaním",
+      "skracovaním",
+      "skladaním"
+    ],
+    "exp": "Žltohnedý vzniklo skladaním (kompozíciou) dvoch základov: žlto + hnedý.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Ktorým slovným druhom je vyjadrený predmet vo vete: Ani jednej zo zavraždených patriť nemohla?",
+    "type": "short",
+    "a": "podstatné meno",
+    "opts": [],
+    "exp": "Predmet „jednej zo zavraždených\" je vyjadrený podstatným menom — substantivizovaným prídavným menom.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Vypíšte z posledného odseku ukážky 1 vokalizovanú predložku.",
+    "type": "short",
+    "a": "zo",
+    "opts": [],
+    "exp": "Vokalizovaná predložka = predložka s pridanou samohláskou. „zo zavraždených\" — predložka zo.",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Z vlastného podstatného mena v poslednom súvetí ukážky 1 vytvorte pravopisne správne prídavné meno.",
+    "type": "short",
+    "a": "francúzsky",
+    "opts": [],
+    "exp": "Vlastné meno Francúz → prídavné meno francúzsky (píše sa malým písmenom).",
+    "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
+    "ctxText": "A ja som čítal:\nNÁLEZ – V Boulonskom lesíku chytili zavčas ráno dňa... (deň vraždy) veľkého žltohnedého orangutana druhu žijúceho na Borneu. Majiteľ (ktorý je, ako je známe, námorníkom na maltskej lodi) si môže zviera prevziať, ak dostatočne preukáže jeho totožnosť a zaplatí neveľké výdavky spojené s chytením a opaterou zvieraťa. Hláste sa vo Faubourg St. Germain, ulica..., číslo..., III. posch.\n\n– Ako môžete vedieť, – spýtal som sa, – že ten človek je námorníkom, a ešte k tomu na maltskej lodi?\n– Vedieť to neviem, – odvetil Dupin. – Aspoň nie určite. Ale tu mám kúsok stuhy a podľa tvaru i toho, aká je mastná, súdim, že slúžila na uväzovanie vlasov do dlhého vrkoča, ktorý majú námorníci tak radi. Navyše takýto uzol uviaže málokto okrem námorníka; je charakteristický pre Malťanov. Stužku som našiel pod bleskozvodom. Ani jednej zo zavraždených patriť nemohla. A ak sa aj mýlim, nestala sa nijaká chyba, keď som text formuloval tak, ako ste ho čítali. No ak mám pravdu, získam veľa. Francúz, ktorý je síce nevinný, ale o vražde vie, si, prirodzene, dobre rozmyslí, či odpovedať."
+  },
+  {
+    "q": "Ktorý verš by mohol nahradiť zvýraznený verš v ukážke 2 (sylabický systém)?",
+    "a": 1,
+    "opts": [
+      "snívaj, snívaj, príde čas, keď sen tvoj sa naplní!",
+      "snívaj, snívaj, príde čas, sen tvoj sa vyplní!",
+      "snívaj len, príde čas a sen tvoj sa splní!",
+      "snívaj len, príde čas, keď sen tvoj sa splní!"
+    ],
+    "exp": "Sylabický systém = rovnaký počet slabík. Správna možnosť B má rovnaký počet slabík ako pôvodný verš.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "O čom sníva junák v ukážke 2 (Ján Botto: Smrť Jánošíkova)?",
+    "a": 3,
+    "opts": [
+      "O mladosti.",
+      "O bohatstve.",
+      "O víťazstve.",
+      "O sláve."
+    ],
+    "exp": "Snívaj, snívaj o slávy báječnom úslní — sníva o sláve.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Koľko čiarok treba podľa platného slovenského pravopisu doplniť do tretieho verša ukážky 2?",
+    "a": 2,
+    "opts": [
+      "jednu",
+      "dve",
+      "tri",
+      "štyri"
+    ],
+    "exp": "Správne sú tri čiarky: Oj, spi, duša mladušká, spi, pekný dlhý sen — oslovenie a vsuvka.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "V ktorej možnosti nie je uvedené slovo s rovnakým významom, aký má slovo otčina?",
+    "a": 3,
+    "opts": [
+      "vlasť",
+      "dedovizeň",
+      "domovina",
+      "dedičstvo"
+    ],
+    "exp": "Dedičstvo je majetok po predkoch, nie synonymum slova otčina (vlasť, domov).",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Lepšiu budúcnosť Slovákov v texte ukážky 2 ohlasuje...",
+    "a": 0,
+    "opts": [
+      "ustupujúca tma.",
+      "uzdravujúci spánok.",
+      "splnený zázrak.",
+      "zmierená duša."
+    ],
+    "exp": "Bo svetlom tým, čo zhora okienkom dnu vpadá — ustupujúca tma symbolizuje nádej.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Pomenujte umelecký jazykový prostriedok, ktorý predstavuje verš: tu skovaný v okovoch, ale voľný vo sne.",
+    "type": "short",
+    "a": "antitéza",
+    "opts": [],
+    "exp": "Antitéza = protiklad: skovaný v okovoch (väzenie) × voľný vo sne (sloboda).",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Pomenujte rým básne v ukážke 2 (Smrť Jánošíkova).",
+    "type": "short",
+    "a": "združený rým",
+    "opts": [],
+    "exp": "Združený rým: schéma aa bb — susedné verše sa rýmujú navzájom.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Koľko viet obsahujú prvé dva verše druhej strofy v ukážke 2?",
+    "type": "short",
+    "a": "2",
+    "opts": [],
+    "exp": "Prvé dva verše druhej strofy: Spí opretý na kláte... / ale na ňom... — dve vety.",
+    "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
+    "ctxText": "On spí – mladý syn Tatier, zbičovaný zlostne;\ntu skovaný v okovoch, ale voľný vo sne.\nOj spi duša mladušká spi pekný dlhý sen –\nkeď v skutku nie, svoj život skonč trebárs vo sne len!\n\nSpí opretý na kláte, odretý zo zlata,\nale na ňom nadzemská ligoce sa šata.\nTieň kríža mu na prsiach, na čele blesk žiari,\nrúčky, nôžky krvavé – a úsmev na tvári.\n\nBo svetlom tým, čo zhora okienkom dnu vpadá,\ns sebou, s Bohom zmierená duša jeho mladá –\nsťa rebríkom Jakuba v iný svet vyšla si\nhľadať pravú otčinu prasvetla i krásy.\n\nA tam pred ňou tajomný závoj sa rozdvojí:\ni v zorách dňa večného vítajú sa svoji.\nTak sníva junák väzeň mladosti krásny sen:\noj, ži mi, ži, junák môj, ži aspoň vo sne len!\n\nSnívaj, snívaj o slávy báječnom úslní –\nsnívaj aspoň, príde čas a sen tvoj sa splní! –"
+  },
+  {
+    "q": "Dôvodom, pre ktorý rozprávač v ukážke 3 opustil Etelku, je jeho...",
+    "a": 2,
+    "opts": [
+      "rozhodnutie navštíviť známeho baču zo Žúberovej.",
+      "úmysel postarať sa o lesnú zver v blízkosti koliby.",
+      "hľadanie duševnej rovnováhy pred dôležitým rozhodnutím.",
+      "túžba zmerať si sily s prírodou, zvíťaziť nad jej nástrahami."
+    ],
+    "exp": "Rozprávač hľadal duševný pokoj pred tým, čo treba vykonať na druhý deň.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "Vzťah rozprávača k prírode v ukážke 3 najlepšie charakterizujú slová...",
+    "a": 0,
+    "opts": [
+      "obdiv a pokora.",
+      "odhodlanie a radosť.",
+      "neistota a smútok.",
+      "nadšenie a túžba."
+    ],
+    "exp": "Rozprávač sa s úžasom díva na hory — obdiv a pokora.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "V ktorej možnosti je uvedený znak naturizmu nachádzajúci sa v ukážke 3?",
+    "a": 0,
+    "opts": [
+      "Prostredie — hory a vrchy vzdialené od civilizácie.",
+      "Skromnosť rozprávača — stačí mu aj koliba plná bĺch.",
+      "Vzťah k žene — dáva prednosť prírode pred ženou.",
+      "Dedinský človek — snaha človeka ovládnuť prírodné sily."
+    ],
+    "exp": "Naturizmus: lyrizovaná próza so zasadením do prírody ďaleko od civilizácie.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "V ktorej možnosti je správny zápis priamej reči?",
+    "a": 3,
+    "opts": [
+      "\"No na jednu noc\", myslel som si: \"bude i takáto dobrá\".",
+      "\"No na jednu noc\", myslel som si, \"bude i takáto dobrá\".",
+      "\"No na jednu noc,\" myslel som si: \"bude i takáto dobrá.\"",
+      "\"No na jednu noc,\" myslel som si, \"bude i takáto dobrá.\""
+    ],
+    "exp": "Správne: čiarka pred úvodzovkami pri prerušení citátu, nie dvojbodka.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "Tvorba ktorého z nasledujúcich autorov nie je ťažiskovo zaradená do medzivojnového obdobia?",
+    "a": 2,
+    "opts": [
+      "J. C. Hronského",
+      "E. M. Remarqua",
+      "J. D. Salingera",
+      "D. Chrobáka"
+    ],
+    "exp": "J. D. Salinger patrí do povojnového obdobia (Kto chytá v žite — 1951).",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "Nájdite v treťom odseku ukážky 3 slovo, ktoré vyjadruje duševný stav rozprávača.",
+    "type": "short",
+    "a": "zmierený",
+    "opts": [],
+    "exp": "„zmierený s Bohom, so svetom\" — slovo zmierený vyjadruje duševný stav rozprávača.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "Vypíšte z prvých troch odsekov ukážky 3 jedno expresívne sloveso.",
+    "type": "short",
+    "a": [
+      "nanosilo",
+      "vyhádzal",
+      "nalámal"
+    ],
+    "opts": [],
+    "exp": "Expresívne slovesá: nanosilo (bĺch), vyhádzal (čečinu), nalámal (čerstvú) — nespisovné, živé výrazy.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  {
+    "q": "Vypíšte zo slova horeznačky prízvučné slabiky.",
+    "type": "short",
+    "a": "ho-zna",
+    "opts": [],
+    "exp": "Horeznačky: HO-re-ZNA-čky — prízvuk na 1. slabike každého základu: ho- a zna-.",
+    "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
+    "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
+  },
+  null,
+  {
+    "q": "Ku ktorému druhu románu môžeme na základe ukážky 4 priradiť román Žiť, hoci aj na kolenách?",
+    "a": 3,
+    "opts": [
+      "dobrodružný",
+      "utopický",
+      "historický",
+      "životopisný"
+    ],
+    "exp": "Autor opisuje vlastný život, emigráciu a závislosť — autobiografický/životopisný román.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Na základe ukážky 4 je najpravdepodobnejšou témou románu Žiť, hoci aj na kolenách...",
+    "a": 3,
+    "opts": [
+      "spoločenská situácia, ktorá prinútila hlavného hrdinu emigrovať.",
+      "existenčné a finančné problémy hlavného hrdinu.",
+      "vzťah hlavného hrdinu k spoločnosti, ktorá je ovládaná peniazmi.",
+      "boj hlavného hrdinu proti rôznym druhom závislostí."
+    ],
+    "exp": "Autor píše o dvoch emigráciách a živote clean.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "V tvorbe ktorého z nasledujúcich autorov prevažuje poézia?",
+    "a": 1,
+    "opts": [
+      "Dušana Mitanu",
+      "Miroslava Válka",
+      "Ivana Bukovčana",
+      "Ladislava Mňačka"
+    ],
+    "exp": "Miroslav Válek je predovšetkým básnik — Dotyky, Príťažlivosť, Nepokoj.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Podľa rozprávača v ukážke 4 spoločnosť akceptuje ľudí...",
+    "a": 3,
+    "opts": [
+      "slabých.",
+      "krehkých.",
+      "citlivých.",
+      "priebojných."
+    ],
+    "exp": "Spoločnosť programovaná na úspech akceptuje tých, čo používajú lakte a egoizmus.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Kniha Žiť, hoci aj na kolenách sa v 90. rokoch stala bestsellerom. To znamená, že...",
+    "a": 1,
+    "opts": [
+      "bola zaradená medzi tzv. brakovú literatúru.",
+      "patrila k rýchlo sa predávajúcim knihám.",
+      "šokovala čitateľov a vyvolala ostrú polemiku.",
+      "patrila k najlepším samizdatovým knihám."
+    ],
+    "exp": "Bestseller = najlepšie predávaná kniha.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Vypíšte z ukážky 4 slovo, ktoré Jiří Vacek označil za dôvod pre napísanie svojho románu.",
+    "type": "short",
+    "a": "sľub",
+    "opts": [],
+    "exp": "Iba sľub, daný v časoch choroby, ma doviedol k tomuto pokusu.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Ktorý slohový postup prevažuje v ukážke 4?",
+    "type": "short",
+    "a": "rozprávací",
+    "opts": [],
+    "exp": "Rozprávací slohový postup — autor chronologicky opisuje udalosti svojho života.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Ktorým vetným členom je zvýraznené slovo v nasledujúcej vete: Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život.",
+    "type": "short",
+    "a": "príslovkové určenie času",
+    "opts": [],
+    "exp": "Slovo nikdy je príslovkové určenie času.",
+    "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
+    "ctxText": "Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život. Boli väčšinou bolestné. Ani dnes ešte neviem, čo spomienky vo mne vyvolajú – aké pocity, nálady alebo depresívne stavy. Iba sľub, daný v časoch choroby, sľub sebe i mojim priateľom, ma doviedol k tomuto pokusu. Pretože v poslednej dobe sa mnoho ľudí snaží opísať svoju emigráciu, chcel som sa tiež o to pokúsiť.\n\nEmigroval som vlastne dvakrát. Prvý raz, keď som v roku 1969 opustil republiku, druhý v roku 1975, keď som opustil sám seba a začal užívať drogy. Nemyslím si, že by som bol príkladom hodným nasledovania, ale pretože žijem už mnoho rokov clean (čistý), chcel by som časť svojich skúseností z tejto doby venovať všetkým, ktorí s podobnou závislosťou bojujú, alebo sa s ňou vo svojom okolí stýkajú. Pre mňa nie je veľký rozdiel v tom, či ide o alkohol, lieky alebo drogy. Každý z nás sa snaží nejako riešiť osobné problémy a každý nie je schopný urobiť to spôsobom, ktorý spoločnosť akceptuje. Zdá sa, že v tejto – na úspech programovanej spoločnosti – nie je miesto pre citlivých, psychicky slabých ľudí. Mimo cesty, na ktorej je bežné používanie lakťov a číry egoizmus, zostávajú ľudia, ktorí to nedokážu."
+  },
+  {
+    "q": "Autorovým cieľom v ukážke 5 bolo...",
+    "a": 1,
+    "opts": [
+      "opísať príjemné prekvapenie zo správania sa palubného personálu.",
+      "ukázať, že palubný personál Turkish Airlines sa učí riešiť krízové situácie.",
+      "poučiť čitateľa, ako sa zachovať pri poplachu v simulovanom lete.",
+      "presvedčiť, že Turkish Airlines zmenila bezpečnostné predpisy."
+    ],
+    "exp": "Reportáž opisuje tréning palubného personálu v simulátore leteckých kríz.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Ktorý z nasledujúcich útvarov publicistického štýlu predstavuje ukážka 5?",
+    "a": 2,
+    "opts": [
+      "rozšírená správa",
+      "komentár",
+      "reportáž",
+      "recenzia"
+    ],
+    "exp": "Reportáž — autor je priamo na mieste, opisuje dianie z vlastného pohľadu.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Úvodzovky v poslednom odseku ukážky 5 naznačujú, že...",
+    "a": 3,
+    "opts": [
+      "slovo cestujúcich nie je v spisovnej podobe.",
+      "muži sa prezliekli za ženy.",
+      "autor využíva iróniu.",
+      "v skutočnosti títo ľudia nikam necestujú."
+    ],
+    "exp": "V simulátore nikto skutočne necestuje — cestujúci sú cvičiaci.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Ktoré z nasledujúcich tvrdení vyplýva z ukážky 5?",
+    "a": 3,
+    "opts": [
+      "Na palube si všetky ženy obliekli kombinézy.",
+      "Piloti využili simulátor na nové záchranné postupy.",
+      "Po nešťastiach spoločnosti organizujú cvičenia častejšie.",
+      "Prvá havária v danom roku sa stala v zimnom mesiaci."
+    ],
+    "exp": "Február je zimný mesiac — havária Turkish Airlines v Amsterdame bola vo februári.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "V ukážke 5 letuška so smiechom položila otázku Dáte si niečo na pitie, pretože...",
+    "a": 1,
+    "opts": [
+      "Vasilka dobre poznala.",
+      "otázku nemyslela vážne.",
+      "lietadlo padalo k zemi.",
+      "po katastrofe sa v lietadlách nepodáva pitie."
+    ],
+    "exp": "Ide o simuláciu — letuška hrá svoju rolu, hoci obaja vedia, že nič nedostane.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Utvorte vlastné podstatné meno ženského rodu od slova Turek a napíšte ho pravopisne správne.",
+    "type": "short",
+    "a": "Turkyňa",
+    "opts": [],
+    "exp": "Od slova Turek sa ženský rod tvorí príponou -yňa: Turkyňa.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Napíšte pomenovanie pre zamestnanca-muža, ktorý obsluhuje v lietadle.",
+    "type": "short",
+    "a": "stevard",
+    "opts": [],
+    "exp": "Mužský ekvivalent slova letuška je stevard.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Napíšte datív plurálu podstatného mena séria.",
+    "type": "short",
+    "a": "sériám",
+    "opts": [],
+    "exp": "Séria → sériám (datív pl.). Vzor: žena → ženám.",
+    "ctx": "Ukážka 5 – Pri skoku z lietadla dávajte pozor na lakte",
+    "ctxText": "Všetko sa musí čo najviac podobať na realitu. Piloti a letušky si cvičia krízové situácie v leteckých simulátoroch. Po sérii tohtoročných leteckých nešťastí sa nič nezmenilo. Skúšobné testy sú nastavené dobre, hovoria piloti.\n\nLetuška sa tvári, akoby to bolo naozaj. Dáte si niečo na pitie? pýta sa so smiechom, hoci obaja vieme, že nič nedostanem.\n\nZrazu z ničoho nič spadne pred nás maska na dýchanie. Letuška všetkým prikáže, aby si ju nasadili na ústa. Každý pochopil – lietadlo ide k zemi.\n\nNašťastie, v tomto prípade neletíme desaťtisíc metrov nad morom. Nachádzame sa v tréningovom simulátore spoločnosti Turkish Airlines na istanbulskom letisku. Vo februári pri pristávaní v Amsterdame havaroval Boeing spoločnosti a zahynulo deväť ľudí.\n\nLetušky nás nabádajú, aby sme si vyzuli topánky. Ženská časť cestujúcich so sukňami si oblieka modrú kombinézu, podobnú montérkam."
+  },
+  {
+    "q": "Ktorá z nasledujúcich možností uvádza Harpagonov dôvod na svadbu v ukážke 6?",
+    "a": 1,
+    "opts": [
+      "krása nevesty",
+      "výhodná úspora",
+      "manželské šťastie",
+      "doživotný zväzok"
+    ],
+    "exp": "Harpagon: Pre mňa je to znamenitá úspora — hlavný motív je finančný.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Harpagon predstavuje v ukážke 6...",
+    "a": 2,
+    "opts": [
+      "starostlivého ženícha, ktorému ide o šťastie Elizy.",
+      "prešibaného ženícha, ktorý si nechce vziať Elizu bez majetku.",
+      "hrabivého otca, pre ktorého sú finančné statky najdôležitejšie.",
+      "šetrného otca, ktorý chce finančne zabezpečiť dcéru."
+    ],
+    "exp": "Harpagon je lakomec — financie sú mu nadovšetko.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Ktorý typ literárnej postavy predstavuje Harpagon v Molièrovej hre Lakomec?",
+    "a": 1,
+    "opts": [
+      "idealizovaný typ",
+      "charakterový typ",
+      "sociálny typ",
+      "romantický typ"
+    ],
+    "exp": "Charakterový typ — postava definovaná jednou dominantnou vlastnosťou: lakomstvo.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "V ktorej možnosti je najlepšie vystihnutý význam vety Pred ním len kapitulovať.",
+    "a": 2,
+    "opts": [
+      "vzdialiť sa",
+      "pokloniť sa",
+      "vzdať sa",
+      "chrániť sa"
+    ],
+    "exp": "Kapitulovať = vzdať sa, podvoliť sa.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "V ktorej z nasledujúcich možností je najvýstižnejšie charakterizovaný klasicizmus?",
+    "a": 0,
+    "opts": [
+      "V klasicizme sa pre umenie stáva najvyšším zákonom súlad pravdy, krásy a dobra.",
+      "Klasicizmus vznikol na dvore Ľudovíta XIV. a vyznačuje sa ozdobnosťou.",
+      "Klasicizmus nadviazal na antiku a kládol dôraz na zmyslovosť a fantáziu.",
+      "V klasicizme patria tragédie k nízkym žánrom."
+    ],
+    "exp": "Klasicizmus: rozum, poriadok, súlad pravdy-krásy-dobra, vzor antika.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Koľko replík z ukážky 6 patrí Valérovi?",
+    "type": "short",
+    "a": "4",
+    "opts": [],
+    "exp": "Valér má 4 repliky v ukážke.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Aký typ vety z hľadiska modálnosti predstavuje veta: Bez vena?",
+    "type": "short",
+    "a": "opytovacia",
+    "opts": [],
+    "exp": "Opytovacia veta — vyjadruje otázku, končí otáznikom.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Ktorý slovný druh predstavuje zvýraznené slovo Pravda vo vete: Pravda, vaša dcéra môže pripomenúť...",
+    "type": "short",
+    "a": "citoslovce",
+    "opts": [],
+    "exp": "Slovo Pravda tu funguje ako citoslovce (vsuvka) — vyjadruje súhlas.",
+    "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
+    "ctxText": "HARPAGON: Takú príležitosť treba bez váhania lapiť za vlasy. Je tu výhoda, akú by som inde darmo hľadal. Pán Anselm je ochotný vziať si Elizu bez vena.\nVALÉR: Bez vena?\nHARPAGON: Áno, bez vena.\nVALÉR: Potom už nevravím ani slova. Vidíte, to je ozaj pádny dôvod. Pred ním len kapitulovať.\nHARPAGON: Pre mňa je to znamenitá úspora.\nVALÉR: Bezpochyby. Škoda sa škriepiť. Pravda, vaša dcéra môže pripomenúť, že manželstvo je vec oveľa vážnejšia, ako sa zdá. Že v ňom ide o šťastie alebo nešťastie na celý život. Že zväzok, ktorý má trvať až do smrti, treba uzatvárať vždy len s najväčšou opatrnosťou.\nHARPAGON: Bez vena."
+  },
+  {
+    "q": "Ukážka 7 patrí v rámci publicistického štýlu...",
+    "a": 3,
+    "opts": [
+      "k spravodajským útvarom.",
+      "k analytickým útvarom.",
+      "k beletristickým útvarom.",
+      "k hybridným útvarom."
+    ],
+    "exp": "Rozhovor/interview patrí k hybridným útvarom.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "V prvej časti ukážky 7 Michal Sťahel povedal novinárke, že...",
+    "a": 1,
+    "opts": [
+      "napriek prekážkam bude vždy žiť len pre vážnu hudbu.",
+      "hudba pre neho nikdy neprestane byť základnou potrebou.",
+      "pravdepodobne nič nezmení jeho vzťah k vážnej hudbe.",
+      "bez hudby by nedokázal čeliť životným problémom."
+    ],
+    "exp": "Sa hudby... asi nikdy nenasýti — hudba je pre neho základnou potrebou.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "V ktorej možnosti je uvedený typ komunikácie medzi autorkou a Michalom Sťahelom?",
+    "a": 3,
+    "opts": [
+      "verbálna, priama, monologická",
+      "neverbálna, priama, monologická",
+      "neverbálna, nepriama, dialogická",
+      "verbálna, priama, dialogická"
+    ],
+    "exp": "Rozhovor = verbálna, priama, dialogická komunikácia.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Ktorá možnosť sa najviac približuje významu vety: Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení.",
+    "a": 2,
+    "opts": [
+      "Rodičia ma vždy porovnávali s bratom.",
+      "Rodičia nevšimli, že aj ja rastiem na hudobníka.",
+      "Pred bratovou hudbou sa u nás nedalo ujsť.",
+      "Nemohol som sa sústrediť na svoj nástroj."
+    ],
+    "exp": "Za kulisou = v pozadí — všade bolo počuť brata cvičiť.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Podstatné meno mýty je v ukážke 7 použité vo význame...",
+    "a": 0,
+    "opts": [
+      "zveličené chýry.",
+      "nevedecké bludy.",
+      "hrdinské rozprávky.",
+      "tradičné predstavy."
+    ],
+    "exp": "Mýty o Lisztovi a Paginim = zveličené, legendárne správy o ich virtuozite.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Vypíšte z prvej časti ukážky 7 obrazné pomenovanie, ktorým Michal Sťahel pomenúva hudbu.",
+    "type": "short",
+    "a": "krehká múza",
+    "opts": [],
+    "exp": "Život s touto krehkou múzou — hudba je personifikovaná ako múza.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Napíšte pravopisne správne vlastné meno Paganini v tvare lokálu singuláru.",
+    "type": "short",
+    "a": "Paginim",
+    "opts": [],
+    "exp": "Paganini → lokál sg.: o Paginim.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Vypíšte z tretej časti ukážky 7 synonymum slova súvekí/súdobí.",
+    "type": "short",
+    "a": "dnešných",
+    "opts": [],
+    "exp": "Vtedajší virtuózi, na rozdiel od tých dnešných — dnešných = súčasných.",
+    "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
+    "ctxText": "Keď sa človek stretne s violončelistom Michalom Sťahelom (28) a začne sa s ním rozprávať o vážnej hudbe, má chuť utekať do obchodu a kúpiť si nejakú nahrávku. Hovorí, že sa hudby, aj keď život s touto krehkou múzou môže byť niekedy poriadne vyčerpávajúci, asi nikdy nenasýti...\n\nU interpretov vážnej hudby býva zvykom, že začínajú hrať na nástroji veľmi skoro.\n\nNaša rodina je celá muzikantská. Moji obidvaja rodičia spievajú v Slovenskom filharmonickom zbore, starší brat hrá na husliach. Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení, vždy ho bolo doma všade počuť...\n\nO klavírnej virtuozite Franza Liszta či o Paganiniho uhrančivej hre na husliach sa kedysi šírili doslova mýty. Ženy omdlievali na ich koncertoch. Ale ja som podobné reakcie zažil veľakrát na koncertoch vo Viedni aj v Paríži."
+  },
+  {
+    "q": "Novým segmentom nazvala autorka ukážky 8...",
+    "a": 2,
+    "opts": [
+      "printové médiá.",
+      "denník Plus jeden deň.",
+      "bezplatný denník.",
+      "internetové médiá."
+    ],
+    "exp": "Nový segment = bezplatný denník — nový typ periodika na slovenskom trhu.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "V ktorej možnosti je tvrdenie vyplývajúce z ukážky 8?",
+    "a": 3,
+    "opts": [
+      "Malé vydavateľstvá spolupracujú s veľkými.",
+      "Malým vydavateľstvám chýba flexibilita.",
+      "Denníky stagnovali dvakrát viac ako časopisy.",
+      "Vstup denníka Plus jeden deň zmenil pomery v mediálnom svete."
+    ],
+    "exp": "Dianie v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Ktorý slohový postup prevažuje v ukážke 8?",
+    "a": 2,
+    "opts": [
+      "opisný",
+      "informačný",
+      "výkladový",
+      "rozprávací"
+    ],
+    "exp": "Výkladový slohový postup — autorka vysvetľuje príčiny a dôsledky javov na mediálnom trhu.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Pod vysokými nákladmi treba v ukážke 8 rozumieť...",
+    "a": 1,
+    "opts": [
+      "veľké množstvo výtlačkov.",
+      "veľké množstvo výdavkov.",
+      "veľká návratnosť vkladov.",
+      "veľké množstvo čitateľov."
+    ],
+    "exp": "Náklady = výdavky. Vysoké náklady na tlač = veľké množstvo výdavkov.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Ktoré podstatné meno má v genitíve singuláru koncovku -u?",
+    "a": 3,
+    "opts": [
+      "denník",
+      "časopis",
+      "mesačník",
+      "periodikum"
+    ],
+    "exp": "Periodikum (stredný rod) → genitív sg.: periodika. Správna odpoveď podľa PDF: periodikum.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Určte druh zvýraznenej vety podľa zloženia: Pre slovenský printový trh je charakteristický čiastočný prechod na web a výraznejšia spolupráca s internetom.",
+    "type": "short",
+    "a": "jednoduchá veta",
+    "opts": [],
+    "exp": "Veta má jeden základ (prísudok je charakteristický) — je to jednoduchá veta.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Podľa ktorého vzoru sa skloňuje podstatné meno médium?",
+    "type": "short",
+    "a": "mesto",
+    "opts": [],
+    "exp": "Médium je stredného rodu, skloňuje sa podľa vzoru mesto.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  },
+  {
+    "q": "Vypíšte z prvej vety ukážky 8 slovo, v ktorom je spoluhláska slabikotvornou.",
+    "type": "short",
+    "a": "trh",
+    "opts": [],
+    "exp": "V slove trh je spoluhláska r slabikotvorná — tvorí slabiku bez samohlásky.",
+    "ctx": "Ukážka 8 – Valéria Černegová: Nové obzory",
+    "ctxText": "Pre slovenský printový trh je v súčasnosti charakteristický čiastočný prechod na web a stále výraznejšia spolupráca s internetom. Dokonca v prípade menších vydavateľských domov sa prejavuje trend úplného odchodu týždenníkov a mesačníkov do internetového priestoru. Dôvodov je niekoľko: problémy s inzerciou, vysoké náklady a naopak nízka rentabilita. Internetová stránka má oproti nákladom na tlač magazínov navrch. Dianie na printovom trhu v roku 2007 ovplyvnil vstup prvého bezplatného denníka a rast denníka Plus jeden deň. Bezplatný Denník 24 však po niekoľkých mesiacoch ukončil svoje vydávanie. Minulý rok slovenské denníky stagnovali, magazíny zaznamenali dvojciferný vzrast."
+  }
+]
