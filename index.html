@@ -949,6 +949,13 @@ html,body{background:#0f0f0f}
         <div class="qtxt" id="qt"></div>
         <div id="ea"></div>
         <div class="og" id="og"></div>
+        <div id="short-wrap" style="display:none;width:100%;max-width:570px;margin:0 auto">
+          <input id="short-input" type="text" autocomplete="off" spellcheck="false"
+            placeholder="Napíš odpoveď..."
+            style="width:100%;padding:14px 16px;font-size:15px;border-radius:12px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-family:var(--font);box-sizing:border-box;outline:none;margin-bottom:8px"
+            onkeydown="if(event.key==='Enter')pickShort()" />
+          <button onclick="pickShort()" style="width:100%;padding:12px;border-radius:12px;border:none;background:#534AB7;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Potvrdiť →</button>
+        </div>
         <div class="fbar" id="fb"></div>
         <button class="nxt nxr" id="nb" onclick="adv()">Ďalej →</button>
       </div>
@@ -2807,7 +2814,26 @@ function launchQuiz(id){
   elSet('tt','className','ttim '+c.tt);
   elSet('ci','textContent',roc+'. roč · '+lv.toUpperCase()+' · '+(md==='s'?'⚔️':'📋'));
   if(md==='s'){elStyle('tw','display','block');elStyle('tt','display','none');}
-  else{elStyle('tw','display','none');var tt=el('tt');if(tt){tt.style.display='block';tt.textContent='⏱ 0:00';tTot=setInterval(function(){tot++;tt.textContent='⏱ '+fmt(tot);},1000);}}
+  else{
+    elStyle('tw','display','none');
+    var tt=el('tt');
+    if(tt){tt.style.display='block';}
+    if(sub.isMat){
+      // 90-minútový odpočet pre maturitné testy
+      var matSec=window._matTime||5400;
+      var fmtMat=function(s){var m=Math.floor(s/60);var sec=s%60;return'⏱ '+m+':'+(sec<10?'0':'')+sec;};
+      if(tt)tt.textContent=fmtMat(matSec);
+      tTot=setInterval(function(){
+        matSec--;
+        if(tt)tt.textContent=fmtMat(matSec);
+        if(matSec<=300&&tt)tt.style.color='#e74c3c';
+        if(matSec<=0){clearInterval(tTot);showScore();}
+      },1000);
+    } else {
+      if(tt)tt.textContent='⏱ 0:00';
+      tTot=setInterval(function(){tot++;if(tt)tt.textContent='⏱ '+fmt(tot);},1000);
+    }
+  }
   rPips();showQ();
 }
 
@@ -2851,17 +2877,29 @@ function showQ(){
   }
   var ea=el('ea');
   if(ea){if(q.en&&q.en.trim()){ea.innerHTML='<div class="qen">'+q.en+'</div>';}else{ea.innerHTML='';}}
-  // Shuffle odpovede — zachovaj správnu odpoveď
-  var idxs=[0,1,2,3];
-  for(var si=idxs.length-1;si>0;si--){var sj=Math.floor(Math.random()*(si+1));var st=idxs[si];idxs[si]=idxs[sj];idxs[sj]=st;}
-  var shuffledOpts=idxs.map(function(i){return q.opts[i];});
-  var newCorrect=idxs.indexOf(q.a);
-  // Uloz shufflovanú mapu pre pick()
-  window._shuffleMap=idxs;
-  window._shuffleCorrect=newCorrect;
-  elSet('og','innerHTML',shuffledOpts.map(function(o,i){return '<button class="opt '+c.o+'" id="o'+i+'" onclick="pick('+i+')"><span class="ltr '+c.l+'">'+L[i]+'</span>'+o+'</button>';}).join(''));
+  // Render odpovede
+  var shortWrap=el('short-wrap');
+  var ogEl=el('og');
+  if(q.type==='short'){
+    if(ogEl)ogEl.style.display='none';
+    if(shortWrap)shortWrap.style.display='block';
+    var sinp=el('short-input');if(sinp){sinp.value='';setTimeout(function(){sinp.focus();},100);}
+    window._shuffleMap=null;window._shuffleCorrect=undefined;
+  } else {
+    if(shortWrap)shortWrap.style.display='none';
+    if(ogEl)ogEl.style.display='';
+    var idxs=[0,1,2,3];
+    if(!sub.isMat){
+      for(var si=idxs.length-1;si>0;si--){var sj=Math.floor(Math.random()*(si+1));var st=idxs[si];idxs[si]=idxs[sj];idxs[sj]=st;}
+    }
+    var shuffledOpts=idxs.map(function(i){return q.opts[i];});
+    var newCorrect=idxs.indexOf(q.a);
+    window._shuffleMap=idxs;
+    window._shuffleCorrect=newCorrect;
+    elSet('og','innerHTML',shuffledOpts.map(function(o,i){return '<button class="opt '+c.o+'" id="o'+i+'" onclick="pick('+i+')"><span class="ltr '+c.l+'">'+L[i]+'</span>'+o+'</button>';}).join(''));
+  }
   rPips();
-  if(md==='s'){var cdEl=el('cd');if(cdEl){cdEl.className='cd '+c.cd+' waiting';cdEl.textContent=TS;}startCD();}
+  if(md==='s'&&q.type!=='short'){var cdEl=el('cd');if(cdEl){cdEl.className='cd '+c.cd+' waiting';cdEl.textContent=TS;}startCD();}
 }
 
 function startCD(){
@@ -2890,6 +2928,28 @@ function timeUp(){
   answers.push({q:q.q,opts:sm2.map(function(x){return q.opts[x];}),correct:sc2,chosen:-1,isCorrect:false,exp:q.exp});
 }
 
+function pickShort(){
+  if(ans)return;ans=true;tck=false;clearInterval(tT);
+  var q=sub.qs[cur];
+  var sinp=el('short-input');
+  var userAns=sinp?sinp.value.trim():'';
+  if(sinp)sinp.disabled=true;
+  var btn=sinp?sinp.nextElementSibling:null;if(btn)btn.disabled=true;
+  // Porovnanie — case-insensitive, akceptuj viacero správnych odpovedí (pole alebo string)
+  var correct=Array.isArray(q.a)?q.a:[q.a];
+  var isOk=correct.some(function(c){return userAns.toLowerCase()===String(c).toLowerCase();});
+  var fb=el('fb');
+  if(isOk){
+    scr++;
+    if(fb){fb.className='fbar ok';fb.textContent='Správne! '+q.exp;}
+  } else {
+    if(fb){fb.className='fbar bad';fb.textContent='Nesprávne. Správna odpoveď: '+correct[0]+'. '+q.exp;}
+  }
+  answers.push({q:q.q,type:'short',correct:correct[0],chosen:userAns,isCorrect:isOk,exp:q.exp});
+  elStyle('pbar','width',((cur+1)/sub.qs.length*100)+'%');
+  elStyle('nb','display','block');
+}
+
 function pick(i){
   if(ans)return;ans=true;tck=false;clearInterval(tT);
   var q=sub.qs[cur];
@@ -2899,12 +2959,12 @@ function pick(i){
   var fb=el('fb');
   if(i===sc){scr++;var oi=el('o'+i);if(oi)oi.classList.add('correct');if(fb){fb.className='fbar ok';fb.textContent='Správne! '+q.exp;}}
   else{var ow=el('o'+i);if(ow)ow.classList.add('wrong');var oq=el('o'+sc);if(oq)oq.classList.add('missed');if(fb){fb.className='fbar bad';fb.textContent='Nesprávne. '+q.exp;}}
-  answers.push({q:q.q,opts:sm.map(function(x){return q.opts[x];}),correct:sc,chosen:i,isCorrect:i===sc,exp:q.exp});
+  answers.push({q:q.q,opts:sm.map(function(x){return q.opts[x];}),correct:sc,chosen:i,isCorrect:i===sc,exp:q.exp,type:q.type||'mc'});
   elStyle('pbar','width',((cur+1)/sub.qs.length*100)+'%');
   elStyle('nb','display','block');
 }
 
-function adv(){cur++;if(cur>=sub.qs.length){showScore();return;}showQ();}
+function adv(){cur++;if(cur>=sub.qs.length){showScore();return;}var sinp=el('short-input');if(sinp){sinp.disabled=false;sinp.value='';var btn=sinp.nextElementSibling;if(btn)btn.disabled=false;}showQ();}
 
 function launchConfetti(){
   var container = el('confetti-box');
@@ -3220,6 +3280,7 @@ function launchMatTest(predmet,rok){
   var qs=MAT_DB[predmet][rok];
   if(!qs||!qs.length)return;
   sub={id:'mat_'+predmet+'_'+rok,icon:'📝',name:'Maturita '+rok+' · '+predmet.toUpperCase(),qs:qs,isMat:true,matPredmet:predmet,matRok:rok};
+  window._matTime=90*60; // 90 minút v sekundách
   cur=0;scr=0;ans=false;tot=0;answers=[];
   clearInterval(tT);clearInterval(tTot);
   window._shuffleMap=null;window._shuffleCorrect=undefined;
