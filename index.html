@@ -3077,7 +3077,21 @@ function retryWrong(){
   elSet('mb','textContent',md==='s'?'⚔️ Súťaž':'📋 Test');
   elSet('ci','textContent',last.roc+'. roč · '+last.lv.toUpperCase()+' · Chyby 🔁');
   if(md==='s'){elStyle('tw','display','block');elStyle('tt','display','none');}
-  else{elStyle('tw','display','none');var tt=el('tt');if(tt){tt.style.display='block';tt.textContent='⏱ 0:00';tTot=setInterval(function(){tot++;tt.textContent='⏱ '+fmt(tot);},1000);}}
+  else{
+    elStyle('tw','display','none');
+    var tt=el('tt');
+    if(tt){tt.style.display='block';}
+    // 90-minútový odpočet pre maturitné testy
+    var matSec=90*60;
+    var fmtMat=function(s){var m=Math.floor(s/60);var sec=s%60;return'⏱ '+m+':'+(sec<10?'0':'')+sec;};
+    if(tt){tt.textContent=fmtMat(matSec);tt.style.color='';}
+    tTot=setInterval(function(){
+      matSec--;
+      if(tt)tt.textContent=fmtMat(matSec);
+      if(matSec<=300&&tt)tt.style.color='#e74c3c';
+      if(matSec<=0){clearInterval(tTot);showScore();}
+    },1000);
+  }
   rPips();showQ();
 }
 
