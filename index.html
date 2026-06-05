@@ -3305,7 +3305,20 @@ function launchMatTest(predmet,rok){
   elSet('mb','textContent',md==='s'?'⚔️ Súťaž':'📋 Test');
   elSet('ci','textContent','Maturita '+rok+' · '+predmet.toUpperCase());
   if(md==='s'){elStyle('tw','display','block');elStyle('tt','display','none');}
-  else{elStyle('tw','display','none');var tt=el('tt');if(tt){tt.style.display='block';tt.textContent='⏱ 0:00';tTot=setInterval(function(){tot++;tt.textContent='⏱ '+fmt(tot);},1000);}}
+  else{
+    elStyle('tw','display','none');
+    var tt=el('tt');
+    if(tt){tt.style.display='block';}
+    var matSec2=90*60;
+    var fmtMat2=function(s){var m=Math.floor(s/60);var sec=s%60;return'⏱ '+m+':'+(sec<10?'0':'')+sec;};
+    if(tt){tt.textContent=fmtMat2(matSec2);tt.style.color='';}
+    tTot=setInterval(function(){
+      matSec2--;
+      if(tt)tt.textContent=fmtMat2(matSec2);
+      if(matSec2<=300&&tt)tt.style.color='#e74c3c';
+      if(matSec2<=0){clearInterval(tTot);showScore();}
+    },1000);
+  }
   rPips();showQ();
 }
 
