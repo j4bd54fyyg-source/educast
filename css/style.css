@@ -169,15 +169,15 @@ button{font-family:var(--font);cursor:pointer}
 .hhero-btn{background:#1D9E75;color:#fff;border:none;font-size:11px;font-weight:500;padding:8px 16px;border-radius:8px;cursor:pointer;white-space:nowrap;flex-shrink:0;font-family:inherit}
 
 /* ── QUIZ ── */
-.quiz-wrap{max-width:720px;margin:0 auto;padding:12px 16px;-webkit-overflow-scrolling:touch}
-.stage{width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;position:relative;overflow-y:auto}
-.stage.mat-mode{aspect-ratio:unset;min-height:520px;height:auto}
+.quiz-wrap{width:100%;max-width:100%;margin:0;padding:0 16px 0;-webkit-overflow-scrolling:touch;box-sizing:border-box}
+.stage.mat-mode{height:calc(100vh - 120px)}
+.stage{width:100%;aspect-ratio:unset;height:calc(100vh - 120px);border-radius:12px;overflow:hidden;position:relative;overflow-y:auto}
 .bgr{background:#04342C}.bgv{background:#0d0d1f}.bgm{background:#0a0800}
 .stage::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:10}
 .sbr::before{background:linear-gradient(90deg,#0F6E56,#0F6E56)}
 .sbv::before{background:#1D9E75}
 .sbm::before{background:#2a2a2a}
-.screen{width:100%;height:100%;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px}
+.screen{width:100%;height:100%;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:32px 40px}
 .tbar{position:absolute;top:2px;left:0;right:0;height:4px}
 .tbr{background:#0F6E56}.tbv{background:#1a1a2e}.tbm{background:#1a1a1a}
 .pfill2{height:100%;transition:width 0.1s linear}
@@ -193,9 +193,9 @@ button{font-family:var(--font);cursor:pointer}
 .ttr{background:#0F6E56;color:#0F6E56}.ttv{background:#04342C;color:#1D9E75}.ttm{background:#242424;color:#888888}
 .qnum{font-size:10px;letter-spacing:0.1em;margin-bottom:10px;text-transform:uppercase}
 .qnr{color:#0F6E56}.qnv{color:#1D9E75}.qnm{color:#888888}
-.qtxt{font-size:clamp(12px,2.2vw,18px);font-weight:500;color:#fff;text-align:center;line-height:1.45;max-width:86%;margin-bottom:18px}
+.qtxt{font-size:clamp(16px,2.4vw,22px);font-weight:600;color:#fff;text-align:center;line-height:1.45;max-width:86%;margin-bottom:24px}
 .qen{font-size:clamp(11px,2vw,16px);color:#1D9E75;font-style:italic;text-align:center;margin-bottom:14px;max-width:86%;line-height:1.4}
-.og{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;max-width:570px}
+.og{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:680px}
 .opt{border-radius:9px;padding:9px 12px;font-size:clamp(10px,1.55vw,12px);cursor:pointer;transition:all 0.12s;text-align:left;display:flex;align-items:center;gap:7px;line-height:1.35;border:1.5px solid;min-height:44px;font-family:inherit}
 .or{background:#0F6E56;border-color:#0F6E56;color:#9FE1CB}.or:hover:not(:disabled){background:#0F6E56;border-color:#0F6E56}
 .ov{background:#1a1520;border-color:#0F6E56;color:#9FE1CB}.ov:hover:not(:disabled){background:#04342C;border-color:#1D9E75}
@@ -217,8 +217,7 @@ button{font-family:var(--font);cursor:pointer}
 .nxt{border:none;font-size:12px;font-weight:600;padding:9px 22px;border-radius:10px;cursor:pointer;font-family:inherit;display:none;margin-top:12px;width:100%;max-width:240px}
 @media(max-width:600px){
   /* Stage — zruš fixný aspect-ratio na mobile, nech sa obsah roztiahne */
-  .stage{aspect-ratio:unset;min-height:auto;height:auto;overflow-y:auto}
-  .stage.mat-mode{min-height:auto}
+  .stage{aspect-ratio:unset;height:auto;min-height:auto;overflow-y:auto}
   .screen{height:auto;min-height:0;padding:16px 12px 60px;justify-content:flex-start;padding-top:28px}
   /* Otázky */
   .qtxt{font-size:clamp(12px,4vw,16px);margin-bottom:12px}
