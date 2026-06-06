@@ -1851,15 +1851,15 @@ function showQ(){
   // Maturitný test — navigácia
   if(sub && sub.isMat){
     var isLast=cur+1>=sub.qs.length;
-    // Ďalej — skryť na poslednej
+    // Ďalej pod odpoveďami — skryť na poslednej
     var nbEl=el('nb');
     if(nbEl)nbEl.style.display=isLast?'none':'inline-block';
-    // Dokončiť — vždy viditeľné
-    var finishBtn=el('nb-finish');
-    if(finishBtn)finishBtn.style.display='inline-block';
-    // Späť
+    // Späť pod odpoveďami
     var prevBtn=el('mat-prev-btn');
     if(prevBtn)prevBtn.style.display=cur>0?'inline-block':'none';
+    // Dokončiť test — len na poslednej otázke, vpravo dole
+    var finishBtn=el('nb-finish');
+    if(finishBtn)finishBtn.style.display=isLast?'inline-block':'none';
     elStyle('ci','display','none');
   } else {
     elStyle('nb','display','none');
@@ -2313,6 +2313,7 @@ function goToPortal(){
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   var prevBtn=el('mat-prev-btn');if(prevBtn)prevBtn.style.display='none';
   var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
+  var finishBtn=el('nb-finish');if(finishBtn)finishBtn.style.display='none';
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   showPage('page-portal');
