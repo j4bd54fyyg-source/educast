@@ -2028,8 +2028,8 @@ function matEvaluate(){
 
 var _ctxFontSize=13;
 function ctxFontChange(d){
-  _ctxFontSize=Math.min(18,Math.max(10,_ctxFontSize+d));
-  var ct=el('ctx-text');
+  _ctxFontSize=Math.min(20,Math.max(10,_ctxFontSize+d));
+  var ct=document.getElementById('ctx-text');
   if(ct)ct.style.fontSize=_ctxFontSize+'px';
 }
 
