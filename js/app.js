@@ -1864,11 +1864,18 @@ function showQ(){
     if(prevBtn2) prevBtn2.style.display='none';
     var matBar3=el('mat-pips-bar');if(matBar3)matBar3.style.display='none';
   }
-  // Kontextový panel — vždy viditeľný
+  // Kontextový panel — na desktope vždy rozbalený
   var ctxWrap=el('ctx-wrap');
   if(q.ctx && q.ctxText){
     elSet('ctx-title','textContent','📖 '+q.ctx);
     elSet('ctx-text','textContent',q.ctxText);
+    var panel=el('ctx-panel');
+    if(panel){panel.classList.remove('collapsed');}
+    var ctxBtn=el('ctx-btn');
+    if(ctxBtn){
+      if(window.innerWidth>=600){ctxBtn.style.display='none';}
+      else{ctxBtn.style.display='';ctxBtn.textContent='Zbaliť ▲';}
+    }
     if(ctxWrap)ctxWrap.style.display='block';
   } else {
     if(ctxWrap)ctxWrap.style.display='none';
