@@ -1851,20 +1851,20 @@ function showQ(){
   // Maturitný test — navigácia
   if(sub && sub.isMat){
     var isLast=cur+1>=sub.qs.length;
-    // Ďalej pod odpoveďami — skryť na poslednej
-    var nbEl=el('nb');
-    if(nbEl)nbEl.style.display=isLast?'none':'inline-block';
-    // Späť pod odpoveďami
-    var prevBtn=el('mat-prev-btn');
-    if(prevBtn)prevBtn.style.display=cur>0?'inline-block':'none';
-    // Dokončiť test — len na poslednej otázke, vpravo dole
+    // Nav wrap pod odpoveďami
+    var navWrap=el('mat-nav-wrap');if(navWrap)navWrap.style.display='flex';
+    // Ďalej — skryť na poslednej
+    var nb2El=el('nb2');
+    if(nb2El)nb2El.style.display=isLast?'none':'inline-block';
+    // Späť
+    var prev2Btn=el('mat-prev-btn2');
+    if(prev2Btn)prev2Btn.style.display=cur>0?'inline-block':'none';
+    // Dokončiť test — len na poslednej, vpravo dole v lište
     var finishBtn=el('nb-finish');
     if(finishBtn)finishBtn.style.display=isLast?'inline-block':'none';
     elStyle('ci','display','none');
   } else {
-    elStyle('nb','display','none');
-    var prevBtn2=el('mat-prev-btn');
-    if(prevBtn2)prevBtn2.style.display='none';
+    var navWrap2=el('mat-nav-wrap');if(navWrap2)navWrap2.style.display='none';
     var finishBtn2=el('nb-finish');
     if(finishBtn2)finishBtn2.style.display='none';
     var matBar3=el('mat-pips-bar');if(matBar3)matBar3.style.display='none';
@@ -2311,9 +2311,8 @@ function goToPortal(){
   // Reset maturitného stavu
   sub=null;matAnswers={};
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
-  var prevBtn=el('mat-prev-btn');if(prevBtn)prevBtn.style.display='none';
-  var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
-  var finishBtn=el('nb-finish');if(finishBtn)finishBtn.style.display='none';
+  var navWrap3=el('mat-nav-wrap');if(navWrap3)navWrap3.style.display='none';
+  var finishBtn3=el('nb-finish');if(finishBtn3)finishBtn3.style.display='none';
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   showPage('page-portal');
