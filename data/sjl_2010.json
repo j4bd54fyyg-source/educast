@@ -40,7 +40,7 @@
   },
   {
     "q": "V ktorej z možností je adresa napísaná pravopisne správne?",
-    "a": 2,
+    "a": 0,
     "opts": [
       "Ulica kapitána Rašu 20, Nitra",
       "ulica Kapitána Rašu 20, Nitra",
@@ -67,7 +67,7 @@
   {
     "q": "Ktorým slovným druhom je vyjadrený predmet vo vete: Ani jednej zo zavraždených patriť nemohla?",
     "type": "short",
-    "a": "podstatné meno",
+    "a": "číslovkou",
     "opts": [],
     "exp": "Predmet „jednej zo zavraždených\" je vyjadrený podstatným menom — substantivizovaným prídavným menom.",
     "ctx": "Ukážka 1 – Edgar Alan Poe: Vražda na ulici Morgue",
@@ -159,7 +159,7 @@
   {
     "q": "Pomenujte umelecký jazykový prostriedok, ktorý predstavuje verš: tu skovaný v okovoch, ale voľný vo sne.",
     "type": "short",
-    "a": "antitéza",
+    "a": "kontrast",
     "opts": [],
     "exp": "Antitéza = protiklad: skovaný v okovoch (väzenie) × voľný vo sne (sloboda).",
     "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
@@ -168,7 +168,7 @@
   {
     "q": "Pomenujte rým básne v ukážke 2 (Smrť Jánošíkova).",
     "type": "short",
-    "a": "združený rým",
+    "a": "združený",
     "opts": [],
     "exp": "Združený rým: schéma aa bb — susedné verše sa rýmujú navzájom.",
     "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
@@ -177,7 +177,7 @@
   {
     "q": "Koľko viet obsahujú prvé dva verše druhej strofy v ukážke 2?",
     "type": "short",
-    "a": "2",
+    "a": "4",
     "opts": [],
     "exp": "Prvé dva verše druhej strofy: Spí opretý na kláte... / ale na ňom... — dve vety.",
     "ctx": "Ukážka 2 – Ján Botto: Smrť Jánošíkova",
@@ -251,7 +251,7 @@
   {
     "q": "Nájdite v treťom odseku ukážky 3 slovo, ktoré vyjadruje duševný stav rozprávača.",
     "type": "short",
-    "a": "zmierený",
+    "a": "tešil sa",
     "opts": [],
     "exp": "„zmierený s Bohom, so svetom\" — slovo zmierený vyjadruje duševný stav rozprávača.",
     "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
@@ -260,11 +260,7 @@
   {
     "q": "Vypíšte z prvých troch odsekov ukážky 3 jedno expresívne sloveso.",
     "type": "short",
-    "a": [
-      "nanosilo",
-      "vyhádzal",
-      "nalámal"
-    ],
+    "a": "nanosiť sa",
     "opts": [],
     "exp": "Expresívne slovesá: nanosilo (bĺch), vyhádzal (čečinu), nalámal (čerstvú) — nespisovné, živé výrazy.",
     "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
@@ -273,13 +269,12 @@
   {
     "q": "Vypíšte zo slova horeznačky prízvučné slabiky.",
     "type": "short",
-    "a": "ho-zna",
+    "a": "ho, znač",
     "opts": [],
     "exp": "Horeznačky: HO-re-ZNA-čky — prízvuk na 1. slabike každého základu: ho- a zna-.",
     "ctx": "Ukážka 3 – Dobroslav Chrobák: Kamarát Jašek",
     "ctxText": "Kolibu sme našli takú, ako sme ju nechali. Iba bĺch – vedel som – sa v nej nanosilo od jari. Nemáš väčšie svinstvo ako takúto opustenú kolibu. No na jednu noc, myslel som si, bude i takáto dobrá… Vyhádzal som iba starú čečinu a nalámal čerstvú.\n\nNa druhý deň vytratil som sa za rána, vyhovoriac sa Etelke, že idem navštíviť známeho baču do Žúberovej…\n\nV skutočnosti som vyšiel hore do radov na Sokolovú. Tu, na samom vrchu, vyvalil som sa horeznačky, díval sa do neba i ponad bezbrehé more hôr a tešil sa z dokonalého diela. Zostávalo vykonať len veľmi málo. A môže sa to nechať i na zajtra...\n\nTento deň, tento ostatný deň strávim v pokoji, zmierený s Bohom, so svetom i s tým, čo ešte treba vykonať, čo treba zajtra vykonať...\n\nPanebože, koľko je tu dreva, koľko hôr a v horách zveriny, krotkej a divokej! Koľko všelijakého pechorenia a hmýrenia, drobných zápasov i mohutných, ďalekou ozvenou sa ohlášajúcich bojov. A z toho všetkého ťažia ľudia, čo bývajú v dedinách, roztrúsených tam v diaľke, hlboko pod tebou.\n\nPozri len, každá vec má svoje meno, každý vrch sa volá inakšie a každá trávička, každý strom a zver. A prečo je to tak? Len preto, aby to ľudia ľahšie premáhali, aby sa vedeli dorozumieť v boji proti tej nesmiernosti."
   },
-  null,
   {
     "q": "Ku ktorému druhu románu môžeme na základe ukážky 4 priradiť román Žiť, hoci aj na kolenách?",
     "a": 3,
@@ -357,7 +352,7 @@
   {
     "q": "Ktorý slohový postup prevažuje v ukážke 4?",
     "type": "short",
-    "a": "rozprávací",
+    "a": "výkladový",
     "opts": [],
     "exp": "Rozprávací slohový postup — autor chronologicky opisuje udalosti svojho života.",
     "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
@@ -366,7 +361,7 @@
   {
     "q": "Ktorým vetným členom je zvýraznené slovo v nasledujúcej vete: Nikdy som sa nechcel vracať k udalostiam, ktoré ovplyvnili môj život.",
     "type": "short",
-    "a": "príslovkové určenie času",
+    "a": "príslovkové určenie",
     "opts": [],
     "exp": "Slovo nikdy je príslovkové určenie času.",
     "ctx": "Ukážka 4 – Jiří Vacek: Žiť, hoci aj na kolenách",
@@ -532,7 +527,7 @@
   {
     "q": "Koľko replík z ukážky 6 patrí Valérovi?",
     "type": "short",
-    "a": "4",
+    "a": "3",
     "opts": [],
     "exp": "Valér má 4 repliky v ukážke.",
     "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
@@ -550,7 +545,7 @@
   {
     "q": "Ktorý slovný druh predstavuje zvýraznené slovo Pravda vo vete: Pravda, vaša dcéra môže pripomenúť...",
     "type": "short",
-    "a": "citoslovce",
+    "a": "častica",
     "opts": [],
     "exp": "Slovo Pravda tu funguje ako citoslovce (vsuvka) — vyjadruje súhlas.",
     "ctx": "Ukážka 6 – J. B. P. Molière: Lakomec",
@@ -558,7 +553,7 @@
   },
   {
     "q": "Ukážka 7 patrí v rámci publicistického štýlu...",
-    "a": 3,
+    "a": 0,
     "opts": [
       "k spravodajským útvarom.",
       "k analytickým útvarom.",
@@ -571,7 +566,7 @@
   },
   {
     "q": "V prvej časti ukážky 7 Michal Sťahel povedal novinárke, že...",
-    "a": 1,
+    "a": 2,
     "opts": [
       "napriek prekážkam bude vždy žiť len pre vážnu hudbu.",
       "hudba pre neho nikdy neprestane byť základnou potrebou.",
@@ -597,7 +592,7 @@
   },
   {
     "q": "Ktorá možnosť sa najviac približuje významu vety: Dá sa povedať, že som vyrastal akoby za kulisou jeho cvičení.",
-    "a": 2,
+    "a": 1,
     "opts": [
       "Rodičia ma vždy porovnávali s bratom.",
       "Rodičia nevšimli, že aj ja rastiem na hudobníka.",
@@ -633,7 +628,7 @@
   {
     "q": "Napíšte pravopisne správne vlastné meno Paganini v tvare lokálu singuláru.",
     "type": "short",
-    "a": "Paginim",
+    "a": "Paganinim",
     "opts": [],
     "exp": "Paganini → lokál sg.: o Paginim.",
     "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
@@ -642,7 +637,7 @@
   {
     "q": "Vypíšte z tretej časti ukážky 7 synonymum slova súvekí/súdobí.",
     "type": "short",
-    "a": "dnešných",
+    "a": "vtedajší",
     "opts": [],
     "exp": "Vtedajší virtuózi, na rozdiel od tých dnešných — dnešných = súčasných.",
     "ctx": "Ukážka 7 – Michal Sťahel: Stará hudba je ako zjavenie",
@@ -663,7 +658,7 @@
   },
   {
     "q": "V ktorej možnosti je tvrdenie vyplývajúce z ukážky 8?",
-    "a": 3,
+    "a": 1,
     "opts": [
       "Malé vydavateľstvá spolupracujú s veľkými.",
       "Malým vydavateľstvám chýba flexibilita.",
@@ -702,7 +697,7 @@
   },
   {
     "q": "Ktoré podstatné meno má v genitíve singuláru koncovku -u?",
-    "a": 3,
+    "a": 1,
     "opts": [
       "denník",
       "časopis",
