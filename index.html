@@ -310,18 +310,14 @@
       <div class="qnum" id="qn"></div>
       <div class="quiz-topbar-right" style="width:80px"></div>
     </div>
-    <!-- Čísla otázok (len maturita) -->
-    <div class="mat-pips-bar" id="mat-pips-bar" style="display:none">
-      <div class="pips" id="pips"></div>
-    </div>
     <div class="tbar" id="tb"><div class="pfill2" id="pbar"></div></div>
     <div class="stage" id="stage">
       <div class="screen" id="qs">
         <div id="ctx-wrap" style="width:100%;max-width:680px;display:none">
           <div class="ctx-panel" id="ctx-panel">
-            <div class="ctx-header" onclick="toggleCtx()">
+            <div class="ctx-header">
               <span id="ctx-title">📖 Ukážka</span>
-              <button class="ctx-toggle" id="ctx-btn">Zbaliť ▲</button>
+              <button class="ctx-toggle" id="ctx-btn" onclick="toggleCtx()" style="display:none">Zbaliť ▲</button>
             </div>
             <div class="ctx-text" id="ctx-text"></div>
           </div>
@@ -358,6 +354,10 @@
           <button onclick="goToLanding()" style="width:100%;background:transparent;border:none;color:#555;font-size:11px;cursor:pointer;font-family:inherit;padding:4px">← Späť na úvod</button>
         </div>
       </div>
+    </div>
+    <!-- Čísla otázok (len maturita) -->
+    <div class="mat-pips-bar" id="mat-pips-bar" style="display:none">
+      <div class="pips" id="pips"></div>
     </div>
     <div class="ctrls">
       <button class="ctb" onclick="goToPortal()">← Predmety</button>

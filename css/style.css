@@ -559,8 +559,8 @@ html,body{background:#0f0f0f}
 .mat-chevron{font-size:10px;color:var(--text2);transition:transform 0.2s;margin-left:auto}
 .mat-chevron.open{transform:rotate(180deg)}
 
-.ctx-panel{background:#0d1a0d;border:0.5px solid #1D9E7555;border-radius:10px;padding:8px 12px;margin-bottom:8px;font-size:11px;color:#9FE1CB;line-height:1.6;max-height:120px;overflow-y:auto;transition:max-height 0.3s ease}
-.ctx-panel.collapsed{max-height:32px;overflow:hidden}
+.ctx-panel{background:#0d1a0d;border:0.5px solid #1D9E7555;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:12px;color:#9FE1CB;line-height:1.6;max-height:220px;overflow-y:auto}
+
 .ctx-header{display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:6px;font-weight:600;font-size:11px;color:#1D9E75}
 .ctx-toggle{font-size:10px;color:#1D9E75;background:transparent;border:none;cursor:pointer;font-family:inherit;padding:0}
 .ctx-text{white-space:pre-wrap;font-size:10px;color:#9FE1CB;line-height:1.65}
