@@ -2315,6 +2315,7 @@ function goToPortal(){
   var finishBtn3=el('nb-finish');if(finishBtn3)finishBtn3.style.display='none';
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
+  document.querySelectorAll('.ctb').forEach(function(b){b.style.display='';});
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
@@ -2399,7 +2400,7 @@ function renderMatGrid(){
       +'</div>';
   }).join('');
 }
-function launchMatTest(predmet,rok){var ctbEl=document.querySelector(".ctb");if(ctbEl)ctbEl.style.display="none";
+function launchMatTest(predmet,rok){document.querySelectorAll(".ctb").forEach(function(b){if(b.textContent.indexOf("Predmety")>-1)b.style.display="none";});
   var qs=MAT_DB[predmet][rok];
   if(!qs||!qs.length)return;
   sub={id:'mat_'+predmet+'_'+rok,icon:'📝',name:'Maturita '+rok+' · '+predmet.toUpperCase(),qs:qs,isMat:true,matPredmet:predmet,matRok:rok};
