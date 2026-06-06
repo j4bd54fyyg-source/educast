@@ -1848,37 +1848,41 @@ function showQ(){
   elStyle('pbar','width',(cur/sub.qs.length*100)+'%');
   elSet('fb','className','fbar');
   elSet('fb','textContent','');
-  // Maturitný test — tlačidlo vždy viditeľné
+  // Maturitný test — nav tlačidlá pod odpoveďami
   if(sub && sub.isMat){
-    var nbEl=el('nb');
-    if(nbEl){
-      nbEl.style.display='block';
-      nbEl.textContent=cur+1<sub.qs.length?'Ďalej →':'Dokončiť test';
-    }
-    var prevBtn=el('mat-prev-btn');
-    if(prevBtn) prevBtn.style.display=cur>0?'inline-block':'none';
+    // Hlavné nav tlačidlá pod odpoveďami
+    var nb2El=el('nb2');
+    if(nb2El){nb2El.style.display='inline-block';nb2El.textContent=cur+1<sub.qs.length?'Ďalej →':'Dokončiť test';}
+    var prev2Btn=el('mat-prev-btn2');
+    if(prev2Btn)prev2Btn.style.display=cur>0?'inline-block':'none';
+    var navWrap=el('mat-nav-wrap');
+    if(navWrap)navWrap.style.display='flex';
     elStyle('ci','display','none');
+    // ctx-ref — ukáž názov ukážky ak nie je ctx viditeľný
+    var ctxRef=el('ctx-ref');
+    var q2=sub.qs[cur];
+    if(ctxRef){
+      if(!q2.ctx){ctxRef.style.display='block';ctxRef.textContent='';}
+      else{ctxRef.style.display='none';}
+    }
   } else {
-    elStyle('nb','display','none');
-    var prevBtn2=el('mat-prev-btn');
-    if(prevBtn2) prevBtn2.style.display='none';
+    var navWrap2=el('mat-nav-wrap');if(navWrap2)navWrap2.style.display='none';
     var matBar3=el('mat-pips-bar');if(matBar3)matBar3.style.display='none';
   }
-  // Kontextový panel — na desktope vždy rozbalený
+  // Kontextový panel — vždy viditeľný ak má text
   var ctxWrap=el('ctx-wrap');
+  var ctxRef=el('ctx-ref');
   if(q.ctx && q.ctxText){
     elSet('ctx-title','textContent','📖 '+q.ctx);
     elSet('ctx-text','textContent',q.ctxText);
-    var panel=el('ctx-panel');
-    if(panel){panel.classList.remove('collapsed');}
-    var ctxBtn=el('ctx-btn');
-    if(ctxBtn){
-      if(window.innerWidth>=600){ctxBtn.style.display='none';}
-      else{ctxBtn.style.display='';ctxBtn.textContent='Zbaliť ▲';}
-    }
     if(ctxWrap)ctxWrap.style.display='block';
+    if(ctxRef)ctxRef.style.display='none';
+  } else if(q.ctx){
+    if(ctxWrap)ctxWrap.style.display='none';
+    if(ctxRef){ctxRef.style.display='block';ctxRef.textContent='📖 '+q.ctx;}
   } else {
     if(ctxWrap)ctxWrap.style.display='none';
+    if(ctxRef)ctxRef.style.display='none';
   }
   var ea=el('ea');
   if(ea){if(q.en&&q.en.trim()){ea.innerHTML='<div class="qen">'+q.en+'</div>';}else{ea.innerHTML='';}}
@@ -2082,7 +2086,6 @@ function pick(i){
 
 function adv(){
   if(sub && sub.isMat){
-    // Ulož krátku odpoveď ak je otvorená
     var sinp=el('short-input');
     if(sinp && sub.qs[cur] && sub.qs[cur].type==='short'){
       matAnswers[cur]=sinp.value.trim();
@@ -2306,8 +2309,8 @@ function goToPortal(){
   // Reset maturitného stavu
   sub=null;matAnswers={};
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
-  var prevBtn=el('mat-prev-btn');if(prevBtn)prevBtn.style.display='none';
-  var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
+  var navWrap3=el('mat-nav-wrap');if(navWrap3)navWrap3.style.display='none';
+  var nb2El2=el('nb2');if(nb2El2)nb2El2.style.display='none';
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   showPage('page-portal');
