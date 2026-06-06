@@ -2313,7 +2313,6 @@ function goToPortal(){
   var _mr=sub&&sub.matRok?sub.matRok:null;
   // Reset maturitného stavu
   sub=null;matAnswers={};
-  if(_mp){lwMatPred=_mp;lwMatRok=_mr;}
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   var navWrap3=el('mat-nav-wrap');if(navWrap3)navWrap3.style.display='none';
   var finishBtn3=el('nb-finish');if(finishBtn3)finishBtn3.style.display='none';
@@ -2322,7 +2321,7 @@ function goToPortal(){
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
-  setTimeout(function(){ renderWizard(); }, 10);
+  setTimeout(function(){ renderWizard(); if(_mp){lwMatPred=_mp;lwMatRok=_mr;} }, 10);
 }
 
 // ── MATURITNA DATABAZA ──
