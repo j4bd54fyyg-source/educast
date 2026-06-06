@@ -1861,7 +1861,7 @@ function showQ(){
     if(prev2Btn)prev2Btn.style.display=cur>0?'inline-block':'none';
     // Dokončiť test — len na poslednej, vpravo dole v lište
     var finishBtn=el('nb-finish');
-    if(finishBtn)finishBtn.style.display='inline-block';
+    if(finishBtn)finishBtn.style.display=isLast?'inline-block':'none';
     elStyle('ci','display','none');
   } else {
     var navWrap2=el('mat-nav-wrap');if(navWrap2)navWrap2.style.display='none';
@@ -2279,7 +2279,7 @@ function showScore(){
   }
 }
 
-function retry(){launchQuiz(sub.id);}
+function retry(){if(sub && sub.isMat){launchMatTest(sub.matPredmet,sub.matRok);}else{launchQuiz(sub.id);}}
 
 function toggleCtx(){
   var panel=el('ctx-panel');
@@ -2308,8 +2308,12 @@ function shareResult(){
 
 function goToPortal(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  // Zachovaj maturitny predmet a rok pre wizard
+  var _mp=sub&&sub.matPredmet?sub.matPredmet:null;
+  var _mr=sub&&sub.matRok?sub.matRok:null;
   // Reset maturitného stavu
   sub=null;matAnswers={};
+  if(_mp){lwMatPred=_mp;lwMatRok=_mr;}
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   var navWrap3=el('mat-nav-wrap');if(navWrap3)navWrap3.style.display='none';
   var finishBtn3=el('nb-finish');if(finishBtn3)finishBtn3.style.display='none';
