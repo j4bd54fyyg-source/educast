@@ -1848,7 +1848,8 @@ function showQ(){
   if(sub && sub.isMat){
     var nbEl=el('nb');
     if(nbEl){
-      nbEl.style.display='block';
+      nbEl.style.display='inline-block';
+      nbEl.style.marginTop='0';
       nbEl.textContent=cur+1<sub.qs.length?'Ďalej →':'Dokončiť test';
     }
     var prevBtn=el('mat-prev-btn');

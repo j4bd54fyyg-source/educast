@@ -327,7 +327,6 @@
           <button id="short-btn" onclick="if(sub&&sub.isMat){matAnswers[cur]=document.getElementById('short-input').value.trim();rPips();}else{pickShort();}" style="width:100%;padding:12px;border-radius:12px;border:none;background:#534AB7;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Potvrdiť →</button>
         </div>
         <div class="fbar" id="fb"></div>
-        <button class="nxt nxr" id="nb" onclick="adv()">Ďalej →</button>
       </div>
       <div class="screen sscr" id="ss">
         <div class="confetti-container" id="confetti-box"></div>
@@ -352,7 +351,10 @@
     </div>
     <div class="ctrls">
       <button class="ctb" onclick="goToPortal()">← Predmety</button>
-      <button class="ctb" id="mat-prev-btn" onclick="matPrev()" style="display:none">← Späť</button>
+      <div style="display:flex;gap:6px;align-items:center">
+        <button class="ctb" id="mat-prev-btn" onclick="matPrev()" style="display:none">← Späť</button>
+        <button class="nxt nxr" id="nb" onclick="adv()" style="display:none;margin-top:0;max-width:120px;padding:7px 16px;font-size:12px">Ďalej →</button>
+      </div>
       <div class="pips" id="pips"></div>
       <div style="font-size:10px;color:var(--text2)" id="ci"></div>
     </div>
