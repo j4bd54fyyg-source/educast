@@ -2812,6 +2812,9 @@ function lwUpdateSteps(active){
 }
 
 function lwStart(){
+  // Upozornenia pre maturitný wizard
+  if(lwMatPred && !lwMatRok){alert('Vyber rok maturitného testu.');return;}
+  if(!lwMatPred && lwMatRok){alert('Vyber predmet maturitného testu.');return;}
   if(lwMatPred && lwMatRok){
     lv = 'v'; md = lwMd;
     showPage('page-portal');
