@@ -2399,7 +2399,7 @@ function renderMatGrid(){
       +'</div>';
   }).join('');
 }
-function launchMatTest(predmet,rok){
+function launchMatTest(predmet,rok){var ctbEl=document.querySelector(".ctb");if(ctbEl)ctbEl.style.display="none";
   var qs=MAT_DB[predmet][rok];
   if(!qs||!qs.length)return;
   sub={id:'mat_'+predmet+'_'+rok,icon:'📝',name:'Maturita '+rok+' · '+predmet.toUpperCase(),qs:qs,isMat:true,matPredmet:predmet,matRok:rok};
