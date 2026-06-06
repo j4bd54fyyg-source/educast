@@ -1859,9 +1859,9 @@ function showQ(){
     // Späť
     var prev2Btn=el('mat-prev-btn2');
     if(prev2Btn)prev2Btn.style.display=cur>0?'inline-block':'none';
-    // Dokončiť test — vždy viditeľné v lište
+    // Dokončiť test — len na poslednej, vpravo dole v lište
     var finishBtn=el('nb-finish');
-    if(finishBtn)finishBtn.style.display='inline-block';
+    if(finishBtn)finishBtn.style.display=isLast?'inline-block':'none';
     elStyle('ci','display','none');
   } else {
     var navWrap2=el('mat-nav-wrap');if(navWrap2)navWrap2.style.display='none';
@@ -2279,7 +2279,7 @@ function showScore(){
   }
 }
 
-function retry(){if(sub && sub.isMat){launchMatTest(sub.matPredmet,sub.matRok);}else{launchQuiz(sub.id);}}
+function retry(){launchQuiz(sub.id);}
 
 function toggleCtx(){
   var panel=el('ctx-panel');
@@ -2308,7 +2308,8 @@ function shareResult(){
 
 function goToPortal(){
   clearInterval(tT);clearInterval(tTot);tck=false;
-  // Zachovaj maturitny predmet a rok pre wizard
+  // Zachovaj maturitny stav pre wizard
+  var _wasMat=sub&&sub.isMat?true:false;
   var _mp=sub&&sub.matPredmet?sub.matPredmet:null;
   var _mr=sub&&sub.matRok?sub.matRok:null;
   // Reset maturitného stavu
@@ -2321,7 +2322,19 @@ function goToPortal(){
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
-  setTimeout(function(){ renderWizard(); if(_mp){lwMatPred=_mp;lwMatRok=_mr;} }, 10);
+  setTimeout(function(){
+    renderWizard();
+    // Ak prišiel z maturitného testu, obnov výber predmetu
+    if(_wasMat && _mp){
+      lwMatPred=_mp;
+      lwMatRok=_mr;
+      lwSelectMaturita();
+      // Zvýrazni predmet
+      document.querySelectorAll('.mat-wiz-pred').forEach(function(e){
+        e.className='mat-wiz-pred'+(e.dataset&&e.dataset.id===_mp?' sel':'');
+      });
+    }
+  }, 10);
 }
 
 // ── MATURITNA DATABAZA ──
@@ -2812,7 +2825,7 @@ function lwUpdateSteps(active){
   });
 }
 
-function lwStart(){if(lwMatPred && !lwMatRok){alert("Vyber rok maturitného testu.");return;}
+function lwStart(){
   if(lwMatPred && lwMatRok){
     lv = 'v'; md = lwMd;
     showPage('page-portal');
