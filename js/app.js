@@ -1861,7 +1861,7 @@ function showQ(){
     if(prev2Btn)prev2Btn.style.display=cur>0?'inline-block':'none';
     // Dokončiť test — len na poslednej, vpravo dole v lište
     var finishBtn=el('nb-finish');
-    if(finishBtn)finishBtn.style.display=isLast?'inline-block':'none';
+    if(finishBtn)finishBtn.style.display='inline-block';
     elStyle('ci','display','none');
   } else {
     var navWrap2=el('mat-nav-wrap');if(navWrap2)navWrap2.style.display='none';
