@@ -1848,8 +1848,7 @@ function showQ(){
   if(sub && sub.isMat){
     var nbEl=el('nb');
     if(nbEl){
-      nbEl.style.display='inline-block';
-      nbEl.style.marginTop='0';
+      nbEl.style.display='block';
       nbEl.textContent=cur+1<sub.qs.length?'Ďalej →':'Dokončiť test';
     }
     var prevBtn=el('mat-prev-btn');
@@ -2214,6 +2213,7 @@ function retryWrong(){
 
 function showScore(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   // Ulož do histórie
   var now = new Date();
   var dateStr = now.getDate()+'.'+(now.getMonth()+1)+'.'+now.getFullYear()+' '+now.getHours()+':'+String(now.getMinutes()).padStart(2,'0');
@@ -2376,6 +2376,7 @@ function launchMatTest(predmet,rok){
   sub={id:'mat_'+predmet+'_'+rok,icon:'📝',name:'Maturita '+rok+' · '+predmet.toUpperCase(),qs:qs,isMat:true,matPredmet:predmet,matRok:rok};
   window._matTime=90*60; // 90 minút v sekundách
   cur=0;scr=0;ans=false;tot=0;answers=[];matAnswers={};
+  var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.add('mat-mode');
   clearInterval(tT);clearInterval(tTot);
   window._shuffleMap=null;window._shuffleCorrect=undefined;
   showPage('page-quiz');

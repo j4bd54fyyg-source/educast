@@ -171,6 +171,7 @@ button{font-family:var(--font);cursor:pointer}
 /* ── QUIZ ── */
 .quiz-wrap{max-width:720px;margin:0 auto;padding:12px 16px;-webkit-overflow-scrolling:touch}
 .stage{width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;position:relative;overflow-y:auto}
+.stage.mat-mode{aspect-ratio:unset;min-height:520px;height:auto}
 .bgr{background:#04342C}.bgv{background:#0d0d1f}.bgm{background:#0a0800}
 .stage::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:10}
 .sbr::before{background:linear-gradient(90deg,#0F6E56,#0F6E56)}
@@ -217,6 +218,7 @@ button{font-family:var(--font);cursor:pointer}
 @media(max-width:600px){
   /* Stage — zruš fixný aspect-ratio na mobile, nech sa obsah roztiahne */
   .stage{aspect-ratio:unset;min-height:auto;height:auto;overflow-y:auto}
+  .stage.mat-mode{min-height:auto}
   .screen{height:auto;min-height:0;padding:16px 12px 60px;justify-content:flex-start;padding-top:28px}
   /* Otázky */
   .qtxt{font-size:clamp(12px,4vw,16px);margin-bottom:12px}
