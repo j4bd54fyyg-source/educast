@@ -315,7 +315,13 @@
       <div class="screen" id="qs">
         <div id="ctx-wrap" style="width:100%;max-width:800px;display:none">
           <div class="ctx-panel" id="ctx-panel">
-            <div class="ctx-label" id="ctx-title">📖 Ukážka</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <div class="ctx-label" id="ctx-title">📖 Ukážka</div>
+              <div style="display:flex;gap:4px">
+                <button onclick="ctxFontChange(-1)" style="background:transparent;border:0.5px solid #1D9E7555;color:#1D9E75;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A−</button>
+                <button onclick="ctxFontChange(1)" style="background:transparent;border:0.5px solid #1D9E7555;color:#1D9E75;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A+</button>
+              </div>
+            </div>
             <div class="ctx-text" id="ctx-text"></div>
           </div>
         </div>
