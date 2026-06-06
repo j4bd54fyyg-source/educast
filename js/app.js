@@ -2286,6 +2286,11 @@ function shareResult(){
 
 function goToPortal(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  // Reset maturitného stavu
+  sub=null;matAnswers={};
+  var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
+  var prevBtn=el('mat-prev-btn');if(prevBtn)prevBtn.style.display='none';
+  var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
