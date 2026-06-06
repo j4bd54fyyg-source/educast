@@ -300,14 +300,24 @@
 <!-- ══ QUIZ PAGE ══ -->
 <div id="page-quiz" class="page">
   <div class="quiz-wrap">
-    <div class="stage" id="stage">
-      <div class="screen" id="qs">
-        <div class="tbar" id="tb"><div class="pfill2" id="pbar"></div></div>
+    <!-- Horná lišta -->
+    <div class="quiz-topbar">
+      <div class="quiz-topbar-left">
         <span class="mbadge" id="mb"></span>
         <div class="twrap" id="tw"><div class="cd" id="cd">15</div></div>
         <div class="ttim" id="tt" style="display:none">⏱ 0:00</div>
-        <div class="qnum" id="qn"></div>
-        <div id="ctx-wrap" style="width:100%;max-width:570px;display:none">
+      </div>
+      <div class="qnum" id="qn"></div>
+      <div class="quiz-topbar-right" style="width:80px"></div>
+    </div>
+    <!-- Čísla otázok (len maturita) -->
+    <div class="mat-pips-bar" id="mat-pips-bar" style="display:none">
+      <div class="pips" id="pips"></div>
+    </div>
+    <div class="tbar" id="tb"><div class="pfill2" id="pbar"></div></div>
+    <div class="stage" id="stage">
+      <div class="screen" id="qs">
+        <div id="ctx-wrap" style="width:100%;max-width:680px;display:none">
           <div class="ctx-panel" id="ctx-panel">
             <div class="ctx-header" onclick="toggleCtx()">
               <span id="ctx-title">📖 Ukážka</span>
@@ -319,7 +329,7 @@
         <div class="qtxt" id="qt"></div>
         <div id="ea"></div>
         <div class="og" id="og"></div>
-        <div id="short-wrap" style="display:none;width:100%;max-width:570px;margin:0 auto">
+        <div id="short-wrap" style="display:none;width:100%;max-width:680px;margin:0 auto">
           <input id="short-input" type="text" autocomplete="off" spellcheck="false"
             placeholder="Napíš odpoveď..."
             style="width:100%;padding:14px 16px;font-size:15px;border-radius:12px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text);font-family:var(--font);box-sizing:border-box;outline:none;margin-bottom:8px"
@@ -351,11 +361,11 @@
     </div>
     <div class="ctrls">
       <button class="ctb" onclick="goToPortal()">← Predmety</button>
+      <div class="pips" id="pips-regular"></div>
       <div style="display:flex;gap:6px;align-items:center">
         <button class="ctb" id="mat-prev-btn" onclick="matPrev()" style="display:none">← Späť</button>
         <button class="nxt nxr" id="nb" onclick="adv()" style="display:none;margin-top:0;max-width:120px;padding:7px 16px;font-size:12px">Ďalej →</button>
       </div>
-      <div class="pips" id="pips"></div>
       <div style="font-size:10px;color:var(--text2)" id="ci"></div>
     </div>
   </div>

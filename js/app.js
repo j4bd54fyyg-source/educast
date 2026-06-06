@@ -1824,13 +1824,17 @@ function applyS(){
 function rPips(){
   var c=C[lv];
   if(sub && sub.isMat){
+    var matBar=el('mat-pips-bar');if(matBar)matBar.style.display='block';
     elSet('pips','innerHTML',sub.qs.map(function(_,i){
       var answered = matAnswers[i]!==undefined && matAnswers[i]!=='';
       var cls = i===cur ? 'pip-mat-num-cur' : (answered ? 'pip-mat-num-done' : 'pip-mat-num-empty');
       return '<div class="'+cls+'" onclick="matGoto('+i+')">'+(i+1)+'</div>';
     }).join(''));
+    elSet('pips-regular','innerHTML','');
   } else {
-    elSet('pips','innerHTML',sub.qs.map(function(_,i){return '<div class="pip '+(i<cur?c.pd:i===cur?c.pc:c.pb)+'"></div>';}).join(''));
+    var matBar2=el('mat-pips-bar');if(matBar2)matBar2.style.display='none';
+    elSet('pips-regular','innerHTML',sub.qs.map(function(_,i){return '<div class="pip '+(i<cur?c.pd:i===cur?c.pc:c.pb)+'"></div>';}).join(''));
+    elSet('pips','innerHTML','');
   }
 }
 
@@ -1853,10 +1857,12 @@ function showQ(){
     }
     var prevBtn=el('mat-prev-btn');
     if(prevBtn) prevBtn.style.display=cur>0?'inline-block':'none';
+    elStyle('ci','display','none');
   } else {
     elStyle('nb','display','none');
     var prevBtn2=el('mat-prev-btn');
     if(prevBtn2) prevBtn2.style.display='none';
+    var matBar3=el('mat-pips-bar');if(matBar3)matBar3.style.display='none';
   }
   // Kontextový panel
   var ctxWrap=el('ctx-wrap');
@@ -2291,6 +2297,8 @@ function goToPortal(){
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   var prevBtn=el('mat-prev-btn');if(prevBtn)prevBtn.style.display='none';
   var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
+  var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
+  elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
