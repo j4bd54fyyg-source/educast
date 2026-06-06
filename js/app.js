@@ -2308,10 +2308,6 @@ function shareResult(){
 
 function goToPortal(){
   clearInterval(tT);clearInterval(tTot);tck=false;
-  // Zachovaj maturitny stav pre wizard
-  var _wasMat=sub&&sub.isMat?true:false;
-  var _mp=sub&&sub.matPredmet?sub.matPredmet:null;
-  var _mr=sub&&sub.matRok?sub.matRok:null;
   // Reset maturitného stavu
   sub=null;matAnswers={};
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
@@ -2322,19 +2318,7 @@ function goToPortal(){
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
-  setTimeout(function(){
-    renderWizard();
-    // Ak prišiel z maturitného testu, obnov výber predmetu
-    if(_wasMat && _mp){
-      lwMatPred=_mp;
-      lwMatRok=_mr;
-      lwSelectMaturita();
-      // Zvýrazni predmet
-      document.querySelectorAll('.mat-wiz-pred').forEach(function(e){
-        e.className='mat-wiz-pred'+(e.dataset&&e.dataset.id===_mp?' sel':'');
-      });
-    }
-  }, 10);
+  setTimeout(function(){ renderWizard(); }, 10);
 }
 
 // ── MATURITNA DATABAZA ──
@@ -2698,7 +2682,8 @@ function lwSelectMaturita(){
     div.innerHTML = lwMatWizHTML();
     wrap.insertBefore(div, document.getElementById('lw-start-btn'));
   }
-  lwMatPred = null; lwMatRok = null;
+  // Neresetuj ak sú už nastavené (návrat z testu)
+  if(!lwMatPred) lwMatRok = null;
   lwUpdateSteps(2);
   renderLwMatWiz();
 }
