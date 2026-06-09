@@ -264,7 +264,7 @@ button{font-family:var(--font);cursor:pointer}
 .smsg{font-size:11px;color:#888}
 .rbtn{background:transparent;font-size:12px;padding:8px 20px;border-radius:8px;cursor:pointer;margin-top:6px;border:1.5px solid;font-family:inherit}
 .rr{border-color:#0F6E56;color:#9FE1CB}.rv{border-color:#0F6E56;color:#9FE1CB}.rm{border-color:#2a2a2a;color:#e8e8e8}
-.quiz-back{background:transparent;border:1px solid #666;color:#ccc;font-size:13px;padding:8px 20px;border-radius:8px;cursor:pointer;margin-top:6px;font-family:inherit}
+.quiz-back{background:transparent;border:1px solid #888;color:#e8e8e8;font-size:13px;padding:8px 20px;border-radius:8px;cursor:pointer;margin-top:6px;font-family:inherit}
 .ctrls{display:flex;align-items:center;justify-content:space-between;padding:8px 20px;border-top:0.5px solid var(--border);flex-shrink:0;height:48px}
 .ctb{background:transparent;border:0.5px solid var(--border);color:var(--text2);font-size:11px;padding:4px 10px;border-radius:6px;cursor:pointer;font-family:inherit}
 .pips{display:flex;align-items:center;gap:3px;flex-wrap:wrap;max-width:100%;justify-content:center}
