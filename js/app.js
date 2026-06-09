@@ -1848,6 +1848,9 @@ function showQ(){
   elStyle('pbar','width',(cur/sub.qs.length*100)+'%');
   elSet('fb','className','fbar');
   elSet('fb','textContent','');
+  // Zobraziť/skryť Ukončiť kvíz
+  var endBtn=el('btn-end-quiz');
+  if(endBtn)endBtn.style.display=(sub&&sub.isMat)?'none':'inline-block';
   // Maturitný test — navigácia
   if(sub && sub.isMat){
     var isLast=cur+1>=sub.qs.length;
@@ -2316,6 +2319,7 @@ function goToPortal(){
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   document.querySelectorAll('.ctb').forEach(function(b){b.style.display='';});
+  var endBtn2=el('btn-end-quiz');if(endBtn2)endBtn2.style.display='none';
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
