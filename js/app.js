@@ -1983,7 +1983,7 @@ function timeUp(){
     elSet('fb','className','fbar bad');
     elSet('fb','textContent','Čas vypršal! '+q.exp);
   }
-  elStyle('nb','display','block');
+  if(!sub||!sub.isMat){elStyle('nb','display','block');}
   answers.push({q:q.q,opts:sm2.map(function(x){return q.opts[x];}),correct:sc2,chosen:-1,isCorrect:false,exp:q.exp});
 }
 
@@ -2084,7 +2084,7 @@ function pickShort(){
   }
   answers.push({q:q.q,type:'short',correct:correct[0],chosen:userAns,isCorrect:isOk,exp:q.exp});
   elStyle('pbar','width',((cur+1)/sub.qs.length*100)+'%');
-  elStyle('nb','display','block');
+  if(!sub||!sub.isMat){elStyle('nb','display','block');}
 }
 
 function pick(i){
@@ -2104,9 +2104,7 @@ function pick(i){
   }
   answers.push({q:q.q,opts:sm.map(function(x){return q.opts[x];}),correct:sc,chosen:i,isCorrect:i===sc,exp:q.exp,type:q.type||'mc'});
   elStyle('pbar','width',((cur+1)/sub.qs.length*100)+'%');
-  if(sub.isMat){
-    var nbEl=el('nb');if(nbEl){nbEl.style.display='block';nbEl.textContent=cur+1<sub.qs.length?'Ďalej →':'Zobraziť výsledok';}
-  } else {
+  if(!sub.isMat){
     elStyle('nb','display','block');
   }
 }
