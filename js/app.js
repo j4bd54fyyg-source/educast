@@ -1770,12 +1770,35 @@ function closeModal(e){if(e.target===el('modal'))hidePaywall();}
 // ═══════════════════════════════════════════
 // QUIZ ENGINE
 // ═══════════════════════════════════════════
+
+// ── ULOŽENIE STAVU KVÍZU ──
+function saveQuizState(){
+  if(!sub||sub.isMat) return;
+  var key=window._saveKey||('edu_save_'+sub.id);
+  var state={cur:cur,scr:scr,answers:answers,tot:tot,savedAt:new Date().toLocaleString('sk-SK')};
+  try{
+    localStorage.setItem(key,JSON.stringify(state));
+    var btn=el('btn-save-quiz');
+    if(btn){btn.textContent='✓ Uložené';setTimeout(function(){if(btn)btn.textContent='Uložiť';},1500);}
+  }catch(e){}
+}
+
 function launchQuiz(id){
   var qs=DB[roc+'_'+lv+'_'+id];
   if(!qs||qs.length===0){return;}
   var sData=SUBS.filter(function(s){return s.id===id;})[0];
   sub={id:id,icon:sData.icon,name:sData.name,qs:qs};
-  cur=0;scr=0;ans=false;tot=0;answers=[];
+  // Skontroluj uložený stav
+  var saveKey='edu_save_'+roc+'_'+lv+'_'+md+'_'+id;
+  var saved=null;
+  try{var raw=localStorage.getItem(saveKey);if(raw)saved=JSON.parse(raw);}catch(e){}
+  if(saved&&saved.cur>0&&confirm('Máš uložený kvíz z '+saved.savedAt+' (otázka '+(saved.cur+1)+'/'+qs.length+'). Pokračovať?')){
+    cur=saved.cur;scr=saved.scr;ans=false;tot=saved.tot||0;answers=saved.answers||[];
+  } else {
+    cur=0;scr=0;ans=false;tot=0;answers=[];
+    try{localStorage.removeItem(saveKey);}catch(e){}
+  }
+  window._saveKey=saveKey;
   clearInterval(tT);clearInterval(tTot);
   showPage('page-quiz');
   elStyle('qs','display','flex');
@@ -1849,8 +1872,8 @@ function showQ(){
   elSet('fb','className','fbar');
   elSet('fb','textContent','');
   // Zobraziť/skryť Ukončiť kvíz
-  var endBtn=el('btn-end-quiz');
-  if(endBtn)endBtn.style.display=(sub&&sub.isMat)?'none':'inline-block';
+  var saveBtn=el('btn-save-quiz');
+  if(saveBtn)saveBtn.style.display=(sub&&sub.isMat)?'none':'inline-block';
   // Maturitný test — navigácia
   if(sub && sub.isMat){
     var isLast=cur+1>=sub.qs.length;
@@ -2238,6 +2261,8 @@ function retryWrong(){
 
 function showScore(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  // Vymaž uložený stav po dokončení
+  if(window._saveKey){try{localStorage.removeItem(window._saveKey);}catch(e){}window._saveKey=null;}
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
   // Ulož do histórie
   var now = new Date();
@@ -2319,7 +2344,7 @@ function goToPortal(){
   var matBar4=el('mat-pips-bar');if(matBar4)matBar4.style.display='none';
   elSet('pips','innerHTML','');elSet('pips-regular','innerHTML','');
   document.querySelectorAll('.ctb').forEach(function(b){b.style.display='';});
-  var endBtn2=el('btn-end-quiz');if(endBtn2)endBtn2.style.display='none';
+  var saveBtn2=el('btn-save-quiz');if(saveBtn2)saveBtn2.style.display='none';
   showPage('page-portal');
   updateAuthUI();renderPortal();renderHistory();renderReminders();
   var hh=el('hhero-wrap');if(hh)hh.style.display=hasAccess('v')?'none':'flex';
