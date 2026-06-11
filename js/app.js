@@ -2365,7 +2365,8 @@ fetch('data/sjl_2010.json')
 // Placeholder roky - pridávajú sa postupne
 // addMat('sjl', 2011, [...]);  // pridaj po nahraní PDF
 // addMat('sjl', 2012, [...]);
-// addMat('ang', 2010, [...]);
+// addMat('ang-b1', 2010, [...]);
+// addMat('ang-b2', 2010, [...]);
 // addMat('mat', 2010, [...]);
 
 // ── MATURITNE TESTY UI ──
@@ -2391,7 +2392,7 @@ function renderMatSection(){
   if(!tabs)return;
   var preds=Object.keys(MAT_DB);
   tabs.innerHTML=preds.map(function(p){
-    var nm={sjl:'SJL',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'};
+    var nm={sjl:'SJL',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG','ang-b1':'ANG B1','ang-b2':'ANG B2',dej:'DEJ'};
     var oc='setMatPredmet(\'' +p+ '\')';
     return '<div class="mat-tab'+(p===matPredmet?' active':'')+'" onclick="'+oc+'">'+(nm[p]||p.toUpperCase())+'</div>';
   }).join('');
@@ -2720,7 +2721,8 @@ var lwMatPred = null;
 var lwMatRok = null;
 var MAT_PREDS = [
   {id:'sjl', icon:'📝', name:'SJL'},
-  {id:'ang', icon:'🇬🇧', name:'ANG'},
+  {id:'ang-b1', icon:'🇬🇧', name:'ANG B1'},
+  {id:'ang-b2', icon:'🇬🇧', name:'ANG B2'},
   {id:'mat', icon:'🔢', name:'MAT'}
 ];
 var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
