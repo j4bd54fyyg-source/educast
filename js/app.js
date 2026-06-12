@@ -2762,8 +2762,7 @@ var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022
 
 function lwMatWizHTML(){
   return '<button style="font-size:11px;font-weight:500;color:#1D9E75;background:#0a2a1e;border:0.5px solid #1D9E7555;border-radius:20px;cursor:pointer;padding:5px 12px;font-family:inherit;margin-bottom:10px" onclick="navBack()">← Späť na predmety</button>'
-    +'<p style="font-size:11px;color:#AFA9EC;margin:0 0 8px">Maturitné testy · Vyber predmet:</p>'
-    +'<div class="mat-wiz-grid" id="lw-mat-pred-grid"></div>'
+    +'<div id="lw-mat-pred-grid"></div>'
     +'<div id="lw-mat-rok-wrap" style="display:none">'
     +'<p style="font-size:11px;color:#AFA9EC;margin:0 0 8px">Vyber rok:</p>'
     +'<div class="mat-rok-grid" id="lw-mat-rok-grid"></div>'
@@ -2774,16 +2773,20 @@ function renderLwMatWiz(){
   var pg = document.getElementById('lw-mat-pred-grid');
   if(!pg) return;
   var free = !hasAccess('v');
-  pg.innerHTML = MAT_PREDS.map(function(p){
-    var sel = lwMatPred === p.id;
-    var hasData = MAT_DB[p.id] && Object.keys(MAT_DB[p.id]).length > 0;
-    var onclick = free ? 'showPaywall()' : 'lwMatSelPred(\'' +p.id+ '\')';
-    return '<div class="mat-wiz-pred'+(sel?' sel':'')+(free?' locked-card':'')+'" onclick="'+onclick+'" style="position:relative">'
-      +(free?'<div style="position:absolute;top:4px;right:6px;font-size:10px">🔒</div>':'')
-      +'<div class="mat-wiz-pred-icon">'+p.icon+'</div>'
-      +'<div class="mat-wiz-pred-name">'+p.name+'</div>'
-      +(hasData?'<div style="font-size:9px;color:#7F77DD;margin-top:2px">'+Object.keys(MAT_DB[p.id]).length+' testov</div>':'<div style="font-size:9px;color:#555;margin-top:2px">čoskoro</div>')
-      +'</div>';
+  pg.innerHTML = MAT_CATS.map(function(cat){
+    var predsHTML = cat.preds.map(function(p){
+      var sel = lwMatPred === p.id;
+      var hasData = MAT_DB[p.id] && Object.keys(MAT_DB[p.id]).length > 0;
+      var onclick = free ? 'showPaywall()' : 'lwMatSelPred(\'' +p.id+ '\')';
+      return '<div class="mat-wiz-pred'+(sel?' sel':'')+(free?' locked-card':'')+'" onclick="'+onclick+'" style="position:relative">'
+        +(free?'<div style="position:absolute;top:4px;right:6px;font-size:10px">🔒</div>':'')
+        +'<div class="mat-wiz-pred-icon">'+p.icon+'</div>'
+        +'<div class="mat-wiz-pred-name">'+p.name+'</div>'
+        +(hasData?'<div style="font-size:9px;color:#1D9E75;margin-top:2px">'+Object.keys(MAT_DB[p.id]).length+' testov</div>':'<div style="font-size:9px;color:#555;margin-top:2px">čoskoro</div>')
+        +'</div>';
+    }).join('');
+    return '<p style="font-size:10px;font-weight:600;color:#888;letter-spacing:0.08em;text-transform:uppercase;margin:10px 0 6px">'+cat.label+'</p>'
+      +'<div class="mat-wiz-grid">'+predsHTML+'</div>';
   }).join('');
   // Ak FREE - zobraz aj roky ale zamknuté
   if(free){
