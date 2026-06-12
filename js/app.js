@@ -2367,6 +2367,20 @@ fetch('data/sjl_2010.json')
 // addMat('sjl', 2012, [...]);
 // addMat('ang-b1', 2010, [...]);
 // addMat('ang-b2', 2010, [...]);
+// addMat('nem-b1', 2010, [...]);
+// addMat('nem-b2', 2010, [...]);
+// addMat('spj-b1', 2010, [...]);
+// addMat('spj-b2', 2010, [...]);
+// addMat('ruj-b1', 2010, [...]);
+// addMat('ruj-b2', 2010, [...]);
+// addMat('frj-b1', 2010, [...]);
+// addMat('frj-b2', 2010, [...]);
+// addMat('taj-b1', 2010, [...]);
+// addMat('taj-b2', 2010, [...]);
+// addMat('mjl', 2010, [...]);
+// addMat('ujl', 2010, [...]);
+// addMat('sjsl', 2010, [...]);
+// addMat('mat', 2010, [...]);
 // addMat('mat', 2010, [...]);
 
 // ── MATURITNE TESTY UI ──
@@ -2392,7 +2406,7 @@ function renderMatSection(){
   if(!tabs)return;
   var preds=Object.keys(MAT_DB);
   tabs.innerHTML=preds.map(function(p){
-    var nm={sjl:'SJL',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG','ang-b1':'ANG B1','ang-b2':'ANG B2',dej:'DEJ'};
+    var nm={sjl:'SJL',mjl:'MJL',ujl:'UJL',sjsl:'SJSL','ang-b1':'ANG B1','ang-b2':'ANG B2','nem-b1':'NEM B1','nem-b2':'NEM B2','spj-b1':'ŠPJ B1','spj-b2':'ŠPJ B2','ruj-b1':'RUJ B1','ruj-b2':'RUJ B2','frj-b1':'FRJ B1','frj-b2':'FRJ B2','taj-b1':'TAJ B1','taj-b2':'TAJ B2',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'};
     var oc='setMatPredmet(\'' +p+ '\')';
     return '<div class="mat-tab'+(p===matPredmet?' active':'')+'" onclick="'+oc+'">'+(nm[p]||p.toUpperCase())+'</div>';
   }).join('');
@@ -2720,10 +2734,23 @@ function lwSelectMaturita(){
 var lwMatPred = null;
 var lwMatRok = null;
 var MAT_PREDS = [
-  {id:'sjl', icon:'📝', name:'SJL'},
+  {id:'sjl',    icon:'📝', name:'SJL'},
+  {id:'mjl',    icon:'🇭🇺', name:'MJL'},
+  {id:'ujl',    icon:'🇺🇦', name:'UJL'},
+  {id:'sjsl',   icon:'📖', name:'SJSL'},
   {id:'ang-b1', icon:'🇬🇧', name:'ANG B1'},
   {id:'ang-b2', icon:'🇬🇧', name:'ANG B2'},
-  {id:'mat', icon:'🔢', name:'MAT'}
+  {id:'nem-b1', icon:'🇩🇪', name:'NEM B1'},
+  {id:'nem-b2', icon:'🇩🇪', name:'NEM B2'},
+  {id:'spj-b1', icon:'🇪🇸', name:'ŠPJ B1'},
+  {id:'spj-b2', icon:'🇪🇸', name:'ŠPJ B2'},
+  {id:'ruj-b1', icon:'🇷🇺', name:'RUJ B1'},
+  {id:'ruj-b2', icon:'🇷🇺', name:'RUJ B2'},
+  {id:'frj-b1', icon:'🇫🇷', name:'FRJ B1'},
+  {id:'frj-b2', icon:'🇫🇷', name:'FRJ B2'},
+  {id:'taj-b1', icon:'🇮🇹', name:'TAJ B1'},
+  {id:'taj-b2', icon:'🇮🇹', name:'TAJ B2'},
+  {id:'mat',    icon:'🔢', name:'MAT'}
 ];
 var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
 
