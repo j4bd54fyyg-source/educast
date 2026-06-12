@@ -2573,6 +2573,9 @@ function lwChooseLevel(l){
 function lwGoBackToLevelSelect(){
   lwChosenLevel = null;
   lwSubj = null; lwRoc = null; lwMatPred = null; lwMatRok = null;
+  // Obnov prepínač Test/Súťaž
+  var modeToggle = document.querySelector('#lmd-t');
+  if(modeToggle && modeToggle.parentElement) modeToggle.parentElement.style.display = '';
   var ls = document.getElementById('lv-select-screen');
   var ws = document.getElementById('lv-wizard-screen');
   if(ls) ls.style.display = 'block';
@@ -2715,6 +2718,9 @@ function lwSelectMaturita(){
   // Zobraz maturitny wizard priamo na landing
   document.getElementById('lw-step1').style.display = 'none';
   document.getElementById('lw-step2').style.display = 'none';
+  // Skryj prepínač Test/Súťaž — v maturite nemá zmysel
+  var modeToggle = document.querySelector('#lmd-t');
+  if(modeToggle && modeToggle.parentElement) modeToggle.parentElement.style.display = 'none';
   var mw = document.getElementById('lw-mat-wiz');
   if(mw){ mw.style.display = 'block'; }
   else {
@@ -2849,6 +2855,9 @@ function lwMatBack(){
 
 function lwBack(){
   lwSubj = null; lwRoc = null; lwMatPred = null; lwMatRok = null;
+  // Obnov prepínač Test/Súťaž
+  var modeToggle = document.querySelector('#lmd-t');
+  if(modeToggle && modeToggle.parentElement) modeToggle.parentElement.style.display = '';
   document.getElementById('lw-step1').style.display = 'block';
   document.getElementById('lw-step2').style.display = 'none';
   var mw = document.getElementById('lw-mat-wiz');
