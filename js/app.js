@@ -2739,25 +2739,44 @@ function lwSelectMaturita(){
 
 var lwMatPred = null;
 var lwMatRok = null;
-var MAT_PREDS = [
-  {id:'sjl',    icon:'📝', name:'SJL'},
-  {id:'mjl',    icon:'🇭🇺', name:'MJL'},
-  {id:'ujl',    icon:'🇺🇦', name:'UJL'},
-  {id:'sjsl',   icon:'📖', name:'SJSL'},
-  {id:'ang-b1', icon:'🇬🇧', name:'ANG B1'},
-  {id:'ang-b2', icon:'🇬🇧', name:'ANG B2'},
-  {id:'nem-b1', icon:'🇩🇪', name:'NEM B1'},
-  {id:'nem-b2', icon:'🇩🇪', name:'NEM B2'},
-  {id:'spj-b1', icon:'🇪🇸', name:'ŠPJ B1'},
-  {id:'spj-b2', icon:'🇪🇸', name:'ŠPJ B2'},
-  {id:'ruj-b1', icon:'🇷🇺', name:'RUJ B1'},
-  {id:'ruj-b2', icon:'🇷🇺', name:'RUJ B2'},
-  {id:'frj-b1', icon:'🇫🇷', name:'FRJ B1'},
-  {id:'frj-b2', icon:'🇫🇷', name:'FRJ B2'},
-  {id:'taj-b1', icon:'🇮🇹', name:'TAJ B1'},
-  {id:'taj-b2', icon:'🇮🇹', name:'TAJ B2'},
-  {id:'mat',    icon:'🔢', name:'MAT'}
+var MAT_CATS = [
+  {
+    id: 'lit',
+    label: 'Vyučovacie jazyky a literatúra',
+    preds: [
+      {id:'sjl',  icon:'📝', name:'SJL'},
+      {id:'mjl',  icon:'🇭🇺', name:'MJL'},
+      {id:'ujl',  icon:'🇺🇦', name:'UJL'},
+      {id:'sjsl', icon:'📖', name:'SJSL'}
+    ]
+  },
+  {
+    id: 'cj',
+    label: 'Cudzie jazyky',
+    preds: [
+      {id:'ang-b1', icon:'🇬🇧', name:'ANG B1'},
+      {id:'ang-b2', icon:'🇬🇧', name:'ANG B2'},
+      {id:'nem-b1', icon:'🇩🇪', name:'NEM B1'},
+      {id:'nem-b2', icon:'🇩🇪', name:'NEM B2'},
+      {id:'spj-b1', icon:'🇪🇸', name:'ŠPJ B1'},
+      {id:'spj-b2', icon:'🇪🇸', name:'ŠPJ B2'},
+      {id:'ruj-b1', icon:'🇷🇺', name:'RUJ B1'},
+      {id:'ruj-b2', icon:'🇷🇺', name:'RUJ B2'},
+      {id:'frj-b1', icon:'🇫🇷', name:'FRJ B1'},
+      {id:'frj-b2', icon:'🇫🇷', name:'FRJ B2'},
+      {id:'taj-b1', icon:'🇮🇹', name:'TAJ B1'},
+      {id:'taj-b2', icon:'🇮🇹', name:'TAJ B2'}
+    ]
+  },
+  {
+    id: 'mat',
+    label: 'Matematika',
+    preds: [
+      {id:'mat', icon:'🔢', name:'MAT'}
+    ]
+  }
 ];
+var MAT_PREDS = MAT_CATS.reduce(function(acc, cat){ return acc.concat(cat.preds); }, []);
 var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
 
 function lwMatWizHTML(){
