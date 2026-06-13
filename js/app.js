@@ -2905,6 +2905,7 @@ function lwMatSelPred(id){
   // Zobraz roky
   var rw = document.getElementById('lw-mat-rok-wrap');
   if(rw) rw.style.display = 'block';
+  setTimeout(function(){ if(rw) rw.scrollIntoView({behavior:'smooth', block:'start'}); }, 50);
   var rg = document.getElementById('lw-mat-rok-grid');
   if(!rg) return;
   rg.innerHTML = MAT_ROKY.map(function(r){
