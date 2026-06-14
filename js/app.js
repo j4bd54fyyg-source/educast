@@ -2390,7 +2390,6 @@ fetch('data/ujl_2010.json')
   .then(function(r){return r.json();})
   .then(function(qs){addMat('ujl',2010,qs);})
   .catch(function(e){console.error('Chyba načítania UJL 2010:',e);});
-// addMat('sjsl', 2010, [...]);
 // addMat('mat', 2010, [...]);
 // addMat('mat', 2010, [...]);
 
@@ -2417,7 +2416,7 @@ function renderMatSection(){
   if(!tabs)return;
   var preds=Object.keys(MAT_DB);
   tabs.innerHTML=preds.map(function(p){
-    var nm={sjl:'SJL',mjl:'MJL',ujl:'UJL',sjsl:'SJSL','ang-b1':'ANG B1','ang-b2':'ANG B2','nem-b1':'NEM B1','nem-b2':'NEM B2','spj-b1':'ŠPJ B1','spj-b2':'ŠPJ B2','ruj-b1':'RUJ B1','ruj-b2':'RUJ B2','frj-b1':'FRJ B1','frj-b2':'FRJ B2','taj-b1':'TAJ B1','taj-b2':'TAJ B2',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'};
+    var nm={sjl:'SJL',mjl:'MJL',ujl:'UJL','ang-b1':'ANG B1','ang-b2':'ANG B2','nem-b1':'NEM B1','nem-b2':'NEM B2','spj-b1':'ŠPJ B1','spj-b2':'ŠPJ B2','ruj-b1':'RUJ B1','ruj-b2':'RUJ B2','frj-b1':'FRJ B1','frj-b2':'FRJ B2','taj-b1':'TAJ B1','taj-b2':'TAJ B2',mat:'MAT',bio:'BIO',che:'CHE',fyz:'FYZ',ang:'ANG',dej:'DEJ'};
     var oc='setMatPredmet(\'' +p+ '\')';
     return '<div class="mat-tab'+(p===matPredmet?' active':'')+'" onclick="'+oc+'">'+(nm[p]||p.toUpperCase())+'</div>';
   }).join('');
@@ -2769,7 +2768,6 @@ var MAT_CATS = [
       {id:'sjl',  icon:'📝', name:'SJL'},
       {id:'mjl',  icon:'🇭🇺', name:'MJL'},
       {id:'ujl',  icon:'🇺🇦', name:'UJL'},
-      {id:'sjsl', icon:'📖', name:'SJSL'}
     ]
   },
   {
