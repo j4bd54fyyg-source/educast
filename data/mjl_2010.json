@@ -1,0 +1,818 @@
+[
+  {
+    "id": 1,
+    "ctx": "1. számú idézet – Kazinczy Ferenc: Ortológus és neológus nálunk és más nemzeteknél",
+    "ctxText": "1. számú idézet\n\nKazinczy Ferenc: Ortológus és neológus nálunk és más nemzeteknél\n(részletek)\n\n– Jól és szépen az ír, aki tüzes ortológus és tüzes neológus egyszersmind, s egyességben és ellenkezésben van önmagával. …\n\nA mi nyelvünk anya, leány s ismert rokon nélkül úgy áll a több nyelvek között, mint a főnix az ég madarainak számában; s emiatt, s azért is, hogy minden új nyelvek közt maga ez zengheti el egész tisztaságában a görög és a római lant mennyei zengzeteit, valamint azért, hogy ez a görög nyelv bájait, a rómainak méltóságát, az olasznak hevét, a franciának könnyűségét, az angolnak és németnek erejét igen nagy mértékben már most is utolérheti, méltó, hogy ha bennünket a halhatatlanok végzése valaha egy idegen győző járma alá hajtana is, azt ez a győző, ha nem barbarus, védelembe vegye, fenntartsa, virágzásra juttassa; s mi ezt a nyelvet szeretni tartozánk, ha ily szép és a maga nemében egyetlen volna is, mert a mienk.",
+    "q": "Az 1. számú idézetből kiindulva döntse el, hogy az Ortológusok és neológusok nálunk és más nemzeteknél című tanulmányát milyen szándékkal írta Kazinczy!",
+    "opts": [
+      "Kompromisszumos állásponttal, a hagyományőrzést és az újítást egyensúlyba hozva a nyelvújítási harcot kívánta lezárni.",
+      "Kompromisszumokat nem tűrve elvetett benne minden nyelvi maradiságot, ami akadályozta munkájában.",
+      "Szembe állította benne a nyelvújítók haladó gondolatait a nyelvújítást ellenzők maradiságával.",
+      "Szembe állította benne a hazai és a más nemzeteknél folyó nyelvújítási harc sikereit, illetve nehézségeit, sikertelenségeit."
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Kazinczy kompromisszumos álláspontot képviselt: a hagyományőrzést és az újítást egyensúlyba hozva kívánta lezárni a nyelvújítási harcot."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Az alábbi lehetőségek közül válassza ki azt a szóalkotási módot, amelyet nem alkalmaztak a nyelvújítási mozgalom során!",
+    "opts": [
+      "elavult szavak felelevenítése",
+      "nyelvjárási szavak irodalmivá tétele",
+      "szóösszetétel",
+      "jelentésfejlesztés"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A jelentésfejlesztés nem volt jellemző szóalkotási mód a nyelvújítási mozgalom során."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Állapítsa meg, hogy az alábbi műfajok közül melyik nem jellemző Kazinczy életművében!",
+    "opts": [
+      "epigramma",
+      "műfordítás",
+      "eposz",
+      "episztola"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Az eposz nem jellemző Kazinczy életművére – ő főleg epigrammát, műfordítást és episztolát írt."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy mire utalt Kazinczy az 1. számú idézetben olvasható „főnix\" hasonlattal!",
+    "opts": [
+      "Anyanyelvünk a többi nyelv között elvész, elhamvad, mint tűzben a mitológiai főnix madár, mivel nincs rokona, támasza a nagy múltú nyelvek között.",
+      "Anyanyelvünk a mitológiai főnix madárhoz hasonlóan külső segítség hiányában elég, elveszik örökre az őt körülvevő népek nyelvei között.",
+      "Anyanyelvünk sosem fogja elérni a görög, olasz, francia nyelv szintjét, de nekünk így is szeretni kötelességünk, ha főnix módjára égünk is el.",
+      "Anyanyelvünk főnix módjára születik újjá, más nyelvek szintjére is fölér, s ha netán idegen hatalom alá kerülnénk, az sem tiporna el, mert mi szeretve vigyázunk rá."
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A főnix-hasonlat arra utal, hogy a magyar nyelv újjászületik, fölér más nyelvek szintjére, és még idegen uralom alatt sem vész el, mert szeretettel óvják."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Válassza ki a Batsányi, Kazinczy és Baróti Szabó Dávid által Kassán alapított első magyar irodalmi lapot, amelyet 1788-tól 1792-ig adtak ki!",
+    "opts": [
+      "Magyar Museum",
+      "Magyar Kurír",
+      "Magyar Hírmondó",
+      "Orpheus"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A Magyar Museum volt az első magyar irodalmi lap, amelyet Kassán alapítottak 1788-ban."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg Kazinczy 1811-ben kiadott epigrammagyűjteményét, amellyel elindította a nyelvújítást!",
+    "a": "Tövisek és virágok",
+    "type": "short",
+    "exp": "Kazinczy 1811-es epigrammagyűjteménye: Tövisek és virágok."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg azt a publicisztikai műfajt, amelyben az ortológusok a Mondolatot írták!",
+    "a": "röpirat / gúnyirat / pamflet",
+    "type": "short",
+    "exp": "A Mondolat műfaja: röpirat (gúnyirat, pamflet)."
+  },
+  {
+    "id": 8,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Fogalmazza meg 2-3 szóval, hogy kik voltak a neológusok ellenfelei: az ortológusok!",
+    "a": "a nyelvújítás ellenfelei / ellenzői / elutasítói",
+    "type": "short",
+    "exp": "Az ortológusok a nyelvújítás ellenzői, ellenfelei, elutasítói voltak."
+  },
+  {
+    "id": 9,
+    "ctx": "2. számú idézet – publicisztikai szöveg (www.ujszo.com)",
+    "ctxText": "2. számú idézet\n\nCenzúrával vádolta meg egy görög emberi jogi szervezet a júniusban megnyílt új Akropolisz múzeumot, mivel szerintük az kivágta Costa-Gavras egyik animációs videójának azt a 12 másodperces jelenetét, melyben korai keresztények vandál pusztítást végeznek az athéni Parthenónban…. A Parthenón szobrainak elrablását bemutató rövid jelenet az egyik bizonyítéka annak, hogy miként alakult át az ősi pogány templom kereszténységet hirdető bazilikává még az időszámításunk szerinti 4. században. …Az athéni Akropoliszon álló templom 2500 éves története során már számos szerencsétlen eseményt megélt, ám az antik szobrok elrablásának epizódja a kevésbé ismertek közé tartozik a görögök körében. A márványtemplomot súlyos károk érték a velenceiek 1687-es ostroma idején, és a hiányzó szobrok jelentős részét még a 19. század elején szállították el Londonba az ismert brit diplomata, Lord Elgin utasítására. Az Akropolisz múzeum visszautasította a cenzúrára vonatkozó vádakat.\n\n(www.ujszo.com)",
+    "q": "Állapítsa meg, hogy miről szól a Costa-Gavras videójából kivágott 12 másodperces jelenet!",
+    "opts": [
+      "arról, hogy egy brit diplomata Londonba szállíttatta a Parthenón szobrainak egy részét",
+      "arról, hogy a korai keresztények elrabolták az antik szobrok egy részét",
+      "arról, hogy a velenceiek elhurcolták a templom szobrait",
+      "arról, hogy a vandálok elrabolták a Parthenón szobrait"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "A kivágott jelenet a korai keresztények vandál pusztítását mutatja be a Parthenónban."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy a történelem folyamán a Parthenón templomot ért szerencsétlen események közül a görögök számára melyik a legkevésbé ismert!",
+    "opts": [
+      "a velenceiek 17. századi ostroma idején okozott károk",
+      "a templom szobrai egy részének Angliába szállítása",
+      "a korai keresztények vandál pusztítása",
+      "ez nem derül ki az idézetből"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "A szöveg szerint az antik szobrok elrablásának epizódja a kevésbé ismertek közé tartozik a görögök körében."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Határozza meg az időpontját a videóból kivágott jelenetben szereplő eseménynek, a szobrok elrablásának!",
+    "opts": [
+      "kb. 2500 évvel ezelőtt",
+      "az 1687-es ostrom alatt",
+      "az időszámításunk szerinti 4. században",
+      "a 19. században"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "A szobrok elrablása az időszámításunk szerinti 4. században történt (pogány templomból keresztény bazilika lett)."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "q": "A 2. számú idézet egy szlovákiai magyar napilapból származik. Döntse el, hogy az alábbi irodalmi lapok közül melyik nem szlovákiai magyar sajtótermék!",
+    "opts": [
+      "Kalligram",
+      "Élet és Irodalom",
+      "Irodalmi Szemle",
+      "Szőrös Kő"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Az Élet és Irodalom magyarországi lap, nem szlovákiai magyar sajtótermék."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Határozza meg a 2. számú idézetben található „cenzúra\" szó magyar megfelelőjét!",
+    "opts": [
+      "alkotások, művek politikai szempontú előzetes vagy utólagos felülvizsgálása",
+      "alkotások, művek engedély nélküli, utólagos megvágása, megcsonkítása",
+      "alkotások, művek megjelenésének megakadályozása",
+      "alkotások, művek politikai alapon való betiltása"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A cenzúra: alkotások politikai szempontú előzetes vagy utólagos felülvizsgálása."
+  },
+  {
+    "id": 14,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja le rövidítve a 2. számú idézetben szereplő „időszámításunk szerinti\" kapcsolatot!",
+    "a": "i. sz.",
+    "type": "short",
+    "exp": "Az „időszámításunk szerinti\" rövidítése: i. sz."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja le betűvel a 2. számú idézetben szereplő „2500\" számot!",
+    "a": "kétezer-ötszáz",
+    "type": "short",
+    "exp": "2500 betűvel: kétezer-ötszáz (vagy kettőezer-ötszáz)."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Válassza el minden lehetséges helyen a „Parthenón\" (ejtsd Partenón) szót!",
+    "a": "Par-the-nón",
+    "type": "short",
+    "exp": "A Parthenón szótagolása: Par-the-nón."
+  },
+  {
+    "id": 17,
+    "ctx": "3. számú idézet – Petőfi Sándor: A XIX. század költői",
+    "ctxText": "3. számú idézet\n\nPetőfi Sándor: A XIX. század költői\n(részletek)\n\nNe fogjon senki könnyelműen\nA húrok pengetésihez!\nNagy munkát vállal az magára,\nKi most kezébe lantot vesz.\nHa nem tudsz mást, mint eldalolni\nSaját fájdalmad s örömed:\nNincs rád szüksége a világnak,\nS ezért a szent fát félretedd.\n\n…..\n\nÉs addig? addig nincs megnyugvás,\nAddig folyvást küszködni kell. –\nTalán az élet, munkáinkért,\nNem fog fizetni semmivel,\nDe a halál majd szemeinket\nSzelíd, lágy csókkal zárja be,\nS virágkötéllel, selyempárnán\nBocsát le a föld mélyibe.",
+    "q": "Állapítsa meg, hogy a 3. számú idézet első versszakának utolsó sorában olvasható „szent fa\" kifejezéssel mire utalhatott a költő!",
+    "opts": [
+      "a jelképes ősi szent fa megtartó erejére",
+      "az ókori húros hangszerre, a lantra",
+      "versfaragásra utaló eszközre",
+      "fából készült pásztorsípra"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "A „szent fa\" a lantra utal – az előző sorban említett lanttal függ össze mint az ősi húros hangszer."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy Petőfi milyen feladatot jelölt ki magának és költőtársainak A XIX. század költői című versben!",
+    "opts": [
+      "a prófétaszerep vállalását",
+      "a népies költészet kialakítását",
+      "a nép kegyetlen sorsának megéneklését",
+      "a romantikus emberideál megvalósítását"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Petőfi a prófétaszerepet jelölte ki a költők számára: vezessék a népet a szabadság felé."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sorolja be Petőfi A XIX. század költői című költeményét a megfelelő kategóriába!",
+    "opts": [
+      "ars poetica",
+      "helyzetdal",
+      "politikai vers",
+      "csatadal"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A XIX. század költői Petőfi ars poeticája – a költői hivatásról szóló programvers."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Jelölje meg azt a választ, amelyben A XIX. század költői című vers zárógondolatát látja megfogalmazva!",
+    "opts": [
+      "a szabadság ára a költők önfeláldozása, hősies küzdelme és elkerülhetetlen halála",
+      "a cél elérése bizonyos, ám ideje bizonytalan, de küzdeni kell érte akkor is",
+      "a küzdelem az egyetlen célkitűzés, amiért a költőnek meg kell halnia",
+      "csak a halálban, az élet feláldozásával érhető el a végső dicsőség"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "A vers zárógondolata: a cél (szabadság) elérése bizonyos, de ideje bizonytalan – küzdeni kell érte akkor is, ha az életünkkel fizetünk."
+  },
+  {
+    "id": 21,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy Petőfi melyik művében formázza meg legerőteljesebben a romantikus emberideált!",
+    "opts": [
+      "Az apostol",
+      "A XIX. század költői",
+      "Egy gondolat bánt engemet",
+      "Nemzeti dal"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Az Egy gondolat bánt engemet formázza meg legerőteljesebben Petőfi romantikus emberideálját."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Petőfi pályakezdésére jellemzőek voltak az olyan versek, amelyekben a mindennapi élet valamely tipikus alakját, helyzetét vagy jelenetét ábrázolta. Nevezze meg azt a líra és epika határán levő verses műfajt!",
+    "a": "életkép / zsánerkép / helyzetdal",
+    "type": "short",
+    "exp": "Ez a műfaj az életkép (zsánerkép, helyzetdal) – líra és epika határán álló verses műfaj."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Petőfi többek közt A XIX. század költői, valamint a Sors, nyiss nekem tért című versek megírásával tört ki a költői válságából. Nevezze meg a versciklust, amely az említett válság ideje alatt íródott!",
+    "a": "Felhők",
+    "type": "short",
+    "exp": "A válság idején született versciklus: Felhők (1845–46)."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg azt az elbeszélő költeményt, amelynek a főhőse Petőfi alteregójának, költői hasonmásának tekinthető!",
+    "a": "Az apostol",
+    "type": "short",
+    "exp": "Petőfi alteregójának tekinthető főhős Az apostol (1848) című elbeszélő költeményben szerepel."
+  },
+  {
+    "id": 25,
+    "ctx": "4. számú idézet – Kelemen Csilla: A moldvai csángókról",
+    "ctxText": "4. számú idézet\n\nA moldvai csángó identitást máig döntően határozza meg az a tény, hogy ez az egyetlen olyan etnikai csoport, amely a XIX. század első felében kimaradt azokból a nagy történelmi folyamatokból, amelyek a modern polgári magyar nemzetet megteremtették. …Szembeötlő például, hogy a magyar nyelvnek a moldvai csángók mindenekelőtt pragmatikus, kommunikatív célokat szolgáló funkciót tulajdonítanak, azaz a nyelvre nem úgy tekintenek, mint közösségformáló szimbolikus tényezőre. … A moldvai csángók közösségi identitástudatának alakulásában tehát a nyelv nem játszik akkora szerepet, mint a Kárpát-medencén belül élő magyarság esetében. A csángó csoportidentitás és a nyelvi identitás között nincs szoros kapcsolat. Önmagukhoz legközelebb állónak a többi csángó falvak katolikus lakosságát érzik, függetlenül attól, hogy ezek megőrizték-e eredeti nyelvüket vagy sem. A nyelvhez való szimbolikus viszonyulási mód helyét mindenekelőtt a közös vallás, továbbá a közös életmódbeli körülmények veszik át.\n\n(Kelemen Csilla, Élet és tudomány, 2008)",
+    "q": "Állapítsa meg a 4. számú idézet alapján, hogyan tekintenek a moldvai csángók a magyar nyelvre!",
+    "opts": [
+      "nagyon erős közösségformáló tényezőnek tartják",
+      "vallásuk gyakorlásában van kizárólagos jelentősége",
+      "identitástudatuk alakításában játszik fontos szerepet",
+      "kommunikációt szolgáló funkcióját tartják elsődlegesnek"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A csángók pragmatikus, kommunikatív célokat tulajdonítanak a magyar nyelvnek – nem közösségformáló szimbolikus tényezőnek tekintik."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el a 4. számú idézetből kiindulva, hogy csoportidentitásuk alapján kit tartanak magukhoz legközelebb állóknak a csángók!",
+    "opts": [
+      "a magyarul beszélő egyéneket",
+      "a csángó falvak magyarul beszélő katolikus lakosságát",
+      "a csángó települések katolikus vallású lakosait tekintet nélkül a nyelvhasználatukra",
+      "valamennyi moldvai csángót függetlenül attól, hogy megőrizték-e a magyar nyelvet"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "A csángók a többi csángó falvak katolikus lakosságát tartják magukhoz legközelebb állóknak – függetlenül a nyelvhasználattól."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy az alábbi jellemzők közül melyik igaz a magyar nyelvre nézve!",
+    "opts": [
+      "a finnugor nyelvcsaládba tartozó agglutináló nyelv",
+      "a vogul nyelvcsaládba tartozó agglutináló nyelv",
+      "a finnugor nyelvcsaládba tartozó flektáló nyelv",
+      "a finnugor nyelvcsaládba tartozó izoláló nyelv"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A magyar nyelv a finnugor nyelvcsaládba tartozó agglutináló (ragozó) nyelv."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "A 4. számú idézetben szereplő tudományos cikk írott szöveg. Határozza meg, hogy az alábbi jellemzők közül melyik nem vonatkoztatható az írott szövegre!",
+    "opts": [
+      "gyors gondolkodást, azonnali szövegezést igényel",
+      "a kifejezőeszközök korlátozottabb körére épít",
+      "szabályos, megfontolt szerkesztés",
+      "időben és térben nem korlátozott"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A gyors, azonnali szövegezés a szóbeli kommunikáció sajátossága, nem az írott szövegé."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Idézze fel, hogy a magyarságnak mint etnikumnak mely csoportjába tartoznak a moldvai csángók!",
+    "opts": [
+      "egyikbe sem, mivel nem magyarok",
+      "a Magyarországon élők csoportjába",
+      "a világon szétszórtan élő szórványmagyarság egy csoportja",
+      "a Magyarországgal szomszédos országok magyarságának csoportjába"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A moldvai csángók a Magyarországgal szomszédos országok (Románia) magyarságához tartoznak."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja ki a predikatív szószerkezetet a 4. számú idézet alábbi mondatából!\nA csángó csoportidentitás és a nyelvi identitás között nincs szoros kapcsolat.",
+    "a": "nincs kapcsolat",
+    "type": "short",
+    "exp": "A predikatív szószerkezet: nincs kapcsolat (alany + állítmány)."
+  },
+  {
+    "id": 31,
+    "ctx": null,
+    "ctxText": null,
+    "q": "A lehető legpontosabban határozza meg a 4. számú idézet alábbi részletében a kiemelt szó szófaját!\n„A moldvai csángó identitást máig döntően határozza meg az a tény…\"",
+    "a": "mutató névmás / főnévi mutató névmás",
+    "type": "short",
+    "exp": "Az „az\" szó ebben a mondatban mutató névmás (főnévi mutató névmás)."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Állapítsa meg a lehető legpontosabban, hogy a mássalhangzók egymásra hatásának esetei közül melyik fedezhető fel a „határozza meg\" szóban!",
+    "a": "írásban jelölt teljes hasonulás / teljes hasonulás",
+    "type": "short",
+    "exp": "A „határozza\" szóban írásban jelölt teljes hasonulás figyelhető meg (határoz+za)."
+  },
+  {
+    "id": 33,
+    "ctx": "5. számú idézet – Márai Sándor: Halotti beszéd",
+    "ctxText": "5. számú idézet\\n\\nMárai Sándor: Halotti beszéd\\n(részletek)\\n\\nSzívverésünk titkos beszéd, álmunk zsiványóké,\\nA gyereknek Toldi-t olvasod és azt feleli: oké.\\nA pap már spanyolul morogja kopórsónk felett:\\n„A halál gyötrelmei körülvettek engemet!...”\\n\\nAz ohioi bányában megbicsaklik kezed,\\nA csákány koppan és lehull nevedről az ékezet.\\n\\n…..\\n\\nMi volt egy nép? Mi ezer év? Költészet és zene?\\nArany szava? … Rippli színe? Bartók vad szelleme?\\n„Az nem lehet, hogy annyi szív…” Maradj nyugodt. Lehet.\\nNagyhatalmak cserélnek majd hosszú üzenetet.\\n\\nTe hallgass és figyelj. Tudjad, már él a kis sakál,\\nMely afrikai sírodon tíz körmével kapál.",
+    "q": "Állapítsa meg, hogy mit fejez ki a költő az 5. számú idézet első két sorában!",
+    "opts": [
+      "a gyökereiket vesztett kivándorlók már csak a Toldiban látják megtartó erejüket",
+      "a külföldön élő magyarok csak titokban használhatják anyanyelvüket",
+      "a kivándorlók leszármazottai már elszakadtak anyanyelvüktől",
+      "az amerikai magyarok csak álmaikban térhetnek haza"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Az első két sor azt fejezi ki, hogy a kivándorlók leszármazottai már elszakadtak anyanyelvüktől (a gyerek Toldira azt mondja: „oké\")."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Az 5. számú idézetben Márai megemlíti Bartók nevét. Válassza ki azt a költőt, aki Bartók címmel írt verset!",
+    "opts": [
+      "Ady Endre",
+      "Illyés Gyula",
+      "Radnóti Miklós",
+      "József Attila"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Illyés Gyula írt Bartók címmel verset."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy Márai Sándor Halotti beszéd című költeményét milyen érzés, személyes tapasztalat ihlette!",
+    "opts": [
+      "a kivándorolt magyarok bűnbánó honvágya",
+      "az emigráns létből következő hazátlanság érzése",
+      "a hazájukat és az anyanyelvüket elhagyók éles kritikája",
+      "az emigráns magyarok elkerülhetetlen asszimilációjának bírálata"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Márai versét az emigráns létből következő hazátlanság érzése ihlette."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Kosztolányi Dezső Márai versével azonos című verset írt. Döntse el, hogy Kosztolányi mit hangsúlyozott az ő Halotti beszéd című versében!",
+    "opts": [
+      "az élet bárhol zajlik is, nem vehető el senki által",
+      "az élet véges, bele kell törődni ebbe a gondolatba",
+      "az élet egyedi, megismételhetetlen egyszeri csoda",
+      "az élet még akkor is kincs, ha azt hazánktól távol éljük"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Kosztolányi Halotti beszéde azt hangsúlyozza, hogy az élet egyedi, megismételhetetlen, egyszeri csoda."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Válassza ki az alábbi versek közül azt, amelyikből az 5. számú idézetben levő kiemelt betűs sor származik:\n„Az nem lehet, hogy annyi szív / Hiába onta vért, / S keservben annyi hű kebel / Szakadt meg a honért\"",
+    "opts": [
+      "Szózat",
+      "Himnusz",
+      "Nemzeti dal",
+      "A vén cigány"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Az idézet Vörösmarty Szózatából való."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg Márai Sándornak azt a két kötetből álló regényét, amelyben szülővárosa életéről, saját családjáról és a maga íróvá éréséről vallott!",
+    "a": "Egy polgár vallomásai",
+    "type": "short",
+    "exp": "Márai kétkötetes önéletrajzi regénye: Egy polgár vallomásai."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja le Arany Toldi-trilógiája harmadik részének pontos címét! Ügyeljen a helyesírásra!",
+    "a": "Toldi estéje",
+    "type": "short",
+    "exp": "A Toldi-trilógia harmadik része: Toldi estéje."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Márai és Kosztolányi Halotti beszéd című költeményüket a középkori Halotti Beszéd mintájára írták. Nevezze meg azt a kódexet, amelyben ezt a nyelvemléket megtalálták!",
+    "a": "Pray-kódex",
+    "type": "short",
+    "exp": "A Halotti Beszédet a Pray-kódexben találták meg."
+  },
+  {
+    "id": 41,
+    "ctx": "6. számú idézet – Ady Endre: Nekünk Mohács kell",
+    "ctxText": "6. számú idézet\n\nAdy Endre: Nekünk Mohács kell\n\nHa van Isten, ne könyörüljön rajta:\nVeréshez szokott fajta,\nCigány-népek langy szivű sihederje,\nVerje csak, verje, verje.\n\nHa van Isten, meg ne sajnáljon engem:\nÉn magyarnak születtem.\nSzent galambja nehogy zöld ágat hozzon,\nÜssön csak, ostorozzon.\n\nHa van Isten, földtől a fényes égig\nRángasson minket végig.\nNe legyen egy félpercnyi békességünk,\nMert akkor végünk, végünk.",
+    "q": "A 6. számú idézetből kiindulva indokolja meg, hogy a költő miért kér újra „Mohácsot\" a magyarságra!",
+    "opts": [
+      "mert az új generáció megkérdőjelezte Isten létezését, ezért kegyetlenül bűnhődnie kell",
+      "mert a magyarság nem él Istenfélő életet, megszegte az Istennel kötött ősi szövetséget",
+      "mert az új generáció elárulta ősei szellemiségét, s ezért kihívta Isten bosszús haragját",
+      "mert a magyarság elveszik, ha nem érik sorscsapások, amelyek ellen védekeznie kell"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Ady azért kér „Mohácsot\", mert a magyarság elveszik, ha nem érik sorscsapások, amelyek ellen fel kell ébrednie és védekezenie."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sorolja be Ady Nekünk Mohács kell című versét a megfelelő motívumkörbe!",
+    "opts": [
+      "istenes versek",
+      "magyarság-versek",
+      "forradalmi versek",
+      "élet-halál versek"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "A vers a magyarság-versek körébe tartozik – a magyar nép sorsával, önpusztításával foglalkozik."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Állapítsa meg, hogy miért nevezhette egy jeles irodalomtudós „fordított Himnusznak\" Ady fent idézett költeményét!",
+    "opts": [
+      "mert ez a vers nem „a magyar nép zivataros századairól\" szól, mint a Himnusz",
+      "mert ez a vers nem mutatja be a magyarság egész történelmét, mint a Himnusz",
+      "mert a Himnusztól eltérően ebben a versben követeli Isten segítségét a költő",
+      "mert a Himnusztól eltérően itt nem segítségért könyörög az Istenhez a költő"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A Himnuszban Kölcsey segítségért könyörög Istenhez, Adynál viszont éppen büntetést, csapást kér – ezért „fordított Himnusz\"."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, mire utal a költő a 6. számú idézet második és harmadik sorával!",
+    "opts": [
+      "a magyarság szolgalelkűségére, akaratgyengeségére",
+      "a magyarság állandó szenvedéskényszerére, önkínzására",
+      "a magyarság nyughatatlanságára, vándorlási kényszerére",
+      "a magyarság megbízhatatlanságára, meghunyászkodására"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A „veréshez szokott fajta\" a magyarság szolgalelkűségére, akaratgyengeségére utal."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Állapítsa meg, hogy Ady Nekünk Mohács kell című versét hogyan lehet a legtalálóbban jellemezni!",
+    "opts": [
+      "Ez a vers az önsirató, öndicsőítő magyarságkép kíméletlen kritikája.",
+      "Ez a vers a melldöngető, önpusztító magyarság legélesebb kritikája.",
+      "Ez a vers az önmarcangoló, önsajnálkozó fohászkodás kritikája.",
+      "Ez a vers a romantikus emberideál újjáélesztésének kritikája."
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A vers az önsirató, öndicsőítő magyarságkép kíméletlen kritikája – Ady ébreszteni akarja a magyarságot."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Fejezze ki egy szóval, hogy minek a szimbólumaként használta Ady a versben a Bibliából kölcsönzött alábbi sort:\n„Szent galambja nehogy zöld ágat hozzon,…\"",
+    "a": "béke / békesség / megbékélés / nyugalom",
+    "type": "short",
+    "exp": "A „zöld ág\" a béke, a megbékélés, a nyugalom szimbóluma (Noé galambja zöld ágat hozott)."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Állapítsa meg, hogy a 6. számú idézetben olvasható versben milyen rímfajta található!",
+    "a": "páros rím / páros (aa bb)",
+    "type": "short",
+    "exp": "A versben páros rím (aa bb) található."
+  },
+  {
+    "id": 48,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg azt a romantikus költőt, aki Mohács címmel írta megrázó erejű, hazafias költeményét, s akinek halála után tiszteletére költőtársai írói csoportosulást hoztak létre!",
+    "a": "Kisfaludy Károly",
+    "type": "short",
+    "exp": "Kisfaludy Károly írta a Mohács c. hazafias verset; halála után tiszteletére jött létre az Auróra-kör."
+  },
+  {
+    "id": 49,
+    "ctx": "7. számú idézet – publicisztikai szöveg (www.litera.hu)",
+    "ctxText": "7. számú idézet\n\nA hétköznapi használatból egyre inkább kiszorul a szerb cirill írás – derül ki a belgrádi sajtó cikkeiből. A hagyományos(nak mondható) írásjeleket a teljes mellőzéstől féltik híveik. A cirill írás híveinek legjobban az a tény fáj, hogy ma már az egyetemi tankönyvek zöme is latin írással jelenik meg. Mint mondják, a cirill írásmód kiszorulására nem elegendő indok az informatikai robbanás sem, hiszen a nagy hardver- és programgyártók meg tudták oldani, hogy termékeiket a csak a saját cirill írását alkalmazó Oroszországban és Bulgáriában is használhassák. Az Európai Unióban ugyancsak meg tudták oldani, hogy a bankjegyekre a csak Hellászban használt görög írással is rákerüljön az euró név. A régebbi írás védőinek jogi érvük is van: a szerb alkotmány kimondja, hogy Szerbiában a hivatalos nyelv a szerb és a hivatalos írás a cirill betűs. Ennek az érvelésnek az a gyengéje, hogy sem az üzleti élet, sem a sajtó nyelve, sem a tankönyveké nem minősül „hivatalosnak\". A cirillisták ellen hat még az is, hogy a hivatalos szerb helyesírási szabályzat kimondja: „nyelvünk standard írásai: a cirill és a latin.\"\n\n(www.litera.hu)",
+    "q": "Állapítsa meg, hogy kiket nevez a 7. számú idézet szerzője „cirillistáknak\"!",
+    "opts": [
+      "a cirill írást hivatalos írássá emelő rendelkezés megfogalmazóit",
+      "a Szerbiában kizárólag cirill betűket használók csoportját",
+      "az orosz és a bolgár, cirill betűt használó népességet",
+      "a cirill írás szerbiai híveit, védelmezőit"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "A „cirillisták\" a cirill írás szerbiai hívei, védelmezői."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "A 7. számú idézet egy internetes lap cikkének részlete. Állapítsa meg, hogy az alábbi jegyek közül melyik jellemző a publicisztikai stílusra!",
+    "opts": [
+      "idézetek, hivatkozások a forrásmű pontos megjelölésével",
+      "a többszörösen összetett mondatok túlsúlya",
+      "érzelmi hatást keltő eszközök használata",
+      "lineáris szövegszerkesztés"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "A publicisztikai stílusra jellemző az érzelmi hatást keltő eszközök használata."
+  },
+  {
+    "id": 51,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy a 7. számú idézet a publicisztikai stílus mely műfajába tartozik!",
+    "opts": [
+      "hír",
+      "riport",
+      "tudósítás",
+      "kommentár"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A szöveg hír műfajú – tényeket közöl egy aktuális eseményről."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Keresse meg azt az állítást, amely nem szerepel a cirill írás mellőzése ellen tiltakozók érvei között a 7. számú idézetben!",
+    "opts": [
+      "az informatikai cikkeket más országokban is igazítani tudták a cirill betűhasználathoz",
+      "Görögországban is megoldották a bankjegyek nem latin betűs feliratozását",
+      "az egyetemi tankönyvek elenyésző része jelenik meg latin írással",
+      "a szerb alkotmány szerint a hivatalos írás a cirill betűs"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "A szöveg azt mondja, hogy a tankönyvek ZÖME latin írással jelenik meg – nem elenyésző része. Ez nem a tiltakozók érve."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Válassza ki a 7. számú idézet alábbi szavai közül azt, amelyikben nem szerepel birtokos személyjel!",
+    "opts": [
+      "nyelve",
+      "tankönyveké",
+      "érvük",
+      "kiszorulása"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "A „tankönyveké\" szóban -é birtokjel van, nem pedig birtokos személyjel."
+  },
+  {
+    "id": 54,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Határozza meg, hogy a 7. számú idézetben szereplő „hat\" szó milyen jelentéstani kategóriába tartozik!",
+    "a": "azonos alakú szó",
+    "type": "short",
+    "exp": "A „hat\" szó azonos alakú szó (homonima): lehet számnév (6) és ige (hatni) is."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja le a 7. számú idézetben szereplő „Európai Unió\" tulajdonnév -s képzős alakját!",
+    "a": "európai uniós",
+    "type": "short",
+    "exp": "Európai Unió → európai uniós (kisbetűvel, mert melléknévképzős alak)."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Határozza meg a lehető legpontosabban, milyen típusú összetett mondat a 7. számú idézet alábbi mondata!\n„Az Európai Unióban ugyancsak meg tudták oldani, hogy a bankjegyekre a csak Hellászban használt görög írással is rákerüljön az euró név.\"",
+    "a": "tárgyi alárendelt mondat",
+    "type": "short",
+    "exp": "A mondat tárgyi alárendelt (hogy-os tárgyi mellékmondat)."
+  },
+  {
+    "id": 57,
+    "ctx": "8. számú idézet – Gogol: A köpönyeg",
+    "ctxText": "8. számú idézet\n\nGogol: A köpönyeg\n(részlet)\n\nAkakij Akakijevicset kivitték a temetőbe, és elhantolták. És Pétervár Akakij Akakijevics nélkül maradt, mintha sohase lett volna benne Akakij Akakijevics. Eltűnt, nyoma se maradt annak a lénynek, akit senki se védett meg soha, aki senkinek se volt kedves, senkinek se volt érdekes, ...eltűnt az a lény, aki béketűréssel viselte az irodai gúnyolódásokat, aki elköltözött ebből az árnyékvilágból anélkül, hogy valami rendkívülit is cselekedett volna, de aki előtt – noha csak élete legvégén – mégis megjelent a jótékony fényes tündér egy köpönyeg alakjában, hogy megélénkítse egy pillanatra szegényes életét, és akire azután olyan elviselhetetlenül zúdult rá a szerencsétlenség, ahogy lecsap e világ hatalmasainak fejére is!",
+    "q": "Döntse el, miért írhatta a szerző, hogy a főhős élete végén „megjelent a jótékony fényes tündér egy köpönyeg alakjában\"!",
+    "opts": [
+      "az új köpönyege hozta meg számára a régtől óhajtott megbecsülést, figyelmet",
+      "az új köpönyeg jótékony tündérként védelmezte őt mindenhol, amíg el nem lopták tőle",
+      "az új köpönyegének köszönhetően kiemelkedett a csinovnyikok sorából, és valódi úr lett",
+      "az új köpönyege miatt ölték meg hazafelé egy sikátorban, és lett belőle bosszúálló szellem"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Az új köpönyeg hozta meg Akakij Akakijevicsnek a régen óhajtott megbecsülést és figyelmet."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Válassza ki azt a jellemzést, amely igaz Gogol realizmusára nézve!",
+    "opts": [
+      "történetei kizárólag a valós életből indulnak ki",
+      "többször merít ötletet alkotásaihoz az orosz történelemből",
+      "műveibe gyakran képtelennek, fantasztikusnak tűnő témák épülnek be",
+      "műveiben gyakran használ bűnügyi keretet az emberi lélek rejtelmeinek feltárásához"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Gogol realizmusára jellemző, hogy műveibe fantasztikus, képtelennek tűnő elemek épülnek be (pl. az orr, a köpönyeg kísértete)."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sorolja be a 8. számú idézetben olvasható „elköltözött az árnyékvilágból\" szókapcsolatot a megfelelő frazeológiai egység csoportjába!",
+    "opts": [
+      "szólás",
+      "közmondás",
+      "képes kifejezés",
+      "szállóige"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Az „elköltözött az árnyékvilágból\" képes kifejezés (eufemizmus a halálra)."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Jelölje meg az alábbiak közül a novella helyes befejezését!\nAkakij Akakijevics kísértetként visszajárt addig, ...",
+    "opts": [
+      "amíg meg nem büntette a tolvajokat.",
+      "amíg vissza nem szerezte ellopott köpönyegét.",
+      "amíg meg nem bosszulta a főnökétől elszenvedett megaláztatásokat.",
+      "amíg a segítségkérését gőgösen elutasító személy kabátját meg nem szerezte."
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Akakij kísértete addig járt vissza, amíg a segítségét elutasító „jelentős személy\" kabátját meg nem szerezte."
+  },
+  {
+    "id": 61,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Döntse el, hogy mi által mond kíméletlen kritikát Gogol a 8. számú idézetben szereplő novellában a nagyvárosi társadalom eltorzult értékrendjéről!",
+    "opts": [
+      "azáltal, hogy egy tárgy egy ember életének értelmévé válik",
+      "azáltal, hogy az ember sorozatos hazugságokba bonyolódik",
+      "azáltal, hogy ez a társadalom mindenkit megvesztegethetővé tesz",
+      "azáltal, hogy egy díszes ruhadarab miatt ölni is képesek az emberek"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Gogol kritikája: egy köpönyeg (tárgy) egy ember egész életének értelmévé válik – ez a társadalom torz értékrendjét tükrözi."
+  },
+  {
+    "id": 62,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Egy idegen szóval írja le azt az esztétikai minőséget, amely által a félelmetes és a tragikus valóság humoros, nevetésre ingerlő képe bontakozik ki Gogol realista műveiben!",
+    "a": "groteszk",
+    "type": "short",
+    "exp": "Ez az esztétikai minőség a groteszk – a tragikus és komikus elemek keveréke."
+  },
+  {
+    "id": 63,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Írja le annak a tragikusan végződő Csehov-novellának a címét, amelynek főhőse szintén egy megnyomorított jellemű orosz kishivatalnok!",
+    "a": "A csinovnyik halála",
+    "type": "short",
+    "exp": "Csehov novellája: A csinovnyik halála (főhőse egy tüsszentés miatti gyötrődésbe hal bele)."
+  },
+  {
+    "id": 64,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nevezze meg azt az orosz realista írót, aki a következő famous mondattal fejezte ki Gogol hatását: „Mindnyájan Gogol köpönyegéből bújtunk ki.\"",
+    "a": "Dosztojevszkij",
+    "type": "short",
+    "exp": "A mondás Dosztojevszkijtől (Fjodor Mihajlovics Dosztojevszkij) származik."
+  }
+]
