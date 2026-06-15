@@ -1865,6 +1865,21 @@ function rPips(){
   }
 }
 
+
+// ── AUDIO PREHRÁVAČ PRE LISTENING SEKCIU ──
+function showAudioPlayer(src, sectionLabel) {
+  var wrap = el('audio-player-wrap');
+  if (!wrap) return;
+  if (!src) { wrap.style.display = 'none'; return; }
+  wrap.style.display = 'block';
+  wrap.innerHTML = '<div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:10px;padding:10px 14px;margin-bottom:10px;">'
+    + '<div style="font-size:10px;color:#1D9E75;margin-bottom:6px;letter-spacing:0.05em">🎧 ' + (sectionLabel||'LISTENING') + '</div>'
+    + '<audio id="mat-audio" controls style="width:100%;height:36px;accent-color:#1D9E75;" src="' + src + '">'
+    + '</audio>'
+    + '<div style="font-size:9px;color:#666;margin-top:4px">Nahrávku si vypočujte pred zodpovedaním otázok. Každú sekciu môžete počuť dvakrát.</div>'
+    + '</div>';
+}
+
 function showQ(){
   ans=false;tck=false;clearInterval(tT);
   var q=sub.qs[cur];
@@ -1914,6 +1929,13 @@ function showQ(){
     if(ctxWrap)ctxWrap.style.display='block';
   } else {
     if(ctxWrap)ctxWrap.style.display='none';
+  }
+  // Audio prehrávač pre listening
+  if(q.audio){
+    showAudioPlayer(q.audio, q.audioSection);
+  } else {
+    var awrap=el('audio-player-wrap');
+    if(awrap)awrap.style.display='none';
   }
   var ea=el('ea');
   if(ea){if(q.en&&q.en.trim()){ea.innerHTML='<div class="qen">'+q.en+'</div>';}else{ea.innerHTML='';}}
@@ -2370,7 +2392,10 @@ fetch('data/sjl_2010.json')
 // Placeholder roky - pridávajú sa postupne
 // addMat('sjl', 2011, [...]);  // pridaj po nahraní PDF
 // addMat('sjl', 2012, [...]);
-// addMat('ang-b1', 2010, [...]);
+fetch('data/ang_b1_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('ang-b1',2010,qs);})
+  .catch(function(e){console.error('Chyba načítania ANG B1 2010:',e);});
 // addMat('ang-b2', 2010, [...]);
 // addMat('nem-b1', 2010, [...]);
 // addMat('nem-b2', 2010, [...]);
@@ -2464,7 +2489,8 @@ function launchMatTest(predmet,rok){document.querySelectorAll(".ctb").forEach(fu
     cur=_matSaved.cur; matAnswers=_matSaved.matAnswers||{};
     window._matTime=_matSaved.timeLeft||90*60;
   } else {
-    window._matTime=90*60; // 90 minút v sekundách
+    var matDur=(sub.duration||90)*60;
+    window._matTime=matDur;
     cur=0;scr=0;ans=false;tot=0;answers=[];matAnswers={};
     try{ localStorage.removeItem(_matSaveKey); }catch(e){}
   }

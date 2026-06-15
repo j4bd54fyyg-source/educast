@@ -1,0 +1,900 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Part 1 – An Interview with Kevin Farley (7 points)",
+    "ctxText": "Part 1: An Interview with Kevin Farley\n\nVypočujte si interview s Kevinom Farleyom, mladým hercom, spisovateľom a režisérom v Hollywoode. Na základe vypočutého vyberte správnu odpoveď.",
+    "audio": "data/audio/ang_b1_2010.mp3",
+    "audioSection": "Part 1: An Interview with Kevin Farley",
+    "q": "Kevin thinks that directing and writing are ___ than acting.",
+    "opts": [
+      "easier",
+      "funnier",
+      "more responsible",
+      "more satisfying"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Kevin said directing and writing are 'more satisfying' than acting."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "The movie's female character, Diane, ___.",
+    "opts": [
+      "has lost her job in a restaurant",
+      "has had an argument with her boyfriend",
+      "would like to start an acting career",
+      "wants to open her own restaurant"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Diane would like to start an acting career."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Kevin's friend, Matt Berman, ___.",
+    "opts": [
+      "directed the movie",
+      "created a script for the movie",
+      "played a leading role in the movie",
+      "had a minor role in the movie"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Matt Berman created a script for the movie."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "'Blazing Saddles' is a western that ___.",
+    "opts": [
+      "was filmed in Wyoming",
+      "was directed by Kevin",
+      "inspired Kevin to shoot his own film",
+      "starred Clint Eastwood in the main role"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'Blazing Saddles' inspired Kevin to shoot his own film."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Kevin realized that he had to learn even harder when he ___.",
+    "opts": [
+      "was a college student",
+      "finished his college studies",
+      "started directing his own films",
+      "became an actor"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Kevin realized he had to learn harder when he finished his college studies."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Playing in a boy band was fun but also stressful because of ___.",
+    "opts": [
+      "a family tragedy",
+      "the female fans",
+      "other musicians",
+      "stage performance"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Playing in a boy band was stressful because of a family tragedy."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Kevin admired his brother Chris mainly for his ___.",
+    "opts": [
+      "directing and performing",
+      "writing and performing",
+      "responsibility in acting",
+      "energy when acting"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Kevin admired Chris mainly for his energy when acting."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Part 2 – The Story of a Teenage Mother (6 points)",
+    "ctxText": "Part 2: The Story of a Teenage Mother\n\nVypočujte si skutočný príbeh mladej matky. Na základe vypočutého rozhodnite o každom tvrdení, či je pravdivé (A), nepravdivé (B) alebo z nahrávky nevyplýva (C).",
+    "audio": null,
+    "q": "Lucy completed her A-levels one year later than her classmates.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – Lucy completed her A-levels at the same time as her classmates."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "While taking care of her first child, Lucy started a journalistic course.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "True – she started a journalistic course while taking care of her first child."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Her second child was born after she completed her course.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – her second child was born before she completed her course."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "She worked in a publishing company without getting a salary.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – she did get a salary at the publishing company."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Her grandparents had to help her with the two children at least twice a week.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Not stated – frequency of grandparents' help is not mentioned."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In her new job, her boss encouraged her to trust herself.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "True – her boss encouraged her to trust herself."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Part 3 – How to Communicate with a Friend in Trouble (7 points)",
+    "ctxText": "Part 3: How to Communicate with a Friend in Trouble\n\nVypočujte si rozhlasovú reláciu. Dozviete sa 6 praktických nápadov. Zoraďte vety 14–20 do správneho poradia (1–6). Jedna veta je navyše — napíšte X.",
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X (veta v nahrávke nezaznela).\n\nShow that your friendship is firm.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Táto veta bola 4. v poradí v nahrávke."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nSearch for proof.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Táto veta bola 1. v poradí v nahrávke."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nTry to give him a good time.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "Táto veta v nahrávke nezaznela — odpoveď X."
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nChoose suitable words.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Táto veta bola 2. v poradí v nahrávke."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nLook for other solutions.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "Táto veta bola 6. v poradí v nahrávke."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nBe ready for different reactions.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Táto veta bola 3. v poradí v nahrávke."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nShow an interest and be patient.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "Táto veta bola 5. v poradí v nahrávke."
+  },
+  {
+    "id": 21,
+    "ctx": "Section II – Part 1: Where It All Began",
+    "ctxText": "Part 1 – Language in Use: Where It All Began\n\nEven though Earth is billions of years old, human beings only entered the picture as recently as a few hundred thousand years ___. It took a while before we progressed from ___ in caves (hunting and gathering), to farming, and ___ to establishing towns and cities.\n\nAt first, people ___ near river valleys as the land was fertile and the waterways provided water and a ___ of travelling. Societies began to organise themselves more efficiently around a ___ language, shared customs and laws. This was how civilizations were born.\n\nThe earliest civilizations ___ in Mesopotamia, Egypt, the Indus Valley and China a long time ago. Later there emerged the Greek, Roman and Islamic civilisations, as well as the Aztec and the Mayan.\n\nThroughout history, people ___ from the advancements of past civilizations. For example, the Greeks ___ the world philosophy, the Jews contributed the concept of monotheism, the Indians introduced the concept of negative numbers, while Aztecs ___ made our beloved chocolate.",
+    "q": "...human beings only entered the picture as recently as a few hundred thousand years ___.",
+    "opts": [
+      "before",
+      "past",
+      "ago",
+      "gone"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'ago' is used with past simple for a specific time in the past."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "It took a while before we progressed from ___ in caves...",
+    "opts": [
+      "living",
+      "spending",
+      "staying",
+      "remaining"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'living in caves' is the natural collocation."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...to farming, and ___ to establishing towns and cities.",
+    "opts": [
+      "suddenly",
+      "finally",
+      "really",
+      "definitely"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'finally' indicates the last step in a sequence of progression."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "At first, people ___ near river valleys as the land was fertile...",
+    "opts": [
+      "stopped",
+      "stood",
+      "settled",
+      "stayed"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'settled' means to establish a permanent home in a place."
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...the waterways provided water and a ___ of travelling.",
+    "opts": [
+      "transport",
+      "vehicle",
+      "way",
+      "kind"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'a way of travelling' is the correct collocation."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Societies began to organise themselves more efficiently around a ___ language...",
+    "opts": [
+      "common",
+      "plain",
+      "primary",
+      "general"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'common language' = shared language understood by all."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The earliest civilizations ___ in Mesopotamia, Egypt, the Indus Valley and China a long time ago.",
+    "opts": [
+      "have found",
+      "have been found",
+      "found",
+      "were found"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Passive past simple 'were found' – civilizations didn't find themselves."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Throughout history, people ___ from the advancements of past civilizations.",
+    "opts": [
+      "have benefited",
+      "will benefit",
+      "benefited",
+      "benefit"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Present perfect 'have benefited' – relevant to the present."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...the Greeks ___ the world philosophy...",
+    "opts": [
+      "began",
+      "gave",
+      "originated",
+      "opened"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'gave the world' = contributed something to the world."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...while Aztecs ___ made our beloved chocolate.",
+    "opts": [
+      "first",
+      "at first",
+      "from the first",
+      "firstly"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'first' as adverb = before anyone else."
+  },
+  {
+    "id": 31,
+    "ctx": "Section II – Part 2: Penguins: Waiters of the Bird World",
+    "ctxText": "Part 2 – Language in Use: Penguins: Waiters of the Bird World\n\nAlthough people can't live long in the Antarctic, penguins love their frosty homes.\n\nPenguins can't fly, but they ___ part of the bird family. There are seventeen species of penguin living ___ and near the Antarctic.\n\nThe emperor penguin is ___ biggest. It is 122cm tall and weighs 40kg. The smallest is the fairy penguin which is 35cm tall and weighs 1kg. On average it lives 6.5 years.\n\nPenguins are ___ good swimmers. They swim so quickly that they look ___ they are flying under water.\n\nLittle penguins eat tiny animals called krill, ___ larger penguins eat fish and squid. Penguins are so scared of sharks that they will ___ jump into the water if no other penguin is already swimming ___. They line up on the beach and try to push ___ other in!\n\nNature parks ___ been opened in Southern Australia and New Zealand where people can study penguins in the wild.",
+    "q": "Penguins can't fly, but they ___ part of the bird family.",
+    "a": "are",
+    "type": "short",
+    "exp": "'are' – present simple, penguins ARE part of the bird family."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "There are seventeen species of penguin living ___ and near the Antarctic.",
+    "a": "in",
+    "type": "short",
+    "exp": "'in' – living IN the Antarctic."
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The emperor penguin is ___ biggest.",
+    "a": "the",
+    "type": "short",
+    "exp": "Superlative requires the definite article 'the'."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Penguins are ___ good swimmers.",
+    "a": "very",
+    "type": "short",
+    "exp": "'very' or 'such' – intensifier before adjective."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "They swim so quickly that they look ___ they are flying under water.",
+    "a": "like",
+    "type": "short",
+    "exp": "'look like' + clause = comparison."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Little penguins eat tiny animals called krill, ___ larger penguins eat fish and squid.",
+    "a": "while",
+    "type": "short",
+    "exp": "'while', 'but', or 'whereas' – contrast conjunction."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Penguins are so scared of sharks that they will ___ jump into the water if no other penguin is already swimming there.",
+    "a": "not",
+    "type": "short",
+    "exp": "'not' or 'never' – they refuse to jump in alone."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...if no other penguin is already swimming ___.",
+    "a": "there",
+    "type": "short",
+    "exp": "'there' – swimming in that place/the water."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "They line up on the beach and try to push ___ other in!",
+    "a": "each",
+    "type": "short",
+    "exp": "'each other' = one another."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nature parks ___ been opened in Southern Australia and New Zealand...",
+    "a": "have",
+    "type": "short",
+    "exp": "Present perfect: 'have been opened'."
+  },
+  {
+    "id": 41,
+    "ctx": "Section III – Part 1: A Former Punk Rocker Recalls",
+    "ctxText": "Section III – Part 1: A Former Punk Rocker Recalls\n\nAs a child I always longed to be different. When I was fourteen I decided to celebrate my individuality. [41] I headed for a special hairdresser. I knew what I wanted – long hair at the back dyed pink and a huge red Mohican on top. This was my first rebellious act, the first of many.\n\nWhen I came back to Seaford later that day, everyone went crazy. [42] They looked at me with horror. 'Why on earth do you want to do this to yourself?' my mum asked. At the time I wasn't really sure.\n\nAlthough the headmaster of my school asked me to leave, I refused to have my hair dyed back to its normal colour. [43] However, as a protest, at the end of the day, I'd stand outside the school gates showing my hair in all its punky glory.\n\nI was one of the first punks, a style leader, I suppose. [44] I became a shop assistant in a punk store. People would come into the shop just to look at us crazy-looking assistants!\n\nI was soon known as The Face of Punk. I managed a punk group, and I lived in a notorious flat which became a mecca for punks. However, I never went out with any of them. Guys were frightened of my reputation – I had stood in a London gallery as a living piece of punk art. They felt I was untouchable.\n\nIt may seem strange that I've ended up living in Seaford as a veterinary assistant. [45] Several years ago, my sister-in-law asked if I could help on her farm and while I was there, the local vet's office rang to see if I could do a couple of days' work. [46]\n\nPunk was all very well, but I got very, very tired from working and partying. I'm more satisfied with my life now. I love my job and I adore my six cats. [47] In spite of this, I don't think I've lost my sense of individuality.\n\nMožnosti:\n(A) I worked in the gallery for a few months.\n(B) After I finished my secondary studies, I started looking for a job.\n(C) So I saved all my pocket money and took the train from Seaford to London.\n(D) These days I have to wear a uniform to work.\n(E) That's because one of my other passions in life, apart from fashion, is animals.\n(F) Although the headmaster punished me, I continued wearing the new hair style.\n(G) In the end we reached a compromise and I wore a headscarf.\n(H) I borrowed some money from my parents.\n(I) My enthusiasm helped and they offered me a full-time job.\n(J) As soon as I walked through the door, my parents' mouths opened in surprise.",
+    "q": "Priraďte vetu k miestu [41] v texte:\n'As a child I always longed to be different... [41] I headed for a special hairdresser.'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "(C) He saved money and took the train to London to visit the hairdresser."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [42] v texte:\n'...everyone went crazy. [42] They looked at me with horror.'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "(J) As soon as she walked through the door, parents' mouths opened in surprise."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [43] v texte:\n'I refused to have my hair dyed back... [43] However, as a protest...'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "(G) They reached a compromise – she wore a headscarf."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [44] v texte:\n'I was one of the first punks... [44] I became a shop assistant.'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "(B) After finishing secondary studies, she started looking for a job → became shop assistant."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [45] v texte:\n'It may seem strange that I've ended up as a veterinary assistant. [45] Several years ago...'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "(E) Her passion for animals explains the vet assistant job."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [46] v texte:\n'...the local vet's office rang... [46] (end of that sequence)'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "(I) Her enthusiasm got her a full-time job at the vet."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [47] v texte:\n'I love my job and I adore my six cats. [47] In spite of this, I don't think I've lost my sense of individuality.'",
+    "opts": [
+      "I worked in the gallery for a few months.",
+      "After I finished my secondary studies, I started looking for a job.",
+      "So I saved all my pocket money and took the train from Seaford to London.",
+      "These days I have to wear a uniform to work.",
+      "That's because one of my other passions in life, apart from fashion, is animals.",
+      "In the end we reached a compromise and I wore a headscarf.",
+      "My enthusiasm helped and they offered me a full-time job.",
+      "As soon as I walked through the door, my parents' mouths opened in surprise."
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "(D) These days she has to wear a uniform – contrast with punk past."
+  },
+  {
+    "id": 48,
+    "ctx": "Section III – Part 2: An Irishman in Madrid",
+    "ctxText": "Section III – Part 2: An Irishman in Madrid\n\n(a) I am a typical fan of Spain. As a child I spent a lot of holidays on the costas (Spanish for 'beaches'), and at school there were a lot of Spanish students, so I developed a love for the place – though for me the costas are not the real Spain. It saddens me to think that foreigners think that's what Spain is.\n\n(b) The social life is very easy. My Spanish has really improved in the year-and-a-half I've been here: I spoke textbook Spanish before I came, but now I speak much better colloquial Spanish. Watching television is a great help. The people are very open and very warm – from the first day I was Peter. I wasn't a foreigner.\n\n(c) It's great to go out at night and explore Madrid's bars and clubs – when you have time. The university, Comillas, I'm studying at has a good reputation for making you work hard, and it has a good name among Spaniards. They all told me: 'If you can get into Comillas, then do.' A friend of mine saw an advertisement in a Spanish newspaper which he sent to me in Dublin, and that was it.\n\n(d) I'm living in a rented room in a house out of the centre. I'd rather live more centrally – if I want to go shopping, I have to take the metro. I don't know whether I'll have to pay rent through the summer yet, though. Accommodation in Madrid is a problem – I'd like to have my own place one day, but it's very expensive. Getting grants isn't easy for foreign students.\n\n(e) I feel just as Spanish as I do Irish now, and I love Madrid. It has some disadvantages as all cities, of course – you are always rushing up and down stairs on the metro. It's a strange place – a big city with a small-town atmosphere. The friendliness of the people makes it like that. I'd like to stay in Spain – not in the city necessarily, but that's where the work will be, of course.",
+    "q": "Peter's aim is to work in Spain.\n(Uveďte aj označenie odseku, na základe ktorého ste rozhodli.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "True – paragraph (e): 'that's where the work will be'."
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Peter is studying at a very good university in Madrid.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "True – paragraph (c): Comillas has 'a good reputation'."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Peter is very satisfied with the location of the house in which he lives.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "False – paragraph (d): 'I'd rather live more centrally'."
+  },
+  {
+    "id": 51,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Peter's nationality was a problem for him.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "False – paragraph (b): 'from the first day I was Peter. I wasn't a foreigner'."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Peter agrees when foreigners identify Spain with costas.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "False – paragraph (a): 'for me the costas are not the real Spain'."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Peter's friend informed him of the Spanish university.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "True – paragraph (c): 'A friend of mine saw an advertisement in a Spanish newspaper'."
+  },
+  {
+    "id": 54,
+    "ctx": "Section III – Part 3: A Part of a Letter to a Pet-sitter",
+    "ctxText": "Section III – Part 3: A Part of a Letter to a Pet-sitter\n\nDear Lee,\n\nAs I told you, I'll be gone until Wednesday morning. Thank you so much for taking on my 'children' while I'm away. Like real children, they can be irritating sometimes, but I'm going to enjoy myself so much more knowing they're getting some kind human attention. Remember that Regina is teething. If you don't watch her, she'll chew anything, including the cat. There are plenty of chew toys around the house. Whenever she starts biting anything illegal, just turn her attention to one of those. She generally settles right down to a good hour-long chew. Then you'll see her wandering around crying with the remains of the toy in her mouth. She gets really frustrated because what she wants is to bury the thing. She'll try to dig a hole between the cushions of the couch. Finding that unsatisfactory, she'll wander some more, restless, until you solve her problem for her. I usually show her the laundry basket, moving a few clothes so she can bury her toy beneath them.\n\nRegina's food is the Puppy Chow in the cellar, where the other pet food is kept. Give her a bowl once in the morning and once in the evening. No more than that, no matter how much she begs. Many beagles over-eat, according to her breeder, and I don't want her to lose her girlish figure. She needs to go out several times a day, especially last thing at night and first thing in the morning. Let her stay out for about ten minutes, so she can do all her business. She also needs a walk in the afternoon, after which it's important to play with her for a while in the yard. The game she loves is fetch, but be sure to make her drop the ball. She'd rather play tug of war with it. Tell her, 'Sit!'. Then, when she does, say 'Drop it!'. Be sure to tell her 'good girl', and then throw the ball for her. I hope you'll enjoy these sessions as much as I do.",
+    "q": "The pet-sitter should ___ Regina all the time. (1 word)",
+    "a": "watch",
+    "type": "short",
+    "exp": "'watch' – 'If you don't watch her, she'll chew anything'."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "According to the owner, the best place for hiding the toys is the ___. (2 words)",
+    "a": "laundry basket",
+    "type": "short",
+    "exp": "'laundry basket' – she buries the toy beneath the clothes in the laundry basket."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "When Regina does something wrong, the pet-sitter should attract her attention to ___ toys. (1 word)",
+    "a": "chew",
+    "type": "short",
+    "exp": "'chew' toys – 'just turn her attention to one of those [chew toys]'."
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The pet-sitter should help Regina to ___ the toy. (1 word)",
+    "a": "bury",
+    "type": "short",
+    "exp": "'bury' – 'what she wants is to bury the thing'."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Food for all the pets is stored in the ___. (1 word)",
+    "a": "cellar",
+    "type": "short",
+    "exp": "'cellar' – 'Regina's food is the Puppy Chow in the cellar, where the other pet food is kept'."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The pet-sitter should allow Regina to go out at least ___. (1 word)",
+    "a": "twice",
+    "type": "short",
+    "exp": "'twice' (morning and evening minimum) – 'once in the morning and once in the evening'."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The owner is not returning home before ___. (2 words)",
+    "a": "Wednesday morning",
+    "type": "short",
+    "exp": "'Wednesday morning' – 'I'll be gone until Wednesday morning'."
+  }
+]
