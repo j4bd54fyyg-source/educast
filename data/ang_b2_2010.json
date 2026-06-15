@@ -1,0 +1,1154 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Part 1 – An Interview with Kathy Hall (7 points)",
+    "ctxText": "Part 1: An Interview with Kathy Hall\n\nYou will hear an interview with Kathy Hall who is a director of the Walker Art Center in Minneapolis, Minnesota. For the following statements 01–07, choose the correct answer (A), (B), (C) or (D). There is always only one correct answer.",
+    "audio": "data/audio/ang_b2_2010.mp3",
+    "audioSection": "Part 1: An Interview with Kathy Hall",
+    "q": "One of the common aims of many cultural institutions in general is ___.",
+    "opts": [
+      "looking for ways to attract the audience even more",
+      "organizing lectures and discussions about art for visitors",
+      "preserving their permanent collections in their original state",
+      "adding essential pieces of art to their permanent collections"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Adding essential pieces to their permanent collections is a common aim of cultural institutions."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "According to Kathy, her institution has tried to focus more on ___.",
+    "opts": [
+      "modern forms of art",
+      "artists and younger visitors",
+      "traditional forms of art",
+      "artists and their work"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "The Walker Art Center focused more on artists and younger visitors."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Kathy would like to attract teenagers much more because they ___.",
+    "opts": [
+      "don't understand the essence of art",
+      "view life similarly to artists",
+      "are not taught about art at school",
+      "rarely visit galleries and museums"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Teenagers view life similarly to artists – that's why Kathy wants to attract them."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "The philosophy of the Walker Art Center can be defined as 'global' because it ___.",
+    "opts": [
+      "includes different cultures and materials",
+      "involves various cultures and traditional views of them",
+      "includes various cultures and new views of them",
+      "involves different forms of art"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'Global' because it includes various cultures and new (contemporary) views of them."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "The programme 'Art in a Global Age' will be also presented through ___.",
+    "opts": [
+      "discussions with artists",
+      "video-conferences",
+      "multimedia presentations",
+      "on-line programmes"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "The programme will be presented through on-line programmes."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "According to Kathy, one of the greatest problems for cultural institutions is the ___ environment.",
+    "opts": [
+      "cultural",
+      "economic",
+      "educational",
+      "working"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "The economic environment is one of the greatest problems for cultural institutions."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In the next decade, new ___ at the art centre.",
+    "opts": [
+      "technologies will emerge",
+      "artists will appear",
+      "educational topics will be introduced",
+      "institutions will be established"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "New technologies will emerge at the art centre in the next decade."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Part 2 – A Story of an American Athlete in Great Britain (6 points)",
+    "ctxText": "Part 2: A Story of an American Athlete in Great Britain\n\nListen to the true story of an American athlete in Great Britain. For questions 08–13, decide whether the statements are true (A), false (B) or whether the information was not given (C).",
+    "audio": null,
+    "q": "It has become common for top U.S. runners to choose British colleges for studying.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – it is not common; Michelle is an exception."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In the U.S.A., Michelle studied political science at a college in North Carolina.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – she studied at a different college/subject."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "At Oxford, a lack of training equipment is not such a big problem for running as for other sports.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "True – running requires less equipment than most other sports."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Michelle's training partner started studying at Oxford the same year as she did.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Not stated – this information is not given in the recording."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "The conditions during the National Cross Country Championships were unsuitable for Michelle.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "True – the muddy, wet conditions were not ideal for her."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Michelle will only stay in Kenya to train for the World Championships.",
+    "opts": [
+      "true",
+      "false",
+      "not stated"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "False – she plans to do more than just train there."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Part 3 – How to Build Your Self-esteem (7 points)",
+    "ctxText": "Part 3: How to Build Your Self-esteem\n\nYou will hear a radio programme in which experts explain how to build your self-esteem. You will hear 6 pieces of advice. The information (14–20) is in the wrong order. Indicate the order (1–6). One item is extra – put X.",
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nMove on after failure.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'Move on after failure' bola 4. v poradí."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nWrite a diary of your activities every day.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "'Write a diary' v nahrávke nezaznelo – odpoveď X."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nMake an inventory of your strengths.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'Make an inventory of your strengths' bola 2. v poradí."
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nTake a deep breath.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'Take a deep breath' bola 1. v poradí."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nBe aware of your strengths and weaknesses.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'Be aware of your strengths and weaknesses' bola 3. v poradí."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nCelebrate progress and small victories.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "'Celebrate progress and small victories' bola 5. v poradí."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zoraďte vety do správneho poradia (1–6) alebo napíšte X.\n\nSummarize positive things every day.",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "X"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "'Summarize positive things every day' bola 6. v poradí."
+  },
+  {
+    "id": 21,
+    "ctx": "Section II – Part 1: Discovering Drylands",
+    "ctxText": "Part 1 – Language in Use: Discovering Drylands\n\nDeserts are places where very ___ rain falls. They are formed in ___ ways. Some are formed by winds ___ the equator which are brought about by hot air ___ from the tropics. These winds can blow ___ rain clouds. Deserts like the Sahara are ___ of this.\n\nCold water currents in the ocean can cause rain clouds above it to cool and ___ their moisture into the sea. This means that the land near the ocean doesn't get any rain. The Namib and Atacama deserts were created by this ___.\n\nWhen rain clouds hit high mountains, they cannot hold their moisture. Areas that lie beyond these mountains like the Gobi desert can suffer from ___ because the mountains around them ___ all the rain!\n\nDeserts can also be man-made. In areas where too many people ___, intensive farming causes environmental damage. Desertification turned the grasslands of the Great Plains in the United States into a desert ___ the start of this century. It is also a big problem in overpopulated parts of China, Chile, Ethiopia, Morocco, Madagascar and other countries.\n\nToday, deserts cover about 20% of the earth. ___ every desert is unique, you can classify them as ___ hot or cold, sandy or rocky.\n\nThe Gobi Desert in Central Asia is very cold during winter but very hot during summer. This desert has lots of ___ mountains as well as rocky plains. The western Gobi has some salt marshes.\n\nAlthough it is home to ___ people and animals, it's a very ___ place to live. The word 'gobi' is Mongolian for 'waterless place'. Its western part gets about 8 cm of rain a year, while its northeast, about 20 cm. Malaysia, ___, gets between 200 cm and 400 cm of rain per year and has lots of rivers and ponds filled ___ freshwater too.\n\nUntil recently, most of the people in the Gobi have been the nomadic Mongols. They still live there, herding their goats, sheep and cattle from one waterhole to ___. But since the Gobi became famous ___ its dinosaur fossils, many scientists now visit these amazing places.",
+    "q": "They are formed in ___ ways.",
+    "opts": [
+      "various",
+      "variant",
+      "varied",
+      "variable"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'various ways' = several different ways."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Some are formed by winds ___ the equator...",
+    "opts": [
+      "across",
+      "behind",
+      "along",
+      "beyond"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'along the equator' = following the line of the equator."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...brought about by hot air ___ from the tropics.",
+    "opts": [
+      "rising",
+      "ascending",
+      "increasing",
+      "raising"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'rising' – hot air rises (intransitive); 'raising' is transitive."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "These winds can blow ___ rain clouds.",
+    "opts": [
+      "down",
+      "away",
+      "up",
+      "off"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'blow away' = drive away, disperse."
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Deserts like the Sahara are ___ of this.",
+    "opts": [
+      "a feature",
+      "an achievement",
+      "an impact",
+      "a result"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'a result of this' = caused by this process."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...can cause rain clouds above it to cool and ___ their moisture into the sea.",
+    "opts": [
+      "reveal",
+      "retain",
+      "release",
+      "relieve"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'release moisture' = let go of the water vapour."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The Namib and Atacama deserts were created by this ___.",
+    "opts": [
+      "issue",
+      "matter",
+      "event",
+      "phenomenon"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'phenomenon' = a natural observable occurrence."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Areas that lie beyond these mountains like the Gobi desert can suffer from ___.",
+    "opts": [
+      "drain",
+      "drought",
+      "draft",
+      "draw"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'drought' = prolonged lack of rain."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...because the mountains around them ___ all the rain!",
+    "opts": [
+      "steal",
+      "emerge",
+      "cover",
+      "conceal"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'steal all the rain' = take all the rain (figurative)."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In areas where too many people ___, intensive farming causes environmental damage.",
+    "opts": [
+      "settle",
+      "accommodate",
+      "board",
+      "stay"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'settle' = establish permanent residence."
+  },
+  {
+    "id": 31,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Desertification turned the grasslands... into a desert ___ the start of this century.",
+    "opts": [
+      "in",
+      "at",
+      "–",
+      "on"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'at the start of' is the correct preposition collocation."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "___ every desert is unique, you can classify them as either hot or cold...",
+    "opts": [
+      "Whereas",
+      "Despite",
+      "In spite of",
+      "Although"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'Although' introduces a concessive clause with a subject + verb."
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...you can classify them as ___ hot or cold, sandy or rocky.",
+    "opts": [
+      "either",
+      "nor",
+      "neither",
+      "or"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'either...or' = one or the other alternative."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "This desert has lots of ___ mountains as well as rocky plains.",
+    "opts": [
+      "hollow",
+      "plated",
+      "plain",
+      "bare"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'bare mountains' = without vegetation, exposed rock."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Although it is home to ___ people and animals...",
+    "opts": [
+      "a quite few",
+      "few quite",
+      "quite few",
+      "quite a few"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'quite a few' = a considerable number."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...it's a very ___ place to live.",
+    "opts": [
+      "tough",
+      "sharp",
+      "rigid",
+      "strict"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'tough place to live' = difficult, harsh environment."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Malaysia, ___, gets between 200 cm and 400 cm of rain per year...",
+    "opts": [
+      "in conclusion",
+      "on purpose",
+      "in contrast",
+      "on condition"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'in contrast' = used to compare two very different things."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...rivers and ponds filled ___ freshwater too.",
+    "opts": [
+      "of",
+      "with",
+      "by",
+      "in"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'filled with' = containing."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...herding their goats, sheep and cattle from one waterhole to ___.",
+    "opts": [
+      "another",
+      "others",
+      "other",
+      "the other"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'from one... to another' = moving between different places."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...since the Gobi became famous ___ its dinosaur fossils...",
+    "opts": [
+      "by",
+      "with",
+      "for",
+      "of"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'famous for' = well known because of."
+  },
+  {
+    "id": 41,
+    "ctx": "Section II – Part 2: Getting It Right (Word Formation)",
+    "ctxText": "Part 2 – Language in Use: Getting It Right\n\nBecause I do a radio show in the United States about language, my pronunciation of English is often under scrutiny.\n\nSome ___ (LISTEN) expect that I will pronounce every word in the most traditional, most ___ (ACCURACY), most conservative way. Of course, I don't. That means I ___ (RECEPTION) lots of emails and phone calls reprimanding me for setting a bad example.\n\nThis ___ (CRITIC) is, in my opinion, a big load of nonsense. Judge not unless you are hired to do the judging. It's one of those situations in which I am quite certain that each one of my ___ (CORRESPOND) pronounces some part of the language in a way that is considered something other than highly traditional. I know this with ___ (CERTAIN) because we all do.\n\nThe number one ___ (COMPLAIN) about my pronunciation is the word 'often'. I pronounce the T, so it does not sound like 'offen'.\n\nWhile I ___ (READY) admit that 'offen' is the most common pronunciation, any claims that it's more correct or more sophisticated are ___ (SUPPORTABLE).\n\nBoth pronunciations exist in English. The T-ful pronunciation is older than the T-less pronunciation. Some historical linguists have suggested that the T-ful pronunciation had a resurgence after more people became ___ (LITERACY).",
+    "q": "Some ___ (LISTEN) expect that I will pronounce every word in the most traditional way.",
+    "a": "listeners",
+    "type": "short",
+    "exp": "LISTEN → listeners (noun, people who listen)."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...the most traditional, most ___ (ACCURACY), most conservative way.",
+    "a": "accurate",
+    "type": "short",
+    "exp": "ACCURACY → accurate (adjective)."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "That means I ___ (RECEPTION) lots of emails and phone calls reprimanding me...",
+    "a": "receive",
+    "type": "short",
+    "exp": "RECEPTION → receive (verb)."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "This ___ (CRITIC) is, in my opinion, a big load of nonsense.",
+    "a": "criticism",
+    "type": "short",
+    "exp": "CRITIC → criticism (noun)."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...each one of my ___ (CORRESPOND) pronounces some part of the language differently.",
+    "a": "correspondents",
+    "type": "short",
+    "exp": "CORRESPOND → correspondents (noun, people who write/contact)."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "I know this with ___ (CERTAIN) because we all do.",
+    "a": "certainty",
+    "type": "short",
+    "exp": "CERTAIN → certainty (noun)."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The number one ___ (COMPLAIN) about my pronunciation is the word 'often'.",
+    "a": "complaint",
+    "type": "short",
+    "exp": "COMPLAIN → complaint (noun)."
+  },
+  {
+    "id": 48,
+    "ctx": null,
+    "ctxText": null,
+    "q": "While I ___ (READY) admit that 'offen' is the most common pronunciation...",
+    "a": "readily",
+    "type": "short",
+    "exp": "READY → readily (adverb)."
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...any claims that it's more correct or more sophisticated are ___ (SUPPORTABLE).",
+    "a": "unsupportable",
+    "type": "short",
+    "exp": "SUPPORTABLE → unsupportable (negative prefix un-)."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...the T-ful pronunciation had a resurgence after more people became ___ (LITERACY).",
+    "a": "literate",
+    "type": "short",
+    "exp": "LITERACY → literate (adjective)."
+  },
+  {
+    "id": 51,
+    "ctx": "Section II – Part 3: Fined for Not Speaking English (Verb Forms)",
+    "ctxText": "Part 3 – Language in Use: Fined for Not Speaking English\n\nErnestina Mondragon was probably not surprised when she was pulled over by police after making an illegal U-turn in Dallas, Texas. She probably thought it was fair when she ___ (give) an additional ticket for not having her driving licence.\n\nBut when the trainee officer fined her 204 dollars for ___ (be) a non-English speaking driver – a penalty later approved by the officer's field-training instructor and sergeant – Mondragon ___ (fight) back.\n\nShe formally opposed the charge and it ___ (throw) out by the court. Since then it has been revealed that at least 39 drivers in the last three years ___ (fine) for not speaking English.\n\nPolice officials in the Texas city of 1.3 million people believe the error originates in a menu on the computers ___ (use) in patrol cars. Federal law requires that certain commercial lorry drivers speak English, but no such requirement ___ (apply) to private motorists.\n\nThe Dallas police chief apologized at a press conference last week. 'This is something I wish ___ (happen, not). It is an embarrassment.' He promised to investigate the incidents, cancel pending charges and refund those who ___ (pay, already) the fine.\n\nThe United States has no official language, but since these problems arose a movement ___ (begin) among conservatives to confirm English in US law as the official tongue.",
+    "q": "She probably thought it was fair when she ___ (give) an additional ticket for not having her driving licence.",
+    "a": "was given",
+    "type": "short",
+    "exp": "Passive past simple: was given."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...when the trainee officer fined her 204 dollars for ___ (be) a non-English speaking driver...",
+    "a": "being",
+    "type": "short",
+    "exp": "'for' + gerund: for being."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...Mondragon ___ (fight) back.",
+    "a": "fought",
+    "type": "short",
+    "exp": "Past simple active: fought."
+  },
+  {
+    "id": 54,
+    "ctx": null,
+    "ctxText": null,
+    "q": "She formally opposed the charge and it ___ (throw) out by the court.",
+    "a": "was thrown",
+    "type": "short",
+    "exp": "Passive past simple: was thrown."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...it has been revealed that at least 39 drivers in the last three years ___ (fine) for not speaking English.",
+    "a": "have been fined",
+    "type": "short",
+    "exp": "Present perfect passive: have been fined."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...the error originates in a menu on the computers ___ (use) in patrol cars.",
+    "a": "used",
+    "type": "short",
+    "exp": "Past participle as adjective: computers used in patrol cars."
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...but no such requirement ___ (apply) to private motorists.",
+    "a": "applies",
+    "type": "short",
+    "exp": "Present simple: applies (general truth/law)."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "'This is something I wish ___ (happen, not).'",
+    "a": "had not happened",
+    "type": "short",
+    "exp": "Wish + past perfect: had not happened."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "He promised to... refund those who ___ (pay, already) the fine.",
+    "a": "had already paid",
+    "type": "short",
+    "exp": "Past perfect: had already paid (before the promise was made)."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...since these problems arose a movement ___ (begin) among conservatives to confirm English in US law...",
+    "a": "has begun",
+    "type": "short",
+    "exp": "Present perfect: has begun (started and is still relevant)."
+  },
+  {
+    "id": 61,
+    "ctx": "Section III – Part 1: Croquet",
+    "ctxText": "Section III – Part 1: Croquet\n\nCroquet is a competitive sport that involves hitting coloured balls through a series of hoops called 'wickets' using a long-handled wooden hammer. It is normally played on a lawn.\n\nThe game of croquet was invented in Ireland as a variation of the older Italian lawn game 'Pall Mall', sometime around the year 1830. [61] Eventually, it migrated to France, America and Australia, all countries where the game is still popular today. In 1900 and 1904, during the game's peak in popularity, it was played in the Olympics. [62]\n\nRecreationally, the game is commonly played in the backyard, using the 'backyard croquet' rules. In backyard croquet, the game is treated as a kind of race and there is no scoring involved. Players have to knock their designated ball through the wickets in a certain order, and then hit a final peg as a finish line. [63] Players can knock their opponents' balls out of the way using their own balls to buy time.\n\nIn tournaments and more competitive play, a variety of different scoring versions of croquet is played, the most popular version being 'international-rules' croquet. This version allows players to make more than one stroke per turn if they get their ball through the appropriate wicket. [64]\n\nGolf croquet is also a widely played version of croquet. In golf croquet the goal is to make it through the most hoops first. [65] No wonder it is rapidly growing in popularity due to its low learning curve and competitive nature.\n\nIn the United States, 'American-rules' croquet is the version most commonly played. It is very similar to international-rules croquet. [66] For this reason it is popular amongst players who are otherwise not very skilful or athletic, but enjoy a good mental challenge.\n\nTo sum up, croquet is a fun, inexpensive and pleasant way to spend an afternoon with company. It can be played virtually anywhere with a lawn. Croquet sets are sold online, in some department stores, or in most sporting goods stores and generally run in the $40–100 range. [67]\n\nMožnosti:\n(A) When one player does this, the game is over.\n(B) Twenty years later it was hugely popular amongst the aristocracy of England.\n(C) Since then it decreased in popularity, but has always retained a significant fan base.\n(D) Not many people are interested in it nowadays.\n(E) By giving players extra strokes, it encourages shot-making ability.\n(F) Later, it was discovered by French sportsmen.\n(G) It differs, however, in the way it emphasizes strategy over skill.\n(H) Unfortunately, croquet is designed for well-off people.\n(I) However, some high quality sets can be much more expensive.\n(J) It is a much simpler version than international-rules croquet.",
+    "q": "Priraďte vetu k miestu [61]:\n'The game of croquet was invented in Ireland... [61] Eventually, it migrated to France, America and Australia...'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "(B) Twenty years later it was hugely popular amongst the aristocracy of England – then migrated further."
+  },
+  {
+    "id": 62,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [62]:\n'...it was played in the Olympics. [62]'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "(C) Since then it decreased in popularity, but retained a fan base."
+  },
+  {
+    "id": 63,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [63]:\n'Players have to knock their ball through the wickets... [63] Players can knock their opponents' balls out of the way...'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "(A) When one player hits the final peg, the game is over."
+  },
+  {
+    "id": 64,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [64]:\n'This version allows players to make more than one stroke per turn... [64]'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "(E) By giving players extra strokes, it encourages shot-making ability."
+  },
+  {
+    "id": 65,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [65]:\n'In golf croquet the goal is to make it through the most hoops first. [65] No wonder it is rapidly growing in popularity...'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "(J) It is a much simpler version than international-rules croquet."
+  },
+  {
+    "id": 66,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [66]:\n'In the United States, American-rules croquet is very similar to international-rules croquet. [66] For this reason it is popular amongst players who enjoy a good mental challenge.'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "(G) It differs, however, in the way it emphasizes strategy over skill."
+  },
+  {
+    "id": 67,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte vetu k miestu [67]:\n'Croquet sets are sold... and generally run in the $40–100 range. [67]'",
+    "opts": [
+      "When one player does this, the game is over.",
+      "Twenty years later it was hugely popular amongst the aristocracy of England.",
+      "Since then it decreased in popularity, but has always retained a significant fan base.",
+      "Not many people are interested in it nowadays.",
+      "By giving players extra strokes, it encourages shot-making ability.",
+      "Later, it was discovered by French sportsmen.",
+      "It differs, however, in the way it emphasizes strategy over skill.",
+      "Unfortunately, croquet is designed for well-off people.",
+      "However, some high quality sets can be much more expensive.",
+      "It is a much simpler version than international-rules croquet."
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "(I) However, some high quality sets can be much more expensive."
+  },
+  {
+    "id": 68,
+    "ctx": "Section III – Part 2: A Week in the Life of a Professional Footballer",
+    "ctxText": "Section III – Part 2: A Week in the Life of a Professional Footballer\n\n(a) Monday: Strange that today didn't really feel all that different from other days. The mood at the club was little down after yesterday's defeat, but everyone kept coming up to me and congratulating me all day. I feel quite nervous about the coming week, but I'm confident I've got all the back-up I need from friends and family. I know I'm going to need advice when it comes to deciding what to do with my salary.\n\n(b) Tuesday: Training as usual, and if I had any ideas that things would get less demanding from now on, I was sadly mistaken. We worked on pace and ball control skills very hard today. Before the session, I spoke to the manager. He told me what I needed to work on – my understanding of tactics and following a game plan – and we talked about the future. There's a bit of media interest in my signing, but I'm trying to stay focused on my football.\n\n(c) Wednesday: The rumours have started about who's going to be in Saturday's team. After the last few matches, it's obvious that we need a bit more speed in midfield, and that could be my chance. The only thing I'm worried about is keeping free from injury. Everyone agrees that my prospects are good.\n\n(d) Thursday: I did my first interview with the press today and I think it went quite well. The other lads have been great about everything and there doesn't seem to be any ill will. The new strip arrived today and it's a bit weird to be given a top with my name and number on it. I ran into some of my old schoolmates. Some of them aren't sure how to react, but I reassured them that nothing had changed.\n\n(e) Friday: It's obvious that there's going to be no star treatment. I was late for training and had to do an extra fifty press-ups, followed by the usual routine. I think the key difference from being an amateur is that you're expected to produce results and to be completely single-minded about what you do. I'm a bit more relaxed about it all now that the initial shock has worn off and I'm eager to show everyone what I can do. Can't wait until the team sheet is put up!",
+    "q": "The footballer's team mates envied him the media interest.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "False – paragraph (d): 'there doesn't seem to be any ill will'."
+  },
+  {
+    "id": 69,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The footballer received a lot of compliments at the club.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "True – paragraph (a): 'everyone kept coming up to me and congratulating me all day'."
+  },
+  {
+    "id": 70,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The footballer felt strange when he had been given a new shirt.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "True – paragraph (d): 'it's a bit weird to be given a top with my name and number on it'."
+  },
+  {
+    "id": 71,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The footballer felt that training was less demanding than he had expected.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "False – paragraph (b): 'I was sadly mistaken' – training was MORE demanding."
+  },
+  {
+    "id": 72,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The footballer knew he could not start in the Saturday's match.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "False – paragraph (c): 'that could be my chance' – he thought he might play."
+  },
+  {
+    "id": 73,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The footballer did extra exercise after the usual routine.\n(Uveďte aj označenie odseku.)",
+    "opts": [
+      "true – paragraph (a)",
+      "true – paragraph (b)",
+      "true – paragraph (c)",
+      "true – paragraph (d)",
+      "true – paragraph (e)",
+      "false – paragraph (a)",
+      "false – paragraph (b)",
+      "false – paragraph (c)",
+      "false – paragraph (d)",
+      "false – paragraph (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "False – paragraph (e): 'had to do an extra fifty press-ups, FOLLOWED BY the usual routine' – extra BEFORE, not after."
+  },
+  {
+    "id": 74,
+    "ctx": "Section III – Part 3: A Part of the History of New Zealand",
+    "ctxText": "Section III – Part 3: A Part of the History of New Zealand\n\nNew Zealand is one of the most recently-settled major landmasses. The first settlers were Eastern Polynesians who went to New Zealand at some time between 700 and 2000 years ago. Over the following centuries these settlers developed into a distinct culture now known as Māori. At some point a group of Māori migrated to the Chatham Islands where they developed their own distinct Moriori culture.\n\nThe first Europeans known to have reached New Zealand were Dutch explorer Tasman and his crew in 1642. The Māori killed several of the crew and no Europeans returned to New Zealand until British explorer James Cook's voyage of 1768–71. Cook reached New Zealand in 1769 and mapped almost the entire coastline. Following Cook, New Zealand was visited by numerous Europeans. They traded European food and goods, especially metal tools and weapons, for Māori timber, food, artefacts and water. From the early nineteenth century, Christian missionaries began to settle New Zealand, eventually converting most of the Māori population, who had become disillusioned by the introduction of Western culture.\n\nBecoming aware of the lawless nature of European settlement and increasing interest in the territory by the French, the British government sent William Hobson to New Zealand to claim sovereignty and negotiate a treaty with the Māori. The Treaty of Waitangi was signed in 1840. It is regarded as New Zealand's foundation as a nation and is respected by the Māori as a guarantee of their rights.\n\nIn 1841 New Zealand became a separate colony, comprising North Island and South Island. In 1863 Wellington was suggested as the capital because of its harbour and central location, and parliament officially sat there for the first time in 1865. In 1893, the country became the first nation in the world to grant women the right to vote. In 1907, New Zealand became a Dominion within the British Empire, and an independent Commonwealth country in 1947, although in practice Britain had ceased to play any real role in the government of New Zealand much earlier than this.",
+    "q": "European settlers in New Zealand began to behave ___. (1 word)",
+    "a": "lawlessly",
+    "type": "short",
+    "exp": "'lawlessly' – 'the lawless nature of European settlement'."
+  },
+  {
+    "id": 75,
+    "ctx": null,
+    "ctxText": null,
+    "q": "The culture in the Chatham Islands is known as ___ culture. (1 word)",
+    "a": "Moriori",
+    "type": "short",
+    "exp": "'Moriori' – 'they developed their own distinct Moriori culture'."
+  },
+  {
+    "id": 76,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Māori culture originated in the east of ___. (1 word)",
+    "a": "Polynesia",
+    "type": "short",
+    "exp": "'Polynesia' – 'The first settlers were Eastern Polynesians'."
+  },
+  {
+    "id": 77,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Christianity was introduced from the ___ century. (2 words)",
+    "a": "early nineteenth",
+    "type": "short",
+    "exp": "'early nineteenth' – 'From the early nineteenth century, Christian missionaries began to settle'."
+  },
+  {
+    "id": 78,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Māori timber was exchanged for metal tools from ___. (1 word)",
+    "a": "Europe",
+    "type": "short",
+    "exp": "'Europe' – Europeans traded metal tools for Māori timber."
+  },
+  {
+    "id": 79,
+    "ctx": null,
+    "ctxText": null,
+    "q": "New Zealand became a ___ ___ a year after the Treaty of Waitangi. (2 words)",
+    "a": "separate colony",
+    "type": "short",
+    "exp": "'separate colony' – 'In 1841 New Zealand became a separate colony' (Treaty was 1840)."
+  },
+  {
+    "id": 80,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In reality, Britain had not influenced the government of New Zealand long before its ___ in 1947. (1 word)",
+    "a": "independence",
+    "type": "short",
+    "exp": "'independence' – 'an independent Commonwealth country in 1947'."
+  }
+]
