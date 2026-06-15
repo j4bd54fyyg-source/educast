@@ -1,2 +1,5 @@
-/data/*
+/data/*.json
   Content-Type: application/json
+
+/data/audio/*.mp3
+  Content-Type: audio/mpeg
