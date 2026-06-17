@@ -1,0 +1,1151 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Primer capítulo – Primera parte: Andrés Orozco Estrada (7 puntos)",
+    "ctxText": "Primera parte: Andrés Orozco Estrada\n\nVypočujte si nahrávku o kolumbijskom dirigentovi Andrésovi Orozcovi Estradovi. Na základe vypočutého vyberte správnu odpoveď (A, B, C alebo D).",
+    "audio": "data/audio/spj_b2_2010.mp3",
+    "audioSection": "Primera parte: Andrés Orozco Estrada",
+    "q": "El director de orquesta Andrés Orozco nació en:",
+    "opts": [
+      "Mérida",
+      "Hamburgo",
+      "Viena",
+      "Medellín"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Nació en Medellín, Colombia."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Cuando era niño a Andrés Orozco le gustaba escuchar:",
+    "opts": [
+      "tangos",
+      "milongas",
+      "música instrumental",
+      "música clásica"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "De niño le gustaba escuchar música clásica."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Su verdadera afición como director de orquesta la descubrió gracias:",
+    "opts": [
+      "a su madre",
+      "a su maestro de piano",
+      "al señor Manrique de su barrio",
+      "a la señora Carmina"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "La descubrió gracias a su maestro de piano."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Con una beca inició sus estudios como director en:",
+    "opts": [
+      "La Universidad de Música y Arte de Bogotá",
+      "La Universidad Javeriana de Bogotá",
+      "La Universidad Técnica de Viena",
+      "La Universidad Juan Carlos I de Madrid"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Inició sus estudios en La Universidad Javeriana de Bogotá."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Durante sus estudios en Viena, para ayudarse económicamente:",
+    "opts": [
+      "dirigía una orquesta de aficionados",
+      "hacía payasadas",
+      "daba clases de piano",
+      "dibujaba música en el aire"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Dirigía una orquesta de aficionados."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El monarca español le otorgó:",
+    "opts": [
+      "La Orden de Oro como director titular de su orquesta",
+      "el cargo de director de La Orquesta Sinfónica de Madrid",
+      "La Cruz Oficial de La Orden de Isabel La Católica",
+      "la beca de La Fundación Rey Juan Carlos"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Le otorgó La Cruz Oficial de La Orden de Isabel La Católica."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Andrés Orozco piensa que:",
+    "opts": [
+      "el éxito es muy importante",
+      "tiene éxito porque es un genio",
+      "el éxito no depende sólo de sus capacidades",
+      "siempre tendrá éxito"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "El éxito no depende sólo de sus capacidades."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Primer capítulo – Segunda parte: El verdadero valor del anillo (6 puntos)",
+    "ctxText": "Segunda parte: El verdadero valor del anillo\n\nVypočujte si rozprávku „El verdadero valor del anillo“. Rozhodnite, či je tvrdenie pravdivé (A), nepravdivé (B), alebo sa v nahrávke nehovorí (C).",
+    "audio": null,
+    "q": "El joven visitó al maestro para pedirle ayuda ya que quería vender un anillo.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El maestro le dijo que sí, pero que primero llevara el caballo al mercado.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El joven llegó al mercado para vender una joya por al menos una moneda de oro.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El maestro reconoció que el joven tenía razón y era mejor saber el verdadero valor del anillo.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El joyero sabía que el anillo tenía un valor muy alto, pero en ese momento no podía pagar mucho por él.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El maestro explica al joven que él al igual que esa joya puede ser valorado sólo por un joyero.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Primer capítulo – Tercera parte: Luís Sepúlveda (7 puntos)",
+    "ctxText": "Tercera parte: Luís Sepúlveda\n\nVypočujte si rozhovor s čílskym spisovateľom Luísom Sepúlvedom. Na základe vypočutého doplňte chýbajúce slová.",
+    "audio": null,
+    "q": "Luís Sepúlveda, después de García Márquez es el escritor latinoamericano que más se ___ en Europa.",
+    "a": "lee",
+    "type": "short",
+    "exp": "Prijateľné: lee / vende / compra."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "En una entrevista nos cuenta algunos ___ sobre su nacimiento.",
+    "a": "detalles",
+    "type": "short",
+    "exp": "Prijateľné: detalles / datos / hechos / informes."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...de los lugares que ha visitado y del ___ en el que escribe sus libros.",
+    "a": "entorno",
+    "type": "short",
+    "exp": "Prijateľné: entorno / lugar / sitio / ambiente."
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...su padre trabajaría como ___.",
+    "a": "chef de cocina",
+    "type": "short",
+    "exp": "Prijateľné: chef de cocina / cocinero."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Desde joven ha viajado por su país del cual tuvo que salir en 1977 para vivir en el ___.",
+    "a": "exilio",
+    "type": "short",
+    "exp": "Prijateľné: exilio / extranjero."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Durante sus viajes toma nota de todo lo que ve, tiene unas doscientas ___ con dibujos, poemas, frases, etc.",
+    "a": "libretas",
+    "type": "short",
+    "exp": "libretas (zápisníky)."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...donde escribe a mano, con su tetera de hierba mate ___.",
+    "a": "a mano",
+    "type": "short",
+    "exp": "Prijateľné: a mano / cerca / caliente / siempre."
+  },
+  {
+    "id": 21,
+    "ctx": "📝 Segundo capítulo – Primera parte: Los mares del sur (20 puntos)",
+    "ctxText": "Segundo capítulo – Primera parte\n\nV texte boli vynechané slová 21 – 40. Pre každé prázdne miesto vyberte správnu možnosť (A – D).",
+    "audio": null,
+    "q": "Carvalho saltó de la cama... y ___ en el borde de la cama.",
+    "opts": [
+      "sentado",
+      "sentaba",
+      "se sentó",
+      "había sentado"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El silencio de ella le hizo ___.",
+    "opts": [
+      "se volviera",
+      "se vuelve",
+      "volviéndose",
+      "volverse"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Alcanzó ___ pijama, se lo puso...",
+    "opts": [
+      "el",
+      "la",
+      "una",
+      "otra"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...el vino al ___ de la otra.",
+    "opts": [
+      "alcanzar",
+      "alcance",
+      "alcanzó",
+      "alcanza"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Bleda, la gata, dormía junto al fuego como si ___ el animal más confiado de este mundo.",
+    "opts": [
+      "fuera",
+      "fue",
+      "es",
+      "ha sido"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Bleda despertó alterada de su sueño y ___ del sofá.",
+    "opts": [
+      "está saltando",
+      "saltaría",
+      "saltó",
+      "saltaba"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...moviendo las orejas y los ojos hacia Carvalho ___ se dirigía hacia la cocina.",
+    "opts": [
+      "por que",
+      "quien",
+      "cuyo",
+      "cual"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Dispuso sobre la mesa de mármol un ejército de programados ___.",
+    "opts": [
+      "ingresivo",
+      "ingresos",
+      "ingreso",
+      "ingredientes"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...puso en una sartén aceite y un ajo que ___ hasta dorar.",
+    "opts": [
+      "fritó",
+      "fritaba",
+      "frite",
+      "fritase"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Pasó en el mismo aceite unas cabezas de gambas ___ les quitaba las colas.",
+    "opts": [
+      "todavía",
+      "antes",
+      "mientras",
+      "después de"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 31,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...las puso a ___ en un caldo.",
+    "opts": [
+      "hirviendo",
+      "hierve",
+      "estuvo hirviendo",
+      "hervir"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...desalaba las berenjenas ___ agua.",
+    "opts": [
+      "de",
+      "con",
+      "contra",
+      "Ø (žiadne slovo)"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...las dejó en un escurridor para que ___ el aceite.",
+    "opts": [
+      "soltaran",
+      "soltaron",
+      "soltar",
+      "soltarían"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...dejó caer sobre ___ una lluvia de colas de gambas.",
+    "opts": [
+      "las",
+      "unas",
+      "les",
+      "ellas"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...dados de jamón y ___ bañó todo con la bechamel.",
+    "opts": [
+      "esto",
+      "lo",
+      "eso",
+      "aquello"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "De ___ dedos cayó la nieve del queso rallado.",
+    "opts": [
+      "suyos",
+      "su",
+      "sus",
+      "de él"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...la nieve del queso rallado ___ la bechamel.",
+    "opts": [
+      "cubriendo",
+      "cubierto",
+      "está cubriendo",
+      "está cubierto"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Quitó todo lo que ___ la mesa de la cocina.",
+    "opts": [
+      "ocupó",
+      "había ocupado",
+      "ocupaba",
+      "ocupa"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...con los hombros ___ aire.",
+    "opts": [
+      "el",
+      "al",
+      "a el",
+      "Ø (žiadne slovo)"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Carvalho la movió hasta ___.",
+    "opts": [
+      "la despierta",
+      "la despertó",
+      "la despertaba",
+      "despertarla"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": null
+  },
+  {
+    "id": 41,
+    "ctx": "📝 Segundo capítulo – Segunda parte: Fomentar el diálogo (10 puntos)",
+    "ctxText": "Segundo capítulo – Druhá časť\n\nV texte chýba 10 slov (41 – 50). Doplňte vhodné slovo z ponuky:\neducativo · valentía · miedos · interpretación · miembros · pedazos · distracciones · relajaciones · mes · jornada · descriptivo · escuchar · contar · turnos · espacios · acepten · experimentan · solución · gratificantes · natural",
+    "audio": null,
+    "q": "Fomentar el diálogo... ha de convertirse en una prioridad básica durante el proceso ___ de nuestros hijos.",
+    "a": "educativo",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Debemos alejar... los ___ o las vergüenzas a expresar sentimientos.",
+    "a": "miedos",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...expresar sentimientos de forma libre y ___.",
+    "a": "natural",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Para potenciar este diálogo entre los ___ de la familia les propongo un sencillo juego.",
+    "a": "miembros",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Olviden la televisión, la música y las ___.",
+    "a": "distracciones",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...puedan compartir con sus hijos los sucesos de la ___.",
+    "a": "jornada",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El juego consiste en ___ a su familia lo mejor y lo peor que les ha sucedido durante el día.",
+    "a": "contar",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 48,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Lo harán por ___, anotando en la pizarra un pequeño resumen.",
+    "a": "turnos",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...mientras sus hijos lo ___ como una parte más de la rutina de la cena.",
+    "a": "acepten",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Si logran que su mente relacione el diálogo con la ___ de conflictos...",
+    "a": "solución",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 51,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...existen grandes, pequeños, con formas, y ___ diferentes. (začína na c)",
+    "a": "colores",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 52,
+    "ctx": "📝 Segundo capítulo – Tercera parte: Cojines (10 puntos)",
+    "ctxText": "Segundo capítulo – Tretia časť\n\nDoplňte chýbajúce slová 51 – 60. Pomôckou je prvé písmeno slova (uvedené v zátvorke).",
+    "audio": null,
+    "q": "...teniendo en cuenta de que su ___ no resulta excesivamente caro. (začína na p)",
+    "a": "precio",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...para ser más ___ y conseguir así maravillosas combinaciones. (začína na cr)",
+    "a": "creativos",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 54,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Los cojines también cuentan con múltiples formas y ___. (začína na d)",
+    "a": "diseños",
+    "type": "short",
+    "exp": "Prijateľné: diseños / dibujos."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "La tendencia es ___ cojines 'XXL'. (začína na u)",
+    "a": "utilizar",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Los tonos y formas más llamativos convienen si la ___ es más moderna. (začína na d)",
+    "a": "decoración",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...estarán mucho más acorde con un estilo más ___. (začína na tr)",
+    "a": "tradicional",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Si tienes planeado colocar cojines sobre la ___. (začína na c)",
+    "a": "cama",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...asegúrate de que los ___ de los que están elaborados sean lavables. (začína na ma)",
+    "a": "materiales",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Existe una gran ___ de tejidos. (začína na v)",
+    "a": "variedad",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 61,
+    "ctx": "📖 Tercer capítulo – Primera parte: Titulky správ (7 puntos)",
+    "ctxText": "Tretia kapitola – Prvá časť\n\nPrečítajte si správy 61 – 67 a ku každej priraďte vhodný titulok (A – J). Tri titulky sú navyše.",
+    "audio": null,
+    "q": "Empresa francesa anula el reparto de dinero cerca de la Torre Eiffel por motivos de seguridad cuando más de 5.000 personas llenaban el lugar.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "Maniobra publicitaria cancelada por gran cantidad de público."
+  },
+  {
+    "id": 62,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El juego de los españoles fue superior al de Argentina; la selección española celebra cien años en el mejor momento de su historia.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "España se apunta la victoria del siglo."
+  },
+  {
+    "id": 63,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Autoridades sanitarias brasileñas cierran dos restaurantes coreanos que vendían carne de perro, cuyo consumo está prohibido.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Tradiciones alimenticias no aceptadas en Brasil."
+  },
+  {
+    "id": 64,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Comer demasiado rápido hace comer más y favorece la obesidad; los expertos recomiendan comer con calma.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "Come despacio aunque tengas prisa."
+  },
+  {
+    "id": 65,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Mientras el mundo anglosajón celebra Halloween, en América Latina se celebra el Día de Todos los Santos y el Día de los Muertos.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "La devoción de los fieles toma diversas formas en todo el mundo."
+  },
+  {
+    "id": 66,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Programa de alfabetización para adultos en Cereté (Costa Caribe); unos 50 adultos, en su mayoría mujeres y abuelos.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Se capacitan adultos mayores."
+  },
+  {
+    "id": 67,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Detienen a un turista británico en Brasil con mil arañas vivas escondidas en el fondo falso de dos maletas.",
+    "opts": [
+      "(A) Tradiciones alimenticias no aceptadas en Brasil",
+      "(B) La devoción de los fieles toma diversas formas en todo el mundo",
+      "(C) Gran recibimiento al hombre araña",
+      "(D) Se capacitan adultos mayores",
+      "(E) Come despacio aunque tengas prisa",
+      "(F) En el Caribe se ayuda al ambiente familiar",
+      "(G) Maniobra publicitaria cancelada por gran cantidad de público",
+      "(H) Ricos menús para entendidos",
+      "(I) España se apunta la victoria del siglo",
+      "(J) El equipaje más extraño"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "El equipaje más extraño."
+  },
+  {
+    "id": 68,
+    "ctx": "📖 Tercer capítulo – Segunda parte: El masaje durante el embarazo (6 puntos)",
+    "ctxText": "Tretia kapitola – Druhá časť\n\nRozhodnite, či je tvrdenie pravdivé (verdadero) alebo nepravdivé (falso), a uveďte odsek (a) – (e), ktorého sa týka.",
+    "audio": null,
+    "q": "Hablar de masaje es hablar únicamente de relajación.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "Falso – párrafo (a): el masaje hace más que relajar (bebé más sano)."
+  },
+  {
+    "id": 69,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El masaje puede ayudar a eliminar la depresión que suele acompañar al embarazo.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (d): el masaje es antidepresivo."
+  },
+  {
+    "id": 70,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Durante cualquier período del embarazo es recomendable un buen masaje.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falso – párrafo (e): en el primer trimestre hay contraindicaciones."
+  },
+  {
+    "id": 71,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El masaje ayuda a aliviar la presión en la espalda, causada por el peso extra.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (c)."
+  },
+  {
+    "id": 72,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Es recomendable que sea el médico quien realice el masaje ya que es un profesional.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falso – párrafo (e): debe hacerlo un profesional del masaje, no el médico."
+  },
+  {
+    "id": 73,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Los beneficios de los masajes son buenos para la madre y para el hijo porque están muy unidos.",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (b)."
+  },
+  {
+    "id": 74,
+    "ctx": "📖 Tercer capítulo – Tercera parte: Fobias (7 puntos)",
+    "ctxText": "Tretia kapitola – Tretia časť\n\nPrečítajte si článok o fóbiách. Potom doplňte chýbajúce slová 74 – 80 do zhrnutia textu.",
+    "audio": null,
+    "q": "Existen más de trescientas ___ de fobias.",
+    "a": "clases",
+    "type": "short",
+    "exp": "Prijateľné: clases / definiciones."
+  },
+  {
+    "id": 75,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...algunos tienen cambios de actitud o de ___.",
+    "a": "conducta",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 76,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Muchas personas no ___ cuándo ni cómo surgieron sus fobias.",
+    "a": "saben",
+    "type": "short",
+    "exp": null
+  },
+  {
+    "id": 77,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...este miedo exagerado puede ___ negativamente en diferentes momentos de sus vidas.",
+    "a": "influir",
+    "type": "short",
+    "exp": "Prijateľné: influir / interferir."
+  },
+  {
+    "id": 78,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...éste puede ser sólo el ___ de problemas que no han sido solucionados.",
+    "a": "reflejo",
+    "type": "short",
+    "exp": "Prijateľné: reflejo / resultado."
+  },
+  {
+    "id": 79,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...es importante contar con el ___ de un profesional.",
+    "a": "asesoramiento",
+    "type": "short",
+    "exp": "Prijateľné: asesoramiento / consejo / apoyo."
+  },
+  {
+    "id": 80,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "...y sobre todo ___ a él.",
+    "a": "enfrentarse",
+    "type": "short",
+    "exp": "Prijateľné: enfrentarse / enfrentarnos."
+  }
+]
