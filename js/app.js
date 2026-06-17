@@ -2416,7 +2416,10 @@ fetch('data/spj_b2_2010.json')
   .then(function(r){return r.json();})
   .then(function(qs){addMat('spj-b2',2010,qs);})
   .catch(function(e){console.error('Chyba SPJ B2:',e);});
-// addMat('ruj-b1', 2010, [...]);
+fetch('data/ruj_b1_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('ruj-b1',2010,qs);})
+  .catch(function(e){console.error('Chyba RUJ B1:',e);});
 // addMat('ruj-b2', 2010, [...]);
 // addMat('frj-b1', 2010, [...]);
 // addMat('frj-b2', 2010, [...]);
