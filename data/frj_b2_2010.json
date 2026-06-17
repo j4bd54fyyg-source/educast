@@ -1,0 +1,1098 @@
+[
+ {
+  "id": 1,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": "data/audio/frj_b2_2010.mp3",
+  "audioSection": "Anna Gavalda",
+  "q": "Que pense Anna Gavalda de la gloire et de l’argent?",
+  "opts": [
+   "Elle s’en désintéresse complètement.",
+   "Elle fait tout pour être célèbre.",
+   "Elle veut seulement gagner beaucoup d’argent.",
+   "Elle trouve qu’il n’y a pas de bonheur sans gloire et sans fortune."
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 2,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quelle relation entretient-elle avec les éditeurs?",
+  "opts": [
+   "À chaque fois, elle envoie son manuscrit à un éditeur différent.",
+   "Elle coopère toujours avec son premier éditeur.",
+   "Pour réussir, elle envoie le même manuscrit à plusieurs éditeurs.",
+   "Elle est attirée par les grandes maisons d’édition."
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 3,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pourquoi préfère-t-elle vivre en province plutôt qu’à Paris?",
+  "opts": [
+   "Elle aime se retirer et rester tranquille pour écrire.",
+   "Elle aime se promener seule à la campagne.",
+   "Ses animaux de compagnie ont plus de place et de liberté.",
+   "Elle trouve que ce lieu convient le mieux à l’éducation des enfants."
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 4,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pourquoi n’était-elle pas entièrement heureuse de son premier succès littéraire?",
+  "opts": [
+   "Elle s’occupait de son mari malade.",
+   "Elle était en train de divorcer de son mari.",
+   "Le graphisme du livre ne lui a pas plu.",
+   "Son éditeur n’a pas respecté le contrat."
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 5,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quelle idée se fait-elle de son travail d’écrivaine?",
+  "opts": [
+   "Pour elle, c’est une thérapie.",
+   "Elle a l’ambition de changer le monde.",
+   "Elle pense avoir un certain talent littéraire.",
+   "Elle trouve ses textes intéressants pour ses élèves."
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 6,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Où trouve-t-elle son inspiration littéraire?",
+  "opts": [
+   "Au collège où elle a enseigné.",
+   "À Paris où elle a fait la promotion de ses livres.",
+   "Dans les journaux qu’elle lit régulièrement.",
+   "Dans ses expériences personnelles et dans le monde qui l’entoure."
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 7,
+  "ctx": "🎧 Partie I – 1: Anna Gavalda, une fille bien (7 points)",
+  "ctxText": "Première sous-partie: Anna Gavalda, une fille bien\n\nÉcoutez l’interview de cette écrivaine à succès donnée à la revue «Elle». Choisissez la bonne réponse (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Qui a le droit de lire et de critiquer en premier ses livres?",
+  "opts": [
+   "C’est sa mère.",
+   "C’est son nouveau compagnon.",
+   "C’est sa petite sœur.",
+   "C’est à chaque fois quelqu’un de nouveau."
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 8,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "D’après Éric, Rouen a plusieurs avantages pour devenir la capitale de France.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 9,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Rouen se trouve à une heure de train de Paris.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 10,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "La ville de Rouen est traversée par un des fleuves principaux de France.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 11,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pendant la dernière guerre, la cathédrale de Rouen est tombée en ruines.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 12,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Tous les Rouennais sont fiers du monument commémoratif dédié à Jeanne d’Arc.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 13,
+  "ctx": "🎧 Partie I – 2: Rouen, une ville à découvrir (6 points)",
+  "ctxText": "Deuxième sous-partie: Rouen, une ville à découvrir\n\nÉcoutez la conversation entre Éric et Martine. Dites si c’est vrai, faux ou n’est pas dit.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Éric est prêt à pardonner à sa ville préférée plusieurs défauts, même la pluie qui y tombe un jour sur deux.",
+  "opts": [
+   "vrai",
+   "faux",
+   "n’est pas dit"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 14,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Les adolescents représentent souvent un grand ___ dans une famille à cause de leur comportement.",
+  "a": "problème",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 15,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ou leur ___ scolaire.",
+  "a": "décrochage",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 16,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Désormais, il s’agit d’un accord ___ entre l’adolescent et les parents.",
+  "a": "commun",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 17,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…les adolescents ont aussi leurs propres ___ d’entrer à l’internat.",
+  "a": "raisons",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 18,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ils rêvent d’une plus grande ___.",
+  "a": "autonomie",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 19,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ils souhaitent goûter à une vie ___.",
+  "a": "communautaire",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 20,
+  "ctx": "🎧 Partie I – 3: Internat: le grand retour (7 points)",
+  "ctxText": "Troisième sous-partie: Internat: le grand retour\n\nÉcoutez le commentaire radiophonique. Complétez le résumé (un seul mot par espace).",
+  "audio": null,
+  "audioSection": null,
+  "q": "La majorité des internats tient à ___ les adolescents prêts à réussir leurs études.",
+  "a": "recevoir",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 21,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…a travaillé pendant plus de soixante-quinze ans ___ blanchisseuse.",
+  "opts": [
+   "comment",
+   "comme",
+   "que",
+   "ce que"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 22,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Un jour, après avoir pris ___ retraite, elle est allée à la banque.",
+  "opts": [
+   "sa",
+   "son",
+   "notre",
+   "leur"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 23,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…et ___ découvert à son plus grand étonnement…",
+  "opts": [
+   "avait",
+   "ait",
+   "a",
+   "eut"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 24,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…les maigres économies qu’elle avait ___ chaque mois s’élevaient à plus de 150 000 dollars.",
+  "opts": [
+   "déposé",
+   "déposés",
+   "déposée",
+   "déposées"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 25,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Puis, au plus grand étonnement de ___, elle a retiré la quasi-totalité de ses économies.",
+  "opts": [
+   "tous",
+   "tout",
+   "toute",
+   "toutes"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 26,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…et ___ a fait le don à une université de la région.",
+  "opts": [
+   "y",
+   "en",
+   "l’",
+   "les"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 27,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Elle a voulu ainsi ___ le fonds de bourses d’études.",
+  "opts": [
+   "créer",
+   "créé",
+   "créée",
+   "créés"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 28,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…le fonds de bourses d’études ___ les étudiants d’origine afro-américaine.",
+  "opts": [
+   "avant",
+   "devant",
+   "pour",
+   "à"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 29,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Cette bonne action a fait les gros titres partout ___ États-Unis.",
+  "opts": [
+   "en",
+   "au",
+   "dans",
+   "aux"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 30,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "À ___ époque, en tant qu’élève ambitieuse, je désirais étudier à l’université.",
+  "opts": [
+   "cet",
+   "cette",
+   "celle",
+   "celui"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 31,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…j’ai raté d’un point les examens d’admission ___ droit à une bourse régulière.",
+  "opts": [
+   "donnant",
+   "donné",
+   "donner",
+   "avoir donné"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 32,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Or, ___ aide financière, je pouvais dire adieu à mon rêve.",
+  "opts": [
+   "avec",
+   "dans",
+   "sans",
+   "en"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 33,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…je pouvais dire adieu à ___ rêve.",
+  "opts": [
+   "mienne",
+   "mien",
+   "ma",
+   "mon"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 34,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…au moment ___ j’allais sortir de la maison…",
+  "opts": [
+   "ou",
+   "où",
+   "quand",
+   "quant"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 35,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…pour rejoindre ma mère ___ partait en ville en voiture…",
+  "opts": [
+   "que",
+   "lequel",
+   "qui",
+   "laquelle"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 36,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "J’étais folle ___ joie.",
+  "opts": [
+   "de",
+   "du",
+   "la",
+   "des"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 37,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "On m’ ___ dit que je retrouvais un membre de la famille.",
+  "opts": [
+   "aurais",
+   "aurait",
+   "auraient",
+   "as"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 38,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ma famille est donc devenue la ___.",
+  "opts": [
+   "mienne",
+   "leur",
+   "tienne",
+   "sienne"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 39,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Évidemment, Osceola s’est ___ aussi à nos réunions de famille.",
+  "opts": [
+   "jointe",
+   "joigne",
+   "joint",
+   "joignit"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 40,
+  "ctx": "📝 Partie II – 1: Plus qu’une bourse d’études (20 points)",
+  "ctxText": "Première sous-partie: Plus qu’une bourse d’études\n\nPour chaque trou 21–40, choisissez le mot qui convient (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Elle m’a ___ le sens d’un geste merveilleux: donner.",
+  "opts": [
+   "enseignée",
+   "enseigné",
+   "enseigner",
+   "enseigne"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 41,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "Je sais qu’il y a une définition ___ mais donnez-nous une définition simple.",
+  "a": "officielle",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 42,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…il faut que les hommes d’aujourd’hui vivent bien, sans ___ la vie des hommes de demain.",
+  "a": "compromettre",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 43,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pourquoi l’ ___ correcte du développement durable ne se pratique pas comme il faut!",
+  "a": "idée",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 44,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pendant très ___, l’humanité pensait que les richesses naturelles étaient sans limites.",
+  "a": "longtemps",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 45,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…l’humanité pensait que les richesses naturelles étaient sans ___.",
+  "a": "limites",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 46,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…on risquait de déstabiliser l’équilibre ___ de la Terre.",
+  "a": "naturel",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 47,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…un équilibre entre les besoins de l’homme et la façon d’exploiter les ___ naturelles.",
+  "a": "ressources",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 48,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…il ne faut pas oublier non plus l’ ___ social.",
+  "a": "aspect",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 49,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…quelques gens riches mais beaucoup de malheureux, ce n’est pas une ___ souhaitable.",
+  "a": "tendance",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 50,
+  "ctx": "📝 Partie II – 2: Un sujet d’actualité (10 points)",
+  "ctxText": "Deuxième sous-partie: Un sujet d’actualité\n\nComplétez le texte 41–50 par les mots de la liste (chaque mot une seule fois):\n\nPRÉVENIR, OFFICIELLE, NOTION, RESPECT, COMPROMETTRE, ARTIFICIEL, IDÉE, SÉQUENCE, LONGTEMPS, LIMITES, NATUREL, RAISONS, RESSOURCES, ASPECT, TENDANCE, OFFICINALE, MÉRITES, ENVIRONNEMENTAL, PROMOTIONS, POÉTIQUE",
+  "audio": null,
+  "audioSection": null,
+  "q": "…le développement durable doit harmoniser le développement économique, ___ et social.",
+  "a": "environnemental",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 51,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…intrigué par la petite boîte de métal ___ (placer) sur l’étagère.",
+  "a": "placée",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 52,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…probablement, il ___ (ne jamais remarquer) cette boîte.",
+  "a": "n’aurait jamais remarqué",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 53,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…une «herbe secrète» que sa mère lui ___ (donner).",
+  "a": "avait donnée",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 54,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…elle avait peur que Ben ou quelqu’un d’autre ne ___ (prendre) la boîte.",
+  "a": "prenne",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 55,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Ben ___ (savoir) que peu après leur mariage, sa belle-mère avait apporté la boîte.",
+  "a": "savait",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 56,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "«Cela ne ___ (faire) de mal à personne si je jetais un coup d’œil dans la boîte».",
+  "a": "ferait",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 57,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "___ (Soulever) son couvercle, il vit que la boîte était vide.",
+  "a": "En soulevant",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 58,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Après ___ (déplier) le papier, il put lire les mots.",
+  "a": "avoir déplié",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 59,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…il put ___ (lire) les mots qui disaient…",
+  "a": "lire",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 60,
+  "ctx": "📝 Partie II – 3: L’ingrédient secret de Marthe (10 points)",
+  "ctxText": "Troisième sous-partie: L’ingrédient secret de Marthe\n\nMettez le verbe entre parenthèses à la forme correcte (chaque verbe une seule fois).",
+  "audio": null,
+  "audioSection": null,
+  "q": "«Marthe, ___ (ajouter) une touche d’amour à tout ce que tu fais».",
+  "a": "ajoute",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 61,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "Les restaurants Mc Donald’s proposent aux enfants des menus variés, moins gras, moins salés… — Quel titre (A–J)?",
+  "a": "D",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 62,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "Florence: réseau de pistes cyclables, vélos gratuits, on pédale vers Sienne et Pise… — Quel titre (A–J)?",
+  "a": "F",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 63,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "En France depuis 2009, les retraités peuvent cumuler un nouvel emploi et leur retraite… — Quel titre (A–J)?",
+  "a": "A",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 64,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "À Miami, une opération chirurgicale a reconstruit la mâchoire d’un crocodile… — Quel titre (A–J)?",
+  "a": "C",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 65,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "1800 milliards de tasses bues dans le monde; le thé stimule, protège des maladies cardio-vasculaires… — Quel titre (A–J)?",
+  "a": "J",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 66,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "En France 86 000 espèces; 54 ont disparu depuis le 19e siècle; crise planétaire… — Quel titre (A–J)?",
+  "a": "G",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 67,
+  "ctx": "📖 Partie III – 1: Quelques brèves (7 points)",
+  "ctxText": "Première sous-partie: Quelques brèves\n\nPour chaque article 61–67, choisissez le titre qui convient (A)–(J). Trois titres ne conviennent pas.\n\n(A) En faveur d’une plus grande activité des seniors\n(B) Obésité des jeunes\n(C) Une intervention dentaire unique\n(D) Vers une alimentation équilibrée\n(E) Le taux de réussite au baccalauréat est en hausse\n(F) De belles découvertes à bicyclette\n(G) Biodiversité en danger\n(H) Un sport particulièrement bénéfique pour tous\n(I) Indicateur de la réussite scolaire\n(J) Une boisson qui nous fait du bien",
+  "audio": null,
+  "audioSection": null,
+  "q": "La note conditionne le passage des élèves; exprimée par un nombre jusqu’à 20… — Quel titre (A–J)?",
+  "a": "I",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 68,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "À l’heure actuelle, la crise économique préoccupe plus les Français que toute autre chose.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 69,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Les Français dépensent des énergies sans réfléchir aux conséquences sur l’environnement.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 70,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Un des «écogestes» consiste à employer des produits bio.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 71,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pour le consommateur écologique, il est désormais possible d’avoir toutes les informations sur le produit.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 72,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Utiliser le vélo à la place de la voiture est correct du point de vue écologique.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 73,
+  "ctx": "📖 Partie III – 2: Dur, dur d’être écologiste au quotidien! (6 points)",
+  "ctxText": "Deuxième sous-partie: Dur, dur d’être écologiste au quotidien!\n\nDites si chaque affirmation est vrai ou faux. (En original on indique aussi le paragraphe a–e.)\n\n(a) Français plus inquiets pour l’environnement (56%) que pour la crise (17%). (b) gestes écologiques: économiseurs d’eau, vélo, tri, produits bio. (c) rares produits à la fois recyclables/bio… (d) pour évaluer l’impact il faut une info pas toujours disponible. (e) principes: marques officielles, réutilisable, tri.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Aujourd’hui, le tri paraît inutile parce qu’il nécessite un transport important.",
+  "opts": [
+   "vrai",
+   "faux"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 74,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Camille et Franck tiennent une ___ au sujet des intellectuels.",
+  "a": "conversation",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 75,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Franck pense que ces personnes ont une vie ___ parce qu’elles ne doivent pas gagner leur vie durement.",
+  "a": "facile",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 76,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "…elles ne sont pas obligées de ___ leur vie aussi durement que lui, le cuisinier.",
+  "a": "gagner",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 77,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "D’après lui, les intellectuels sont totalement ___ de la réalité.",
+  "a": "coupés",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 78,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Pour leur travail, les intellectuels ___ des instruments inoffensifs.",
+  "a": "utilisent",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 79,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ils sont performants intellectuellement, grâce à leur ___ générale.",
+  "a": "culture",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 80,
+  "ctx": "📖 Partie III – 3: L’ingrédient... dialogue Camille/Franck (7 points)",
+  "ctxText": "Troisième sous-partie: Extrait d’un dialogue entre Camille et Franck à propos des intellectuels\n\nDans le résumé, complétez les trous 74–80 par un seul mot, d’après le sens.",
+  "audio": null,
+  "audioSection": null,
+  "q": "…et non pas forts ___ par leurs muscles.",
+  "a": "physiquement",
+  "type": "short",
+  "exp": null
+ }
+]
