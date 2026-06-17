@@ -2432,6 +2432,10 @@ fetch('data/frj_b2_2010.json')
   .then(function(r){return r.json();})
   .then(function(qs){addMat('frj-b2',2010,qs);})
   .catch(function(e){console.error('Chyba FRJ B2:',e);});
+fetch('data/taj_b1_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('taj-b1',2010,qs);})
+  .catch(function(e){console.error('Chyba TAJ B1:',e);});
 // addMat('ruj-b2', 2010, [...]);
 // addMat('frj-b1', 2010, [...]);
 // addMat('frj-b2', 2010, [...]);
