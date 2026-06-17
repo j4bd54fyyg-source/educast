@@ -1,0 +1,1098 @@
+[
+ {
+  "id": 1,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": "data/audio/taj_b2_2010.mp3",
+  "audioSection": "1ª sotto-parte",
+  "q": "Per il loro carattere i pappagalli tendono:",
+  "opts": [
+   "ad affaticarsi in casa",
+   "ad essere ben educati",
+   "ad imporsi in casa",
+   "a creare difficoltà"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 2,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "È meglio fare le lezioni:",
+  "opts": [
+   "nella sua gabbia",
+   "in un ambiente diverso",
+   "nella sua stanza preferita",
+   "in una stanza qualsiasi"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 3,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "La lezione deve durare:",
+  "opts": [
+   "meno di 15 minuti",
+   "due o tre ore al giorno",
+   "massimo 20 minuti",
+   "un’ora al giorno"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 4,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "I pappagalli amano:",
+  "opts": [
+   "ricevere punizioni",
+   "seguire lezioni",
+   "ricevere comandi",
+   "essere sgridati"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 5,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quando pronunciate la parola «Su» dovrà:",
+  "opts": [
+   "posarsi su un oggetto",
+   "posarsi sulla mano",
+   "entrare nella gabbia",
+   "posarsi sul trespolo"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 6,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quando fa qualcosa che non va:",
+  "opts": [
+   "è bene strapazzarlo un po’",
+   "fategli l’occhiolino",
+   "guardatelo con severità",
+   "fategli una carezza"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 7,
+  "ctx": "🎧 Prima parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nAscoltate la registrazione sulle possibilità di educazione dei pappagalli. Scegliete la risposta giusta.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il quarto comando è:",
+  "opts": [
+   "Fai bene",
+   "Vai bene",
+   "Va bene",
+   "Dai bene"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 8,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Soprattutto i settentrionali vorrebbero vivere in Germania.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 9,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "La Francia è apprezzata soprattutto per il governo attuale.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 10,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Secondo gli italiani l’Australia è poco affollata.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 11,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "La maggior parte degli aspiranti emigranti abita nell’Italia settentrionale.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 12,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "In Germania vorrebbero andare i giovani laureati ed i pensionati.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 13,
+  "ctx": "🎧 Prima parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nAscoltate la registrazione sul desiderio degli italiani di vivere all’estero. Scegliete: vero, falso o non si dice.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Rispetto al passato, in Italia sono aumentati i pessimisti.",
+  "opts": [
+   "vero",
+   "falso",
+   "non si dice nella registrazione"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 14,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "MARIO: Fantastico! ___, non mi sono presentato, mi chiamo Mario.",
+  "a": "scusami",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 15,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: Sono ___. (di dove sei?)",
+  "a": "slovacca",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 16,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: Ci siamo separati più di ___ anni fa…",
+  "a": "15",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 17,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: …quando ti svegli la mattina in una ___ di montagna…",
+  "a": "baita",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 18,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: Da noi le ___ durano quattro anni, non cinque come da voi.",
+  "a": "superiori",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 19,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: Cosa vuol dire ___ delle arie?",
+  "a": "darsi",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 20,
+  "ctx": "🎧 Prima parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nAscoltate il dialogo tra Mario e Janka. Inserite la parola mancante (una parola soltanto).",
+  "audio": null,
+  "audioSection": null,
+  "q": "JANKA: …che ne dici di ___ da bere?",
+  "a": "offrirmi",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 21,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "La prima raccomandazione per chi ha intenzione ___ fare una vacanza in Val d’Aosta riguarda sci e scarponi.",
+  "opts": [
+   "a",
+   "da",
+   "per",
+   "di"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 22,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "___ controllare bene prima di partire…",
+  "opts": [
+   "Fateli",
+   "Metteteli",
+   "Dateli",
+   "Andateli"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 23,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…perché ___ in perfetta condizione.",
+  "opts": [
+   "sono",
+   "erano",
+   "siano",
+   "fossi"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 24,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…spiegate al vostro rivenditore che non ___ andando a fare una sciata qualsiasi.",
+  "opts": [
+   "stiate",
+   "state",
+   "stette",
+   "siete"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 25,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…quando propongono un itinerario ___ neve.",
+  "opts": [
+   "sulla",
+   "sul",
+   "alla",
+   "al"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 26,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Si può andare avanti fino a sera senza mai togliersi gli sci, ___ piste sempre diverse…",
+  "opts": [
+   "guidando",
+   "guardando",
+   "mettendo",
+   "facendo"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 27,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…uno si chiede che cosa ci ___ un pezzetto di Roma antica ai piedi delle Alpi.",
+  "opts": [
+   "fa",
+   "faccia",
+   "facendo",
+   "farà"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 28,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il monumento ___ accoglie il visitatore all’ingresso è romano…",
+  "opts": [
+   "chi",
+   "quali",
+   "che",
+   "qualsiasi"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 29,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…tremila pretoriani inviati da Augusto ___ nella zona…",
+  "opts": [
+   "arrivarono",
+   "arriveranno",
+   "arrivino",
+   "arrivavano"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 30,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…e sottomisero il popolo dei Salassi che ___ lì da un paio di millenni.",
+  "opts": [
+   "abitasse",
+   "abiti",
+   "abitava",
+   "abiterà"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 31,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "I soldati costruirono la città, ___ Augusta Praetoria.",
+  "opts": [
+   "la chiamata",
+   "chiamandola",
+   "chiamando",
+   "chiamare"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 32,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Se Aosta ___ il cuore della regione, le valli sono le sue arterie.",
+  "opts": [
+   "fosse",
+   "sia",
+   "fu",
+   "è"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 33,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…pochi eguali in tutto l’arco alpino ___ a bellezze naturali…",
+  "opts": [
+   "quando",
+   "che",
+   "tra",
+   "quanto"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 34,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…è particolarmente apprezzata ___ un pubblico internazionale…",
+  "opts": [
+   "con",
+   "di",
+   "da",
+   "per"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 35,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Percorrendo la strada che ___ attraversa…",
+  "opts": [
+   "la",
+   "lo",
+   "ne",
+   "le"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 36,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ricca di gallerie che ___ prima vista sembrano superflue…",
+  "opts": [
+   "da",
+   "a",
+   "per",
+   "con"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 37,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ma che ___ costruite per arginare le frequenti valanghe invernali.",
+  "opts": [
+   "sono state",
+   "stanno",
+   "stato",
+   "saranno"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 38,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Nome ___ che giustificato, visto lo sconfinato bosco di larici.",
+  "opts": [
+   "molto",
+   "meno",
+   "più",
+   "troppo"
+  ],
+  "a": 2,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 39,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "…lo sconfinato bosco di larici in ___ si è immersi.",
+  "opts": [
+   "che",
+   "quale",
+   "dove",
+   "cui"
+  ],
+  "a": 3,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 40,
+  "ctx": "📝 Seconda parte – 1ª sotto-parte (20 punti)",
+  "ctxText": "Prima sotto-parte\n\nNell’articolo (Val d’Aosta) ci sono 20 spazi vuoti 21–40. Scegliete la parola giusta (A)–(D).",
+  "audio": null,
+  "audioSection": null,
+  "q": "La Val d’Aosta vi regala sempre ___ vacanza indimenticabile.",
+  "opts": [
+   "molta",
+   "una",
+   "sulla",
+   "bella"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 41,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…si è presentato chiedendo un ___ alla direttrice.",
+  "a": "colloquio",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 42,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ha spiegato perché quei soldi che chiedeva ___ per lui indispensabili.",
+  "a": "erano",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 43,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…è andato fuori di testa: ha iniziato ___ urlare…",
+  "a": "a",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 44,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…una pattuglia dell’Arma ___ fermato l’uomo…",
+  "a": "ha",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 45,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "___ scattate le manette.",
+  "a": "sono",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 46,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…è stato accompagnato in caserma ___ è stato identificato…",
+  "a": "dove",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 47,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…non sarà processato con il ___ direttissimo.",
+  "a": "rito",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 48,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…aveva rapinato circa 5.500 euro in banconote ___ vario calibro.",
+  "a": "di",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 49,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…una spiegazione che comunque non ___ bastata per giustificare il suo gesto.",
+  "a": "è",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 50,
+  "ctx": "📝 Seconda parte – 2ª sotto-parte (10 punti)",
+  "ctxText": "Seconda sotto-parte\n\nNel testo (rapina in banca) mancano 10 parole 41–50. Scegliete 10 parole adatte dalla lista:\n\natto, colloquio, erano, che, quale, sono, a, abbia, verso, fosse, ritmo, rito, avesse, da, sia, di, ha, è, dove, cui",
+  "audio": null,
+  "audioSection": null,
+  "q": "…la gravità della situazione in ___ da ieri pomeriggio si ritrova.",
+  "a": "cui",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 51,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "___ (trattarsi) di uno dei piatti più famosi del Lazio: i bucatini all’amatriciana.",
+  "a": "si tratta",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 52,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il nome di questo piatto ___ (essere) derivato da Amatrice.",
+  "a": "è",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 53,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "Si dice che proprio questo piatto ___ (dare) la forza ai contadini del posto.",
+  "a": "dia",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 54,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "…ingredienti che la maggior parte delle casalinghe ___ (avere) sempre nel frigorifero.",
+  "a": "ha",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 55,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "Bisogna solo ___ (tagliare) a dadini duecento grammi di guanciale.",
+  "a": "tagliare",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 56,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "Non appena il grasso ___ (sciogliersi), il guanciale viene tolto dal tegame.",
+  "a": "si è sciolto",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 57,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "…il guanciale ___ (andare) tolto dal tegame e tenuto da parte.",
+  "a": "va",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 58,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "…e quindi ___ (unire) un quarto di chilo di pomodori pelati.",
+  "a": "unite",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 59,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "…aggiungete il guanciale e ___ (insaporire) tutto con un pezzettino di peperoncino.",
+  "a": "insaporite",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 60,
+  "ctx": "📝 Seconda parte – 3ª sotto-parte (10 punti)",
+  "ctxText": "Terza sotto-parte\n\nScegliete il verbo adeguato e scrivetelo nella forma esatta (bucatini all’amatriciana):\n\ntrattarsi, essere, dare, avere, tagliare, sciogliersi, andare, unire, insaporire, servire",
+  "audio": null,
+  "audioSection": null,
+  "q": "Prima di ___ (servire) cospargete ogni piatto con pecorino grattugiato.",
+  "a": "servire",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 61,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "Woody Allen presenta una nuova commedia «Basta che funzioni»; soffre della mancanza di idee nuove. — Quale titolo (A–J)?",
+  "a": "B",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 62,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "La fondazione per lo studio dei tumori distribuirà a San Siro biglietti per la prevenzione del cancro. — Quale titolo (A–J)?",
+  "a": "F",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 63,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "«Un piatto di pasta sulla tavola di ogni famiglia»: XII Giornata Mondiale della Pasta, contro l’obesità. — Quale titolo (A–J)?",
+  "a": "J",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 64,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "Un aereo USA ha proseguito per 240 km oltre la destinazione; si ipotizza che i piloti si siano addormentati. — Quale titolo (A–J)?",
+  "a": "G",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 65,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "La Torre Eiffel festeggia 120 anni con uno spettacolo di luci colorate. — Quale titolo (A–J)?",
+  "a": "I",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 66,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "Marge Simpson conquista la copertina di una rivista americana per i 20 anni della serie. — Quale titolo (A–J)?",
+  "a": "H",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 67,
+  "ctx": "📖 Terza parte – 1ª sotto-parte (7 punti)",
+  "ctxText": "Prima sotto-parte\n\nLeggete gli articoli 61–67 e trovate il titolo adatto (A)–(J). Tre titoli non si possono usare.\n\n(A) Ladro aggressivo dà dei colpi\n(B) Nuovo film che non funziona bene\n(C) Tenta furto, ma si addormenta\n(D) Aereo cade per un errore della FBI\n(E) Lo show degli attori francesi sulla Torre Eiffel\n(F) Prevenire il cancro allo stadio\n(G) I piloti si addormentano?\n(H) Copertina con personaggio immaginario\n(I) Luci colorate sulla Torre Eiffel\n(J) La Festa Mondiale della Pasta",
+  "audio": null,
+  "audioSection": null,
+  "q": "Entrato in casa per rubare, è stato colto dal sonno; la polizia l’ha trovato sul divano. — Quale titolo (A–J)?",
+  "a": "C",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 68,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Un quarto dei giovani vuole diventare calciatore.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 69,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Solo pochissimi ragazzi diventeranno professionisti.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 70,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Negli ultimi anni si è fatto molto contro l’aggressività nel calcio.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 71,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "In Italia sono in tanti che praticano lo sport.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 72,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Baggio dice che sono i tifosi a fare l’atmosfera positiva.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 0,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 73,
+  "ctx": "📖 Terza parte – 2ª sotto-parte (6 punti)",
+  "ctxText": "Seconda sotto-parte\n\nDecidete se le affermazioni sono vere o false. (In originale si indica anche il paragrafo a–e.)\n\n(a) Carta dei diritti dei ragazzi allo sport (1992); poco fatto contro l’aggressività. (b) 1 su 1500 diventa professionista; il 25% dei 7-18enni sogna di fare il calciatore. (c) il 70% degli italiani è sedentario. (d) aggressività sugli stadi nasce tra i genitori (papà/mamma ultras). (e) club di Firenze in protesta; Baggio: servono tifosi modelli.",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quelli che fanno problemi sugli stadi sono soprattutto i giovani.",
+  "opts": [
+   "vero",
+   "falso"
+  ],
+  "a": 1,
+  "type": "mc",
+  "exp": null
+ },
+ {
+  "id": 74,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Quasi la ___ delle persone da 25 a 34 anni usa le reti sociali.",
+  "a": "metà",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 75,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Reti sociali creano un nuovo ___ di comunicazione.",
+  "a": "mezzo",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 76,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il ___ per cento degli italiani è registrato sulle reti sociali.",
+  "a": "trenta",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 77,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Un membro tipico della comunità ___ nell’Italia centrale.",
+  "a": "vive",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 78,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il Facebook è molto adatto per ___ i nuovi rapporti.",
+  "a": "nascere",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 79,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "Il numero degli utenti delle reti sociali è in ___.",
+  "a": "aumento",
+  "type": "short",
+  "exp": null
+ },
+ {
+  "id": 80,
+  "ctx": "📖 Terza parte – 3ª sotto-parte (7 punti)",
+  "ctxText": "Terza sotto-parte\n\nNel riassunto (reti sociali / Facebook) mancano 7 parole 74–80. Scrivetele (una parola per spazio).",
+  "audio": null,
+  "audioSection": null,
+  "q": "I giovani ___ il Facebook un mezzo di comunicazione sicuro.",
+  "a": "considerano",
+  "type": "short",
+  "exp": null
+ }
+]
