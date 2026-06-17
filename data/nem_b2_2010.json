@@ -1,0 +1,1084 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Teil 1 – „In der Schule war ich aber gar nicht so gut...\" (7 Punkte)",
+    "ctxText": "Teil 1: „In der Schule war ich aber gar nicht so gut...\"\n\nSie hören ein Interview mit dem Diplom-Psychologen Heinz-Detlef Scheer. Dazu gibt es 7 Aussagen. Ergänzen Sie in jeder Aussage den fehlenden Satzteil. Es gibt jeweils nur eine richtige Antwort.",
+    "audio": "data/audio/nem_b2_2010.mp3",
+    "audioSection": "Teil 1: In der Schule war ich aber gar nicht so gut...",
+    "q": "Beim standardisierten IQ-Test werden in der Regel geprüft ___.",
+    "opts": [
+      "das logische sowie das figurale Denken",
+      "nicht nur das wörtliche Verständnis, sondern auch das figurale Denken",
+      "das figurale und logische Denken und das verbale Verständnis",
+      "sowohl das verbale Verständnis als auch das logische Denken"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Geprüft werden figurales und logisches Denken sowie verbales Verständnis (drei Komponenten)."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Einen IQ-Test kann man ___ beeinflussen.",
+    "opts": [
+      "nur selten",
+      "fast nicht",
+      "nur schwer",
+      "keinesfalls"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'keinesfalls' – einen IQ-Test kann man überhaupt nicht beeinflussen."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Ein Hochbegabter unterscheidet sich von dem Durchschnittsbürger durch ___.",
+    "opts": [
+      "gelerntes Lernen",
+      "Ausdauer und Leistungsfähigkeit",
+      "Wissensdurst und Fragelust",
+      "Konzentrationsfähigkeit und Einsatzfreude"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Hochbegabte unterscheiden sich durch Wissensdurst und Fragelust."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Die Mehrheit der Hochbegabten in Deutschland ___.",
+    "opts": [
+      "ist sich ihrer großen Begabung nicht bewusst",
+      "fällt fast überhaupt nicht auf",
+      "arbeitet in einer Führungsposition in der Wirtschaft oder Wissenschaft",
+      "kann mit ihrer Begabung nur schwer umgehen"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Die meisten Hochbegabten sind sich ihrer großen Begabung nicht bewusst."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Um die Hochbegabten rechtzeitig zu entdecken, wäre es vernünftig, ___.",
+    "opts": [
+      "alle Abiturienten zu einem IQ-Test zu verpflichten",
+      "die Eltern über die Begabung ihrer Kinder informieren zu lassen",
+      "noch vor dem Hochschulstudium einen IQ-Test zu schreiben",
+      "die ganze Population einen IQ-Test schreiben zu lassen"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Es wäre sinnvoll, die ganze Population einen IQ-Test schreiben zu lassen."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Hochbegabte Frauen möchten ihre Fähigkeiten oft ___.",
+    "opts": [
+      "beweisen",
+      "vergrößern",
+      "vermindern",
+      "präsentieren"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Hochbegabte Frauen möchten ihre Fähigkeiten oft vermindern (herunterspielen)."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Dem Verein „Mensa\" können beitreten ___.",
+    "opts": [
+      "alle überdurchschnittlich begabten Menschen",
+      "alle hochbegabten Menschen",
+      "nur hochbegabte Menschen mit besonderen Berufen",
+      "nur hochbegabte Akademiker"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Dem Verein Mensa können alle hochbegabten Menschen beitreten."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Teil 2 – Mann in der Küche (6 Punkte)",
+    "ctxText": "Teil 2: Mann in der Küche\n\nSie hören ein Interview mit dem strengen TV-Restauranttester Christian Rach. Dazu gibt es 6 Aussagen. Ergänzen Sie in jeder Aussage den fehlenden Satzteil.",
+    "audio": null,
+    "q": "Als Koch und Leiter eines gastronomischen Unternehmens braucht man ___.",
+    "opts": [
+      "Talent und Begeisterung",
+      "Kopf und Mut",
+      "Intellekt und Talent"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Man braucht Kopf und Mut."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Für eine kulinarische Bahn entschied sich Rach ___.",
+    "opts": [
+      "vor dem Examen",
+      "nach dem Studium",
+      "während des Studiums"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Rach entschied sich während des Studiums für die kulinarische Bahn."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Mehr als seinen Kochstern schätzt Rach ___.",
+    "opts": [
+      "den langjährigen Erfolg in der Branche",
+      "ohne Existenzsorgen zu leben",
+      "die Ruhe, die er sich gönnt"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Rach schätzt mehr den langjährigen Erfolg in der Branche als seinen Stern."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Zu Hause kocht Christian Rach ___.",
+    "opts": [
+      "nur Landesküche",
+      "einfache Diätspeisen",
+      "mehrere Gänge"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Zu Hause kocht Rach mehrere Gänge."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Wenn ein Mann seine Partnerin bekochen möchte, sollte er ___ kochen.",
+    "opts": [
+      "nach einem Rezept",
+      "alles mit dem Herzen",
+      "eine Spezialität"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Er sollte alles mit dem Herzen kochen."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Bei Kochversuchen des Partners soll die Frau auch ___ schätzen.",
+    "opts": [
+      "die Misserfolge",
+      "das Optische",
+      "den Geschmack"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Die Frau soll auch das Optische schätzen, nicht nur den Geschmack."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Teil 3 – Von der Straße auf die Bühne (7 Punkte)",
+    "ctxText": "Teil 3: Von der Straße auf die Bühne\n\nSie hören ein Interview mit Udo Neubauer. In folgender Zusammenfassung fehlen die Wörter 14–20. Ergänzen Sie immer nur ein Wort.",
+    "audio": null,
+    "q": "Udo Neubauer entschied sich für den Polizeidienst. Er ___ aber seinen Schritt, von der Schule ohne Abitur abzugehen. (1 Wort)",
+    "a": "bereut",
+    "type": "short",
+    "exp": "'bereut/bedauert' – er bereut diesen Schritt heute."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Seine Informationen über die Studienbedingungen haben sich später als falsch ___. (1 Wort)",
+    "a": "erwiesen",
+    "type": "short",
+    "exp": "'erwiesen/herausgestellt/gezeigt' – sich als falsch erweisen."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Auf ___ dieser Kollegen fing er mit den Auftritten an. (1 Wort)",
+    "a": "Anregung",
+    "type": "short",
+    "exp": "'Anregung/Ermunterung/Ermutigung' – durch den Anstoß der Kollegen."
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Er fing mit den Auftritten vor dem ___ an. (1 Wort)",
+    "a": "Publikum",
+    "type": "short",
+    "exp": "'Publikum/Volk' – vor Zuschauern auftreten."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Die Inspiration für seine Sketsche schöpft er sowohl aus dem privaten als auch aus dem ___ Bereich. (1 Wort)",
+    "a": "beruflichen",
+    "type": "short",
+    "exp": "'beruflichen/dienstlichen/polizeilichen' – aus seinem Polizeiberuf."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Abiturienten, die an den Polizeiberuf denken, ___ er, sich körperlich fit zu halten. (1 Wort)",
+    "a": "rät",
+    "type": "short",
+    "exp": "'rät/empfiehlt' – er gibt ihnen den Rat."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Die ___ Komiker sollten den Zuschauern mutig ihre Begabung zeigen. (1 Wort)",
+    "a": "künftigen",
+    "type": "short",
+    "exp": "'künftigen/zukünftigen/angehenden' – zukünftige Komiker."
+  },
+  {
+    "id": 21,
+    "ctx": "Abschnitt II – Teil 1: Langenscheidts Wörterbücher",
+    "ctxText": "Teil 1 – Sprachstrukturen: Langenscheidts Wörterbücher\n\nWer kennt sie nicht, die Wörterbücher aus dem Verlagshaus Langenscheidt. Der Erfinder dieser Nachschlagewerke ist Gustav Langenscheidt, der am 21. Oktober 175 Jahre alt ___. Mit seiner Lautschrift und seinen Wörterbüchern revolutionierte er den Fremdsprachenunterricht und schuf die Grundlagen für ___ der erfolgreichsten Familienunternehmen in Deutschland.\n\nVölkerverständigung bedeutet, ___ reden zu können. Der Sprachunterricht damals war nicht effektiv. Diese Erfahrung machte auch Gustav Langenscheidt ___ einer Bildungsreise durch Europa. Er ___, dass es im Sprachunterricht zu wenig Sprachpraxis gab. Er stellte sich das Ziel, das Sprachenlernen so zu vereinfachen, ___ die Kommunikation im Vordergrund steht und jeder eine andere Sprache leicht erlernen kann. Gustav Langenscheidt entstammte einer ___ Handwerkerfamilie. Nach dem Abschluss einer kaufmännischen Lehre ___ er sich 1849 von Berlin zu Fuß ___, Europa zu erkunden. Er wanderte, fuhr mit der Postkutsche und dem Schiff. Und egal, ___ er war, störte es ihn, dass seine Sprachkenntnisse nicht ausreichten.\n\nSein Schlüsselerlebnis hatte er in London. Erschöpft vom Reisen wollte Langenscheidt ein feines Hotel zur Übernachtung finden. ___ nächtigte er aber aus Versehen in einem zweifelhaften Gasthof. „Es ist ein wahrhaft peinliches Gefühl, unter Menschen nicht Mensch sein und seine eigenen Gedanken nicht ___,\" schrieb er später verärgert über sich selbst in sein Tagebuch. Das peinliche ___ ermunterte Langenscheidt dazu, ein neues Lernsystem zu entwickeln, um eine Fremdsprache leichter lernen zu können.\n\nEr selbst hatte bemerkt, dass sein Französisch sich verbesserte, ___ er häufig mit Einheimischen sprach. Und das war die Idee: Sprache ___ Muttersprachler zu lernen, ___ damals übten die Schüler vor allem Grammatik im Unterricht. Um die Aussprache und Betonung eines Muttersprachlers imitieren zu können, erfand Langenscheidt die erste praktikable Lautschrift. Gemeinsam mit dem französischen Sprachlehrer Charles Toussaint begann Gustav Langenscheidt ___ der französischen Sprache in eine Lautschrift zu übertragen. Der junge Mann arbeitete rastlos die ganze Nacht hindurch. ___ musste er seinen Militärdienst absolvieren. 1856 legte Gustav Langenscheidt sein Manuskript vor. Diese Selbstlernbriefe enthielten eine neue Lautschrift-Methode und gaben ___ die Möglichkeit zum Spracherwerb. Mit dieser Erfindung ___ Gustav Langenscheidt zum Vater des modernen Sprachkurses. Doch niemand wollte seine Idee zunächst unterstützen. Also ___ er das gesamte Vermögen aus dem Familienbetrieb seiner Eltern ___ und druckte die ersten Exemplare selbst. Wenig später gründete er seinen eigenen Verlag.",
+    "q": "...der am 21. Oktober 175 Jahre alt ___.",
+    "opts": [
+      "geworden ist",
+      "geworden wäre",
+      "geworden sei",
+      "geworden war"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Konjunktiv II für eine hypothetische/zukünftige Aussage im Erzählkontext: geworden wäre."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...und schuf die Grundlagen für ___ der erfolgreichsten Familienunternehmen in Deutschland.",
+    "opts": [
+      "einer",
+      "eins",
+      "eine",
+      "eines"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'eines der erfolgreichsten Unternehmen' – Genitiv Singular Neutrum."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Völkerverständigung bedeutet, ___ reden zu können.",
+    "opts": [
+      "zueinander",
+      "übereinander",
+      "miteinander",
+      "durcheinander"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'miteinander reden' = mit anderen sprechen (gegenseitige Verständigung)."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Diese Erfahrung machte auch Gustav Langenscheidt ___ einer Bildungsreise durch Europa.",
+    "opts": [
+      "während",
+      "durch",
+      "in",
+      "an"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'während einer Reise' = zeitliche Präposition."
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er ___, dass es im Sprachunterricht zu wenig Sprachpraxis gab.",
+    "opts": [
+      "erkanntet",
+      "erkennt",
+      "erkannte",
+      "erkannt"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Präteritum 3. Person Singular: erkannte."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er stellte sich das Ziel, das Sprachenlernen so zu vereinfachen, ___ die Kommunikation im Vordergrund steht.",
+    "opts": [
+      "wenn",
+      "dass",
+      "als",
+      "damit"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'so..., dass' = Folgesatz mit dass."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Gustav Langenscheidt entstammte einer ___ Handwerkerfamilie.",
+    "opts": [
+      "angesehener",
+      "ansehen",
+      "ansehenden",
+      "angesehenen"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Dativ Singular feminin nach 'einer': angesehenen."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Nach dem Abschluss einer kaufmännischen Lehre ___ er sich 1849 von Berlin zu Fuß ___, Europa zu erkunden.",
+    "opts": [
+      "machte ... an",
+      "machte ... zu",
+      "machte ... auf",
+      "machte ... aus"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'sich auf den Weg machen' = aufbrechen."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Und egal, ___ er war, störte es ihn, dass seine Sprachkenntnisse nicht ausreichten.",
+    "opts": [
+      "wo",
+      "was",
+      "warum",
+      "wann"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'egal, wo er war' = unabhängig vom Ort."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "___ nächtigte er aber aus Versehen in einem zweifelhaften Gasthof.",
+    "opts": [
+      "Anstatt",
+      "Stattdessen",
+      "Statt",
+      "Indessen"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'Stattdessen' als selbstständiges Adverb am Satzanfang."
+  },
+  {
+    "id": 31,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„...unter Menschen nicht Mensch sein und seine eigenen Gedanken nicht ___,\"",
+    "opts": [
+      "können auszutauschen",
+      "austauschen können",
+      "austauschen zu können",
+      "können"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'nicht austauschen zu können' – Infinitivkonstruktion mit zu."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Das peinliche ___ ermunterte Langenscheidt dazu, ein neues Lernsystem zu entwickeln.",
+    "opts": [
+      "Erlaubnis",
+      "Erlebnis",
+      "Ergebnis",
+      "Erzeugnis"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'das peinliche Erlebnis' = die unangenehme Erfahrung im Gasthof."
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er selbst hatte bemerkt, dass sein Französisch sich verbesserte, ___ er häufig mit Einheimischen sprach.",
+    "opts": [
+      "wenn",
+      "obwohl",
+      "denn",
+      "nachdem"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'wenn' für wiederholte Bedingung/Gewohnheit."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sprache ___ Muttersprachler zu lernen...",
+    "opts": [
+      "von",
+      "durch",
+      "mit",
+      "neben"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'durch Muttersprachler lernen' = mittels, durch deren Hilfe."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...zu lernen, ___ damals übten die Schüler vor allem Grammatik im Unterricht.",
+    "opts": [
+      "weil",
+      "da",
+      "wenn auch",
+      "denn"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'wenn auch' = konzessiv, Kontrast zur damaligen Praxis."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Gustav Langenscheidt begann ___ der französischen Sprache in eine Lautschrift zu übertragen.",
+    "opts": [
+      "Wort mit Wort",
+      "Wort für Wort",
+      "Wort um Wort",
+      "Wort nach Wort"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Feste Wendung: 'Wort für Wort' = jedes Wort einzeln."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Der junge Mann arbeitete rastlos die ganze Nacht hindurch. ___ musste er seinen Militärdienst absolvieren.",
+    "opts": [
+      "Nachts",
+      "Fasttags",
+      "Tagsüber",
+      "Tags und nachts"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'Tagsüber' = im Kontrast zur Nachtarbeit musste er tagsüber den Militärdienst leisten."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Diese Selbstlernbriefe gaben ___ die Möglichkeit zum Spracherwerb.",
+    "opts": [
+      "jedem",
+      "jede",
+      "jeden",
+      "jeder"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Dativ Singular maskulin: jedem (gaben jedem die Möglichkeit)."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Mit dieser Erfindung ___ Gustav Langenscheidt zum Vater des modernen Sprachkurses.",
+    "opts": [
+      "ist",
+      "wird",
+      "war",
+      "wurde"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Präteritum für die historische Erzählung: wurde."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Also ___ er das gesamte Vermögen aus dem Familienbetrieb seiner Eltern ___ und druckte die ersten Exemplare selbst.",
+    "opts": [
+      "setzte ... ein",
+      "setzte ... durch",
+      "setzte ... auf",
+      "setzte ... aus"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'etwas einsetzen' = investieren, verwenden."
+  },
+  {
+    "id": 41,
+    "ctx": "Abschnitt II – Teil 2: Die Welle (Word Bank)",
+    "ctxText": "Teil 2 – Wortschatz: Die Welle\n\nDas Wort Welle ruft in uns verschiedene Assoziationen wach. Es kann sich zum Beispiel um eine Dauer-, Tsunami- oder Meereswelle handeln. Bekannt ist sie auch als der ___ Roman von Morton Rhue.\n\nIn unserem Text geht es um ___. Wenn ein Opernsänger eine besonders professionelle Leistung auf der Bühne präsentiert, rufen die Zuschauer „bravo\" oder sie ___ Beifall.\n\nDie Sportfans reagieren ___. Bei einem Europa-, Welt- oder Olympiarekord springen Tausende auf und ___ die Hände nach oben: Eine gigantische Welle wogt durchs ___. Damit diese Menschenwelle überhaupt in Gang kommen kann, müssen 25 bis 30 Menschen ___ aufspringen und die Arme hochheben. Ist die Welle einmal unterwegs, fließt sie mit einer Geschwindigkeit von 12 Metern pro ___ in einer Breite von 6 bis 12 Metern durch die Reihen.\n\nDas fanden Wissenschaftler der ___ in Budapest heraus. Sie wollen mit der Untersuchung der Stadion-Welle das Verhalten von Menschenmengen genauer erforschen.\n\nDie ___ Welle machten aufgeregte Fans bei der Fußballweltmeisterschaft 1986 in Mexiko.\n\nWörter zur Auswahl: tratschen, reisen, nacheinander, klatschen, emotionaler, Stadion, Stunde, namenlose, Bewunderung, gleichzeitig, Institut, aggressiver, gleichnamige, Sekunde, Arena, Beeinflussung, erste, Universität, reißen, einmal",
+    "q": "Bekannt ist sie auch als der ___ Roman von Morton Rhue. (vyberte z banky slov)",
+    "a": "gleichnamige",
+    "type": "short",
+    "exp": "'gleichnamige' = der Roman mit demselben Namen (Die Welle)."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In unserem Text geht es um ___.",
+    "a": "Bewunderung",
+    "type": "short",
+    "exp": "'Bewunderung' = Admiration, im Kontext der applaudierenden Fans."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Wenn ein Opernsänger eine besonders professionelle Leistung präsentiert, rufen die Zuschauer 'bravo' oder sie ___ Beifall.",
+    "a": "klatschen",
+    "type": "short",
+    "exp": "'klatschen' = applaudieren."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die Sportfans reagieren ___.",
+    "a": "aggressiver",
+    "type": "short",
+    "exp": "'aggressiver' – intensiver, lebhafter als das Opernpublikum."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Bei einem Rekord springen Tausende auf und ___ die Hände nach oben.",
+    "a": "reißen",
+    "type": "short",
+    "exp": "'reißen' – die Hände schnell nach oben werfen."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Eine gigantische Welle wogt durchs ___.",
+    "a": "Stadion",
+    "type": "short",
+    "exp": "'Stadion' – der Ort, wo die Welle durchläuft."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Damit diese Menschenwelle in Gang kommen kann, müssen 25 bis 30 Menschen ___ aufspringen.",
+    "a": "gleichzeitig",
+    "type": "short",
+    "exp": "'gleichzeitig' – zur selben Zeit."
+  },
+  {
+    "id": 48,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die Welle fließt mit einer Geschwindigkeit von 12 Metern pro ___.",
+    "a": "Sekunde",
+    "type": "short",
+    "exp": "'Sekunde' – Zeiteinheit für die Geschwindigkeit."
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Das fanden Wissenschaftler der ___ in Budapest heraus.",
+    "a": "Universität",
+    "type": "short",
+    "exp": "'Universität' – akademische Institution, die die Forschung durchführte."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die ___ Welle machten aufgeregte Fans bei der Fußballweltmeisterschaft 1986 in Mexiko.",
+    "a": "erste",
+    "type": "short",
+    "exp": "'erste' – die allererste Stadion-Welle überhaupt."
+  },
+  {
+    "id": 51,
+    "ctx": "Abschnitt II – Teil 3: Aus der fränkischen Provinz an die Weltspitze (Adidas)",
+    "ctxText": "Teil 3 – Wortschatz: Aus der fränkischen Provinz an die Weltspitze\n\nDer Zweite Weltkrieg ist gerade vorüber, Deutschland hungert und Rohstoffe sind knapp. In einem kleinen Ort in der fränkischen Provinz beschließt Adolf Dassler, Sportschuhe zu fertigen – die Vorgänger der später weltbekannten Adidas-Schuhe. ___ (Le_ _ _, Leder) hat er keines, aber davon lässt er sich nicht abhalten. Der sportverrückte ___ (Schu_ _ _ _ _ _ _, Schuhmacher) nimmt Zeltleinen und das Gummi amerikanischer Armeetanks und stellt daraus die ersten Nachkriegssportschuhe her. Mit seinen 47 Mitarbeitern will er für jede Sportart Spezial-Modelle ___ (ent_ _ _ _ _ _ _, entwickeln). Dabei hatte er ursprünglich Bäcker gelernt und ___ (20, mit) sein erstes Paar Schuhe aus Leinen in der Waschküche seiner Mutter gebastelt. 1948 meldet der inzwischen 48-Jährige sein Unternehmen an. Er nimmt seinen Spitznamen „Adi\", fügt den Anfang seines Nachnamens hinzu und ___ (n_ _ _ _, nennt) die Firma Adidas.\n\nHeute ist der Konzern ein weltweit agierender Sportartikelhersteller. Adidas Erfolgsgeschichte ist geprägt von dem ___ (Wi_ _ _ _, Willen), an der Spitze zu stehen. Selbst aus einer Phase tiefer Orientierungslosigkeit hat sich der Konzern wieder nach oben gekämpft. Er nimmt schwierige Übernahmen in Kauf, um die Weltmarktführung zu erringen. Kämpfen ___ (g_ _ _ _ _, gehört) bei Adidas zum Geschäft: Selbst die Gründung der Drei-Streifen-Marke geht auf einen Konflikt zurück.\n\nUrsprünglich hatte Adolf Dassler gemeinsam mit seinem Bruder Rudolf Anfang der 20er-Jahre eine Schuhfabrik gegründet. Doch nach dem Krieg kommt es zum Streit. Was den Bruderkampf ausgelöst hat, ist bis heute ___ (un_ _ _ _, unklar). In jedem Fall zerschlagen die ___ (G_ _ _ _ _ _ _ _ _ _, Geschwister) das gemeinsame Unternehmen und gründen ihre eigenen Firmen. Adolf lässt sich südlich des Flusses Aurach nieder, Rudolf mit dem späteren Weltkonzern Puma auf der nördlichen Seite. Aus den Brüdern werden erbitterte Rivalen, die alles versuchen, um ___ (e_ _ _ _ _ _ _, einander) zu übertrumpfen.",
+    "q": "Le _ _ _ hat er keines, aber davon lässt er sich nicht abhalten. (doplňte chýbajúce písmená: Le + 3 písmená)",
+    "a": "Leder",
+    "type": "short",
+    "exp": "Leder = kožа, materiál na topánky, ktorý chýbal."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Der sportverrückte Schu _ _ _ _ _ _ _ nimmt Zeltleinen und das Gummi amerikanischer Armeetanks. (Schu + 7 písmen)",
+    "a": "Schuhmacher",
+    "type": "short",
+    "exp": "Schuhmacher = topánkár."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Mit seinen 47 Mitarbeitern will er für jede Sportart Spezial-Modelle ent _ _ _ _ _ _ _. (ent + 7 písmen)",
+    "a": "entwickeln",
+    "type": "short",
+    "exp": "entwickeln = vyvíjať."
+  },
+  {
+    "id": 54,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Dabei hatte er ursprünglich Bäcker gelernt und 20 sein erstes Paar Schuhe aus Leinen in der Waschküche seiner Mutter gebastelt. (slovo s 20 = mit)",
+    "a": "mit",
+    "type": "short",
+    "exp": "mit 20 (Jahren) = vo veku 20 rokov."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er nimmt seinen Spitznamen 'Adi', fügt den Anfang seines Nachnamens hinzu und n _ _ _ _ die Firma Adidas. (n + 4 písmená)",
+    "a": "nennt",
+    "type": "short",
+    "exp": "nennt = nazýva (firmu Adidas)."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Adidas Erfolgsgeschichte ist geprägt von dem Wi _ _ _ _, an der Spitze zu stehen. (Wi + 4 písmená)",
+    "a": "Willen",
+    "type": "short",
+    "exp": "Willen = vôľa (byť na vrchole)."
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Kämpfen g _ _ _ _ _ bei Adidas zum Geschäft. (g + 5 písmen)",
+    "a": "gehört",
+    "type": "short",
+    "exp": "gehört = patrí (boj patrí k obchodu)."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Was den Bruderkampf ausgelöst hat, ist bis heute un _ _ _ _. (un + 4 písmená)",
+    "a": "unklar",
+    "type": "short",
+    "exp": "unklar = nejasné."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In jedem Fall zerschlagen die G _ _ _ _ _ _ _ _ _ _ das gemeinsame Unternehmen. (G + 10 písmen)",
+    "a": "Geschwister",
+    "type": "short",
+    "exp": "Geschwister = súrodenci (bratia Dassler)."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Aus den Brüdern werden erbitterte Rivalen, die alles versuchen, um e _ _ _ _ _ _ _ zu übertrumpfen. (e + 7 písmen)",
+    "a": "einander",
+    "type": "short",
+    "exp": "einander = jeden druhého (prekonať jeden druhého)."
+  },
+  {
+    "id": 61,
+    "ctx": "Abschnitt III – Teil 1: Gesundheitsmanager",
+    "ctxText": "Teil 1 – Lesen: Gesundheitsmanager – Einige Ratschläge für gesundes Leben\n\nText 61: Stress ist wichtig für uns, er motiviert und befähigt uns zu Höchstleistungen. Doch es muss eine Balance geben zwischen Anspannung und Entspannung. Denn sonst lähmt Stress nicht nur, er kann auch krank machen. Sie bekommen bereits feuchte Hände und werden nervös, wenn Sie nur an bestimmte Situationen denken: etwa ein Gespräch über mehr Gehalt mit dem Chef oder auf einer Sitzung Ihr neues Projekt vorzustellen? Mehr Selbstsicherheit lautet die Lösung für Ihre Probleme.\n\nText 62: Brummt Ihnen häufig der Schädel, wenn Sie unter Stress stehen oder stundenlang vor dem Computer sitzen müssen? Wenn ein Termin den anderen jagt, reagiert der Körper oft mit Migräne. Dabei spielen viele Faktoren eine Rolle. Im Vordergrund stehen jedoch einseitige Verkrampfungen der Nackenmuskulatur. Es gibt viele einfache Übungen, die verhindern können, dass sich Spannungskopfschmerzen bilden.\n\nText 63: Nicht jeder ist eine geborene Frohnatur. Doch bei schlechter Laune muss es nicht bleiben, denn gute Laune kann man lernen. Es gibt effektive Wege, wie Sie Körper, Geist und Seele auf Gute-Laune-Kurs bringen. Lernen Sie verschiedene Sicht- und Verhaltensweisen kennen für den Umgang mit Ärger, Stress und Sorgen.\n\nText 64: „Schluss mit Rauchen\" heißt das Motto des Nichtrauchen-Beraters. Er hilft Ihnen kostenlos, von der Zigarette loszukommen, und zwar gut gelaunt und für immer. Der Nichtraucher-Trainer bereitet Sie in zehn Tagen auf ein rauchfreies Leben vor und begleitet Sie dann noch weitere vier Monate.\n\nText 65: Wer Lebensmittel vermeidet, die Säure bilden, entlastet seinen Körper – und kann, ohne zu hungern, in einer Woche sechs bis acht Pfund abnehmen. Basenfasten ist eine milde Form des Fastens. Anders als beim traditionellen Fasten dürfen Sie essen – Obst, Gemüse, Kräuter und frische Keimlinge.\n\nText 66: In zehn Tagen lassen Gemüsesuppen und frische Säfte Fettpölsterchen schmelzen – ohne Hungergefühl und Energietief. Suppenfasten ist keine Diät, sondern der bewusste Verzicht auf feste Nahrung.\n\nText 67: 80 Prozent der Deutschen wollen mehr Sport treiben. Doch nur 15 Prozent schaffen es, pro Woche wenigstens eine Stunde zu trainieren. Weltklassesportler wie Michael Jordan oder Carl Lewis engagieren deshalb Mentaltrainer und nutzen spezielle Motivationstechniken.\n\nÜberschriften:\n(A) Tief Luft holen\n(B) Büroarbeit optimalisieren\n(C) Kommen Sie in Bewegung\n(D) Satt essen und abnehmen\n(E) Abspecken mit Obst und Gemüse\n(F) Unabhängig für immer\n(G) Kopfweh einfach auflösen\n(H) Endlich Nichtraucher – mit Hypnose\n(I) Entwickeln Sie mehr Selbstbewusstsein\n(J) Wie Sie dauerhaft die Stimmung heben",
+    "q": "Priraďte nadpis k Textu 61 (o strese a sebadôvere):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "I – 'Entwickeln Sie mehr Selbstbewusstsein' – o sebavedomí pri stresových situáciách."
+  },
+  {
+    "id": 62,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 62 (o bolestiach hlavy):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "G – 'Kopfweh einfach auflösen' – o bolestiach hlavy pri práci s počítačom."
+  },
+  {
+    "id": 63,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 63 (o dobrej nálade):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "J – 'Wie Sie dauerhaft die Stimmung heben' – ako si zlepšiť nálado."
+  },
+  {
+    "id": 64,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 64 (o odvykaní od cigariet):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "F sa nehodí, správna je z poskytnutej rovnice F='Unabhängig für immer' – odvykanie od fajčenia natrvalo."
+  },
+  {
+    "id": 65,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 65 (o Basenfasten – chudnutí ovocím a zeleninou):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "E – 'Abspecken mit Obst und Gemüse' – chudnutie pomocou ovocia a zeleniny."
+  },
+  {
+    "id": 66,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 66 (o polievkovom pôste):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "D – 'Satt essen und abnehmen' – chudnutie polievkami bez pocitu hladu."
+  },
+  {
+    "id": 67,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 67 (o športe a mentálnych trénerov):",
+    "opts": [
+      "Tief Luft holen",
+      "Büroarbeit optimalisieren",
+      "Kommen Sie in Bewegung",
+      "Satt essen und abnehmen",
+      "Abspecken mit Obst und Gemüse",
+      "Kopfweh einfach auflösen",
+      "Endlich Nichtraucher – mit Hypnose",
+      "Entwickeln Sie mehr Selbstbewusstsein",
+      "Wie Sie dauerhaft die Stimmung heben"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "C – 'Kommen Sie in Bewegung' – výzva k väčšiemu pohybu a športu."
+  },
+  {
+    "id": 68,
+    "ctx": "Abschnitt III – Teil 2: Herr Yunus gibt Kredit",
+    "ctxText": "Teil 2 – Lesen: Herr Yunus gibt Kredit\n\n(a) Mit einer simplen Idee hat der Wirtschaftsprofessor Muhammad Yunus Zigtausenden Menschen aus der Armut geholfen – und ist dabei bescheiden geblieben. An seinem größten Tag war Muhammad Yunus vollkommen überwältigt: „Jeder sagt mir, dass ich den Friedensnobelpreis bekommen habe. Aber ich kann es nicht glauben. Es ist so unglaublich!\" Die renommierteste internationale Auszeichnung ging also an einen Mann, der mit seiner „Dorfbank\" Millionen Armen Kleinstkredite und somit Hilfe zur Selbsthilfe gibt.\n\n(b) Dabei sah es anfangs danach aus, als ob Yunus eine typische Karriere als Geschäftsmann einschlagen würde. Sein Vater, ein wohlhabender Goldschmied, ermöglichte dem Sohn eine gute Ausbildung im damaligen Ost-Pakistan. Muhammad Yunus bekam ein Fulbright-Stipendium in den USA und promovierte an der Vanderbilt Universität in Nashville. 1972 kehrte er in seine Heimat zurück und wurde mit nur 32 Jahren Direktor der Wirtschaftsfakultät der Universität Chittagong. Doch vor der immer schlimmeren Armut in seiner gerade unabhängig gewordenen Heimat Bangladesch konnte Yunus nicht die Augen verschließen.\n\n(c) „Während Menschen auf den Straßen vor Hunger starben, lehrte ich elegante Wirtschaftstheorien. Ich begann, mich für die Arroganz zu hassen, vorzugeben, ich hätte Antworten. Wir Universitätsprofessoren waren intelligent, aber wir wussten absolut nichts über die Armut um uns herum.\" Zusammen mit seinen Studenten besuchte er auf einer Exkursion 1974 eine Frau, die Bambusstühle fertigte. Dafür musste sie Rohbambus besorgen, was sie nur mit teuren Krediten von privaten Geldhändlern tun konnte. Die Zinsen waren derart überzogen, dass die Frau kaum mehr selbst Gewinn machen konnte. „Da wurde mir klar, dass etwas mit der Wirtschaft, wie ich sie lehrte, vollkommen falsch lief.\"\n\n(d) Daraufhin gab er 42 Korbweberinnen einen Kredit von etwa 25 Dollar aus eigener Tasche. Es stellte sich heraus, dass dieses Geld den Armen nicht nur zu überleben half, sondern auch persönliche Initiative und Unternehmensgeist beförderte, die nötig waren, um sich selbst aus der Armut herauszuarbeiten. 1976 gründete Yunus sein Kreditunternehmen Grameen, 1983 wurde daraus die Grameen Bank. Bis heute hat seine Bank mehr als sechs Millionen Armen – zu mehr als 95 Prozent Frauen – zu Kleinkrediten verholfen. Knapp der Hälfte dieser Menschen ist es gelungen, der Armut zu entkommen.\n\n(e) In mehr als 60 Entwicklungsländern hat sein Konzept inzwischen Nachahmer gefunden. „Ich lade jeden ein, meine Idee zu klauen. Es ist eine tolle Idee, jeder sollte das tun. Ich beschwere mich nur, dass sich nicht noch viel mehr Leute dieser Idee annehmen und sie umsetzen.\" Nun hat sich Yunus zum Ziel gesetzt, die Armut nicht nur in Bangladesch, sondern in der ganzen Welt auszurotten. Im Jahre 2006 erhielt Yunus den Friedensnobelpreis.",
+    "q": "Yunus Vorlesungen unterschieden sich diametral von der Realität.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Richtig – Absatz (c): er lehrte elegante Theorien, während Menschen hungerten – diametraler Unterschied."
+  },
+  {
+    "id": 69,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Obwohl Yunus persönliche Erfolge feierte, blieb er mit beiden Beinen fest auf dem Boden stehen.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Richtig – Absatz (a): trotz des Nobelpreises blieb er bescheiden."
+  },
+  {
+    "id": 70,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Yunus Geldinvestitionen unterstützten sowohl die Arbeit, als auch den Gewinn jedes Einzelnen.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Richtig – Absatz (d): Geld half nicht nur zu überleben, sondern auch persönliche Initiative."
+  },
+  {
+    "id": 71,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Yunus – ein Junge aus armen Verhältnissen schaffte dank dem Stipendium den Uniabschluss.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "Falsch – Absatz (b): sein Vater war ein wohlhabender Goldschmied, kein armer Junge."
+  },
+  {
+    "id": 72,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Geizige Geldunternehmer ermöglichten den Armen keinen Gewinn.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Richtig – Absatz (c): die hohen Zinsen ließen der Frau kaum Gewinn."
+  },
+  {
+    "id": 73,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Leider fanden Yunus Ideen bis heute nur wenige Nachfolger.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falsch – Absatz (e): in über 60 Ländern fand das Konzept Nachahmer."
+  },
+  {
+    "id": 74,
+    "ctx": "Abschnitt III – Teil 3: Alternative Energien in Deutschland",
+    "ctxText": "Teil 3 – Lesen: Alternative Energien in Deutschland\n\nDer Winter ist da. Drinnen ärgern sich die Deutschen über die steigenden Heizkosten und Strompreise, während draußen der kalte Wind pfeift. Aber gerade der Wind ist es, der in Zukunft dafür sorgen soll, dass die Deutschen nicht frieren müssen.\n\nDie Idee ist uralt: Schon die Müller nutzten im Mittelalter die natürliche Kraft des Windes, um in ihren Windmühlen Korn zu mahlen. Spätestens mit der Ölkrise in den 1970er Jahren erkannte man, dass diese alte Idee Zukunft hat. Brennstoffe wie Öl und Kohle gibt es nur begrenzt auf der Erde. Wind-, Sonnen- und Wasserkraft gibt es nahezu unbegrenzt. Die Nutzung dieser Energien schont die Umwelt und macht die Bundesrepublik etwas unabhängiger vom internationalen Energiemarkt.\n\nAuf der Klimakonferenz in der japanischen Stadt Kyoto haben die Industrieländer beschlossen, ihren Ausstoß von Treibhausgasen zu reduzieren. In der Europäischen Union sollen die Emissionen bis 2012 um acht Prozent sinken. Deutschland erklärte sich sogar bereit, einundzwanzig Prozent weniger Kohlendioxid zu produzieren. Der Ausbau der Windenergie ist dabei entscheidend, um dieses Ziel zu erreichen. Deutschland ist weltweit die Nummer eins in Sachen Windkraft. Knapp zwanzigtausend Windenergieanlagen stehen bereits in Deutschland. Mit einer Gesamtleistung von dreiundzwanzigtausend Megawatt liefern sie genug Strom, um 7,2 Prozent des deutschen Energiebedarfs zu decken.\n\nDas ist erst der Anfang. Seit Januar 2009 gibt es ein neues Gesetz, das erneuerbare Energien noch stärker fördert. Darin setzt sich die Bundesregierung das Ziel, bis 2020 den Anteil erneuerbarer Energien an der Stromversorgung auf dreißig Prozent zu erhöhen. Darum werden immer mehr Windparks gebaut. Günstige Möglichkeiten sind jedoch begrenzt. Der stärkste Wind weht im flachen Norddeutschland, vor allem in Küstennähe, wo schon heute viele Anlagen stehen. Auch dürfen die Windräder nicht zu nah an Wohn- oder Naturschutzgebieten errichtet werden, weil sie laut sind. Deshalb sollen ältere Windräder durch modernere ersetzt werden. Außerdem sollen mehr Windparks in der Nord- und Ostsee entstehen.\n\nDer Bau auf dem offenen Meer ist technisch kompliziert. Die größten Windkraftanlagen sind über hundert Meter hoch und ihre riesigen Flügel decken die Fläche eines halben Fußballfeldes ab. Deutsche Ingenieure haben das nötige Know-how und genug Erfahrung, um solche Anlagen aufzubauen. Und das nicht nur im eigenen Land. Die deutsche Technologie ist auf der ganzen Welt gefragt. Derzeit boomt die Windkraft besonders in den USA und China. Mit achtundzwanzig Prozent Marktanteil gehört Deutschland zu den größten Exporteuren für Windkraftanlagen.",
+    "q": "Sowohl die Stromversorgung als auch die Beheizung der deutschen Haushalte wird immer ___. (1 Wort)",
+    "a": "teurer",
+    "type": "short",
+    "exp": "'teurer/kostspieliger' – steigende Heizkosten und Strompreise."
+  },
+  {
+    "id": 75,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Deshalb ___ man nach neuen Energiequellen. (1 Wort)",
+    "a": "sucht",
+    "type": "short",
+    "exp": "'sucht/forscht' – man sucht nach Alternativen."
+  },
+  {
+    "id": 76,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Diese fördern die ___ Deutschlands auf dem Gebiet der Energieversorgung. (1 Wort)",
+    "a": "Unabhängigkeit",
+    "type": "short",
+    "exp": "'Unabhängigkeit/Selbstständigkeit' – weniger Abhängigkeit vom internationalen Energiemarkt."
+  },
+  {
+    "id": 77,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die ___ und künftigen Windenergieanlagen helfen dem Land, die Emissionen zu senken. (1 Wort)",
+    "a": "bestehenden",
+    "type": "short",
+    "exp": "'bestehenden/derzeitigen/existierenden' – die jetzt vorhandenen Anlagen."
+  },
+  {
+    "id": 78,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Es ist nicht einfach, für solche Windkolosse einen passenden ___ zu finden. (1 Wort)",
+    "a": "Ort",
+    "type": "short",
+    "exp": "'Ort/Standort/Platz' – geeigneter Standort für Windräder."
+  },
+  {
+    "id": 79,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er muss nämlich strengen ökologischen Anforderungen ___. (1 Wort)",
+    "a": "entsprechen",
+    "type": "short",
+    "exp": "'entsprechen/unterliegen/genügen' – den Anforderungen gerecht werden."
+  },
+  {
+    "id": 80,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Fast ein Drittel aller exportierten Anlagen auf dem ___ werden in Deutschland hergestellt. (1 Wort)",
+    "a": "Markt",
+    "type": "short",
+    "exp": "'Markt/Weltmarkt' – der globale Markt für Windkraftanlagen."
+  }
+]
