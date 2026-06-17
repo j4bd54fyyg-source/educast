@@ -1,0 +1,914 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Teil 1 – Karin und ihre Reiseerfahrungen (7 Punkte)",
+    "ctxText": "Teil 1: Karin und ihre Reiseerfahrungen\n\nVypočujte si rozhovor s Karin. Na základe vypočutého vyberte správnu odpoveď. Vždy je správna iba jedna z ponúkaných možností.",
+    "audio": "data/audio/nem_b1_2010.mp3",
+    "audioSection": "Teil 1: Karin und ihre Reiseerfahrungen",
+    "q": "Karin zog sehr früh von zu Hause weg, weil sie ___.",
+    "opts": [
+      "ihr eigenes Leben leben wollte",
+      "mehr Freiheit brauchte",
+      "Fremdsprachen lernen wollte",
+      "vom Abenteuer träumte"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Karin wollte Fremdsprachen lernen – das war ihr Hauptmotiv."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Karins Eltern ___.",
+    "opts": [
+      "haben die Tochter nach Heidelberg geschickt",
+      "waren vom Studienort ihrer Tochter begeistert",
+      "waren strikt gegen ihr Studium in Heidelberg",
+      "hatten nichts gegen ihr Studium in Heidelberg"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Die Eltern hatten nichts gegen ihr Studium in Heidelberg."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In Karins amerikanischer Gastfamilie ___.",
+    "opts": [
+      "gab es für alles feste Regeln",
+      "war das Leben ganz frei",
+      "waren alle beim Essen da",
+      "herrschte strenge Disziplin"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "In der Gastfamilie war das Leben ganz frei."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In der High School in Amerika ___.",
+    "opts": [
+      "hat sich Karin schnell integriert",
+      "fand Karin ein paar gute Freunde",
+      "fühlte sich Karin einsam",
+      "halfen Karin vor allem die Lehrer"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Karin fühlte sich in der High School einsam."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "In der zweiten Hälfte ihres Aufenthaltes in Amerika ___.",
+    "opts": [
+      "hat Karin viel Interessantes erlebt",
+      "hat sich Karin oft gelangweilt",
+      "hat Karin viel Zeit alleine verbracht",
+      "hat Karin nur die Schule besucht"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "In der zweiten Hälfte hat Karin viel Interessantes erlebt."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Karin meint, in Amerika gibt es ___ Beziehungen unter den Menschen.",
+    "opts": [
+      "kaum wahre und tiefe",
+      "viele wahre und tiefe",
+      "nur kalte und unpersönliche",
+      "selten kalte und unpersönliche"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Karin meint, es gibt kaum wahre und tiefe Beziehungen."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Nach vier Monaten in Paris kam Karin zurück, weil sie ___.",
+    "opts": [
+      "in Paris keine Arbeit finden konnte",
+      "vom Leben in Paris genug hatte",
+      "sich alleine fühlte",
+      "Heimweh hatte"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Karin kam zurück, weil sie Heimweh hatte."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Teil 2 – Ich bin siebzehn (6 Punkte)",
+    "ctxText": "Teil 2: Ich bin siebzehn\n\nVypočujte si rozprávanie Alexa o tom, čo sa zmenilo v jeho živote v poslednom období. Na základe vypočutého vyberte správnu odpoveď.",
+    "audio": null,
+    "q": "Alex geht in diesem Schuljahr in die ___ Klasse.",
+    "opts": [
+      "zehnte",
+      "zwölfte",
+      "elfte"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Alex geht in die elfte Klasse."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Alex hat jetzt ___ Lehrer.",
+    "opts": [
+      "auch gute",
+      "auch schlechte",
+      "nur gute"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Alex hat nur gute Lehrer."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Alex mag lieber ___ als Sprachen.",
+    "opts": [
+      "Geschichte und Physik",
+      "Mathematik und Philosophie",
+      "Geographie und Mathematik"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Alex mag lieber Mathematik und Philosophie als Sprachen."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Mit dem Kampfsport beschäftigt sich Alex ___.",
+    "opts": [
+      "dreimal wöchentlich",
+      "mehrmals am Tag",
+      "zweimal wöchentlich"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Alex macht Kampfsport dreimal wöchentlich."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Alex kann ein sportliches Motorrad nur dann fahren, wenn er ___.",
+    "opts": [
+      "in der Schule gute Noten hat",
+      "sich jeden Tag um seinen Hund kümmert",
+      "Schutzkleidung trägt"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Alex darf das Motorrad nur fahren, wenn er gute Noten hat."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Nach dem Abitur will Alex bei der Polizei arbeiten, weil er ___ möchte.",
+    "opts": [
+      "nur im Büro arbeiten",
+      "nicht studieren",
+      "einen sicheren Arbeitsplatz haben"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Alex möchte einen sicheren Arbeitsplatz haben."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Teil 3 – Reiseverkehrskauffrau (7 Punkte)",
+    "ctxText": "Teil 3: Reiseverkehrskauffrau\n\nVypočujte si rozprávanie Hanny. K bodom 14–20, ktoré charakterizujú jej prácu, priraďte výpovede A–G.",
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Einstieg in den Beruf",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "D – 'Ich wollte, dass mein Hobby auch für andere vom Vorteil wird' (motivácia začať)."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Anfang der Ausbildung",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "F – 'Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.'"
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Zweite Hälfte der Ausbildung",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A – 'Ich musste auch viele für diesen Beruf spezifische Sachen lernen.'"
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Verhalten zu den Kunden",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "G – 'Trotz allem muss der Kunde fühlen, dass er hier König ist.'"
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Arbeitsplatz Büro",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "B – 'Meer und Strand kommen bei mir fast nur im Urlaub in Frage.'"
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Zufriedene Kunden",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "C – 'Die Kunden schätzen individuelle Beratung und persönlichen Faktor.'"
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Priraďte výpoveď k bodu: Dankbare Kunden",
+    "opts": [
+      "Ich musste auch viele für diesen Beruf spezifische Sachen lernen.",
+      "Meer und Strand kommen bei mir fast nur im Urlaub in Frage.",
+      "Die Kunden schätzen individuelle Beratung und persönlichen Faktor.",
+      "Ich wollte, dass mein Hobby auch für andere vom Vorteil wird.",
+      "Von Kunden kann man manchmal auch ein überraschendes 'Dankeschön' bekommen.",
+      "Ich musste viele für mich damals noch unbekannte und neue Sachen lernen.",
+      "Trotz allem muss der Kunde fühlen, dass er hier König ist."
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "E – 'Von Kunden kann man manchmal auch ein überraschendes Dankeschön bekommen.'"
+  },
+  {
+    "id": 21,
+    "ctx": "Abschnitt II – Teil 1: Immer nur fliegen",
+    "ctxText": "Teil 1 – Sprachstrukturen: Immer nur fliegen\n\nWer sagt denn, dass bestimmte Berufe oder Hobbys nur für Jungen sind?\n\nAngelika (17) will fliegen. Immer nur fliegen. „Es ist einfach ein ___ Gefühl,\" sagt sie. „Wenn ich Angst hätte, ___,\" glaubt sie. Schon als kleines Mädchen wollte sie nichts anderes als bis zum Himmel fliegen. Mit drei Jahren stand sie auf Skiern, mit fünf sprang sie zum ersten Mal. Das Haus ___ Eltern steht im Fichtelgebirge, ganz in der Nähe einer Sprungschanze. Vom Balkon des Hauses aus konnte sie den Skispringern zusehen. Beim Training war sie das einzige Mädchen. Sie ___ bei ihrem ersten Wettkampf nur gegen Jungen an. Denen flog sie weg. Sie gewann das Springen. „Nein,\" wundert sie sich, „eigentlich habe ich nie gehört, dass ich es als Mädchen nicht schaffen ___.\" Manches hat sich inzwischen in ihrem Sport geändert. „___ den Erfolgen von Sven Hannawald und Martin Schmitt wollen immer mehr Mädchen Skispringerin werden,\" weiß sie. Doch nach wie vor ist es für Frauen ein Sondersport und Angelika eine Ausnahmesportlerin. „Viele männliche Skispringer nehmen uns Frauen nicht wirklich ernst. Das spürt ___ besonders bei einem Turnier,\" ist ihre Erfahrung. Sie selbst dagegen nimmt ihren Sport sehr ernst. Wegen der besseren Trainingsmöglichkeiten ___ sie ins Skiinternat nach Obersdorf ___. Hier ___ sie Übungen wie das Absprungtraining machen und lernt ihr Heimweh ___ Kontrolle bringen.",
+    "q": "„Es ist einfach ein ___ Gefühl,\" sagt sie.",
+    "opts": [
+      "unbeschreiblicher",
+      "unbeschreibliche",
+      "unbeschreiblichen",
+      "unbeschreibliches"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'ein ... Gefühl' – das Neutrum braucht -es im Nominativ: unbeschreibliches."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„Wenn ich Angst hätte, ___,\" glaubt sie.",
+    "opts": [
+      "sofort könnte ich meinen Sport vergessen",
+      "ich könnte sofort meinen Sport vergessen",
+      "könnte ich sofort meinen Sport vergessen",
+      "vergessen könnte ich sofort meinen Sport"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Nach 'wenn'-Satz folgt Verb-Subjekt-Inversion: könnte ich sofort..."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Das Haus ___ Eltern steht im Fichtelgebirge.",
+    "opts": [
+      "ihren",
+      "seinen",
+      "ihrer",
+      "seiner"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Genitiv Plural feminin: ihrer Eltern (bezieht sich auf Angelika – feminine Possessivform)."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sie ___ bei ihrem ersten Wettkampf nur gegen Jungen an.",
+    "opts": [
+      "tritt",
+      "tretet",
+      "trete",
+      "trat"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Präteritum 3. Person Singular: trat (antreten)."
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„...dass ich es als Mädchen nicht schaffen ___.\"",
+    "opts": [
+      "würde",
+      "wäre",
+      "wird",
+      "hätte"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Konjunktiv II für indirekte Rede der Vermutung: würde."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„___ den Erfolgen von Sven Hannawald und Martin Schmitt wollen immer mehr Mädchen Skispringerin werden.\"",
+    "opts": [
+      "Ab",
+      "Seit",
+      "Von",
+      "Bis"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'Seit den Erfolgen' = seit dieser Zeit."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„Das spürt ___ besonders bei einem Turnier.\"",
+    "opts": [
+      "er",
+      "sie",
+      "man",
+      "es"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Unpersönliches Pronomen 'man' für allgemeine Aussagen."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Wegen der besseren Trainingsmöglichkeiten ___ sie ins Skiinternat nach Obersdorf ___.",
+    "opts": [
+      "ist ... umgezogen",
+      "hat ... umgezogen",
+      "wird ... umgezogen",
+      "werde ... umgezogen"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'umziehen' ist ein Verb der Bewegung – Perfekt mit 'sein': ist umgezogen."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Hier ___ sie Übungen wie das Absprungtraining machen.",
+    "opts": [
+      "kennt",
+      "kann",
+      "weiß",
+      "könnt"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Modalverb 'können' für Fähigkeit/Möglichkeit: kann."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...und lernt ihr Heimweh ___ Kontrolle bringen.",
+    "opts": [
+      "gegen",
+      "unter",
+      "vor",
+      "für"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Feste Wendung: 'etwas unter Kontrolle bringen'."
+  },
+  {
+    "id": 31,
+    "ctx": "Abschnitt II – Teil 2: Unhöflich? Jetzt nicht mehr (Word Bank)",
+    "ctxText": "Teil 2 – Wortschatz: Unhöflich? Jetzt nicht mehr\n\nEinige Schüler Deutschlands sind unhöflich und respektlos. Das soll sich jetzt ändern. An ___ Schulen gibt es jetzt besondere Kurse. Hier ___ Schüler lernen, wie man mit anderen Leuten zusammen lebt.\n\nDer Arbeitgeber-Präsident Dieter Hundt erinnert sich ___ seine Jugend und sagt: „Viele junge Leute, die heutzutage von der Schule ___, und mit der Arbeit ___, kennen einfache Regeln nicht.\" Viele Deutsche stimmen ihm zu: Die Jugendlichen sind unpünktlich und sie lügen.\n\nDeutsche Politiker sagen jetzt: „Die Eltern erziehen ihre Kinder zu Hause nicht, also müssen die Schulen das machen.\"\n\nIn einigen deutschen Schulen haben die Jugendlichen jetzt ein neues ___. Hier lernen sie Themen ___ diese: „Mit Leuten reden\", „Mein und Dein\", „Beim Essen\" oder „Kleidung und Aussehen\".\n\nEs gibt jetzt ___ verschiedenen deutschen Bundesländern auch besondere Noten. Auf dem Zeugnis wird nun stehen, ob ein Schüler fleißig ist, ob er pünktlich ist und kooperativ mit ___ arbeitet.\n\nAber es gibt auch Kritik an diesen Ideen. Viele Lehrer glauben, dass die Eltern den Kindern diese Dinge zeigen müssen, ___ Lehrer finden die Noten für gutes Verhalten schlecht. Sie glauben, dass es schwer ist, objektive Kriterien für diese Noten zu finden. Aber in einer Umfrage sagten achtzig Prozent der Deutschen, dass die Schüler in der Schule mehr Disziplin und Ordnung lernen müssen und dass ein solches Fach mehr ist ___ gar nichts.\n\nSlová na výber: an, anfangen, Unterricht, andere, wie, kommen, gehen, sollen, einigen, Fach, in, als, anderen, haben, Deutschlands",
+    "q": "An ___ Schulen gibt es jetzt besondere Kurse. (vyberte z banky slov)",
+    "a": "einigen",
+    "type": "short",
+    "exp": "'An einigen Schulen' – Dativ Plural."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Hier ___ Schüler lernen, wie man mit anderen Leuten zusammen lebt.",
+    "a": "sollen",
+    "type": "short",
+    "exp": "Modalverb 'sollen' für Aufforderung/Erwartung."
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Der Arbeitgeber-Präsident erinnert sich ___ seine Jugend...",
+    "a": "an",
+    "type": "short",
+    "exp": "'sich erinnern an' = feste Präposition."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„Viele junge Leute, die heutzutage von der Schule ___...\"",
+    "a": "kommen",
+    "type": "short",
+    "exp": "'von der Schule kommen' = die Schule verlassen, absolvieren."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "„...und mit der Arbeit ___, kennen einfache Regeln nicht.\"",
+    "a": "anfangen",
+    "type": "short",
+    "exp": "'mit der Arbeit anfangen' = beginnen zu arbeiten."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In einigen deutschen Schulen haben die Jugendlichen jetzt ein neues ___.",
+    "a": "Fach",
+    "type": "short",
+    "exp": "'ein neues Fach' = ein neues Schulfach."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Hier lernen sie Themen ___ diese: „Mit Leuten reden\"...",
+    "a": "wie",
+    "type": "short",
+    "exp": "'Themen wie diese' = Themen ähnlich wie diese."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Es gibt jetzt ___ verschiedenen deutschen Bundesländern auch besondere Noten.",
+    "a": "in",
+    "type": "short",
+    "exp": "'in verschiedenen Bundesländern' – Lokalpräposition."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...ob er pünktlich ist und kooperativ mit ___ arbeitet.",
+    "a": "andere",
+    "type": "short",
+    "exp": "Hier passt 'andere' im Akkusativ (mit anderen) im Kontext."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...dass ein solches Fach mehr ist ___ gar nichts.",
+    "a": "als",
+    "type": "short",
+    "exp": "'mehr ist als nichts' = Vergleichsstruktur mit 'als'."
+  },
+  {
+    "id": 41,
+    "ctx": "Abschnitt III – Teil 1: Interessantes",
+    "ctxText": "Teil 1 – Lesen: Interessantes\n\nText 1: Es gibt viele Gründe, warum Eltern keinen Hund im Haus haben wollen. Du wünschst dir trotzdem einen? Schön! Hier ein paar gute Argumente dafür: Kinder mit einem Hund in der Familie zeigen bessere schulische Leistungen als Kinder ohne einen Hund. Das hat eine wissenschaftliche Untersuchung bei 400 deutschen Familien gezeigt. Und das sagt die Studie noch: Ein Hund erhöht die Lust am Lernen. Kinder mit Hund machen länger und intensiver Hausaufgaben. Sie sind weniger aggressiv und weniger egoistisch.\n\nText 2: Früher war hier die Berliner Mauer. Jetzt ist das Betreten des Gebietes zwischen Ost- und Westberlin ungefährlich. Man kann dort in neu angelegten Parks spazieren gehen oder auch klettern. Denn wo früher ein Turm für Soldaten stand, sind jetzt neue Türme, die man besteigen kann. An denen üben Bergsteiger und solche, die es werden wollen.\n\nText 3: Computer, Fernsehen und Gameboy sind im „Wichernhaus\" in Boltenhagen verboten. In dieser Klinik an der Ostsee lernen Kinder und Jugendliche, sinnvoll mit ihrer Freizeit umzugehen. Früher saßen viele von ihnen stundenlang vor dem PC. Fachleute sprechen von einer Abhängigkeit. Die meisten jungen Patienten leiden unter Übergewicht: Sie bewegen sich zu wenig. Darum lesen die Jugendlichen in der Klinik nicht nur Bücher und spielen Karten, sondern beschäftigen sich auch regelmäßig im Freien.\n\nText 4: Mitten in Berlin liegt das „Badeschiff Spreebrücke\". Von Mai bis Oktober kann man hier in 20 Grad warmem Wasser schwimmen. Das „Badeschiff\" ist im Sommer von 8–24 Uhr geöffnet. Es erinnert an vergangene Berliner Badekultur. Schon früher war das Baden in der Spree in einigen Wasserbereichen bzw. in „Badeschiffen\" mit Frischwasser erlaubt. Doch das Flusswasser wurde immer schmutziger, und die Schiffe sind nicht mehr da.\n\nText 5: „Aus der Tüte auf die Hand und dann auf die Zunge. Es schmeckte und man bekam davon eine farbige Zunge.\" Das sind Kindheitserinnerungen unserer Großeltern an Ahoi-Brause, eine leckere Süßigkeit in bunten Tüten. Seit achtzig Jahren gibt es das bunte Limonadepulver. Im Moment ist es mal wieder groß in Mode. Man bekommt es mit Himbeer-, Orange-, Zitrone- und Waldmeister-Aroma. Doch Vorsicht, wenn Eltern in der Nähe sind: Die sind nämlich heute noch ganz fasziniert davon.\n\nText 6: Fast 4,69 Millionen Mal haben die Einwohner der sächsischen Landeshauptstadt Dresden im letzten Jahr in den Stadtbüchereien Bücher ausgeliehen. Jugendliche Leser sind auch dabei. Seit 2000 gibt es für sie die Jugendbibliothek „medien@age\". Insgesamt 26 200 Medien finden sich im Angebot, darunter 9 600 Sach- und Fachbücher sowie 5 000 Romane. Neben den Büchern kann man 5 700 CDs, 2 100 Videos, 750 DVDs und fast 900 CD-ROMs ausleihen.\n\nText 7: Die schönsten Kleider vorführen, zwischen Paris, Mailand und Miami fliegen und dafür auch noch am Tag so viel Geld verdienen wie normale Leute in einem Jahr – davon träumen viele junge Menschen. Bei einer Umfrage unter deutschen Jugendlichen stand der Job auf Platz drei der Traumberufe – direkt hinter Ärztin und Designerin.\n\nÜberschriften:\n(A) Frische Luft gegen Computersucht\n(B) Transport ins Tierheim\n(C) Kletterturm im Mauerpark\n(D) Nostalgie mit Obstgeschmack\n(E) Die Dresdner lesen\n(F) Traumberuf Nummer 1\n(G) Schwimmendes Freibad\n(H) Ein Hund muss her!\n(I) Beruf: Fotomodell\n(J) 4,69 Mill. junge Leser in Dresdner Bibliothek",
+    "q": "Priraďte nadpis k Textu 1 (o psoch a deťoch):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "H – 'Ein Hund muss her!' – über die Vorteile eines Hundes für Kinder."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 2 (o Berlínskom múre a horolezeckej veži):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "C – 'Kletterturm im Mauerpark' – nový lezecký objekt na mieste múru."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 3 (o klinike Wichernhaus):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A – 'Frische Luft gegen Computersucht' – klinika lieči závislosť na PC."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 4 (o Badeschiff v Berlíne):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "G – 'Schwimmendes Freibad' – plávajúci kúpací bazén."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 5 (o Ahoi-Brause):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "D – 'Nostalgie mit Obstgeschmack' – sladkosti s príchuťami ovocia."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 6 (o knižnici v Drážďanoch):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "E – 'Die Dresdner lesen' – o vypožičiavaní kníh v Drážďanoch."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 7 (o fotomodelingu):",
+    "opts": [
+      "Frische Luft gegen Computersucht",
+      "Transport ins Tierheim",
+      "Kletterturm im Mauerpark",
+      "Nostalgie mit Obstgeschmack",
+      "Die Dresdner lesen",
+      "Traumberuf Nummer 1",
+      "Schwimmendes Freibad",
+      "Ein Hund muss her!",
+      "Beruf: Fotomodell",
+      "4,69 Mill. junge Leser in Dresdner Bibliothek"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "I – 'Beruf: Fotomodell' – sníva sa o práci modelky."
+  },
+  {
+    "id": 48,
+    "ctx": "Abschnitt III – Teil 2: Nena macht Schule",
+    "ctxText": "Teil 2 – Lesen: Nena macht Schule\n\n(a) 85 Schüler, sechs Lehrer und ein mutiges Projekt: Vor kurzem eröffnete in Hamburg die „Neue Schule\". Mitbegründerin der „Neuen Schule\" ist die Sängerin Nena. An der „Neuen Schule\" soll alles anders werden als an den staatlichen Schulen. Es gibt keine Noten, Lehrer und Schüler sind gleichberechtigt und die Schüler entscheiden selbst, was sie lernen möchten. Die Gründer der „Neuen Schule\" glauben, dass Kinder und Jugendliche dann am besten lernen, wenn sie über das Lernen selbst bestimmen können. Wer tut schon gerne etwas, was er muss. Deshalb sollen Schüler selbst über den Lernstoff entscheiden. So tragen sie auch selbst mehr Verantwortung.\n\n(b) An der „Neuen Schule\" hält man Noten für überflüssig. Jeder Schüler hat ein so genanntes „Lernarchiv\", in dem er aufschreibt, was er bereits gelernt hat. Aber das Lernarchiv wird genauso wenig benotet wie zum Beispiel Übungen. Wenn ein Schüler jedoch wissen möchte, wie gut er ist, kann er seine Lehrer darum bitten, ihm eine Bewertung zu schreiben.\n\n(c) Alle Entscheidungen an der „Neuen Schule\" werden von der Schulversammlung getroffen. Jeder Schüler und jeder Lehrer hat dort eine Stimme. Bei 85 Schülern und nur sechs Lehrern bedeutet das: Die Schüler haben die „Macht\"! Jetzt sollte man aber nicht denken, dass sofort der Kauf eines Schul-Swimmingpools oder der Bau eines Schul-Vergnügungsparks beschlossen wird. Nein, die Schüler wissen, dass die Entscheidungen auch durchführbar sein müssen. Und wenn man zu einer gemeinsamen Entscheidung kommt, hält man sie einfacher, als wenn es wieder eine Regel ist. Das glauben wenigstens die Gründer der „Neuen Schule\" und bisher haben sie damit Erfolg.\n\n(d) Nach dem Motto „Lernen beim Handeln\" lernen die Schüler der „Neuen Schule\" vieles, indem sie es selbst ausprobieren. Es gibt keine Klassen mit dem sonst so verbreiteten „Frontalunterricht\", sondern die Schüler bestimmen selbst, wann und wie sie lernen möchten. Und auch mit wem sie lernen. Das ist an einer traditionellen Schule schnell entschieden: Man lernt mit Gleichaltrigen aus der Klasse. An der „Neuen Schule\" spielt das Alter keine Rolle, hier lernen 10-Jährige mit 16-Jährigen, wenn sie sich gerade für das Gleiche interessieren. So lernt der eine vom anderen und Neues wird gemeinsam erarbeitet.\n\n(e) Soweit zumindest die Theorie. Eine Garantie auf Erfolg des neuen Modells hat selbst Nena nicht. Die „Neue Schule\" ist offiziell bisher nur staatlich erlaubt, nicht anerkannt. Das heißt, die Schüler können dort keinen Schulabschluss bekommen, sondern schreiben an einer ganz „normalen\" Schule ihre Abschlussprüfung. Ob das Konzept aufgeht, wird sich dann zeigen, wenn die ersten Schüler ihren Abschluss in der Tasche haben.",
+    "q": "Über wichtige Fragen entscheiden die Schüler.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "Falsch – Absatz (c): Schüler haben die 'Macht', aber Entscheidungen müssen durchführbar sein, nicht alles entscheiden sie allein."
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Für die Schüler ist es unmöglich an der „Neuen Schule\" einen Schulabschluss zu erreichen.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 4,
+    "type": "mc",
+    "exp": "Richtig – Absatz (e): an der Neuen Schule selbst kann man keinen Abschluss machen, nur an einer normalen Schule."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "In der „Neuen Schule\" werden die Schüler nie benotet und bewertet.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 6,
+    "type": "mc",
+    "exp": "Falsch – Absatz (b): Lehrer können auf Bitte eine Bewertung schreiben."
+  },
+  {
+    "id": 51,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die Schüler der „Neuen Schule\" sollen selbst aussuchen, was sie lernen möchten.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Richtig – Absatz (a): Schüler entscheiden selbst, was sie lernen möchten."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Die Sängerin Nena sorgt dafür, dass das Projekt erfolgreich wird.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falsch – Absatz (e): selbst Nena hat keine Garantie auf Erfolg des Modells."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Das Zusammentreffen der Schüler in den Klassen hängt vom Alter ab.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "richtig – Absatz (a)",
+      "richtig – Absatz (b)",
+      "richtig – Absatz (c)",
+      "richtig – Absatz (d)",
+      "richtig – Absatz (e)",
+      "falsch – Absatz (a)",
+      "falsch – Absatz (b)",
+      "falsch – Absatz (c)",
+      "falsch – Absatz (d)",
+      "falsch – Absatz (e)"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "Falsch – Absatz (d): das Alter spielt keine Rolle, 10-Jährige lernen mit 16-Jährigen."
+  },
+  {
+    "id": 54,
+    "ctx": "Abschnitt III – Teil 3: Dramatische Augenblicke im Tierpark",
+    "ctxText": "Teil 3 – Lesen: Dramatische Augenblicke im Tierpark\n\nAls die Medizinstudentin Janine Bauer mit Söhnchen Johann an einem schönen Sommertag durch den Tierpark der deutschen Stadt Halle spazierte, ahnte sie nicht, dass sie einem Tigerbaby Leben retten wird.\n\nSie wusste noch nicht, wie wichtig die nächsten Minuten und Sekunden für das Leben dieses Tieres sein sollten…\n\nDie junge Mutter kam gerade zu den Tigern, da begann das Drama. Im Käfig war ein kleiner Tiger, er stand auf und wollte etwas fressen. Offensichtlich war er sehr hungrig. Er kämpfte mit einem großen Stück Fleisch. Ein Stück vom Fleisch blieb in seinem Hals stecken. Das Tigerbaby zitterte und konnte nicht atmen. Bald bewegte es sich auch nicht mehr. Die Situation war für das Tier sehr gefährlich. Ohne Hilfe konnte das Tigerbaby sterben.\n\nSchnell alarmierte Janine einen Tierpfleger und erklärte ihm, dass sie etwas von Medizin versteht. Sie war bereit dem Tier zu helfen.\n\nDer Tierpfleger hatte keine Wahl, er wollte auch das Tier retten. Janine durfte in den Käfig hinein und begann sofort mit Erster Hilfe.\n\nZuerst holte Janine mit den Fingern das große Stück Fleisch heraus, dann presste sie ihren Mund auf die Tigernase und begann schnell mit einer Mund-zu-Mund-Beatmung und einer Herzdruckmassage.\n\nEndlich! Nach gut drei Minuten schwerer Arbeit atmete der Kleine wieder. Er hatte Angst und lief sofort weg.\n\nDer Zoo bedankte sich bei Janine Bauer: Sie durfte wählen, wie das Tier benannt wird. Das Tigerbaby wurde nach ihrem Sohn benannt und heißt heute Johann.\n\nHeute ist „Johann\" gesund, aber auch viel schwerer und größer. Trotzdem „besuchen\" ihn Janine und Johann Bauer auch weiterhin.\n\n(pressen = pritlačiť)",
+    "q": "Sie rief ___ den Tierpfleger und beschrieb ihm die Situation. (1 Wort)",
+    "a": "sofort",
+    "type": "short",
+    "exp": "'sofort/rasch/schnell/gleich' – Janine reagierte unmittelbar."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sie rief sofort den Tierpfleger und beschrieb ihm die ___. (1 Wort)",
+    "a": "Situation",
+    "type": "short",
+    "exp": "'Situation/Lage/Sachlage' – die Beschreibung des Notfalls."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Er reagierte sofort und ließ Janine dem Tiger ___. (1 Wort)",
+    "a": "helfen",
+    "type": "short",
+    "exp": "'helfen' – Janine durfte dem Tiger helfen."
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Das Tier ___ nicht. (1 Wort)",
+    "a": "atmete",
+    "type": "short",
+    "exp": "'atmete' – das Tier konnte nicht atmen (Präteritum von atmen)."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Janine musste zuerst mit der ___ das Fleisch aus dem Mund des Tieres herausnehmen. (1 Wort)",
+    "a": "Hand",
+    "type": "short",
+    "exp": "'Hand' – sie holte mit den Fingern/der Hand das Fleisch heraus."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Ihre Erste Hilfe konnte das Tier vor dem ___ retten. (1 Wort)",
+    "a": "Tod",
+    "type": "short",
+    "exp": "'Tod/Sterben/Ersticken' – das Tigerbaby wäre sonst gestorben."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Alle im Zoo waren Janine sehr dankbar und deshalb durfte sie dem Tigerbaby einen ___ geben. (1 Wort)",
+    "a": "Namen",
+    "type": "short",
+    "exp": "'Namen' – Janine durfte dem Tiger einen Namen (Johann) geben."
+  }
+]
