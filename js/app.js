@@ -2408,7 +2408,10 @@ fetch('data/nem_b2_2010.json')
   .then(function(r){return r.json();})
   .then(function(qs){addMat('nem-b2',2010,qs);})
   .catch(function(e){console.error('Chyba NEM B2:',e);});
-// addMat('spj-b1', 2010, [...]);
+fetch('data/spj_b1_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('spj-b1',2010,qs);})
+  .catch(function(e){console.error('Chyba SPJ B1:',e);});
 // addMat('spj-b2', 2010, [...]);
 // addMat('ruj-b1', 2010, [...]);
 // addMat('ruj-b2', 2010, [...]);

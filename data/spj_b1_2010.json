@@ -1,0 +1,851 @@
+[
+  {
+    "id": 1,
+    "ctx": "🎧 Primera parte – El rey y su locura (7 puntos)",
+    "ctxText": "Primera parte: El rey y su locura\n\nVypočujte si rozprávku o kráľovi, ktorý sa z márnivosti zbláznil. Na základe vypočutého vyberte správnu odpoveď.",
+    "audio": "data/audio/spj_b1_2010.mp3",
+    "audioSection": "Primera parte: El rey y su locura",
+    "q": "El rey mandó a construir un:",
+    "opts": [
+      "jardín",
+      "palacio",
+      "templo",
+      "mercado"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "El rey mandó a construir un templo para su nueva religión."
+  },
+  {
+    "id": 2,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El rey decidió que su religión debía tener:",
+    "opts": [
+      "un solo adorador",
+      "tres adoradores",
+      "soldados adoradores",
+      "más adoradores"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "El rey quería más adoradores para su religión."
+  },
+  {
+    "id": 3,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Los soldados del rey se arrodillaban ante su estatua:",
+    "opts": [
+      "mínimo una vez diaria",
+      "después del desayuno",
+      "antes de ir al mercado",
+      "al regresar del mercado"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Los soldados se arrodillaban mínimo una vez diaria."
+  },
+  {
+    "id": 4,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El rey mandó a traer del mercado a:",
+    "opts": [
+      "los ministros del reino",
+      "los jardineros",
+      "los locos del mercado",
+      "tres personas"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "El rey mandó a traer tres personas del mercado."
+  },
+  {
+    "id": 5,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El intelectual dijo que:",
+    "opts": [
+      "el rey era el único dios verdadero",
+      "el rey estaba loco",
+      "el rey quería que se arrodillaran",
+      "el rey mandó a construir un jardín"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "El intelectual dijo que el rey estaba loco."
+  },
+  {
+    "id": 6,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Ante el rey se negó a arrodillarse el:",
+    "opts": [
+      "ministro",
+      "intelectual",
+      "mendigo",
+      "sacerdote"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "El mendigo se negó a arrodillarse ante el rey."
+  },
+  {
+    "id": 7,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "La respuesta del mendigo hizo que el rey:",
+    "opts": [
+      "se conmoviera y le sacara los piojos",
+      "se conmoviera y comprara flores en el mercado",
+      "se conmoviera y construyera una estatua al mendigo",
+      "se conmoviera y cambiara de actitud"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "El rey se conmovió y cambió de actitud."
+  },
+  {
+    "id": 8,
+    "ctx": "🎧 Segunda parte – La cocina de la abuela: la arepa (6 puntos)",
+    "ctxText": "Segunda parte: La cocina de la abuela\n\nVypočujte si ukážku televízneho programu La cocina de la abuela, v ktorom sa pripravuje la arepa, jedlo z kolumbijskej gastronómie, podľa receptu pani Nory Cano.",
+    "audio": null,
+    "q": "'La cocina de la abuela' es un programa mensual.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso – no es un programa mensual."
+  },
+  {
+    "id": 9,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El vocablo indígena 'erepa' fue utilizado por una tribu de las Islas Canarias para nombrar el maíz.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso – la tribu no era de las Islas Canarias."
+  },
+  {
+    "id": 10,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "La receta de la señora Nory Cano es la arepa paisa.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero – su receta es la arepa paisa."
+  },
+  {
+    "id": 11,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "La arepa paisa puede prepararse con sal.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero – puede prepararse con sal."
+  },
+  {
+    "id": 12,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "La arepa que prepara la señora Nory Cano tiene un relleno de huevo.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Falso – no tiene relleno de huevo."
+  },
+  {
+    "id": 13,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "El próximo Festival de la Arepa Colombiana se realizará en Cali.",
+    "opts": [
+      "verdadero",
+      "falso",
+      "no se dice en la grabación"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "No se dice en la grabación dónde se realizará el festival."
+  },
+  {
+    "id": 14,
+    "ctx": "🎧 Tercera parte – La amaxofobia (7 puntos)",
+    "ctxText": "Tercera parte: La amaxofobia\n\nVypočujte si správu o amaxofóbii, strachu jazdiť na autách. Na základe vypočutého doplňte chýbajúce slová.",
+    "audio": null,
+    "q": "En España está ___ la amaxofobia, que es el pánico a conducir. (1 palabra)",
+    "a": "aumentando",
+    "type": "short",
+    "exp": "'aumentando/creciendo' – la amaxofobia está en aumento en España."
+  },
+  {
+    "id": 15,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "No es ___ tener un accidente para desarrollar este miedo. (1 palabra)",
+    "a": "necesario",
+    "type": "short",
+    "exp": "'necesario' – no hace falta tener un accidente para desarrollar amaxofobia."
+  },
+  {
+    "id": 16,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Se debe a las diferentes situaciones personales o laborales que causan un ___ muy alto. (1 palabra)",
+    "a": "estrés",
+    "type": "short",
+    "exp": "'estrés/miedo' – situaciones que causan mucho estrés."
+  },
+  {
+    "id": 17,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Cuando una ___ sufre de amaxofobia, siente un miedo muy intenso al conducir. (1 palabra)",
+    "a": "persona",
+    "type": "short",
+    "exp": "'persona' – cuando una persona sufre amaxofobia."
+  },
+  {
+    "id": 18,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Su mayor deseo es ___ de hacerlo (conducir). (1 palabra)",
+    "a": "dejar",
+    "type": "short",
+    "exp": "'dejar/terminar' – su deseo es dejar de conducir."
+  },
+  {
+    "id": 19,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Las personas más afectadas son los conductores con varios años de ___. (1 palabra)",
+    "a": "experiencia",
+    "type": "short",
+    "exp": "'experiencia/conducción' – conductores con años de experiencia."
+  },
+  {
+    "id": 20,
+    "ctx": null,
+    "ctxText": null,
+    "audio": null,
+    "q": "Si no se realiza correctamente el tratamiento, la enfermedad puede ___. (1 palabra)",
+    "a": "empeorar",
+    "type": "short",
+    "exp": "'empeorar' – la enfermedad puede ponerse peor."
+  },
+  {
+    "id": 21,
+    "ctx": "Segundo capítulo – Primera parte: El pez en el agua",
+    "ctxText": "Primera parte – Gramática: Texto de Mario Vargas Llosa\n\nGladys y yo cumplíamos años el mismo día, y la tía Lala y el tío Juan ___ una fiesta con chicos y chicas del barrio ese 28 de marzo de 1948. Recuerdo mi sorpresa al entrar y ver que había parejas ___ y que mis dos primas también sabían bailar. Y que el cumpleaños se celebraba no para jugar ___ para poner discos, oír música, charlar, etc.\n\nEstaban allí todos mis tíos y mis tías y me presentaron a algunos de los que serían después grandes amigos. Ensayábamos la declaración antes, ___ amigos. Algunos preferían ___ en el cine, aprovechando la oscuridad y haciendo coincidir la declaración con algún momento romántico de la película...\n\nYo intenté ese método ___ vez, con Maritza, una chica muy bonita, de cabellos muy negros y piel muy pálida, y el resultado ___ un fracaso. Porque cuando, después de dudarlo mucho, me atreví a murmurarle al oído las palabras ensayadas: 'Me gustas mucho, ___ enamorado de ti. ¿Quieres estar conmigo?' – ella se volvió a mirarme llorando como una Magdalena.\n\nPero a Tere, Inge y Helena les declaré mi amor de manera ortodoxa, bailando un bolero en una fiesta de los sábados, y a las tres ___ escribí poemas de amor que nunca les mostré. Pero soñaba con ellas toda la semana, contando los días que faltaban para ir a verlas y rogando que ___ alguna fiesta ese sábado para bailar con mis enamoradas.\n\n(Mario Vargas Llosa, El pez en el agua – Adaptación)",
+    "q": "...la tía Lala y el tío Juan ___ una fiesta con chicos y chicas del barrio.",
+    "opts": [
+      "hacían",
+      "habían hecho",
+      "harían",
+      "hicieron"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "Pretérito indefinido para acción puntual pasada: hicieron."
+  },
+  {
+    "id": 22,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Recuerdo mi sorpresa al entrar y ver que había parejas ___.",
+    "opts": [
+      "bailaban",
+      "bailando",
+      "bailan",
+      "bailaron"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "'había parejas bailando' – gerundio tras haber + sustantivo."
+  },
+  {
+    "id": 23,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Y que el cumpleaños se celebraba no para jugar ___ para poner discos, oír música, charlar.",
+    "opts": [
+      "pero",
+      "también",
+      "sino",
+      "aún"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'no... sino' = estructura de contraste negativo."
+  },
+  {
+    "id": 24,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Ensayábamos la declaración antes, ___ amigos.",
+    "opts": [
+      "entre",
+      "en medio",
+      "contra",
+      "según"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "'entre amigos' = en compañía de amigos."
+  },
+  {
+    "id": 25,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Algunos preferían ___ en el cine, aprovechando la oscuridad.",
+    "opts": [
+      "se declaraban",
+      "declararse",
+      "declarándose",
+      "se declaran"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "Infinitivo después de 'preferían': declararse."
+  },
+  {
+    "id": 26,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Yo intenté ese método ___ vez, con Maritza.",
+    "opts": [
+      "la",
+      "a la",
+      "una",
+      "en"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "'una vez' = en una ocasión."
+  },
+  {
+    "id": 27,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...y el resultado ___ un fracaso.",
+    "opts": [
+      "fue",
+      "es",
+      "estuvo",
+      "está"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Pretérito indefinido para resultado puntual pasado: fue."
+  },
+  {
+    "id": 28,
+    "ctx": null,
+    "ctxText": null,
+    "q": "'Me gustas mucho, ___ enamorado de ti.'",
+    "opts": [
+      "soy",
+      "estuve",
+      "fui",
+      "estoy"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "'estoy enamorado' – estado actual con estar."
+  },
+  {
+    "id": 29,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...y a las tres ___ escribí poemas de amor que nunca les mostré.",
+    "opts": [
+      "las",
+      "la",
+      "les",
+      "le"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Pronombre objeto indirecto plural: les."
+  },
+  {
+    "id": 30,
+    "ctx": null,
+    "ctxText": null,
+    "q": "...rogando que ___ alguna fiesta ese sábado para bailar con mis enamoradas.",
+    "opts": [
+      "hubiera",
+      "había",
+      "hubo",
+      "hay"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Subjuntivo imperfecto tras 'rogando que': hubiera."
+  },
+  {
+    "id": 31,
+    "ctx": "Segundo capítulo – Segunda parte: Muebles variables (vyplniť chýbajúce písmená)",
+    "ctxText": "Segunda parte – Léxico: Muebles variables\n\nElegir muebles variables es la mejor opción para tener el ___ a gusto sin afectar el bolsillo. Si la idea es mantener la casa renovada y en espléndido estado sin ___ demasiado dinero, la clave será escoger muebles lo suficientemente variables como para moverlos e intercambiarlos entre diferentes ___.\n\nEs aconsejable no tirar las ___ útiles de los muebles viejos o estropeados, como por ejemplo, estantería o cajones de un escritorio, ya que se podrán utilizar en un dormitorio, vestíbulo o en otros lugares.\n\nEs mejor escoger dos sillones antes que un sofá grande, pues los primeros pueden ser ___ juntos o separados, y en espacios grandes o pequeños.\n\nSe aconseja elegir almohadas, telas, y accesorios que armonicen con el ___ predominante de la temporada. Si, por ejemplo, el sillón es verde, se deben escoger almohadas floreadas y/o amarillas para la primavera y almohadas de color caramelo para el ___.\n\nLos sofás y los sillones se pueden cubrir con una ___ de un color original y resistente. Su tono debería ser el central dentro de la decoración de la habitación.\n\nCuando vuelvan a acomodar los muebles, una cama podría convertirse en un sofá, un escritorio en una ___ de cocina, etc.",
+    "q": "Elegir muebles variables es la mejor opción para tener el ___ a gusto. (h + 4 letras)",
+    "a": "hogar",
+    "type": "short",
+    "exp": "hogar = casa/domicilio."
+  },
+  {
+    "id": 32,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Sin ___ demasiado dinero. (g + 5 letras)",
+    "a": "gastar",
+    "type": "short",
+    "exp": "gastar = invertir dinero."
+  },
+  {
+    "id": 33,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Para moverlos e intercambiarlos entre diferentes ___. (es + 6 letras)",
+    "a": "espacios",
+    "type": "short",
+    "exp": "espacios = lugares de la casa."
+  },
+  {
+    "id": 34,
+    "ctx": null,
+    "ctxText": null,
+    "q": "No tirar las ___ útiles de los muebles viejos. (p + 5 letras)",
+    "a": "partes",
+    "type": "short",
+    "exp": "partes/piezas = componentes de los muebles."
+  },
+  {
+    "id": 35,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Pues los primeros pueden ser ___ juntos o separados. (ut + 8 letras)",
+    "a": "utilizados",
+    "type": "short",
+    "exp": "utilizados = usados."
+  },
+  {
+    "id": 36,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Que armonicen con el ___ predominante de la temporada. (c + 4 letras)",
+    "a": "color",
+    "type": "short",
+    "exp": "color = tono predominante."
+  },
+  {
+    "id": 37,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Y almohadas de color caramelo para el ___. (o + 4 letras)",
+    "a": "otoño",
+    "type": "short",
+    "exp": "otoño = estación del año (fall/autumn)."
+  },
+  {
+    "id": 38,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Se pueden cubrir con una ___ de un color original. (t + 3 letras)",
+    "a": "tela",
+    "type": "short",
+    "exp": "tela = material textil."
+  },
+  {
+    "id": 39,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Su tono debería ser el central dentro de la ___ de la habitación. (de + 8 letras)",
+    "a": "decoración",
+    "type": "short",
+    "exp": "decoración = diseño/ambientación de la habitación."
+  },
+  {
+    "id": 40,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Un escritorio en una ___ de cocina, etc. (m + 3 letras)",
+    "a": "mesa",
+    "type": "short",
+    "exp": "mesa = mueble de cocina."
+  },
+  {
+    "id": 41,
+    "ctx": "Tercer capítulo – Primera parte: Textos cortos",
+    "ctxText": "Tercer capítulo – Primera parte: Textos cortos sobre niños y familia\n\nText 41: Dicen los estudios en salud bucodental que los niños que mantienen una buena higiene bucal hasta los 13 años tienen más probabilidades de prolongar ese hábito en su vida adulta. Por eso, es importante motivar a los más pequeños con una serie de sencillas rutinas.\n\nText 42: La lectura, ya sea de un clásico o de mágicos mundos, es una puerta a la fantasía con infinitas ventajas para los niños. Sin embargo, si el hábito de leer no se fomenta desde bebés, los niños tendrán su primer contacto con la lectura en el colegio.\n\nText 43: Podrás comprar de forma económica y muy sencilla todo lo que necesitan tus hijos para el colegio, sin moverte de casa en 'todoparaelcole.com'. También complementos como etiquetas para marcar todas las cosas de los niños.\n\nText 44: Las pinturas decorativas te permiten crear fácilmente un espacio agradable y divertido. Se pueden emplear de distintas clases y colores para hacer dibujos animados, paisajes africanos, fondos marinos, etc.\n\nText 45: Las camas y cunas rodeadas de cortinas proporcionan a las habitaciones de los niños un aire de calidez y romanticismo. Dicen que este tipo de camas y cunas tienen un origen real, ya que empezó a utilizarse para cubrir los tronos de los reyes.\n\nText 46: No siempre resulta fácil hacer que los niños coman lo que se les pone en la mesa. Una de las mejores sugerencias, para que coman, es cuidar la presentación de los diferentes platos.\n\nText 47: La pasta es una de las comidas favoritas de chicos y chicas. Es rica en carbohidratos, fibra y vitaminas, capaces de aportarles toda esa energía que necesitan para jugar y divertirse.\n\nNadpisy:\n(A) Enséñales a mantener los dientes fuertes y sanos\n(B) Para que duerman como un pequeño 'rey'\n(C) Cepíllate los dientes todos los días\n(D) El alimento preferido de los más pequeños\n(E) Lecturas de mundos mágicos\n(F) Convierte la habitación de tu hijo en un lugar mágico\n(G) Tronos reales, en nuestras casas\n(H) ¿Por qué es importante fomentar la lectura en los pequeños?\n(I) Comidas muy divertidas para los más pequeños\n(J) El mejor material escolar a los mejores precios",
+    "q": "Priraďte nadpis k Textu 41 (o ústnej hygiene detí):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "A – 'Enséñales a mantener los dientes fuertes y sanos' – о zubnej hygiene."
+  },
+  {
+    "id": 42,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 42 (o čítaní u detí):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 7,
+    "type": "mc",
+    "exp": "H – '¿Por qué es importante fomentar la lectura en los pequeños?' – o čítaní."
+  },
+  {
+    "id": 43,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 43 (o nakupovaní školských pomôcok online):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "J – 'El mejor material escolar a los mejores precios' – o lacných školských potrebách."
+  },
+  {
+    "id": 44,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 44 (o dekoratívnych farbách na detskú izbu):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 5,
+    "type": "mc",
+    "exp": "F – 'Convierte la habitación de tu hijo en un lugar mágico' – o maľovaní detskej izby."
+  },
+  {
+    "id": 45,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 45 (o posteliach s baldachýnom):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 1,
+    "type": "mc",
+    "exp": "B – 'Para que duerman como un pequeño rey' – o postieľkach s baldachýnom."
+  },
+  {
+    "id": 46,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 46 (o problémoch s jedením detí):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "I – 'Comidas muy divertidas para los más pequeños' – o spestrení jedla pre deti."
+  },
+  {
+    "id": 47,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Priraďte nadpis k Textu 47 (o cestovinách ako oblúbenom jedle):",
+    "opts": [
+      "Enséñales a mantener los dientes fuertes y sanos",
+      "Para que duerman como un pequeño 'rey'",
+      "Cepíllate los dientes todos los días",
+      "El alimento preferido de los más pequeños",
+      "Lecturas de mundos mágicos",
+      "Convierte la habitación de tu hijo en un lugar mágico",
+      "Tronos reales, en nuestras casas",
+      "¿Por qué es importante fomentar la lectura en los pequeños?",
+      "Comidas muy divertidas para los más pequeños",
+      "El mejor material escolar a los mejores precios"
+    ],
+    "a": 3,
+    "type": "mc",
+    "exp": "D – 'El alimento preferido de los más pequeños' – o cestovinách."
+  },
+  {
+    "id": 48,
+    "ctx": "Tercer capítulo – Segunda parte: Homenaje al amor y a la amistad",
+    "ctxText": "Tercer capítulo – Segunda parte: Homenaje al amor y a la amistad\n\n(a) Con esta celebración se promueve la amistad, la convivencia armónica y la comprensión entre los seres humanos, es un homenaje al amor. Sobre su origen y procedencia existen varias versiones. La mayoría de ellas relacionadas con la vida y obra de Valentín, un monje que vivió en Roma hace muchos años. Cuentan que ese monje se dedicaba a cultivar flores para llevarlas a los enfermos, y que acostumbraba enviar mensajes a sus amigos con palomas mensajeras.\n\n(b) La celebración del día del amor y la amistad está basada en una historia que se cree comenzó en el siglo tercero, cuando el emperador romano Claudio II decidió prohibir la celebración de matrimonios para los hombres jóvenes, porque en su opinión los solteros sin familia eran mejores soldados.\n\n(c) Valentín consideró el decreto injusto y continuó celebrando en secreto matrimonios entre jóvenes parejas enamoradas. Cuando el emperador se enteró, lo envió a prisión y lo sentenció a pena de muerte.\n\n(d) Un día Julia, la hija de un amigo suyo que era ciega, lo visitó en su celda, ella se arrodilló y apretó la mano de Valentín. Se sentaron juntos haciendo una oración. De pronto, una luz brillante iluminó la celda de la prisión. Admirada, Julia exclamó: '¡Valentín, puedo ver!'\n\n(e) La noche anterior de su muerte, Valentín le escribió una carta a Julia pidiéndole que se mantuviera cerca de Dios y la firmó 'Con amor de tu Valentín'. El monje fue ejecutado al día siguiente, el 14 de febrero del año 270 D.C. Cuenta la leyenda que Julia plantó un almendro de flores rosadas junto a su tumba.",
+    "q": "Los soldados que se dedicaban a sus esposas e hijos eran peores soldados que los solteros.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 0,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (b): el emperador pensaba que los solteros sin familia eran mejores soldados."
+  },
+  {
+    "id": 49,
+    "ctx": null,
+    "ctxText": null,
+    "q": "El origen de esta celebración se relaciona con Gloria, una ciega amiga de Valentín.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 8,
+    "type": "mc",
+    "exp": "Falso – párrafo (d): la chica ciega se llamaba Julia, no Gloria."
+  },
+  {
+    "id": 50,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Las parejas enamoradas para casarse en secreto, buscaban al monje.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (c): Valentín continuó celebrando matrimonios en secreto."
+  },
+  {
+    "id": 51,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Las rosas junto a la tumba de San Valentín son el símbolo del amor y la amistad.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falso – párrafo (e): fue un almendro, no rosas, lo que se plantó junto a la tumba."
+  },
+  {
+    "id": 52,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Por no obedecer el decreto, el monje fue condenado a muerte.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 2,
+    "type": "mc",
+    "exp": "Verdadero – párrafo (c): por desobedecer el decreto fue sentenciado a muerte."
+  },
+  {
+    "id": 53,
+    "ctx": null,
+    "ctxText": null,
+    "q": "El día anterior a la muerte de Valentín, Julia le pidió que no se separara de Dios.\n(Uveďte aj príslušný odsek.)",
+    "opts": [
+      "verdadero – párrafo (a)",
+      "verdadero – párrafo (b)",
+      "verdadero – párrafo (c)",
+      "verdadero – párrafo (d)",
+      "verdadero – párrafo (e)",
+      "falso – párrafo (a)",
+      "falso – párrafo (b)",
+      "falso – párrafo (c)",
+      "falso – párrafo (d)",
+      "falso – párrafo (e)"
+    ],
+    "a": 9,
+    "type": "mc",
+    "exp": "Falso – párrafo (e): fue Valentín quien le pidió a Julia que se mantuviera cerca de Dios, no al revés."
+  },
+  {
+    "id": 54,
+    "ctx": "Tercer capítulo – Tercera parte: Senderismo",
+    "ctxText": "Tercer capítulo – Tercera parte: Senderismo: un ejercicio sano, fácil y económico\n\nAdemás de ayudarte a sentirte más en forma y a perder kilos, andar de forma regular reduce el riesgo de enfermedades cardiovasculares, la osteoporosis y la diabetes.\n\nEl senderismo es un deporte con una ventaja más: no tendrás que invertir en un equipamiento caro ni en una matrícula en un gimnasio.\n\nPara realizar senderismo, lo primero que debes tener en cuenta es utilizar un calzado adecuado. Lo mejor es tener unas buenas botas porque sujetan mejor el tobillo. La ropa debe ser cómoda y holgada. Y algo muy importante, no te olvides de un sombrero o una gorra para impedir insolaciones o quemaduras.\n\nSi tu estado de forma no es muy bueno, entrena unos cuantos días antes: tres veces por semana da un paseo rápido; a medida que te vayas encontrando más cómodo, aumenta la frecuencia hasta realizar una buena caminata diaria.\n\nTen en cuenta también que hay itinerarios creados a la medida de los amantes de las caminatas por la naturaleza. Hay grandes o pequeños recorridos, rutas marcadas que guían a través de los parajes más bellos de la geografía. En muchos gimnasios y hoteles rurales se organizan grupos para hacer senderismo, y también hay asociaciones donde sus miembros, cada fin de semana, o en vacaciones, salen al campo.",
+    "q": "El senderismo es un deporte que no sólo ___ a estar en forma y a adelgazar. (1 palabra)",
+    "a": "ayuda",
+    "type": "short",
+    "exp": "'ayuda' – el senderismo ayuda a mantenerse en forma."
+  },
+  {
+    "id": 55,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Una de las muchas ___ para practicar este deporte es que no se necesitan complementos caros. (1 palabra)",
+    "a": "ventajas",
+    "type": "short",
+    "exp": "'ventajas' – beneficios de practicar senderismo."
+  },
+  {
+    "id": 56,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Lo importante es contar con un buen ___ y si son botas, mejor. (1 palabra)",
+    "a": "calzado",
+    "type": "short",
+    "exp": "'calzado' – zapatos/botas adecuados."
+  },
+  {
+    "id": 57,
+    "ctx": null,
+    "ctxText": null,
+    "q": "De igual forma hay que vestirse ___. (1 palabra)",
+    "a": "cómodamente",
+    "type": "short",
+    "exp": "'cómodamente/holgadamente' – ropa cómoda y holgada."
+  },
+  {
+    "id": 58,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Por esto haga una ___ cada día hasta estar en buena forma. (1 palabra)",
+    "a": "caminata",
+    "type": "short",
+    "exp": "'caminata' – paseo a pie diario."
+  },
+  {
+    "id": 59,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Existen varios ___ y rutas marcadas que atraviesan bellos parajes. (1 palabra)",
+    "a": "recorridos",
+    "type": "short",
+    "exp": "'recorridos/itinerarios' – rutas o caminos preparados."
+  },
+  {
+    "id": 60,
+    "ctx": null,
+    "ctxText": null,
+    "q": "Los ___ de diferentes asociaciones durante los fines de semana salen hacer senderismo. (1 palabra)",
+    "a": "miembros",
+    "type": "short",
+    "exp": "'miembros' – personas que pertenecen a las asociaciones."
+  }
+]
