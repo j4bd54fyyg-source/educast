@@ -1981,6 +1981,7 @@ function showQ(){
   }
   rPips();
   if(md==='s'&&q.type!=='short'){var cdEl=el('cd');if(cdEl){cdEl.className='cd '+c.cd+' waiting';cdEl.textContent=TS;}startCD();}
+  if(typeof spLoadForCurrent==='function')spLoadForCurrent();
 }
 
 function startCD(){
@@ -3027,4 +3028,146 @@ document.addEventListener('DOMContentLoaded', function() {
     if(hasAccess('v')){ lwChosenLevel='v'; lwLv='v'; lv='v'; }
   }, 50);
 });
+
+// ── DIGITÁLNY POMOCNÝ PAPIER (per-otázka, text + kreslenie) ──
+var matNotes = {}; // {qIndex: {text:'', draw:'dataURL'}}
+var _spOpen = false;
+var _spMode = 'text'; // 'text' | 'draw'
+var _spDrawing = false, _spCtx = null, _spLastX = 0, _spLastY = 0;
+
+function spInjectUI(){
+  if(document.getElementById('sp-fab')) return;
+  var css = document.createElement('style');
+  css.textContent =
+    '#sp-fab{position:fixed;right:14px;bottom:64px;z-index:900;background:linear-gradient(135deg,#534AB7,#7F77DD);color:#fff;border:none;border-radius:24px;padding:10px 16px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,0.4);display:none}'
+  + '#sp-fab:hover{opacity:0.92}'
+  + '#sp-panel{position:fixed;right:14px;bottom:108px;z-index:901;width:min(380px,92vw);background:#161616;border:1px solid #2a2a2a;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,0.6);display:none;flex-direction:column;overflow:hidden}'
+  + '#sp-panel.open{display:flex}'
+  + '.sp-head{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid #2a2a2a}'
+  + '.sp-title{font-size:11px;color:#CECBF6;font-weight:600;letter-spacing:0.04em}'
+  + '.sp-tabs{display:flex;gap:4px}'
+  + '.sp-tab{font-size:10px;padding:4px 10px;border-radius:14px;border:1px solid #2a2a2a;background:transparent;color:#888;cursor:pointer;font-family:inherit}'
+  + '.sp-tab.active{background:#1a1528;border-color:#534AB7;color:#CECBF6}'
+  + '.sp-close{background:transparent;border:none;color:#888;font-size:16px;cursor:pointer;line-height:1;padding:0 4px}'
+  + '.sp-body{padding:10px}'
+  + '#sp-text{width:100%;height:180px;background:#0f0f0f;border:1px solid #2a2a2a;border-radius:8px;color:#e8e8e8;font-family:ui-monospace,Menlo,monospace;font-size:13px;padding:10px;resize:vertical;outline:none;box-sizing:border-box}'
+  + '#sp-text:focus{border-color:#534AB7}'
+  + '#sp-canvas-wrap{position:relative}'
+  + '#sp-canvas{width:100%;height:200px;background:#fff;border-radius:8px;border:1px solid #2a2a2a;touch-action:none;cursor:crosshair;display:block}'
+  + '.sp-canvas-tools{display:flex;gap:6px;margin-top:6px}'
+  + '.sp-btn{font-size:10px;padding:5px 10px;border-radius:6px;border:1px solid #2a2a2a;background:#1a1a1a;color:#aaa;cursor:pointer;font-family:inherit}'
+  + '.sp-btn:hover{border-color:#534AB7;color:#CECBF6}'
+  + '@media(max-width:600px){#sp-fab{bottom:58px;padding:8px 13px}#sp-panel{bottom:100px;width:94vw;right:3vw}#sp-text{height:140px}#sp-canvas{height:160px}}';
+  document.head.appendChild(css);
+
+  var fab = document.createElement('button');
+  fab.id = 'sp-fab';
+  fab.textContent = '📝 Papier';
+  fab.onclick = spToggle;
+  document.body.appendChild(fab);
+
+  var panel = document.createElement('div');
+  panel.id = 'sp-panel';
+  panel.innerHTML =
+    '<div class="sp-head">'
+  +   '<span class="sp-title">📝 POMOCNÝ PAPIER</span>'
+  +   '<div class="sp-tabs">'
+  +     '<button class="sp-tab active" id="sp-tab-text" onclick="spSetMode(\'text\')">Text</button>'
+  +     '<button class="sp-tab" id="sp-tab-draw" onclick="spSetMode(\'draw\')">Kreslenie</button>'
+  +   '</div>'
+  +   '<button class="sp-close" onclick="spToggle()">✕</button>'
+  + '</div>'
+  + '<div class="sp-body">'
+  +   '<textarea id="sp-text" placeholder="Sem si píš výpočty…" oninput="spSaveText()"></textarea>'
+  +   '<div id="sp-canvas-wrap" style="display:none">'
+  +     '<canvas id="sp-canvas"></canvas>'
+  +     '<div class="sp-canvas-tools">'
+  +       '<button class="sp-btn" onclick="spClearCanvas()">🗑 Vymazať</button>'
+  +     '</div>'
+  +   '</div>'
+  + '</div>';
+  document.body.appendChild(panel);
+
+  var cv = document.getElementById('sp-canvas');
+  cv.addEventListener('mousedown', spDown);
+  cv.addEventListener('mousemove', spMove);
+  window.addEventListener('mouseup', spUp);
+  cv.addEventListener('touchstart', spDown, {passive:false});
+  cv.addEventListener('touchmove', spMove, {passive:false});
+  cv.addEventListener('touchend', spUp);
+}
+
+function spToggle(){
+  _spOpen = !_spOpen;
+  var p = document.getElementById('sp-panel');
+  if(p) p.classList.toggle('open', _spOpen);
+  if(_spOpen && _spMode==='draw') spInitCanvas();
+}
+
+function spSetMode(m){
+  _spMode = m;
+  document.getElementById('sp-tab-text').classList.toggle('active', m==='text');
+  document.getElementById('sp-tab-draw').classList.toggle('active', m==='draw');
+  document.getElementById('sp-text').style.display = m==='text'?'block':'none';
+  document.getElementById('sp-canvas-wrap').style.display = m==='draw'?'block':'none';
+  if(m==='draw') spInitCanvas();
+}
+
+function spInitCanvas(){
+  var cv = document.getElementById('sp-canvas');
+  if(!cv) return;
+  // Match internal resolution to display size once
+  if(cv.width !== cv.offsetWidth){
+    cv.width = cv.offsetWidth; cv.height = cv.offsetHeight;
+  }
+  _spCtx = cv.getContext('2d');
+  _spCtx.lineWidth = 2; _spCtx.lineCap = 'round'; _spCtx.strokeStyle = '#111';
+  // Restore saved drawing for current question
+  var n = matNotes[cur];
+  if(n && n.draw){
+    var img = new Image();
+    img.onload = function(){ _spCtx.clearRect(0,0,cv.width,cv.height); _spCtx.drawImage(img,0,0,cv.width,cv.height); };
+    img.src = n.draw;
+  } else {
+    _spCtx.clearRect(0,0,cv.width,cv.height);
+  }
+}
+
+function spPos(e){
+  var cv = document.getElementById('sp-canvas');
+  var r = cv.getBoundingClientRect();
+  var cx = (e.touches?e.touches[0].clientX:e.clientX) - r.left;
+  var cy = (e.touches?e.touches[0].clientY:e.clientY) - r.top;
+  return [cx*(cv.width/r.width), cy*(cv.height/r.height)];
+}
+function spDown(e){ e.preventDefault(); if(!_spCtx) spInitCanvas(); _spDrawing=true; var p=spPos(e); _spLastX=p[0]; _spLastY=p[1]; }
+function spMove(e){ if(!_spDrawing) return; e.preventDefault(); var p=spPos(e); _spCtx.beginPath(); _spCtx.moveTo(_spLastX,_spLastY); _spCtx.lineTo(p[0],p[1]); _spCtx.stroke(); _spLastX=p[0]; _spLastY=p[1]; }
+function spUp(){ if(!_spDrawing) return; _spDrawing=false; spSaveDraw(); }
+
+function spClearCanvas(){
+  var cv = document.getElementById('sp-canvas');
+  if(_spCtx) _spCtx.clearRect(0,0,cv.width,cv.height);
+  if(!matNotes[cur]) matNotes[cur]={};
+  matNotes[cur].draw = '';
+}
+function spSaveText(){
+  if(!matNotes[cur]) matNotes[cur]={};
+  matNotes[cur].text = document.getElementById('sp-text').value;
+}
+function spSaveDraw(){
+  var cv = document.getElementById('sp-canvas');
+  if(!matNotes[cur]) matNotes[cur]={};
+  try{ matNotes[cur].draw = cv.toDataURL('image/png'); }catch(e){}
+}
+
+// Volané z showQ – načíta poznámky pre aktuálnu otázku
+function spLoadForCurrent(){
+  spInjectUI();
+  var fab = document.getElementById('sp-fab');
+  if(fab) fab.style.display = (sub && sub.isMat) ? 'block' : 'none';
+  var ta = document.getElementById('sp-text');
+  var n = matNotes[cur] || {};
+  if(ta) ta.value = n.text || '';
+  if(_spOpen && _spMode==='draw') spInitCanvas();
+}
 
