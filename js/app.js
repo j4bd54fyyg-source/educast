@@ -1883,7 +1883,7 @@ function showAudioPlayer(src, sectionLabel) {
 function showQ(){
   ans=false;tck=false;clearInterval(tT);
   var q=sub.qs[cur];
-  var L=['A','B','C','D'];
+  var L=['A','B','C','D','E'];
   var c=C[lv];
   elSet('qn','textContent',sub.icon+' '+sub.name+' · Otázka '+(cur+1)+' / '+sub.qs.length);
   elSet('qt','textContent',q.q);
@@ -1958,7 +1958,7 @@ function showQ(){
   } else {
     if(shortWrap)shortWrap.style.display='none';
     if(ogEl)ogEl.style.display='';
-    var idxs=[0,1,2,3];
+    var idxs=[];for(var ii=0;ii<q.opts.length;ii++){idxs.push(ii);}
     if(!sub.isMat){
       for(var si=idxs.length-1;si>0;si--){var sj=Math.floor(Math.random()*(si+1));var st=idxs[si];idxs[si]=idxs[sj];idxs[sj]=st;}
     }
@@ -2453,8 +2453,10 @@ fetch('data/ujl_2010.json')
   .then(function(r){return r.json();})
   .then(function(qs){addMat('ujl',2010,qs);})
   .catch(function(e){console.error('Chyba načítania UJL 2010:',e);});
-// addMat('mat', 2010, [...]);
-// addMat('mat', 2010, [...]);
+fetch('data/mat_2010.json')
+  .then(function(r){return r.json();})
+  .then(function(qs){addMat('mat',2010,qs);})
+  .catch(function(e){console.error('Chyba nacitania MAT 2010:',e);});
 
 // ── MATURITNE TESTY UI ──
 var matPredmet='sjl',matOpen=false;
