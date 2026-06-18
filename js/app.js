@@ -1938,7 +1938,7 @@ function showQ(){
     if(awrap)awrap.style.display='none';
   }
   var ea=el('ea');
-  if(ea){if(q.en&&q.en.trim()){ea.innerHTML='<div class="qen">'+q.en+'</div>';}else{ea.innerHTML='';}}
+  if(ea){var _h='';if(q.img){_h+='<div style="text-align:center;margin:10px 0"><img src="'+q.img+'" alt="obrazok" style="max-width:min(100%,360px);max-height:42vh;background:#fff;border-radius:8px;padding:8px"></div>';}if(q.en&&q.en.trim()){_h+='<div class="qen">'+q.en+'</div>';}ea.innerHTML=_h;}
   // Render odpovede
   var shortWrap=el('short-wrap');
   var ogEl=el('og');

@@ -3,3 +3,6 @@
 
 /data/audio/*.mp3
   Content-Type: audio/mpeg
+
+/data/img/*.png
+  Content-Type: image/png

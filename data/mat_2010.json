@@ -1,32 +1,303 @@
 [
-  {"type":"short","q":"Číslo 2 010 môžeme napísať ako súčet troch po sebe idúcich prirodzených čísel. Určte aritmetický priemer týchto čísel.","a":["670"],"exp":"Tri po sebe idúce čísla: n−1, n, n+1. Ich súčet je 3n = 2010, teda n = 670. Aritmetický priemer troch po sebe idúcich čísel je ich prostredný člen, čiže 670."},
-  {"type":"short","q":"Desať futbalových mužstiev hralo na turnaji systémom práve raz každý s každým. Priemerne koľko gólov padlo v jednom zápase, ak počas celého turnaja hráči strelili 135 gólov?","a":["3"],"exp":"Počet zápasov = C(2,10) = (10·9)/2 = 45. Priemer = 135 / 45 = 3 góly na zápas."},
-  {"type":"short","q":"Na výlet autobusom išiel párny počet žiakov. Všetci sa zmestili do 30-miestneho autobusu. Koľko žiakov sa zúčastnilo výletu, ak dievčat bolo 10-krát viac ako chlapcov?","a":["22"],"exp":"Nech chlapcov je x, dievčat 10x, spolu 11x. Súčet musí byť párny a ≤ 30. 11·2 = 22 (párne, ≤30); 11·4 = 44 > 30. Teda x = 2, spolu 22 žiakov."},
-  {"type":"short","q":"Určte smernicu priamky, ktorá prechádza bodmi A[3;0] a B[4;2].","a":["2"],"exp":"Smernica k = (y_B − y_A)/(x_B − x_A) = (2 − 0)/(4 − 3) = 2/1 = 2."},
-  {"type":"short","q":"Spolužiaci Oľga a Peter bývajú na tej istej strane priamej ulice. Na druhej strane ulice domy nie sú. Vľavo od Oľginho domu je 7 domov, vpravo od Oľginho domu je 25 domov tejto ulice. Peter býva v prostrednom dome ulice. Zistite, koľko domov je medzi Oľginým a Petrovým domom.","a":["8"],"exp":"Spolu domov: 7 + 1 (Oľga) + 25 = 33. Prostredný (Petrov) je 17. dom. Oľgin je 8. dom (po 7 domoch zľava). Medzi nimi je 17 − 8 − 1 = 8 domov."},
-  {"type":"short","q":"Rozmery kvádra sú v pomere 1 : 4 : 8. Jeho telesová uhlopriečka má dĺžku 18 cm. Vypočítajte v centimetroch dĺžku najdlhšej hrany kvádra.","a":["16"],"exp":"Hrany a, 4a, 8a. Telesová uhlopriečka: √(a² + 16a² + 64a²) = √(81a²) = 9a = 18, teda a = 2. Najdlhšia hrana 8a = 16 cm."},
-  {"type":"short","q":"Určte najmenšie prirodzené číslo p, pre ktoré rovnica 2·sin x = p nemá riešenie.","a":["3"],"exp":"sin x ∈ ⟨−1; 1⟩, takže 2·sin x ∈ ⟨−2; 2⟩. Rovnica má riešenie pre p ≤ 2. Najmenšie prirodzené p bez riešenia je p = 3."},
-  {"type":"short","q":"Daná je funkcia f(x) = 2^(x+1). Určte, pre ktoré x sa funkčná hodnota funkcie f rovná 64.","a":["5"],"exp":"2^(x+1) = 64 = 2⁶, teda x + 1 = 6, x = 5."},
-  {"type":"short","q":"Medzi čísla 2 a 17 sme vložili dve čísla x a y tak, že spolu s danými číslami tvoria štyri za sebou nasledujúce členy aritmetickej postupnosti. Určte neznáme čísla x a y. Do odpoveďového hárka zapíšte väčšie z nich.","a":["12"],"exp":"a₁ = 2, a₄ = 17. d = (17 − 2)/3 = 5. Členy: 2, 7, 12, 17. Vložené čísla x = 7, y = 12. Väčšie je 12."},
-  {"type":"short","q":"V obdĺžniku ABCD je vzdialenosť jeho stredu od priamky AB o 3 cm väčšia ako od priamky BC. Obvod obdĺžnika je 52 cm. Vypočítajte obsah obdĺžnika. Výsledok uveďte v cm².","a":["160"],"exp":"Vzdialenosti stredu sú polovice strán: a/2 a b/2. Nech a/2 = b/2 + 3, teda a = b + 6. Obvod 2(a+b) = 52, a+b = 26. Z toho b = 10, a = 16. Obsah = 16·10 = 160 cm²."},
-  {"type":"short","q":"Existujú tri prirodzené čísla n (n≠1), pre ktoré platí: Ak číslom n vydelíme čísla 37 a 47, dostaneme rovnaký zvyšok. Určte súčet týchto troch čísel.","a":["17"],"exp":"Rovnaký zvyšok znamená, že n delí rozdiel 47 − 37 = 10. Delitele 10 okrem 1: 2, 5, 10. Súčet = 2 + 5 + 10 = 17."},
-  {"type":"short","q":"Pravidelný štvorboký ihlan má dĺžku bočnej hrany c = 5 cm, jej uhol s rovinou podstavy je 30°. Vypočítajte objem ihlana v cm³.","a":["31,25","31.25"],"exp":"Priemet bočnej hrany do podstavy = c·cos30° = 5·(√3/2). Výška v = c·sin30° = 5·0,5 = 2,5 cm. Uhlopriečka podstavy u = 2·c·cos30° = 5√3, hrana podstavy a = u/√2 = 5√3/√2, a² = 75/2 = 37,5 = S_p. Objem = (1/3)·37,5·2,5 = 31,25 cm³."},
-  {"type":"short","q":"Dva páry rovnobežných priamok sú určené rovnicami y = 2x+1, y = 2x−5 a y = 1, y = 3. Vypočítajte obsah rovnobežníka, ktorý ohraničujú tieto štyri priamky.","a":["6"],"exp":"Vodorovné priamky y=1 a y=3 sú vzdialené 2 (výška). Šikmé priamky y=2x+1 a y=2x−5 vytínajú na priamke y=1 úsek od x=0 do x=3, čiže základňa b=3. Obsah = b·v = 3·2 = 6."},
-  {"type":"short","q":"Koncoročné hodnotenie žiakov z matematiky je znázornené na diagrame: známka 1 → 32 %, známka 2 → 28 %, známka 3 → 27 %, známka 4 → 8 %, známka 5 → 5 %. Určte s presnosťou na dve desatinné miesta aritmetický priemer známok znázornených na diagrame.","a":["2,26","2.26"],"exp":"Priemer = 1·0,32 + 2·0,28 + 3·0,27 + 4·0,08 + 5·0,05 = 0,32 + 0,56 + 0,81 + 0,32 + 0,25 = 2,26."},
-  {"type":"short","q":"Bazén tvaru kvádra s hĺbkou 145 cm a rozmermi dna 6 m a 4 m bolo nutné vymaľovať. Použili sa 750 ml balenia farby, ktorej 1 liter stačí na 12 m² plochy. Najmenej koľko celých balení farby bolo treba použiť na vymaľovanie celého bazéna trikrát?","a":["18","17"],"exp":"Plocha = dno + 4 steny = 6·4 + 2·(6·1,45) + 2·(4·1,45) = 24 + 17,4 + 11,6 = 53 m². Trikrát: 159 m². Spotreba farby = 159/12 = 13,25 l. Balenia po 0,75 l: 13,25/0,75 = 17,67 → 18 balení (uznáva sa aj 17)."},
-  {"type":"short","q":"Kužeľ s polomerom podstavy 12 cm a výškou 15 cm rozdelíme rovinami rovnobežnými s podstavou na tri telesá. Roviny rozdelia výšku kužeľa na tri rovnaké časti. Určte pomer objemov najväčšieho a najmenšieho vzniknutého telesa.","a":["19"],"exp":"Objemy kužeľov od vrcholu sú v pomere 1³ : 2³ : 3³ = 1 : 8 : 27. Telesá (vrstvy): najmenšie (vrch) = 1, stredné = 8−1 = 7, najväčšie (dole) = 27−8 = 19. Pomer najväčšie : najmenšie = 19 : 1 = 19."},
-  {"type":"short","q":"Inverznú funkciu k funkcii f: y = 2 − 1/(x+3) môžeme napísať v tvare f⁻¹: y = a + b/(x−2), kde a, b ∈ R. Určte súčet a+b.","a":["-4","−4"],"exp":"Z y = 2 − 1/(x+3) vyjadríme x: y − 2 = −1/(x+3), x+3 = −1/(y−2), x = −3 − 1/(y−2). Inverzná: f⁻¹(x) = −3 + (−1)/(x−2). Teda a = −3, b = −1, a+b = −4."},
-  {"type":"short","q":"Určte kladnú hodnotu koeficientu q, pre ktorú má priamka daná rovnicou y = 2x+q a kružnica určená rovnicou x²+y² = 5 práve jeden spoločný bod.","a":["5"],"exp":"Dosadením: x² + (2x+q)² = 5 → 5x² + 4qx + q² − 5 = 0. Dotyk (jeden bod) ⇒ diskriminant = 0: 16q² − 20(q²−5) = 0 → −4q² + 100 = 0 → q² = 25 → q = 5 (kladná hodnota)."},
-  {"type":"short","q":"Určte prirodzené číslo n tak, aby √(2n(2n+1)) bola dĺžka prepony pravouhlého trojuholníka, ktorého odvesny majú dĺžky √(2n+27) a n.","a":["3"],"exp":"Pytagorova veta: (2n+27) + n² = 2n(2n+1) = 4n² + 2n. → 3n² − 25n − 27 = 0... preverením n=3: odvesny √33 a 3 (9), súčet 33+9=42; prepona² = 2·3·7 = 42. Sedí, n = 3."},
-  {"type":"short","q":"Daná je kvadratická funkcia f: y = −3x²+4x+c s neznámym koeficientom c. Určte najmenšie celé číslo c, pre ktoré graf funkcie f pretína x-ovú os v dvoch rôznych bodoch.","a":["-1","−1"],"exp":"Dva rôzne korene ⇒ diskriminant > 0: 16 − 4·(−3)·c > 0 → 16 + 12c > 0 → c > −16/12 = −4/3 ≈ −1,33. Najmenšie celé číslo väčšie ako −1,33 je c = −1."},
-  {"type":"mc","q":"Postupnosť {aₙ} je daná n-tým členom aₙ = (40n+2)/(n+3). Určte najväčšie n, pre ktoré aₙ < 39.","opts":["112","113","114","115","116"],"a":2,"exp":"(40n+2)/(n+3) < 39 → 40n+2 < 39n+117 → n < 115. Najväčšie celé n = 114."},
-  {"type":"mc","q":"V trojuholníku ABC sú dané strany a = 2 cm, b = 3 cm a uhol γ = 60°. Vypočítajte dĺžku strany c.","opts":["√11 cm","√7 cm","√5 cm","√3 cm","√2 cm"],"a":1,"exp":"Kosínusová veta: c² = a² + b² − 2ab·cosγ = 4 + 9 − 2·2·3·0,5 = 13 − 6 = 7. c = √7 cm."},
-  {"type":"mc","q":"Rozhodnite, ktorá z úsečiek k, l, m, n, o je podľa údajov znázornených na obrázku najdlhšia. (Uhly: 60°, 55°, 65°, 40°.)","opts":["úsečka k","úsečka l","úsečka m","úsečka n","úsečka o"],"a":3,"exp":"Proti najväčšiemu uhlu leží najdlhšia strana. Porovnaním uhlov v jednotlivých trojuholníkoch vychádza najdlhšia úsečka n."},
-  {"type":"mc","q":"Dané sú dva výroky. Prvý: „Ak je štvoruholník rovnobežník, tak sa jeho uhlopriečky navzájom rozpoľujú.“ Druhý: „Ak sa uhlopriečky štvoruholníka navzájom rozpoľujú, tak štvoruholník je rovnobežník.“ Koľko z nasledovných tvrdení je pravdivých? • Prvý výrok je pravdivý. • Druhý výrok je nepravdivý. • Druhý výrok je ekvivalencia. • Druhý výrok je negáciou prvého.","opts":["4","3","2","1","0"],"a":3,"exp":"Prvý výrok je pravdivý (✓). Druhý výrok je tiež pravdivý, teda „je nepravdivý“ je nesprávne. Druhý výrok nie je ekvivalencia (je to implikácia). Druhý výrok je obrátená implikácia, nie negácia. Pravdivé je len 1 tvrdenie."},
-  {"type":"mc","q":"Otváracie hodiny prvého obchodu sú 9:00–12:00 a 13:00–16:00, druhého obchodu 8:00–14:30 a tretieho obchodu 8:30–12:30 a 14:00–16:00. Aký dlhý čas sú otvorené všetky tri obchody súčasne?","opts":["180 minút","210 minút","330 minút","450 minút","480 minút"],"a":1,"exp":"Prienik: 9:00–12:00 spoločné všetkým (180 min). Popoludní: obchod 1 (13–16), obchod 2 (do 14:30), obchod 3 (14–16) → prienik 14:00–14:30 = 30 min. Spolu 180 + 30 = 210 minút."},
-  {"type":"mc","q":"Zistite definičný obor funkcie f: y = log₂((3x−2)/(1−x)).","opts":["(2/3; 1)","(2/3; ∞)","⟨2/3; 1)","(−∞; 2/3) ∪ (1; ∞)","(−∞; 1) ∪ (1; ∞)"],"a":0,"exp":"Argument logaritmu musí byť kladný: (3x−2)/(1−x) > 0. Čitateľ > 0 pre x > 2/3, menovateľ > 0 pre x < 1. Zlomok kladný na (2/3; 1)."},
-  {"type":"mc","q":"Po vystriedaní si na striedačke náhodne sadlo vedľa seba päť hokejistov. Aká je pravdepodobnosť, že dvaja najlepší strelci z tejto pätice budú sedieť vedľa seba?","opts":["0,8","0,4","0,2","0,1","0,05"],"a":1,"exp":"Dvojicu vnímame ako jeden blok: 4! usporiadaní × 2 (poradie v bloku) = 48 priaznivých. Všetkých usporiadaní 5! = 120. P = 48/120 = 0,4."},
-  {"type":"mc","q":"Koľkokrát sa zväčší povrch atmosférického balóna tvaru gule, ak sa jeho objem zväčší 8-násobne?","opts":["4","16","32","8","2"],"a":0,"exp":"Objem ∝ r³, povrch ∝ r². Ak V·8, tak r³·8 ⇒ r·2. Povrch ∝ r² ⇒ 2² = 4-násobne."},
-  {"type":"mc","q":"Koľko je medzi prirodzenými číslami od 10 do 100 000 všetkých tých, ktoré sú druhou mocninou prirodzeného čísla?","opts":["316","315","314","313","312"],"a":3,"exp":"√10 ≈ 3,16, takže najmenšie n je 4 (16). √100000 ≈ 316,2, najväčšie n je 316. Počet: 316 − 4 + 1 = 313."},
-  {"type":"mc","q":"Určte súčet všetkých celých čísel, ktoré sú koreňmi nerovnice √(6−3x) < 4.","opts":["6","3","2","−6","−3"],"a":4,"exp":"Podmienka: 6−3x ≥ 0 ⇒ x ≤ 2. Nerovnica: 6−3x < 16 ⇒ −3x < 10 ⇒ x > −10/3 ≈ −3,33. Celé čísla x ∈ {−3, −2, −1, 0, 1, 2}. Súčet = −3."}
+  {
+    "type": "short",
+    "q": "Číslo 2 010 môžeme napísať ako súčet troch po sebe idúcich prirodzených čísel. Určte aritmetický priemer týchto čísel.",
+    "a": [
+      "670"
+    ],
+    "exp": "Tri po sebe idúce čísla: n−1, n, n+1. Ich súčet je 3n = 2010, teda n = 670. Aritmetický priemer troch po sebe idúcich čísel je ich prostredný člen, čiže 670."
+  },
+  {
+    "type": "short",
+    "q": "Desať futbalových mužstiev hralo na turnaji systémom práve raz každý s každým. Priemerne koľko gólov padlo v jednom zápase, ak počas celého turnaja hráči strelili 135 gólov?",
+    "a": [
+      "3"
+    ],
+    "exp": "Počet zápasov = C(2,10) = (10·9)/2 = 45. Priemer = 135 / 45 = 3 góly na zápas."
+  },
+  {
+    "type": "short",
+    "q": "Na výlet autobusom išiel párny počet žiakov. Všetci sa zmestili do 30-miestneho autobusu. Koľko žiakov sa zúčastnilo výletu, ak dievčat bolo 10-krát viac ako chlapcov?",
+    "a": [
+      "22"
+    ],
+    "exp": "Nech chlapcov je x, dievčat 10x, spolu 11x. Súčet musí byť párny a ≤ 30. 11·2 = 22 (párne, ≤30); 11·4 = 44 > 30. Teda x = 2, spolu 22 žiakov."
+  },
+  {
+    "type": "short",
+    "q": "Určte smernicu priamky, ktorá prechádza bodmi A[3;0] a B[4;2].",
+    "a": [
+      "2"
+    ],
+    "exp": "Smernica k = (y_B − y_A)/(x_B − x_A) = (2 − 0)/(4 − 3) = 2/1 = 2."
+  },
+  {
+    "type": "short",
+    "q": "Spolužiaci Oľga a Peter bývajú na tej istej strane priamej ulice. Na druhej strane ulice domy nie sú. Vľavo od Oľginho domu je 7 domov, vpravo od Oľginho domu je 25 domov tejto ulice. Peter býva v prostrednom dome ulice. Zistite, koľko domov je medzi Oľginým a Petrovým domom.",
+    "a": [
+      "8"
+    ],
+    "exp": "Spolu domov: 7 + 1 (Oľga) + 25 = 33. Prostredný (Petrov) je 17. dom. Oľgin je 8. dom (po 7 domoch zľava). Medzi nimi je 17 − 8 − 1 = 8 domov."
+  },
+  {
+    "type": "short",
+    "q": "Rozmery kvádra sú v pomere 1 : 4 : 8. Jeho telesová uhlopriečka má dĺžku 18 cm. Vypočítajte v centimetroch dĺžku najdlhšej hrany kvádra.",
+    "a": [
+      "16"
+    ],
+    "exp": "Hrany a, 4a, 8a. Telesová uhlopriečka: √(a² + 16a² + 64a²) = √(81a²) = 9a = 18, teda a = 2. Najdlhšia hrana 8a = 16 cm.",
+    "img": "data/img/mat_2010_q6.png"
+  },
+  {
+    "type": "short",
+    "q": "Určte najmenšie prirodzené číslo p, pre ktoré rovnica 2·sin x = p nemá riešenie.",
+    "a": [
+      "3"
+    ],
+    "exp": "sin x ∈ ⟨−1; 1⟩, takže 2·sin x ∈ ⟨−2; 2⟩. Rovnica má riešenie pre p ≤ 2. Najmenšie prirodzené p bez riešenia je p = 3."
+  },
+  {
+    "type": "short",
+    "q": "Daná je funkcia f(x) = 2^(x+1). Určte, pre ktoré x sa funkčná hodnota funkcie f rovná 64.",
+    "a": [
+      "5"
+    ],
+    "exp": "2^(x+1) = 64 = 2⁶, teda x + 1 = 6, x = 5."
+  },
+  {
+    "type": "short",
+    "q": "Medzi čísla 2 a 17 sme vložili dve čísla x a y tak, že spolu s danými číslami tvoria štyri za sebou nasledujúce členy aritmetickej postupnosti. Určte neznáme čísla x a y. Do odpoveďového hárka zapíšte väčšie z nich.",
+    "a": [
+      "12"
+    ],
+    "exp": "a₁ = 2, a₄ = 17. d = (17 − 2)/3 = 5. Členy: 2, 7, 12, 17. Vložené čísla x = 7, y = 12. Väčšie je 12."
+  },
+  {
+    "type": "short",
+    "q": "V obdĺžniku ABCD je vzdialenosť jeho stredu od priamky AB o 3 cm väčšia ako od priamky BC. Obvod obdĺžnika je 52 cm. Vypočítajte obsah obdĺžnika. Výsledok uveďte v cm².",
+    "a": [
+      "160"
+    ],
+    "exp": "Vzdialenosti stredu sú polovice strán: a/2 a b/2. Nech a/2 = b/2 + 3, teda a = b + 6. Obvod 2(a+b) = 52, a+b = 26. Z toho b = 10, a = 16. Obsah = 16·10 = 160 cm².",
+    "img": "data/img/mat_2010_q10.png"
+  },
+  {
+    "type": "short",
+    "q": "Existujú tri prirodzené čísla n (n≠1), pre ktoré platí: Ak číslom n vydelíme čísla 37 a 47, dostaneme rovnaký zvyšok. Určte súčet týchto troch čísel.",
+    "a": [
+      "17"
+    ],
+    "exp": "Rovnaký zvyšok znamená, že n delí rozdiel 47 − 37 = 10. Delitele 10 okrem 1: 2, 5, 10. Súčet = 2 + 5 + 10 = 17."
+  },
+  {
+    "type": "short",
+    "q": "Pravidelný štvorboký ihlan má dĺžku bočnej hrany c = 5 cm, jej uhol s rovinou podstavy je 30°. Vypočítajte objem ihlana v cm³.",
+    "a": [
+      "31,25",
+      "31.25"
+    ],
+    "exp": "Priemet bočnej hrany do podstavy = c·cos30° = 5·(√3/2). Výška v = c·sin30° = 5·0,5 = 2,5 cm. Uhlopriečka podstavy u = 2·c·cos30° = 5√3, hrana podstavy a = u/√2 = 5√3/√2, a² = 75/2 = 37,5 = S_p. Objem = (1/3)·37,5·2,5 = 31,25 cm³.",
+    "img": "data/img/mat_2010_q12.png"
+  },
+  {
+    "type": "short",
+    "q": "Dva páry rovnobežných priamok sú určené rovnicami y = 2x+1, y = 2x−5 a y = 1, y = 3. Vypočítajte obsah rovnobežníka, ktorý ohraničujú tieto štyri priamky.",
+    "a": [
+      "6"
+    ],
+    "exp": "Vodorovné priamky y=1 a y=3 sú vzdialené 2 (výška). Šikmé priamky y=2x+1 a y=2x−5 vytínajú na priamke y=1 úsek od x=0 do x=3, čiže základňa b=3. Obsah = b·v = 3·2 = 6."
+  },
+  {
+    "type": "short",
+    "q": "Koncoročné hodnotenie žiakov z matematiky je znázornené na diagrame: známka 1 → 32 %, známka 2 → 28 %, známka 3 → 27 %, známka 4 → 8 %, známka 5 → 5 %. Určte s presnosťou na dve desatinné miesta aritmetický priemer známok znázornených na diagrame.",
+    "a": [
+      "2,26",
+      "2.26"
+    ],
+    "exp": "Priemer = 1·0,32 + 2·0,28 + 3·0,27 + 4·0,08 + 5·0,05 = 0,32 + 0,56 + 0,81 + 0,32 + 0,25 = 2,26.",
+    "img": "data/img/mat_2010_q14.png"
+  },
+  {
+    "type": "short",
+    "q": "Bazén tvaru kvádra s hĺbkou 145 cm a rozmermi dna 6 m a 4 m bolo nutné vymaľovať. Použili sa 750 ml balenia farby, ktorej 1 liter stačí na 12 m² plochy. Najmenej koľko celých balení farby bolo treba použiť na vymaľovanie celého bazéna trikrát?",
+    "a": [
+      "18",
+      "17"
+    ],
+    "exp": "Plocha = dno + 4 steny = 6·4 + 2·(6·1,45) + 2·(4·1,45) = 24 + 17,4 + 11,6 = 53 m². Trikrát: 159 m². Spotreba farby = 159/12 = 13,25 l. Balenia po 0,75 l: 13,25/0,75 = 17,67 → 18 balení (uznáva sa aj 17)."
+  },
+  {
+    "type": "short",
+    "q": "Kužeľ s polomerom podstavy 12 cm a výškou 15 cm rozdelíme rovinami rovnobežnými s podstavou na tri telesá. Roviny rozdelia výšku kužeľa na tri rovnaké časti. Určte pomer objemov najväčšieho a najmenšieho vzniknutého telesa.",
+    "a": [
+      "19"
+    ],
+    "exp": "Objemy kužeľov od vrcholu sú v pomere 1³ : 2³ : 3³ = 1 : 8 : 27. Telesá (vrstvy): najmenšie (vrch) = 1, stredné = 8−1 = 7, najväčšie (dole) = 27−8 = 19. Pomer najväčšie : najmenšie = 19 : 1 = 19.",
+    "img": "data/img/mat_2010_q16.png"
+  },
+  {
+    "type": "short",
+    "q": "Inverznú funkciu k funkcii f: y = 2 − 1/(x+3) môžeme napísať v tvare f⁻¹: y = a + b/(x−2), kde a, b ∈ R. Určte súčet a+b.",
+    "a": [
+      "-4",
+      "−4"
+    ],
+    "exp": "Z y = 2 − 1/(x+3) vyjadríme x: y − 2 = −1/(x+3), x+3 = −1/(y−2), x = −3 − 1/(y−2). Inverzná: f⁻¹(x) = −3 + (−1)/(x−2). Teda a = −3, b = −1, a+b = −4."
+  },
+  {
+    "type": "short",
+    "q": "Určte kladnú hodnotu koeficientu q, pre ktorú má priamka daná rovnicou y = 2x+q a kružnica určená rovnicou x²+y² = 5 práve jeden spoločný bod.",
+    "a": [
+      "5"
+    ],
+    "exp": "Dosadením: x² + (2x+q)² = 5 → 5x² + 4qx + q² − 5 = 0. Dotyk (jeden bod) ⇒ diskriminant = 0: 16q² − 20(q²−5) = 0 → −4q² + 100 = 0 → q² = 25 → q = 5 (kladná hodnota)."
+  },
+  {
+    "type": "short",
+    "q": "Určte prirodzené číslo n tak, aby √(2n(2n+1)) bola dĺžka prepony pravouhlého trojuholníka, ktorého odvesny majú dĺžky √(2n+27) a n.",
+    "a": [
+      "3"
+    ],
+    "exp": "Pytagorova veta: (2n+27) + n² = 2n(2n+1) = 4n² + 2n. → 3n² − 25n − 27 = 0... preverením n=3: odvesny √33 a 3 (9), súčet 33+9=42; prepona² = 2·3·7 = 42. Sedí, n = 3."
+  },
+  {
+    "type": "short",
+    "q": "Daná je kvadratická funkcia f: y = −3x²+4x+c s neznámym koeficientom c. Určte najmenšie celé číslo c, pre ktoré graf funkcie f pretína x-ovú os v dvoch rôznych bodoch.",
+    "a": [
+      "-1",
+      "−1"
+    ],
+    "exp": "Dva rôzne korene ⇒ diskriminant > 0: 16 − 4·(−3)·c > 0 → 16 + 12c > 0 → c > −16/12 = −4/3 ≈ −1,33. Najmenšie celé číslo väčšie ako −1,33 je c = −1."
+  },
+  {
+    "type": "mc",
+    "q": "Postupnosť {aₙ} je daná n-tým členom aₙ = (40n+2)/(n+3). Určte najväčšie n, pre ktoré aₙ < 39.",
+    "opts": [
+      "112",
+      "113",
+      "114",
+      "115",
+      "116"
+    ],
+    "a": 2,
+    "exp": "(40n+2)/(n+3) < 39 → 40n+2 < 39n+117 → n < 115. Najväčšie celé n = 114."
+  },
+  {
+    "type": "mc",
+    "q": "V trojuholníku ABC sú dané strany a = 2 cm, b = 3 cm a uhol γ = 60°. Vypočítajte dĺžku strany c.",
+    "opts": [
+      "√11 cm",
+      "√7 cm",
+      "√5 cm",
+      "√3 cm",
+      "√2 cm"
+    ],
+    "a": 1,
+    "exp": "Kosínusová veta: c² = a² + b² − 2ab·cosγ = 4 + 9 − 2·2·3·0,5 = 13 − 6 = 7. c = √7 cm."
+  },
+  {
+    "type": "mc",
+    "q": "Rozhodnite, ktorá z úsečiek k, l, m, n, o je podľa údajov znázornených na obrázku najdlhšia. (Uhly: 60°, 55°, 65°, 40°.)",
+    "opts": [
+      "úsečka k",
+      "úsečka l",
+      "úsečka m",
+      "úsečka n",
+      "úsečka o"
+    ],
+    "a": 3,
+    "exp": "Proti najväčšiemu uhlu leží najdlhšia strana. Porovnaním uhlov v jednotlivých trojuholníkoch vychádza najdlhšia úsečka n.",
+    "img": "data/img/mat_2010_q23.png"
+  },
+  {
+    "type": "mc",
+    "q": "Dané sú dva výroky. Prvý: „Ak je štvoruholník rovnobežník, tak sa jeho uhlopriečky navzájom rozpoľujú.“ Druhý: „Ak sa uhlopriečky štvoruholníka navzájom rozpoľujú, tak štvoruholník je rovnobežník.“ Koľko z nasledovných tvrdení je pravdivých? • Prvý výrok je pravdivý. • Druhý výrok je nepravdivý. • Druhý výrok je ekvivalencia. • Druhý výrok je negáciou prvého.",
+    "opts": [
+      "4",
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "a": 3,
+    "exp": "Prvý výrok je pravdivý (✓). Druhý výrok je tiež pravdivý, teda „je nepravdivý“ je nesprávne. Druhý výrok nie je ekvivalencia (je to implikácia). Druhý výrok je obrátená implikácia, nie negácia. Pravdivé je len 1 tvrdenie."
+  },
+  {
+    "type": "mc",
+    "q": "Otváracie hodiny prvého obchodu sú 9:00–12:00 a 13:00–16:00, druhého obchodu 8:00–14:30 a tretieho obchodu 8:30–12:30 a 14:00–16:00. Aký dlhý čas sú otvorené všetky tri obchody súčasne?",
+    "opts": [
+      "180 minút",
+      "210 minút",
+      "330 minút",
+      "450 minút",
+      "480 minút"
+    ],
+    "a": 1,
+    "exp": "Prienik: 9:00–12:00 spoločné všetkým (180 min). Popoludní: obchod 1 (13–16), obchod 2 (do 14:30), obchod 3 (14–16) → prienik 14:00–14:30 = 30 min. Spolu 180 + 30 = 210 minút."
+  },
+  {
+    "type": "mc",
+    "q": "Zistite definičný obor funkcie f: y = log₂((3x−2)/(1−x)).",
+    "opts": [
+      "(2/3; 1)",
+      "(2/3; ∞)",
+      "⟨2/3; 1)",
+      "(−∞; 2/3) ∪ (1; ∞)",
+      "(−∞; 1) ∪ (1; ∞)"
+    ],
+    "a": 0,
+    "exp": "Argument logaritmu musí byť kladný: (3x−2)/(1−x) > 0. Čitateľ > 0 pre x > 2/3, menovateľ > 0 pre x < 1. Zlomok kladný na (2/3; 1)."
+  },
+  {
+    "type": "mc",
+    "q": "Po vystriedaní si na striedačke náhodne sadlo vedľa seba päť hokejistov. Aká je pravdepodobnosť, že dvaja najlepší strelci z tejto pätice budú sedieť vedľa seba?",
+    "opts": [
+      "0,8",
+      "0,4",
+      "0,2",
+      "0,1",
+      "0,05"
+    ],
+    "a": 1,
+    "exp": "Dvojicu vnímame ako jeden blok: 4! usporiadaní × 2 (poradie v bloku) = 48 priaznivých. Všetkých usporiadaní 5! = 120. P = 48/120 = 0,4."
+  },
+  {
+    "type": "mc",
+    "q": "Koľkokrát sa zväčší povrch atmosférického balóna tvaru gule, ak sa jeho objem zväčší 8-násobne?",
+    "opts": [
+      "4",
+      "16",
+      "32",
+      "8",
+      "2"
+    ],
+    "a": 0,
+    "exp": "Objem ∝ r³, povrch ∝ r². Ak V·8, tak r³·8 ⇒ r·2. Povrch ∝ r² ⇒ 2² = 4-násobne."
+  },
+  {
+    "type": "mc",
+    "q": "Koľko je medzi prirodzenými číslami od 10 do 100 000 všetkých tých, ktoré sú druhou mocninou prirodzeného čísla?",
+    "opts": [
+      "316",
+      "315",
+      "314",
+      "313",
+      "312"
+    ],
+    "a": 3,
+    "exp": "√10 ≈ 3,16, takže najmenšie n je 4 (16). √100000 ≈ 316,2, najväčšie n je 316. Počet: 316 − 4 + 1 = 313."
+  },
+  {
+    "type": "mc",
+    "q": "Určte súčet všetkých celých čísel, ktoré sú koreňmi nerovnice √(6−3x) < 4.",
+    "opts": [
+      "6",
+      "3",
+      "2",
+      "−6",
+      "−3"
+    ],
+    "a": 4,
+    "exp": "Podmienka: 6−3x ≥ 0 ⇒ x ≤ 2. Nerovnica: 6−3x < 16 ⇒ −3x < 10 ⇒ x > −10/3 ≈ −3,33. Celé čísla x ∈ {−3, −2, −1, 0, 1, 2}. Súčet = −3."
+  }
 ]
