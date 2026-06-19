@@ -1779,7 +1779,7 @@ function startCheckout(plan){
   if(btn){ btn.disabled=true; btn.textContent='Presmerúvam na platbu…'; }
   fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/functions/v1/create-checkout',{
     method:'POST',
-    headers:{'Content-Type':'application/json','apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMzk3NjgsImV4cCI6MjA5NTgxNTc2OH0.XFveqebjISScFY9-8MCbNFtx0uj6iMz62V6F5JhMk_I'},
+    headers:{'Content-Type':'application/json'},
     body:JSON.stringify({email:email})
   })
   .then(function(r){return r.json();})
