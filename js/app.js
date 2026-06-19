@@ -2193,7 +2193,7 @@ function gLoad(key, def){ try{ var v=localStorage.getItem('edu_'+key); return v!
 var lastPlayed = gLoad('lastPlayed', {}); // {roc_lv_id: dateStr}
 
 function markPlayed(roc, lv, id){
-  lastPlayed[roc+'_'+lv+'_'+id] = todayStr();
+  lastPlayed[roc+'_'+lv+'_'+id] = new Date().toISOString().slice(0,10);
   gSave('lastPlayed', lastPlayed);
 }
 
