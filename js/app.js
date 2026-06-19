@@ -2330,6 +2330,14 @@ function showScore(){
       rwBtn.style.display='none';
     }
   }
+  var plusBanner=el('score-plus-banner');
+  if(plusBanner){
+    if(pct===100 && lv==='r' && !hasAccess('v')){
+      plusBanner.style.display='block';
+    } else {
+      plusBanner.style.display='none';
+    }
+  }
 }
 
 function retry(){if(sub&&sub.isMat){launchMatTest(sub.matPredmet,sub.matRok);}else if(sub){launchQuiz(sub.id);}}
