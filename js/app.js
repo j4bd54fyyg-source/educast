@@ -1765,6 +1765,30 @@ function renderPortal(){
 
 function showPaywall(){var m=el('modal');if(m)m.classList.add('show');}
 function hidePaywall(){var m=el('modal');if(m)m.classList.remove('show');}
+
+function startCheckout(plan){
+  var emailInput=el('buy-email-input');
+  var email = emailInput && emailInput.value ? emailInput.value.trim() : '';
+  if(!email){
+    email = prompt('Zadaj e-mail pre platbu a doručenie prístupového kódu:');
+    if(!email) return;
+    email = email.trim();
+  }
+  if(email.indexOf('@')<0 || email.indexOf('.')<0){ alert('Zadaj platný e-mail.'); return; }
+  var btn = el('buy-submit-btn');
+  if(btn){ btn.disabled=true; btn.textContent='Presmerúvam na platbu…'; }
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/functions/v1/create-checkout',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMzk3NjgsImV4cCI6MjA5NTgxNTc2OH0.XFveqebjISScFY9-8MCbNFtx0uj6iMz62V6F5JhMk_I'},
+    body:JSON.stringify({email:email})
+  })
+  .then(function(r){return r.json();})
+  .then(function(d){
+    if(d && d.url){ window.location.href = d.url; }
+    else { alert('Platbu sa nepodarilo spustiť. Skús znova.'); if(btn){btn.disabled=false;btn.textContent='Zaplatiť kartou →';} }
+  })
+  .catch(function(e){ console.error('Checkout error:',e); alert('Chyba pripojenia k platobnej bráne. Skús znova.'); if(btn){btn.disabled=false;btn.textContent='Zaplatiť kartou →';} });
+}
 function closeModal(e){if(e.target===el('modal'))hidePaywall();}
 
 // ═══════════════════════════════════════════
