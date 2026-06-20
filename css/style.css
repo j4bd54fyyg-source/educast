@@ -654,3 +654,12 @@ html,body{background:#0f0f0f}
 .modal-close:hover,.faq-q:hover{
   color:#378ADD !important;
 }
+
+
+/* ── UNIVERZÁLNY HOVER (landing wizard doplnenie) ── */
+.wiz-subj-card:hover,.wiz-roc-btn:hover,.wiz-tog-btn:hover,
+.nav-login:hover,.nav-cta:hover,.mat-wiz-pred:hover,.mat-rok-btn:hover,
+.lw-plus-promo:hover,.hhero-banner:hover{
+  border-color:#378ADD !important;
+  transform:none !important;
+}
