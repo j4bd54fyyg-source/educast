@@ -663,3 +663,32 @@ html,body{background:#0f0f0f}
   border-color:#378ADD !important;
   transform:none !important;
 }
+
+
+/* ── HOVER FIX: v-mode karty maju vyssiu specificitu ── */
+.wiz-subj-card.v-mode:hover,.wiz-subj-card:hover,
+.mat-wiz-pred.sel:hover,.wiz-roc-btn.sel:hover{
+  border-color:#378ADD !important;
+  transform:none !important;
+}
+
+
+/* ── HOVER MASTER: vsetko klikatelne, modry ramik bez pohybu ── */
+body #nav-auth-label:hover,
+body .wiz-subj-card:hover,
+body .wiz-subj-card.v-mode:hover,
+body .mat-special-card:hover,
+body .wiz-roc-btn:hover,
+body .wiz-tog-btn:hover,
+body .lv-select-card:hover,
+body .lw-plus-promo:hover,
+body #lw-plus-promo:hover,
+body .mat-wiz-pred:hover,
+body .mat-rok-btn:hover,
+body .nav-cta:hover,
+body .nav-login:hover{
+  border:1px solid #378ADD !important;
+  border-radius:10px !important;
+  transform:none !important;
+  transition:border-color 0.12s ease !important;
+}
