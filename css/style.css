@@ -647,7 +647,7 @@ html,body{background:#0f0f0f}
 .rtab:hover,.ltab:hover,.faq-q:hover,.portal-user-btn:hover,.detail-back:hover,
 .modal-close:hover,.auth-tab:hover,.mat-tab:hover,
 .hhero-btn:hover,.price-btn:hover,.nav-cta:hover,.sub-card:hover,
-.lv-select-card:hover,.mat-card:hover{
+.mat-card:hover{
   border-color:#378ADD !important;
   transform:none !important;
 }
@@ -686,7 +686,6 @@ body .wiz-subj-card.v-mode:hover,
 body .mat-special-card:hover,
 body .wiz-roc-btn:hover,
 body .wiz-tog-btn:hover,
-body .lv-select-card:hover,
 body .lw-plus-promo:hover,
 body #lw-plus-promo:hover,
 body .mat-wiz-pred:hover,
