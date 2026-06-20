@@ -674,7 +674,13 @@ html,body{background:#0f0f0f}
 
 
 /* ── HOVER MASTER: vsetko klikatelne, modry ramik bez pohybu ── */
-body #nav-auth-label:hover,
+body #nav-auth-label:hover{
+  border:1px solid #378ADD !important;
+  border-radius:8px !important;
+  padding:4px 10px !important;
+  transform:none !important;
+  transition:border-color 0.12s ease !important;
+}
 body .wiz-subj-card:hover,
 body .wiz-subj-card.v-mode:hover,
 body .mat-special-card:hover,
