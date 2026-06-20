@@ -2822,7 +2822,12 @@ function lwUpdateNav(){
       btn.onmouseover = function(){ this.style.background='#e74c3c'; this.style.color='#fff'; };
       btn.onmouseout = function(){ this.style.background='transparent'; this.style.color='#e74c3c'; };
     }
-    if(lbl) lbl.textContent = '🎓 ' + authState.email.split('@')[0];
+    if(lbl){
+      lbl.textContent = '👤 ' + authState.email.split('@')[0];
+      lbl.style.cursor = 'pointer';
+      lbl.onclick = showProfile;
+      lbl.title = 'Môj profil';
+    }
   } else {
     if(btn){
       btn.textContent = '🔑 Prihlásiť sa';
@@ -2831,7 +2836,7 @@ function lwUpdateNav(){
       btn.onmouseover = null;
       btn.onmouseout = null;
     }
-    if(lbl) lbl.textContent = '';
+    if(lbl){ lbl.textContent = ''; lbl.onclick = null; lbl.style.cursor = 'default'; }
   }
 }
 
