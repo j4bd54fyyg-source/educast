@@ -1789,6 +1789,7 @@ function wizStart(){
 }
 
 function renderPortal(){
+  if(typeof updateAuthUI==='function') updateAuthUI();
   var lvNames={r:'EDUCAST free',v:'VÝZVA',m:'MASTER'};
   elSet('subj-title','textContent','Predmety — '+roc+'. ročník · '+lvNames[lv]);
   var meta=META[roc][lv];
