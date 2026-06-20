@@ -713,3 +713,13 @@ body .lv-card-free .lv-card-title,
 body .lv-card-plus .lv-card-title{color:#e8e8e8 !important}
 body .lv-card-free .lv-card-desc,
 body .lv-card-plus .lv-card-desc{color:#888 !important}
+
+
+/* ── LANDING: jemnejsie pozadie pre dovery­hodnost ── */
+#page-landing{
+  background:#16181d !important;
+  background:linear-gradient(180deg,#1b1e24 0%,#16181d 40%,#141414 100%) !important;
+}
+#page-landing nav{
+  background:#1b1e24 !important;
+}
