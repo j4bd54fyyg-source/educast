@@ -21,6 +21,7 @@ var VALID_CODES = {
 
 // ── KONŠTANTY ──
 var AUTH_KEY = 'educast_auth_v1';   // localStorage kľúč
+var SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1jdXNpcGN5YXBzdXZyYm54dGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMzk3NjgsImV4cCI6MjA5NTgxNTc2OH0.XFveqebjISScFY9-8MCbNFtx0uj6iMz62V6F5JhMk_I';
 var AUTH_MAX_DAYS = 35;              // počet dní do expirácie (trochu viac ako mesiac)
 
 // ── AUTH STATE ──
@@ -244,13 +245,15 @@ function elStyle(id, prop, val) { var e = el(id); if (e) e.style[prop] = val; }
 function updateAuthUI() {
   // Elementy existujú iba na portal page — bezpečne ignorujeme ak chýbajú
   if (authState.loggedIn) {
-    elSet('portal-auth-btn', 'textContent', '🎓 EDUCAST PLUS · ' + authState.email.split('@')[0]);
+    elSet('portal-auth-btn', 'textContent', '👤 ' + authState.email.split('@')[0]);
+    var _pab = el('portal-auth-btn'); if(_pab) _pab.setAttribute('onclick','showProfile()');
     elSet('lk-v', 'textContent', '');
     elSet('lk-m', 'textContent', '');
     elSet('op-v', 'textContent', '0%');
     elSet('op-m', 'textContent', '0%');
   } else {
     elSet('portal-auth-btn', 'textContent', '🔑 Prihlásiť sa');
+    var _pab2 = el('portal-auth-btn'); if(_pab2) _pab2.setAttribute('onclick','openAuth()');
     elSet('lk-v', 'textContent', '🔒');
     elSet('lk-m', 'textContent', '🔒');
     elSet('op-v', 'textContent', '🔒');
@@ -1511,6 +1514,74 @@ function showPage(id){
   var target = el(id);
   if(target) target.classList.add('active');
   window.scrollTo(0,0);
+}
+
+var _profileCodeShown = false;
+var _profileCodeVal = '';
+
+function showProfile(){
+  if(!authState.loggedIn){ openAuth(); return; }
+  showPage('page-profile');
+  var loading = el('profile-loading');
+  var content = el('profile-content');
+  if(loading) loading.style.display='block';
+  if(content) content.style.display='none';
+  _profileCodeShown = false;
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/rest/v1/access_codes?email=eq.' + encodeURIComponent(authState.email) + '&select=code,email,tier,valid_until&order=valid_until.desc&limit=1', {
+    headers: { 'apikey': SUPABASE_ANON, 'Authorization': 'Bearer ' + SUPABASE_ANON }
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(rows){ fillProfile((rows && rows.length) ? rows[0] : null); })
+  .catch(function(e){ console.error('Profile load error:', e); fillProfile(null); });
+}
+
+function fillProfile(rec){
+  var loading = el('profile-loading');
+  var content = el('profile-content');
+  if(loading) loading.style.display='none';
+  if(content) content.style.display='block';
+  elSet('profile-email','textContent', authState.email);
+  var title = el('profile-status-title');
+  var sub = el('profile-status-sub');
+  var card = el('profile-status-card');
+  if(rec && (rec.tier==='p' || rec.tier==='v' || rec.tier==='m')){
+    _profileCodeVal = rec.code || '';
+    if(title) title.textContent = '🎓 EDUCAST PLUS · aktívne';
+    if(rec.valid_until){
+      var d = new Date(rec.valid_until);
+      var datum = d.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
+      var expired = Date.now() > d.getTime();
+      if(sub) sub.textContent = expired ? ('Vypršalo ' + datum) : ('Platné do ' + datum + ' · obnovuje sa automaticky');
+    } else { if(sub) sub.textContent = 'Aktívny prístup'; }
+  } else {
+    _profileCodeVal = '';
+    if(title) title.textContent = '📘 EDUCAST free';
+    if(sub) sub.textContent = 'Zatiaľ nemáš aktívne PLUS predplatné';
+    if(card){ card.style.background='#1a1a1a'; card.style.borderColor='#2a2a2a'; }
+  }
+  _profileCodeShown = false;
+  var codeEl = el('profile-code');
+  var tgl = el('profile-code-toggle');
+  if(_profileCodeVal){
+    if(codeEl) codeEl.textContent = '••••••••••';
+    if(tgl){ tgl.textContent='👁 Zobraziť'; tgl.style.display='inline-block'; }
+  } else {
+    if(codeEl) codeEl.textContent = '—';
+    if(tgl) tgl.style.display='none';
+  }
+}
+
+function toggleProfileCode(){
+  _profileCodeShown = !_profileCodeShown;
+  var codeEl = el('profile-code');
+  var tgl = el('profile-code-toggle');
+  if(_profileCodeShown){
+    if(codeEl) codeEl.textContent = _profileCodeVal;
+    if(tgl) tgl.textContent = '🙈 Skryť';
+  } else {
+    if(codeEl) codeEl.textContent = '••••••••••';
+    if(tgl) tgl.textContent = '👁 Zobraziť';
+  }
 }
 function goToLanding(){
   clearInterval(tT);clearInterval(tTot);tck=false;
