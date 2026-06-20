@@ -716,9 +716,11 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
 
 
 /* ── LANDING: jemnejsie pozadie pre dovery­hodnost ── */
-#page-landing{
+#page-landing.active{
+  min-height:100vh !important;
   background:#16181d !important;
-  background:linear-gradient(180deg,#1b1e24 0%,#16181d 40%,#141414 100%) !important;
+  background:linear-gradient(180deg,#1b1e24 0%,#181b21 50%,#15171c 100%) !important;
+  background-attachment:fixed !important;
 }
 #page-landing nav{
   background:#1b1e24 !important;
