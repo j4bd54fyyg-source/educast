@@ -640,3 +640,17 @@ html,body{background:#0f0f0f}
 .wiz-level-bar.free{background:linear-gradient(90deg,#185FA5,#378ADD)}
 .wiz-level-bar.plus{background:linear-gradient(90deg,#534AB7,#7F77DD)}
 
+
+
+/* ── UNIVERZÁLNY HOVER: modrý border bez pohybu na klikateľné prvky ── */
+.ctb:hover,.quiz-back:hover,.rbtn:hover,.nxt:hover,.mode-btn:hover,
+.rtab:hover,.ltab:hover,.faq-q:hover,.portal-user-btn:hover,.detail-back:hover,
+.modal-close:hover,.auth-tab:hover,.mat-tab:hover,
+.hhero-btn:hover,.price-btn:hover,.nav-cta:hover,.sub-card:hover,
+.lv-select-card:hover,.mat-card:hover{
+  border-color:#378ADD !important;
+  transform:none !important;
+}
+.modal-close:hover,.faq-q:hover{
+  color:#378ADD !important;
+}
