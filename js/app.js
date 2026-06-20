@@ -2832,9 +2832,9 @@ function lwUpdateNav(){
     if(btn){
       btn.textContent = '🔑 Prihlásiť sa';
       btn.onclick = openAuth;
-      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit';
-      btn.onmouseover = null;
-      btn.onmouseout = null;
+      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit;transition:border-color 0.12s ease';
+      btn.onmouseover = function(){ this.style.borderColor='#378ADD'; };
+      btn.onmouseout = function(){ this.style.borderColor='#2a2a2a'; };
     }
     if(lbl){ lbl.textContent = ''; lbl.onclick = null; lbl.style.cursor = 'default'; }
   }
