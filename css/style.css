@@ -698,3 +698,19 @@ body .nav-login:hover{
   transform:none !important;
   transition:border-color 0.12s ease !important;
 }
+
+
+/* ── LV CARDS: neutralne pozadie, farba len v ramiku, nadpis farebny ── */
+body .lv-card-free{
+  background:#141414 !important;
+  border:1.5px solid #378ADD !important;
+}
+body .lv-card-plus{
+  background:#141414 !important;
+  border:1.5px solid #7F77DD !important;
+}
+/* Popisy a podnadpisy neutralne (nie nadpis EDUCAST free/PLUS, ten ostava) */
+body .lv-card-free .lv-card-title,
+body .lv-card-plus .lv-card-title{color:#e8e8e8 !important}
+body .lv-card-free .lv-card-desc,
+body .lv-card-plus .lv-card-desc{color:#888 !important}
