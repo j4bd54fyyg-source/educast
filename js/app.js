@@ -1583,6 +1583,37 @@ function toggleProfileCode(){
     if(tgl) tgl.textContent = '👁 Zobraziť';
   }
 }
+
+function cancelSubscription(){
+  if(!authState.loggedIn || !_profileCodeVal){ return; }
+  if(!confirm('Naozaj chceš zrušiť predplatné? Prístup ti zostane do konca zaplateného obdobia, potom sa už neobnoví.')) return;
+  var btn = el('profile-cancel-btn');
+  if(btn){ btn.disabled = true; btn.textContent = 'Ruším…'; }
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/functions/v1/cancel-subscription', {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json', 'Authorization':'Bearer '+SUPABASE_ANON },
+    body: JSON.stringify({ email: authState.email, code: _profileCodeVal })
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(res){
+    if(res.ok){
+      var sub = el('profile-status-sub');
+      if(sub && res.valid_until){
+        var d = new Date(res.valid_until);
+        var datum = d.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
+        sub.textContent = 'Zrušené · prístup platí do ' + datum;
+      }
+      if(btn){ btn.textContent = '✓ Predplatné zrušené'; btn.style.opacity='0.6'; }
+    } else {
+      alert('Zrušenie zlyhalo: ' + (res.error || 'neznáma chyba'));
+      if(btn){ btn.disabled = false; btn.textContent = 'Zrušiť predplatné'; }
+    }
+  })
+  .catch(function(e){
+    alert('Chyba spojenia: ' + e);
+    if(btn){ btn.disabled = false; btn.textContent = 'Zrušiť predplatné'; }
+  });
+}
 function goToLanding(){
   clearInterval(tT);clearInterval(tTot);tck=false;
   showPage('page-landing');
