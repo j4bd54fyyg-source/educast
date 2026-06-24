@@ -2949,7 +2949,7 @@ function lwChooseLevel(l){
   var bar = document.getElementById('lw-level-bar');
   if(bar) bar.className = 'wiz-level-bar ' + (l === 'v' ? 'plus' : 'free');
   var promo = document.getElementById('lw-plus-promo');
-  if(promo) promo.style.display = l === 'r' ? 'block' : 'none';
+  if(promo) promo.style.display = 'none';
   lwUpdateSettings();
   renderLandingWizard();
 }
