@@ -1,3 +1,54 @@
+
+// ── GLOBAL LOADER ──
+var _loaderTimer = null;
+var _loaderPct = 0;
+function showLoader(){
+  var bar = document.getElementById('global-loader');
+  var fill = document.getElementById('global-loader-bar');
+  var pct = document.getElementById('global-loader-pct');
+  if(!bar || !fill || !pct) return;
+  if(_loaderTimer){ clearInterval(_loaderTimer); }
+  _loaderPct = 0;
+  bar.classList.add('show');
+  pct.classList.add('show');
+  fill.style.width = '0%';
+  pct.textContent = '0 %';
+  // Plynuly nabeh do ~90% (spomaluje sa cim blizsie k 90)
+  _loaderTimer = setInterval(function(){
+    if(_loaderPct < 90){
+      var step = (90 - _loaderPct) * 0.08;
+      if(step < 0.4) step = 0.4;
+      _loaderPct += step;
+      if(_loaderPct > 90) _loaderPct = 90;
+      fill.style.width = _loaderPct + '%';
+      pct.textContent = Math.round(_loaderPct) + ' %';
+    }
+  }, 120);
+}
+function setLoader(p){
+  var fill = document.getElementById('global-loader-bar');
+  var pct = document.getElementById('global-loader-pct');
+  if(!fill || !pct) return;
+  if(_loaderTimer){ clearInterval(_loaderTimer); _loaderTimer = null; }
+  _loaderPct = Math.max(0, Math.min(100, p));
+  fill.style.width = _loaderPct + '%';
+  pct.textContent = Math.round(_loaderPct) + ' %';
+}
+function hideLoader(){
+  var bar = document.getElementById('global-loader');
+  var fill = document.getElementById('global-loader-bar');
+  var pct = document.getElementById('global-loader-pct');
+  if(!bar || !fill || !pct) return;
+  if(_loaderTimer){ clearInterval(_loaderTimer); _loaderTimer = null; }
+  fill.style.width = '100%';
+  pct.textContent = '100 %';
+  setTimeout(function(){
+    bar.classList.remove('show');
+    pct.classList.remove('show');
+    setTimeout(function(){ fill.style.width = '0%'; }, 250);
+  }, 280);
+}
+
 // ═══════════════════════════════════════════════════════════
 // AUTH SYSTÉM — Fáza 1
 // Email + kód + device fingerprint (localStorage lock)

@@ -725,3 +725,27 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
 #page-landing nav{
   background:#1b1e24 !important;
 }
+
+
+/* ── GLOBAL LOADER: progres bar overlay ── */
+#global-loader{
+  position:fixed; top:0; left:0; right:0; height:3px;
+  background:transparent; z-index:9999;
+  opacity:0; transition:opacity 0.2s ease; pointer-events:none;
+}
+#global-loader.show{opacity:1}
+#global-loader-bar{
+  height:100%; width:0%;
+  background:linear-gradient(90deg,#185FA5,#378ADD);
+  box-shadow:0 0 8px #378ADD88;
+  transition:width 0.2s ease;
+  border-radius:0 2px 2px 0;
+}
+#global-loader-pct{
+  position:fixed; top:10px; right:14px; z-index:9999;
+  font-size:11px; font-weight:600; color:#378ADD;
+  background:#0f0f0f; border:0.5px solid #185FA5; border-radius:20px;
+  padding:3px 10px; opacity:0; transition:opacity 0.2s ease;
+  pointer-events:none; font-family:var(--font);
+}
+#global-loader-pct.show{opacity:1}
