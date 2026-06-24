@@ -1569,6 +1569,7 @@ function fillProfile(rec){
     if(codeEl) codeEl.textContent = '—';
     if(tgl) tgl.style.display='none';
   }
+  if(typeof loadPaymentHistory==='function') loadPaymentHistory();
 }
 
 function toggleProfileCode(){
@@ -1612,6 +1613,40 @@ function cancelSubscription(){
   .catch(function(e){
     alert('Chyba spojenia: ' + e);
     if(btn){ btn.disabled = false; btn.textContent = 'Zrušiť predplatné'; }
+  });
+}
+
+function loadPaymentHistory(){
+  var wrap = el('profile-history-list');
+  if(!wrap) return;
+  if(!authState.loggedIn || !_profileCodeVal){ wrap.innerHTML = ''; return; }
+  wrap.innerHTML = '<div style="font-size:11px;color:#666;padding:8px 0">Načítavam…</div>';
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/functions/v1/payment-history', {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json', 'Authorization':'Bearer '+SUPABASE_ANON },
+    body: JSON.stringify({ email: authState.email, code: _profileCodeVal })
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(res){
+    if(!res.ok || !res.invoices || !res.invoices.length){
+      wrap.innerHTML = '<div style="font-size:11px;color:#666;padding:8px 0">Zatiaľ žiadne platby.</div>';
+      return;
+    }
+    var html = res.invoices.map(function(inv){
+      var d = new Date(inv.date * 1000);
+      var datum = d.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
+      var suma = (inv.amount/100).toFixed(2).replace('.', ',') + ' ' + (inv.currency==='eur'?'€':inv.currency.toUpperCase());
+      var stav = inv.status==='paid' ? '<span style="color:#2ecc71">✓ Zaplatené</span>' : ('<span style="color:#888">'+inv.status+'</span>');
+      var odkaz = inv.pdf ? ('<a href="'+inv.pdf+'" target="_blank" style="color:#378ADD;text-decoration:none;font-size:11px">PDF ↗</a>') : '';
+      return '<div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#1a1a1a">'
+        + '<div><div style="font-size:12px;color:#e8e8e8">'+datum+'</div><div style="font-size:10px;margin-top:2px">'+stav+'</div></div>'
+        + '<div style="display:flex;align-items:center;gap:12px"><span style="font-size:13px;font-weight:600;color:#e8e8e8">'+suma+'</span>'+odkaz+'</div>'
+        + '</div>';
+    }).join('');
+    wrap.innerHTML = html;
+  })
+  .catch(function(e){
+    wrap.innerHTML = '<div style="font-size:11px;color:#c97070;padding:8px 0">Históriu sa nepodarilo načítať.</div>';
   });
 }
 function goToLanding(){
