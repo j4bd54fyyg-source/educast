@@ -1628,6 +1628,19 @@ function loadPaymentHistory(){
   })
   .then(function(r){ return r.json(); })
   .then(function(res){
+    // Stav zrusenia - uprav status kartu a tlacidlo
+    if(res.ok && res.cancel_at_period_end){
+      var sub2 = el('profile-status-sub');
+      var title2 = el('profile-status-title');
+      if(res.current_period_end){
+        var dd = new Date(res.current_period_end * 1000);
+        var datum2 = dd.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
+        if(sub2) sub2.textContent = 'Zrušené · prístup platí do ' + datum2;
+      }
+      if(title2) title2.textContent = '🎓 EDUCAST PLUS · zrušené';
+      var cbtn = el('profile-cancel-btn');
+      if(cbtn){ cbtn.disabled = true; cbtn.textContent = '✓ Predplatné zrušené'; cbtn.style.opacity = '0.6'; cbtn.style.cursor = 'default'; }
+    }
     if(!res.ok || !res.invoices || !res.invoices.length){
       wrap.innerHTML = '<div style="font-size:11px;color:#666;padding:8px 0">Zatiaľ žiadne platby.</div>';
       return;
