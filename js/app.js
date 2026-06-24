@@ -1632,10 +1632,14 @@ function loadPaymentHistory(){
     if(res.ok && res.cancel_at_period_end){
       var sub2 = el('profile-status-sub');
       var title2 = el('profile-status-title');
-      if(res.current_period_end){
-        var dd = new Date(res.current_period_end * 1000);
-        var datum2 = dd.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
-        if(sub2) sub2.textContent = 'Zrušené · prístup platí do ' + datum2;
+      var endDate = null;
+      if(res.current_period_end){ endDate = new Date(res.current_period_end * 1000); }
+      else if(res.valid_until){ endDate = new Date(res.valid_until); }
+      if(sub2 && endDate){
+        var datum2 = endDate.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
+        sub2.textContent = 'Zrušené · prístup platí do ' + datum2;
+      } else if(sub2){
+        sub2.textContent = 'Zrušené · prístup platí do konca obdobia';
       }
       if(title2) title2.textContent = '🎓 EDUCAST PLUS · zrušené';
       var cbtn = el('profile-cancel-btn');

@@ -21,7 +21,7 @@ serve(async (req) => {
 
     // Najdi subscription ID
     const lookup = await fetch(
-      `${SUPA_URL}/rest/v1/access_codes?email=eq.${encodeURIComponent(email)}&code=eq.${encodeURIComponent(code)}&select=stripe_id&limit=1`,
+      `${SUPA_URL}/rest/v1/access_codes?email=eq.${encodeURIComponent(email)}&code=eq.${encodeURIComponent(code)}&select=stripe_id,valid_until&limit=1`,
       { headers: { apikey: SERVICE, Authorization: `Bearer ${SERVICE}` } }
     );
     const rows = await lookup.json();
@@ -61,6 +61,7 @@ serve(async (req) => {
       invoices: items,
       cancel_at_period_end: !!sub.cancel_at_period_end,
       current_period_end: sub.current_period_end || null,
+      valid_until: rows[0].valid_until || null,
       sub_status: sub.status || null,
     }), { headers: { ...CORS, "Content-Type": "application/json" } });
   } catch (e) {
