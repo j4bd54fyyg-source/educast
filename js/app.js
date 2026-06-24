@@ -3168,7 +3168,7 @@ var MAT_PREDS = MAT_CATS.reduce(function(acc, cat){ return acc.concat(cat.preds)
 var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
 
 function lwMatWizHTML(){
-  return '<button style="font-size:11px;font-weight:500;color:#1D9E75;background:#0a2a1e;border:0.5px solid #1D9E7555;border-radius:20px;cursor:pointer;padding:5px 12px;font-family:inherit;margin-bottom:10px" onclick="navBack()">← Späť na predmety</button>'
+  return '<button style="font-size:12px;font-weight:600;color:#378ADD;background:#0A2238;border:0.5px solid #378ADD55;border-radius:20px;cursor:pointer;padding:6px 14px;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background=\'#0C3257\'" onmouseout="this.style.background=\'#0A2238\'" onclick="navBack()">← Späť na predmety</button>'
     +'<div id="lw-mat-pred-grid"></div>'
     +'<div id="lw-mat-rok-wrap" style="display:none">'
     +'<p style="font-size:11px;color:#AFA9EC;margin:0 0 8px">Vyber rok:</p>'
