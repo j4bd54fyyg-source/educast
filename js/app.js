@@ -10,7 +10,7 @@ function showLoader(){
   if(_loaderTimer){ clearInterval(_loaderTimer); }
   _loaderPct = 0;
   bar.classList.add('show');
-  pct.classList.add('show');
+  
   fill.style.width = '0%';
   pct.textContent = '0 %';
   // Plynuly nabeh do ~90% (spomaluje sa cim blizsie k 90)
