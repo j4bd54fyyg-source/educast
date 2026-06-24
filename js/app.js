@@ -49,6 +49,26 @@ function hideLoader(){
   }, 280);
 }
 
+// ── Globalny fetch wrapper: loader pri kazdom sietovom volani ──
+(function(){
+  if(window._fetchWrapped) return;
+  window._fetchWrapped = true;
+  var _origFetch = window.fetch.bind(window);
+  var _activeRequests = 0;
+  window.fetch = function(){
+    _activeRequests++;
+    if(_activeRequests === 1 && typeof showLoader === 'function'){ showLoader(); }
+    var done = function(){
+      _activeRequests--;
+      if(_activeRequests <= 0){
+        _activeRequests = 0;
+        if(typeof hideLoader === 'function'){ hideLoader(); }
+      }
+    };
+    return _origFetch.apply(null, arguments).then(function(r){ done(); return r; }, function(e){ done(); throw e; });
+  };
+})();
+
 // ═══════════════════════════════════════════════════════════
 // AUTH SYSTÉM — Fáza 1
 // Email + kód + device fingerprint (localStorage lock)
