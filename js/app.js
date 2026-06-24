@@ -155,6 +155,8 @@ function authSave(email, tier) {
   };
   localStorage.setItem(AUTH_KEY, JSON.stringify(data));
   authState = { loggedIn: true, email: email, tier: tier };
+  // Refresh po prihlaseni - cisty stav appky
+  setTimeout(function(){ window.location.href = '/'; }, 400);
 }
 
 // Odhlásiť
