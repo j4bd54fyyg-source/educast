@@ -1598,13 +1598,8 @@ function cancelSubscription(){
   .then(function(r){ return r.json(); })
   .then(function(res){
     if(res.ok){
-      var sub = el('profile-status-sub');
-      if(sub && res.valid_until){
-        var d = new Date(res.valid_until);
-        var datum = d.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
-        sub.textContent = 'Zrušené · prístup platí do ' + datum;
-      }
-      if(btn){ btn.textContent = '✓ Predplatné zrušené'; btn.style.opacity='0.6'; }
+      // Znova nacitaj stav - prepne tlacidlo na "Obnovit", upravi texty
+      loadPaymentHistory();
     } else {
       alert('Zrušenie zlyhalo: ' + (res.error || 'neznáma chyba'));
       if(btn){ btn.disabled = false; btn.textContent = 'Zrušiť predplatné'; }
@@ -1613,6 +1608,31 @@ function cancelSubscription(){
   .catch(function(e){
     alert('Chyba spojenia: ' + e);
     if(btn){ btn.disabled = false; btn.textContent = 'Zrušiť predplatné'; }
+  });
+}
+
+function resumeSubscription(){
+  if(!authState.loggedIn || !_profileCodeVal){ return; }
+  var btn = el('profile-cancel-btn');
+  if(btn){ btn.disabled = true; btn.textContent = 'Obnovujem…'; }
+  fetch('https://mcusipcyapsuvrbnxtkw.supabase.co/functions/v1/resume-subscription', {
+    method:'POST',
+    headers:{ 'Content-Type':'application/json', 'Authorization':'Bearer '+SUPABASE_ANON },
+    body: JSON.stringify({ email: authState.email, code: _profileCodeVal })
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(res){
+    if(res.ok){
+      // Znova nacitaj stav - prepise nadpis, podnadpis aj tlacidlo
+      loadPaymentHistory();
+    } else {
+      alert('Obnovenie zlyhalo: ' + (res.error || 'neznáma chyba'));
+      if(btn){ btn.disabled = false; btn.textContent = 'Obnoviť predplatné'; }
+    }
+  })
+  .catch(function(e){
+    alert('Chyba spojenia: ' + e);
+    if(btn){ btn.disabled = false; btn.textContent = 'Obnoviť predplatné'; }
   });
 }
 
@@ -1628,22 +1648,40 @@ function loadPaymentHistory(){
   })
   .then(function(r){ return r.json(); })
   .then(function(res){
-    // Stav zrusenia - uprav status kartu a tlacidlo
-    if(res.ok && res.cancel_at_period_end){
+    // Stav predplatneho - jednoduchy, bez protirecenia
+    if(res.ok){
       var sub2 = el('profile-status-sub');
       var title2 = el('profile-status-title');
+      var cbtn = el('profile-cancel-btn');
       var endDate = null;
       if(res.current_period_end){ endDate = new Date(res.current_period_end * 1000); }
       else if(res.valid_until){ endDate = new Date(res.valid_until); }
-      if(sub2 && endDate){
-        var datum2 = endDate.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
-        sub2.textContent = 'Zrušené · prístup platí do ' + datum2;
-      } else if(sub2){
-        sub2.textContent = 'Zrušené · prístup platí do konca obdobia';
+      var datum2 = endDate ? endDate.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'}) : 'konca obdobia';
+      if(res.cancel_at_period_end){
+        // ZRUSENE
+        if(title2) title2.textContent = '🎓 EDUCAST PLUS · zrušené';
+        if(sub2) sub2.textContent = 'Predplatné je zrušené · prístup platí do ' + datum2;
+        if(cbtn){
+          cbtn.disabled = false;
+          cbtn.textContent = 'Obnoviť predplatné';
+          cbtn.onclick = resumeSubscription;
+          cbtn.style.cssText = 'width:100%;background:transparent;border:0.5px solid #185FA5;color:#378ADD;font-size:12px;font-weight:500;padding:11px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.12s';
+          cbtn.onmouseover = function(){ this.style.borderColor='#378ADD'; };
+          cbtn.onmouseout = function(){ this.style.borderColor='#185FA5'; };
+        }
+      } else {
+        // AKTIVNE
+        if(title2) title2.textContent = '🎓 EDUCAST PLUS · aktívne';
+        if(sub2) sub2.textContent = 'Platné do ' + datum2 + ' · obnovuje sa automaticky';
+        if(cbtn){
+          cbtn.disabled = false;
+          cbtn.textContent = 'Zrušiť predplatné';
+          cbtn.onclick = cancelSubscription;
+          cbtn.style.cssText = 'width:100%;background:transparent;border:0.5px solid #5a2a2a;color:#c97070;font-size:12px;font-weight:500;padding:11px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.12s';
+          cbtn.onmouseover = function(){ this.style.borderColor='#e74c3c'; this.style.color='#e74c3c'; };
+          cbtn.onmouseout = function(){ this.style.borderColor='#5a2a2a'; this.style.color='#c97070'; };
+        }
       }
-      if(title2) title2.textContent = '🎓 EDUCAST PLUS · zrušené';
-      var cbtn = el('profile-cancel-btn');
-      if(cbtn){ cbtn.disabled = true; cbtn.textContent = '✓ Predplatné zrušené'; cbtn.style.opacity = '0.6'; cbtn.style.cursor = 'default'; }
     }
     if(!res.ok || !res.invoices || !res.invoices.length){
       wrap.innerHTML = '<div style="font-size:11px;color:#666;padding:8px 0">Zatiaľ žiadne platby.</div>';
