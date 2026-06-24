@@ -2188,6 +2188,8 @@ function showQ(){
     var isLast=cur+1>=sub.qs.length;
     // Nav wrap pod odpoveďami
     var navWrap=el('mat-nav-wrap');if(navWrap)navWrap.style.display='flex';
+    // Skry male Dalej (#nb) v maturite - pouziva sa len nb2 dole
+    var nbEl=el('nb');if(nbEl)nbEl.style.display='none';
     // Ďalej — skryť na poslednej
     var nb2El=el('nb2');
     if(nb2El)nb2El.style.display=isLast?'none':'inline-block';
