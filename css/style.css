@@ -845,3 +845,25 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
   color:#9FE1CB!important;
   margin-top:4px!important;
 }
+
+/* ── WIZARD KROKY: klikateľný vzhľad ── */
+.wiz-step{
+  cursor:pointer;
+  padding:5px 10px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--bg2);
+  transition:all 0.15s;
+}
+.wiz-step:hover{
+  border-color:#5B8DEE;
+  background:#1a2332;
+  transform:translateY(-1px);
+}
+.wiz-step.active{
+  border-color:#5B8DEE;
+  background:#16243a;
+}
+.wiz-step.done{
+  border-color:#1D9E75;
+}
