@@ -820,3 +820,20 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
   100%{transform:scale(1);filter:brightness(1)}
 }
 .coin-anim{animation:coinChange 0.5s cubic-bezier(0.34,1.56,0.64,1)}
+
+
+/* ── WIZARD: klikateľný vzhľad (rám + hover lift) ── */
+.wiz-subj-card,.wiz-roc-btn,.mat-wiz-pred,.mat-rok-btn,.lv-select-card{
+  border-width:1.5px!important;
+  box-shadow:0 1px 3px rgba(0,0,0,0.25);
+}
+.wiz-subj-card:hover,.wiz-roc-btn:hover,.mat-wiz-pred:hover,
+.mat-rok-btn:not(.locked):hover,.lv-select-card:hover{
+  transform:translateY(-3px)!important;
+  box-shadow:0 6px 16px rgba(0,0,0,0.4);
+  border-color:#1D9E75!important;
+}
+.wiz-subj-card.v-mode:hover,.mat-wiz-pred:hover,.mat-rok-btn:not(.locked):hover{
+  border-color:#7F77DD!important;
+  box-shadow:0 6px 16px #534AB733;
+}
