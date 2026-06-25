@@ -1866,6 +1866,8 @@ function loadPaymentHistory(){
 }
 function goToLanding(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  // Vzdy na rozcestnik stupnov (nova vstupna stranka)
+  if(typeof goToStageSelect==='function'){ goToStageSelect(); window.scrollTo({top:0,behavior:'smooth'}); return; }
   showPage('page-landing');
   lwSubj=null;lwRoc=null;lwMatPred=null;lwMatRok=null;lwChosenLevel=null;
   var ls=document.getElementById('lv-select-screen');
