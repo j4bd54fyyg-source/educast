@@ -1,4 +1,20 @@
 
+// ── VYBER STUPNA SKOLY ──
+function selectStage(stage){
+  if(stage === 'ss'){
+    showPage('page-landing');
+    updateAuthUI();
+  } else {
+    var nazov = stage === 'zs' ? 'Základná škola' : 'Vysoká škola';
+    alert(nazov + ' — obsah pripravujeme. Čoskoro bude dostupný! Zatiaľ si vyskúšaj Strednú školu.');
+  }
+}
+function goToStageSelect(){
+  showPage('page-stage-select');
+  updateAuthUI();
+}
+
+
 // ── GLOBAL LOADER ──
 var _loaderTimer = null;
 var _loaderPct = 0;
