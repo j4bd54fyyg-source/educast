@@ -61,6 +61,14 @@ function lwPlayNextLevel(num){
 var sessionUnlockedL2 = false; // odomknutie Level 2 cez 100% (len session)
 
 // ── Navigacia cez kroky wizardu (Predmet / Rocnik = spat) ──
+function lwShake(id){
+  var s = document.getElementById(id);
+  if(!s) return;
+  s.classList.remove('wiz-shake');
+  void s.offsetWidth; // restart animacie
+  s.classList.add('wiz-shake');
+  setTimeout(function(){ s.classList.remove('wiz-shake'); }, 600);
+}
 function lwGoStep1(){
   // Spat na vyber predmetu
   document.getElementById('lw-step1').style.display = 'block';
@@ -74,7 +82,7 @@ function lwGoStep1(){
 }
 function lwGoStep2(){
   // Spat na vyber rocnika (len ak je uz zvoleny predmet)
-  if(!lwSubj){ lwGoStep1(); return; }
+  if(!lwSubj){ lwShake('lw-s1'); return; }
   document.getElementById('lw-step1').style.display = 'none';
   document.getElementById('lw-step2').style.display = 'block';
   var lvl = document.getElementById('lw-step-level');
@@ -3554,8 +3562,8 @@ function lwUpdateSteps(active){
 }
 function lwGoStepLevel(){
   // Klik na krok Level - zobraz cestu levelov (len ak je zvoleny predmet aj rocnik)
-  if(!lwSubj){ lwGoStep1(); return; }
-  if(lwRoc===null){ lwGoStep2(); return; }
+  if(!lwSubj){ lwShake('lw-s1'); return; }
+  if(lwRoc===null){ lwShake('lw-s2'); return; }
   document.getElementById('lw-step1').style.display = 'none';
   document.getElementById('lw-step2').style.display = 'none';
   var lvl = document.getElementById('lw-step-level');

@@ -867,3 +867,7 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
 .wiz-step.done{
   border-color:#1D9E75;
 }
+
+/* SHAKE NEVYPLNENEHO KROKU WIZARDU */
+.wiz-shake{animation:shake 0.4s ease}
+.wiz-shake .wiz-num{background:#A32D2D!important;color:#fff!important}
