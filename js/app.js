@@ -147,7 +147,9 @@ function lwPlayLevel(num, lvCode){
   // Spusti kviz cez existujucu logiku
   lwStart();
 }
+var lcLockedNum = 2; // ktory zamknuty level user kliknul
 function lcOpen(num){
+  lcLockedNum = num || 2;
   var ov = document.getElementById('level-choice-overlay');
   if(ov) ov.style.display = 'flex';
 }
@@ -156,8 +158,10 @@ function lcClose(){
   if(ov) ov.style.display = 'none';
 }
 function lcGoLevel1(){
+  // Posli na predosly level - ten ked zvladne na 100%, odomkne zamknuty
   lcClose();
-  lwPlayLevel(1,'r');
+  var prev = Math.max(1, lcLockedNum - 1);
+  lwPlayLevel(prev, prev===1 ? 'r' : 'v');
 }
 function lcGoPaywall(){
   lcClose();
