@@ -837,3 +837,11 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
   border-color:#7F77DD!important;
   box-shadow:0 6px 16px #534AB733;
 }
+
+/* ZVYRAZNENY PODTITUL CESTY */
+.level-path-sub-big{
+  font-size:15px!important;
+  font-weight:600!important;
+  color:#9FE1CB!important;
+  margin-top:4px!important;
+}
