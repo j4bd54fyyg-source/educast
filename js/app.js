@@ -41,6 +41,23 @@ function coinsGoPlus(){
   showPaywall();
 }
 var coins = 3; // mince - session kredit, 1 minca = odomknutie po neuspesnom kvize
+var MAX_COINS = 3;
+function openCoinInfo(){
+  var m = document.getElementById('coin-modal');
+  var n = document.getElementById('coin-modal-n');
+  if(n) n.textContent = coins;
+  if(m) m.classList.add('show');
+}
+function closeCoinInfo(){
+  var m = document.getElementById('coin-modal');
+  if(m) m.classList.remove('show');
+}
+function syncCoinPills(){
+  ['coin-pill1-n','coin-pill2-n'].forEach(function(id){
+    var e = document.getElementById(id);
+    if(e) e.textContent = coins + '/' + MAX_COINS;
+  });
+}
 var sessionUnlockedL3 = false; // odomknutie Level 3 cez 100% v L2 (session)
 
 // Po 100% v Leveli 1 — pokracuj rovno na Level 2 (zadarmo, session)
@@ -2877,7 +2894,7 @@ function showScore(){
         if(playedN===2){ sessionUnlockedL3 = true; }
       } else {
         // Neuspesny pokus (pod 100%) stoji 1 mincu
-        if(coins > 0){ coins = coins - 1; }
+        if(coins > 0){ coins = coins - 1; } syncCoinPills();
         if(coins <= 0){
           // Mince minute - zobraz modal po kratkom oneskoreni
           setTimeout(function(){ coinsOpen(); }, 1200);

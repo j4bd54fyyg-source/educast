@@ -871,3 +871,19 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
 /* SHAKE NEVYPLNENEHO KROKU WIZARDU */
 .wiz-shake{animation:shake 0.4s ease}
 .wiz-shake .wiz-num{background:#A32D2D!important;color:#fff!important}
+
+/* ── COIN PILL + MODAL ── */
+.coin-pill{
+  font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;
+  border:1px solid #C9A84C66;background:#2a2418;color:#C9A84C;
+  cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px;
+  transition:all 0.15s;
+}
+.coin-pill:hover{border-color:#C9A84C;background:#332b1c;transform:translateY(-1px)}
+
+.coin-modal-icon{font-size:40px;margin-bottom:8px;text-align:center}
+.coin-modal-title{font-size:18px;font-weight:700;color:#C9A84C;text-align:center;margin-bottom:6px}
+.coin-modal-count{font-size:13px;color:#e8e8e8;text-align:center;margin-bottom:16px}
+.coin-modal-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:13px;color:#b8b8b8;line-height:1.5}
+.coin-modal-row .cm-ic{font-size:18px;flex-shrink:0}
+.coin-modal-row b{color:#e8e8e8}

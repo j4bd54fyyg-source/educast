@@ -104,6 +104,7 @@
     <div style="font-size:16px;font-weight:700;color:#e8e8e8">🎓 Educast</div>
     <div style="display:flex;gap:8px;align-items:center">
       <span id="nav-auth-label2" style="font-size:11px;color:#888"></span>
+      <button onclick="openCoinInfo()" id="coin-pill2" class="coin-pill" title="Mince">🪙 <span id="coin-pill2-n">3/3</span></button>
       <button onclick="openAuth()" id="nav-auth-btn2" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
     </div>
   </nav>
@@ -141,6 +142,7 @@
     <div style="font-size:16px;font-weight:700;color:#e8e8e8;cursor:pointer" onclick="goToStageSelect()">🎓 Educast</div>
     <div style="display:flex;gap:8px;align-items:center">
       <span id="nav-auth-label" style="font-size:11px;color:#888"></span>
+      <button onclick="openCoinInfo()" id="coin-pill1" class="coin-pill" title="Mince">🪙 <span id="coin-pill1-n">3/3</span></button>
       <button onclick="openAuth()" id="nav-auth-btn" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
     </div>
   </nav>
@@ -232,10 +234,6 @@
       <div id="lw-step-level" style="display:none">
         <div class="level-path-sub level-path-sub-big">Zdolaj level 1 a odomkni ďalšie výzvy</div>
         <div class="level-path" id="lw-level-path"></div>
-        <div id="lw-coins-info" style="display:none;margin-top:14px;background:#2a2418;border:0.5px solid #C9A84C44;border-radius:10px;padding:10px 14px;text-align:center">
-          <div style="font-size:14px;font-weight:700;color:#C9A84C;margin-bottom:3px"><span id="lw-coins-count">🪙 3 mince</span></div>
-          <div style="font-size:10px;color:#8a7d5a;line-height:1.5">Každý pokus pod 100 % ťa stojí 1 mincu. Za 100 % neplatíš nič a odomkneš ďalší level.</div>
-        </div>
       </div>
 
       <button class="wiz-start-btn" id="lw-start-btn" onclick="lwStart()">Spustiť kvíz →</button>
@@ -538,5 +536,17 @@
   </div>
 </div>
 
+  <!-- COIN INFO MODAL -->
+  <div class="modal-overlay" id="coin-modal" onclick="if(event.target===this)closeCoinInfo()">
+    <div class="modal">
+      <button class="modal-close" onclick="closeCoinInfo()">&times;</button>
+      <div class="coin-modal-icon">🪙</div>
+      <div class="coin-modal-title">Tvoje mince</div>
+      <div class="coin-modal-count">Máš <b id="coin-modal-n">3</b> z 3 mincí</div>
+      <div class="coin-modal-row"><span class="cm-ic">🎯</span><div>Mince ti umožňujú odomykať ďalšie levely aj keď test nezvládneš na 100 %.</div></div>
+      <div class="coin-modal-row"><span class="cm-ic">💯</span><div>Za <b>100 %</b> neplatíš nič — odomkneš ďalší level <b>zadarmo</b>.</div></div>
+      <div class="coin-modal-row"><span class="cm-ic">📉</span><div>Každý pokus <b>pod 100 %</b> ťa stojí <b>1 mincu</b>.</div></div>
+    </div>
+  </div>
 </body>
 </html>
