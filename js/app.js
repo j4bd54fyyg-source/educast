@@ -33,7 +33,7 @@ function renderLevelPath(){
       title='<div class="level-title2 lt-locked">'+L.name+'</div>';
       sub='<div class="level-sub2 ls-locked">Odomkni s EDUCAST PLUS</div>';
       cta='<div class="level-cta lc-locked">🔒 PREMIUM</div>';
-      onclick='showPaywall()';
+      onclick='lwLockedLevelPrompt('+L.num+')';
     }
     html += '<div class="level-node"><div class="level-card2 '+cardCls+'" onclick="'+onclick+'">'
       + iconBadge
@@ -48,6 +48,12 @@ function lwPlayLevel(num, lvCode){
   lwLv = lvCode; lv = lvCode;
   // Spusti kviz cez existujucu logiku
   lwStart();
+}
+function lwLockedLevelPrompt(num){
+  // Ponukni: zacni Levelom 1, alebo odomkni PLUS
+  var ok = confirm('Level '+num+' je súčasťou EDUCAST PLUS 🔒\n\nOdporúčame začať Levelom 1 — je zadarmo a pripraví ťa na ďalšie výzvy.\n\nStlač OK pre odomknutie PLUS, alebo Zrušiť a vyskúšaj najprv Level 1.');
+  if(ok){ showPaywall(); }
+  else { lwPlayLevel(1,'r'); }
 }
 
 // ── VYBER STUPNA SKOLY ──
