@@ -354,7 +354,7 @@
         <div class="ttim" id="tt" style="display:none">⏱ 0:00</div>
       </div>
       <div class="qnum" id="qn"></div>
-      <div class="quiz-topbar-right" style="width:80px"></div>
+      <div class="quiz-topbar-right" style="width:80px;text-align:right"><span id="coin-counter" style="display:none;font-size:12px;font-weight:600;color:#C9A84C;background:#2a2418;padding:3px 9px;border-radius:12px;white-space:nowrap">🪙 3</span></div>
     </div>
     <div class="tbar" id="tb"><div class="pfill2" id="pbar"></div></div>
     <div class="stage" id="stage">
@@ -521,6 +521,19 @@
     <button onclick="lcGoLevel1()" style="width:100%;padding:13px;border-radius:12px;border:1.5px solid #378ADD;background:#0A2238;color:#378ADD;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background='#0C3257'" onmouseout="this.style.background='#0A2238'">🎯 Skúsiť zvládnuť na 100 %</button>
     <button onclick="lcGoPaywall()" style="width:100%;padding:10px;border-radius:10px;border:0.5px solid #2a2a2a;background:transparent;color:#888;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:all 0.15s" onmouseover="this.style.borderColor='#378ADD';this.style.color='#378ADD'" onmouseout="this.style.borderColor='#2a2a2a';this.style.color='#888'">Odomknúť cez EDUCAST PLUS</button>
     <button onclick="lcClose()" style="position:absolute;top:12px;right:14px;background:transparent;border:none;color:#666;font-size:18px;cursor:pointer">×</button>
+  </div>
+</div>
+
+
+<!-- MODAL: minute mince -->
+<div id="coins-empty-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:3100;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(6px)">
+  <div style="background:var(--bg2);border:1px solid #C9A84C55;border-radius:18px;padding:28px 24px;max-width:360px;width:100%;text-align:center;position:relative">
+    <div style="font-size:36px;margin-bottom:10px">🪙</div>
+    <div style="font-size:17px;font-weight:700;color:#e8e8e8;margin-bottom:8px">Minul si všetky mince</div>
+    <div style="font-size:12px;color:#888;line-height:1.6;margin-bottom:22px">Každý neúspešný pokus (pod 100 %) stojí 1 mincu. Pokračuj jedným zo spôsobov nižšie.</div>
+    <button onclick="coinsRestart()" style="width:100%;padding:13px;border-radius:12px;border:1.5px solid #378ADD;background:#0A2238;color:#378ADD;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background='#0C3257'" onmouseout="this.style.background='#0A2238'">🔄 Začať odznova</button>
+    <button onclick="coinsBuy()" style="width:100%;padding:11px;border-radius:10px;border:0.5px solid #C9A84C66;background:transparent;color:#C9A84C;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;margin-bottom:8px;transition:all 0.15s" onmouseover="this.style.borderColor='#C9A84C'" onmouseout="this.style.borderColor='#C9A84C66'">🪙 Dokúpiť 3 mince</button>
+    <button onclick="coinsGoPlus()" style="width:100%;padding:10px;border-radius:10px;border:0.5px solid #2a2a2a;background:transparent;color:#888;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:all 0.15s" onmouseover="this.style.borderColor='#378ADD';this.style.color='#378ADD'" onmouseout="this.style.borderColor='#2a2a2a';this.style.color='#888'">Odomknúť všetko cez EDUCAST PLUS</button>
   </div>
 </div>
 

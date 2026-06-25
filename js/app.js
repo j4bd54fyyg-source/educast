@@ -1,3 +1,36 @@
+
+// Zobrazenie poctu minci v kvize (len free uzivatelia)
+function renderCoins(){
+  var el2 = document.getElementById('coin-counter');
+  if(!el2) return;
+  if(hasAccess('v')){ el2.style.display='none'; return; }
+  el2.style.display='inline-block';
+  el2.textContent = '🪙 ' + coins;
+}
+
+// ── MINCE (kreditova mechanika) ──
+function coinsOpen(){
+  var ov = document.getElementById('coins-empty-overlay');
+  if(ov) ov.style.display = 'flex';
+}
+function coinsClose(){
+  var ov = document.getElementById('coins-empty-overlay');
+  if(ov) ov.style.display = 'none';
+}
+function coinsRestart(){
+  // Zacat odznova - refresh do prostredia predmetov (pamata stupen skoly = SS)
+  try{ sessionStorage.setItem('edu_restart_to_subjects','1'); }catch(e){}
+  window.location.href = '/?stage=ss';
+}
+function coinsBuy(){
+  // Dokupenie minci - platba neskor (placeholder)
+  alert('Dokúpenie mincí bude čoskoro dostupné.');
+}
+function coinsGoPlus(){
+  coinsClose();
+  showPaywall();
+}
+var coins = 3; // mince - session kredit, 1 minca = odomknutie po neuspesnom kvize
 var sessionUnlockedL3 = false; // odomknutie Level 3 cez 100% v L2 (session)
 
 // Po 100% v Leveli 1 — pokracuj rovno na Level 2 (zadarmo, session)
@@ -2366,6 +2399,7 @@ function showAudioPlayer(src, sectionLabel) {
 function showQ(){
   ans=false;tck=false;clearInterval(tT);
   var q=sub.qs[cur];
+  if(typeof renderCoins==='function') renderCoins();
   var L=['A','B','C','D','E'];
   var c=C[lv];
   elSet('qn','textContent',sub.icon+' '+sub.name+' · Otázka '+(cur+1)+' / '+sub.qs.length);
@@ -2824,6 +2858,13 @@ function showScore(){
       if(pct===100){
         if(playedN===1){ sessionUnlockedL2 = true; }
         if(playedN===2){ sessionUnlockedL3 = true; }
+      } else {
+        // Neuspesny pokus (pod 100%) stoji 1 mincu
+        if(coins > 0){ coins = coins - 1; }
+        if(coins <= 0){
+          // Mince minute - zobraz modal po kratkom oneskoreni
+          setTimeout(function(){ coinsOpen(); }, 1200);
+        }
       }
       var l2title = el('score-l2-title');
       var l2subt = el('score-l2-subt');
@@ -3552,6 +3593,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if(typeof lwUpdateNav === 'function') lwUpdateNav();
     // Ak je prihlásenỳ, nastav level
     if(hasAccess('v')){ lwChosenLevel='v'; lwLv='v'; lv='v'; }
+    // Zacat odznova - skoc rovno do predmetov (SS)
+    if(window.location.search.indexOf('stage=ss')!==-1 && typeof selectStage==='function'){
+      selectStage('ss');
+    }
   }, 50);
 });
 
