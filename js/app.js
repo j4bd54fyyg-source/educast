@@ -2752,7 +2752,7 @@ function showScore(){
     if(pct===100 && lv==='r' && !hasAccess('v')){
       sessionUnlockedL2 = true; // odomkni Level 2 v ramci tejto session
       if(l2btn) l2btn.style.display='block';
-      plusBanner.style.display='block';
+      plusBanner.style.display='none'; // PLUS banner zruseny - staci tlacidlo na Level 2
     } else {
       if(l2btn) l2btn.style.display='none';
       plusBanner.style.display='none';
