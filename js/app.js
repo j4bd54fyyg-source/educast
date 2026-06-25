@@ -4,6 +4,10 @@ function selectStage(stage){
   if(stage === 'ss'){
     showPage('page-landing');
     updateAuthUI();
+    // Rovno na predmety - preskoc vyber urovne. Ak ma PLUS, nastav PLUS, inak FREE.
+    setTimeout(function(){
+      if(typeof lwChooseLevel==='function'){ lwChooseLevel(hasAccess('v') ? 'v' : 'r'); }
+    }, 20);
   } else {
     var nazov = stage === 'zs' ? 'Základná škola' : 'Vysoká škola';
     alert(nazov + ' — obsah pripravujeme. Čoskoro bude dostupný! Zatiaľ si vyskúšaj Strednú školu.');
