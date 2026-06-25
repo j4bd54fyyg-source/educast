@@ -750,3 +750,36 @@ body .lv-card-plus .lv-card-desc{color:#888 !important}
   pointer-events:none; font-family:var(--font);
 }
 #global-loader-pct.show{opacity:1}
+
+
+/* ── LEVEL PATH (gamifikovana cesta levelov) ── */
+.level-path{display:flex;flex-direction:column;gap:0;align-items:center;padding:8px 0 4px;position:relative}
+.level-node{position:relative;width:100%;max-width:340px;display:flex;flex-direction:column;align-items:center}
+.level-connector{width:3px;height:28px;background:linear-gradient(180deg,#2a2a2a,#1a1a1a);margin:2px 0}
+.level-connector.lit{background:linear-gradient(180deg,#378ADD,#185FA5);box-shadow:0 0 8px #378ADD66}
+.level-card2{width:100%;border-radius:16px;padding:18px 20px;cursor:pointer;transition:all 0.2s cubic-bezier(0.34,1.56,0.64,1);position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;border:1.5px solid}
+/* Level 1 - aktivny, ziariaci */
+.level-card2.active-lvl{background:linear-gradient(135deg,#0A2238,#11335a);border-color:#378ADD;box-shadow:0 0 0 0 #378ADD66;animation:lvlPulse 2.2s ease-in-out infinite}
+.level-card2.active-lvl:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 8px 28px #378ADD55}
+@keyframes lvlPulse{0%,100%{box-shadow:0 0 0 0 #378ADD44}50%{box-shadow:0 0 22px 2px #378ADD55}}
+/* Zamknuty level - poklad */
+.level-card2.locked-lvl{background:linear-gradient(135deg,#1a1712,#221d14);border-color:#3a3220;cursor:pointer;opacity:0.92}
+.level-card2.locked-lvl:hover{border-color:#C9A84C;box-shadow:0 4px 18px #C9A84C33;transform:translateY(-1px)}
+/* Dokonceny level */
+.level-card2.done-lvl{background:linear-gradient(135deg,#0a2a1e,#0d3326);border-color:#1D9E75}
+.level-icon-badge{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;font-weight:700}
+.lib-active{background:linear-gradient(135deg,#378ADD,#185FA5);color:#fff;box-shadow:0 0 12px #378ADD88}
+.lib-locked{background:#2a2418;color:#C9A84C}
+.lib-done{background:linear-gradient(135deg,#1D9E75,#0F6E56);color:#fff}
+.level-info2{flex:1;min-width:0}
+.level-title2{font-size:15px;font-weight:700;margin-bottom:2px}
+.lt-active{color:#9FC9F4}.lt-locked{color:#C9A84C}.lt-done{color:#9FE1CB}
+.level-sub2{font-size:11px;line-height:1.4}
+.ls-active{color:#6FA8DC}.ls-locked{color:#8a7d5a}.ls-done{color:#5FB89A}
+.level-cta{font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.lc-start{background:#378ADD;color:#fff;animation:ctaBlink 1.8s ease-in-out infinite}
+@keyframes ctaBlink{0%,100%{opacity:1}50%{opacity:0.6}}
+.lc-locked{background:#2a2418;color:#C9A84C;border:0.5px solid #C9A84C66}
+.lc-done{background:#1D9E75;color:#fff}
+.level-path-title{font-size:13px;font-weight:600;color:#e8e8e8;text-align:center;margin-bottom:4px}
+.level-path-sub{font-size:11px;color:#888;text-align:center;margin-bottom:14px}

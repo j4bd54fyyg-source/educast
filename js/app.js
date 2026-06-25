@@ -1,4 +1,55 @@
 
+// ── CESTA LEVELOV (gamifikacia) ──
+var lwChosenLvlNum = 1;
+function renderLevelPath(){
+  var path = document.getElementById('lw-level-path');
+  if(!path) return;
+  var hasPlus = hasAccess('v');
+  // Zatial 2 levely: L1 (free), L2 (PLUS kvizy)
+  var levels = [
+    {num:1, name:'Level 1', sub:'Základná výzva · zadarmo', lvCode:'r'},
+    {num:2, name:'Level 2', sub:'Pokročilá výzva', lvCode:'v'}
+  ];
+  // Zisti ci je L1 dokonceny (z progressu)
+  var html = '';
+  levels.forEach(function(L, idx){
+    var unlocked = (L.num===1) || hasPlus;
+    var state = unlocked ? 'active' : 'locked';
+    // konektor nad kartou (okrem prvej)
+    if(idx>0){
+      html += '<div class="level-connector'+(hasPlus?' lit':'')+'"></div>';
+    }
+    var iconBadge, title, sub, cta, cardCls, onclick;
+    if(unlocked){
+      cardCls='active-lvl'; 
+      iconBadge='<div class="level-icon-badge lib-active">'+L.num+'</div>';
+      title='<div class="level-title2 lt-active">'+L.name+'</div>';
+      sub='<div class="level-sub2 ls-active">'+L.sub+'</div>';
+      cta='<div class="level-cta lc-start">HRAŤ →</div>';
+      onclick='lwPlayLevel('+L.num+",'"+L.lvCode+"')";
+    } else {
+      cardCls='locked-lvl';
+      iconBadge='<div class="level-icon-badge lib-locked">🔒</div>';
+      title='<div class="level-title2 lt-locked">'+L.name+'</div>';
+      sub='<div class="level-sub2 ls-locked">Odomkni s EDUCAST PLUS</div>';
+      cta='<div class="level-cta lc-locked">🔒 PREMIUM</div>';
+      onclick='showPaywall()';
+    }
+    html += '<div class="level-node"><div class="level-card2 '+cardCls+'" onclick="'+onclick+'">'
+      + iconBadge
+      + '<div class="level-info2">'+title+sub+'</div>'
+      + cta
+      + '</div></div>';
+  });
+  path.innerHTML = html;
+}
+function lwPlayLevel(num, lvCode){
+  lwChosenLvlNum = num;
+  lwLv = lvCode; lv = lvCode;
+  // Spusti kviz cez existujucu logiku
+  lwStart();
+}
+
 // ── VYBER STUPNA SKOLY ──
 function selectStage(stage){
   if(stage === 'ss'){
@@ -3104,6 +3155,8 @@ function lwSelectSubj(id){
   lwSubj = id; lwRoc = null;
   document.getElementById('lw-step1').style.display = 'none';
   document.getElementById('lw-step2').style.display = 'block';
+  var lvlStep0 = document.getElementById('lw-step-level');
+  if(lvlStep0) lvlStep0.style.display = 'none';
   var lbl = document.getElementById('lw-subj-label');
   var icons = {slj:'📝',lit:'📚',mat:'🔢',dej:'🌍',bio:'🔬',che:'⚗️',fyz:'⚡',ang:'🇬🇧'};
   if(lbl) lbl.textContent = (icons[id]||'') + ' ' + id.toUpperCase();
@@ -3123,8 +3176,12 @@ function lwSetRoc(r){
     var b = document.getElementById('lr-'+n);
     if(b) b.className = 'wiz-roc-btn'+(parseInt(n)===r?' sel':'');
   });
+  // Namiesto priameho startu zobraz cestu levelov
   var sb = document.getElementById('lw-start-btn');
-  if(sb) sb.className = 'wiz-start-btn visible';
+  if(sb) sb.className = 'wiz-start-btn';
+  var lvlStep = document.getElementById('lw-step-level');
+  if(lvlStep){ lvlStep.style.display = 'block'; }
+  renderLevelPath();
   lwUpdateSteps(3);
 }
 
