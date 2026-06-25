@@ -2064,6 +2064,8 @@ function closeModal(e){if(e.target===el('modal'))hidePaywall();}
 // ── ULOŽENIE STAVU KVÍZU ──
 function saveQuizState(){
   if(!sub) return;
+  // Ukladanie je PLUS funkcia - FREE pouzivatel dostane paywall
+  if(!hasAccess('v')){ showPaywall(); return; }
   var key = sub.isMat
     ? ('edu_mat_save_'+sub.matPred+'_'+sub.matRok)
     : (window._saveKey||('edu_save_'+sub.id));
@@ -2182,7 +2184,7 @@ function showQ(){
   elSet('fb','textContent','');
   // Zobraziť/skryť Ukončiť kvíz
   var saveBtn=el('btn-save-quiz');
-  if(saveBtn)saveBtn.style.display='inline-block';
+  if(saveBtn){saveBtn.style.display='inline-block';saveBtn.textContent=hasAccess('v')?'Uložiť':'🔒 Uložiť';}
   // Maturitný test — navigácia
   if(sub && sub.isMat){
     var isLast=cur+1>=sub.qs.length;
