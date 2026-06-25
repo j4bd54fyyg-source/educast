@@ -1,3 +1,4 @@
+var sessionUnlockedL2 = false; // odomknutie Level 2 cez 100% (len session)
 
 // ── Navigacia cez kroky wizardu (Predmet / Rocnik = spat) ──
 function lwGoStep1(){
@@ -37,11 +38,12 @@ function renderLevelPath(){
   // Zisti ci je L1 dokonceny (z progressu)
   var html = '';
   levels.forEach(function(L, idx){
-    var unlocked = (L.num===1) || hasPlus;
+    var unlocked = (L.num===1) || hasPlus || (L.num===2 && sessionUnlockedL2);
+    var bonusUnlock = (L.num===2 && sessionUnlockedL2 && !hasPlus);
     var state = unlocked ? 'active' : 'locked';
     // konektor nad kartou (okrem prvej)
     if(idx>0){
-      html += '<div class="level-connector'+(hasPlus?' lit':'')+'"></div>';
+      html += '<div class="level-connector'+((hasPlus||sessionUnlockedL2)?' lit':'')+'"></div>';
     }
     var iconBadge, title, sub, cta, cardCls, onclick;
     if(unlocked){
@@ -49,7 +51,8 @@ function renderLevelPath(){
       iconBadge='<div class="level-icon-badge lib-active">'+L.num+'</div>';
       title='<div class="level-title2 lt-active">'+L.name+'</div>';
       sub='<div class="level-sub2 ls-active">'+L.sub+'</div>';
-      cta='<div class="level-cta lc-start">HRAŤ →</div>';
+      cta='<div class="level-cta lc-start">'+(bonusUnlock?'🎉 HRAŤ →':'HRAŤ →')+'</div>';
+      if(bonusUnlock){ sub='<div class="level-sub2 ls-active">🎉 Odomknuté za 100 % · len teraz</div>'; }
       onclick='lwPlayLevel('+L.num+",'"+L.lvCode+"')";
     } else {
       cardCls='locked-lvl';
@@ -2740,6 +2743,7 @@ function showScore(){
   var plusBanner=el('score-plus-banner');
   if(plusBanner){
     if(pct===100 && lv==='r' && !hasAccess('v')){
+      sessionUnlockedL2 = true; // odomkni Level 2 v ramci tejto session
       plusBanner.style.display='block';
     } else {
       plusBanner.style.display='none';
