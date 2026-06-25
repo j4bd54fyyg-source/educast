@@ -8,7 +8,13 @@ function renderCoins(){
   info.style.display='block';
   if(cnt){
     var slovo = (coins===1) ? 'minca' : (coins>=2 && coins<=4) ? 'mince' : 'mincí';
-    cnt.textContent = '🪙 ' + coins + ' ' + slovo;
+    var newText = '🪙 ' + coins + ' ' + slovo;
+    if(cnt.textContent !== newText){
+      cnt.textContent = newText;
+      cnt.classList.remove('coin-anim');
+      void cnt.offsetWidth; // restart animacie
+      cnt.classList.add('coin-anim');
+    }
   }
 }
 
@@ -135,11 +141,11 @@ function renderLevelPath(targetId, scoreMode, scorePct){
         iconBadge='<div class="level-icon-badge lib-done">✓</div>';
         title='<div class="level-title2 lt-done">'+L.name+'</div>';
         if(perfect){
-          sub='<div class="level-sub2 ls-done">Dokončené na 100 %</div>';
+          sub='<div class="level-sub2 ls-done">100 % ✓</div>';
           cta='<div class="level-cta lc-done">✓ HOTOVO</div>';
           onclick='';
         } else {
-          sub='<div class="level-sub2 ls-done">Dokončené na '+(scorePct||0)+' % · skús 100 %</div>';
+          sub='<div class="level-sub2 ls-done">'+(scorePct||0)+' % · skús 100 %</div>';
           cta='<div class="level-cta lc-start">🔁 OPAKUJ</div>';
           onclick='lwPlayLevel('+L.num+",'"+L.lvCode+"')";
         }
@@ -2871,13 +2877,9 @@ function showScore(){
       }
       var l2title = el('score-l2-title');
       var l2subt = el('score-l2-subt');
-      if(l2title) l2title.textContent = (pct===100 ? '🎉 Odomkol si nový level!' : '🎯 Tvoja cesta · Level '+playedN);
+      if(l2title) l2title.textContent = (pct===100 ? '🎉 Nový level odomknutý!' : '🎯 Tvoja cesta');
       if(l2subt){
-        if(pct===100){
-          l2subt.textContent = 'Zvládol si Level '+playedN+' na 100 % — pokračuj ďalej';
-        } else {
-          l2subt.textContent = 'Minul si 1 mincu · zostáva 🪙 '+coins+'. Skús to znova na 100 %.';
-        }
+        l2subt.textContent = (pct===100) ? 'Pokračuj ďalej' : '🪙 '+coins+' · skús to znova na 100 %';
       }
       if(l2btn) l2btn.style.display='block';
       renderLevelPath('score-level-path', true, pct);
