@@ -398,11 +398,11 @@
         <div class="sti" id="si"></div>
         <div class="smsg" id="sm"></div>
 
-        <!-- Bonus: odomknuty Level 2 za 100% -->
-        <div id="score-l2-unlock" style="display:none;background:linear-gradient(135deg,#0A2238,#11335a);border:1.5px solid #378ADD;border-radius:12px;padding:14px 16px;width:100%;max-width:280px;margin:8px 0;text-align:center;animation:lvlPulse 2.2s ease-in-out infinite">
-          <div style="font-size:13px;font-weight:700;color:#9FC9F4;margin-bottom:3px">🎉 Odomkol si Level 2!</div>
-          <div style="font-size:10px;color:#6FA8DC;line-height:1.5;margin-bottom:10px">Zvládol si Level 1 na 100 %. Pokračuj rovno na ďalšiu výzvu — zadarmo, len teraz.</div>
-          <button onclick="scoreContinueL2()" style="width:100%;background:linear-gradient(135deg,#378ADD,#185FA5);color:#fff;font-size:12px;font-weight:600;padding:10px 0;border-radius:9px;border:none;cursor:pointer;font-family:inherit">Pokračovať na Level 2 →</button>
+        <!-- Bonus: cesta levelov po 100% (rovnaka grafika ako vo wizarde) -->
+        <div id="score-l2-unlock" style="display:none;width:100%;max-width:340px;margin:10px 0">
+          <div class="level-path-title">🎉 Odomkol si nový level!</div>
+          <div class="level-path-sub">Zvládol si Level 1 na 100 % — pokračuj ďalej</div>
+          <div class="level-path" id="score-level-path"></div>
         </div>
 
         <div id="score-plus-banner" style="display:none;background:#13101f;border:0.5px solid #534AB7;border-radius:10px;padding:12px 14px;width:100%;max-width:280px;margin:8px 0;cursor:pointer" onclick="showPaywall()">
