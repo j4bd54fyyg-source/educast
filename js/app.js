@@ -1,11 +1,15 @@
 
-// Zobrazenie poctu minci v kvize (len free uzivatelia)
+// Zobrazenie poctu minci na ceste levelov (len free, pred startom)
 function renderCoins(){
-  var el2 = document.getElementById('coin-counter');
-  if(!el2) return;
-  if(hasAccess('v')){ el2.style.display='none'; return; }
-  el2.style.display='inline-block';
-  el2.textContent = '🪙 ' + coins;
+  var info = document.getElementById('lw-coins-info');
+  var cnt = document.getElementById('lw-coins-count');
+  if(!info) return;
+  if(hasAccess('v')){ info.style.display='none'; return; }
+  info.style.display='block';
+  if(cnt){
+    var slovo = (coins===1) ? 'minca' : (coins>=2 && coins<=4) ? 'mince' : 'mincí';
+    cnt.textContent = '🪙 ' + coins + ' ' + slovo;
+  }
 }
 
 // ── MINCE (kreditova mechanika) ──
@@ -2399,7 +2403,6 @@ function showAudioPlayer(src, sectionLabel) {
 function showQ(){
   ans=false;tck=false;clearInterval(tT);
   var q=sub.qs[cur];
-  if(typeof renderCoins==='function') renderCoins();
   var L=['A','B','C','D','E'];
   var c=C[lv];
   elSet('qn','textContent',sub.icon+' '+sub.name+' · Otázka '+(cur+1)+' / '+sub.qs.length);
@@ -2869,7 +2872,13 @@ function showScore(){
       var l2title = el('score-l2-title');
       var l2subt = el('score-l2-subt');
       if(l2title) l2title.textContent = (pct===100 ? '🎉 Odomkol si nový level!' : '🎯 Tvoja cesta · Level '+playedN);
-      if(l2subt) l2subt.textContent = (pct===100 ? 'Zvládol si Level '+playedN+' na 100 % — pokračuj ďalej' : 'Zvládni Level '+playedN+' na 100 % a odomkni ďalší');
+      if(l2subt){
+        if(pct===100){
+          l2subt.textContent = 'Zvládol si Level '+playedN+' na 100 % — pokračuj ďalej';
+        } else {
+          l2subt.textContent = 'Minul si 1 mincu · zostáva 🪙 '+coins+'. Skús to znova na 100 %.';
+        }
+      }
       if(l2btn) l2btn.style.display='block';
       renderLevelPath('score-level-path', true, pct);
       plusBanner.style.display='none';
@@ -3550,6 +3559,7 @@ function lwGoStepLevel(){
   var lvl = document.getElementById('lw-step-level');
   if(lvl) lvl.style.display = 'block';
   renderLevelPath();
+  if(typeof renderCoins==='function') renderCoins();
   lwUpdateSteps(3);
 }
 
