@@ -1,4 +1,25 @@
 
+// ── LIGHT / DARK MOOD ──
+function applyTheme(t){
+  if(t==='light'){ document.documentElement.setAttribute('data-theme','light'); }
+  else { document.documentElement.removeAttribute('data-theme'); }
+  try{ localStorage.setItem('edu_theme', t); }catch(e){}
+  var btns=document.querySelectorAll('.theme-toggle-btn');
+  btns.forEach(function(b){ b.textContent = (t==='light' ? '🌙' : '☀️'); });
+}
+function toggleTheme(){
+  var cur = document.documentElement.getAttribute('data-theme')==='light' ? 'light' : 'dark';
+  applyTheme(cur==='light' ? 'dark' : 'light');
+}
+// Pri starte nacitaj ulozenu temu
+(function(){
+  try{
+    var saved = localStorage.getItem('edu_theme');
+    if(saved==='light'){ document.documentElement.setAttribute('data-theme','light'); }
+  }catch(e){}
+})();
+
+
 // ── VYBER STUPNA SKOLY ──
 function selectStage(stage){
   if(stage === 'ss'){

@@ -33,7 +33,7 @@
         <button class="auth-logout" onclick="authLogout()">Odhlásiť</button>
       </div>
       <div style="text-align:center;margin-bottom:12px">
-        <span style="font-size:12px;color:#888">Aktívny plán: </span>
+        <span style="font-size:12px;color:var(--text2)">Aktívny plán: </span>
         <span class="auth-tier-badge" id="auth-tier-display"></span>
       </div>
       <div class="auth-success show" id="auth-device-note" style="font-size:11px">
@@ -100,35 +100,36 @@
 
 <!-- ══ VYBER STUPNA SKOLY ══ -->
 <div id="page-stage-select" class="page active">
-  <nav style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:0.5px solid #2a2a2a;background:#0f0f0f;position:sticky;top:0;z-index:100">
-    <div style="font-size:16px;font-weight:700;color:#e8e8e8">🎓 Educast</div>
+  <nav style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:0.5px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:100">
+    <div style="font-size:16px;font-weight:700;color:var(--text)">🎓 Educast</div>
     <div style="display:flex;gap:8px;align-items:center">
-      <span id="nav-auth-label2" style="font-size:11px;color:#888"></span>
-      <button onclick="openAuth()" id="nav-auth-btn2" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
+      <span id="nav-auth-label2" style="font-size:11px;color:var(--text2)"></span>
+      <button class="theme-toggle-btn" onclick="toggleTheme()" style="font-size:14px;padding:6px 10px;border-radius:20px;border:0.5px solid var(--border);background:var(--bg2);cursor:pointer;font-family:inherit;margin-right:4px">☀️</button>
+      <button onclick="openAuth()" id="nav-auth-btn2" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid var(--border);background:var(--bg2);color:var(--text);cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
     </div>
   </nav>
   <div style="max-width:680px;margin:0 auto;padding:40px 16px 40px">
     <div style="text-align:center;margin-bottom:32px">
       <div style="font-size:40px;margin-bottom:10px">🎓</div>
-      <h1 style="font-size:clamp(24px,5vw,34px);font-weight:700;color:#e8e8e8;margin:0 0 8px;line-height:1.2">Vyber si stupeň školy</h1>
+      <h1 style="font-size:clamp(24px,5vw,34px);font-weight:700;color:var(--text);margin:0 0 8px;line-height:1.2">Vyber si stupeň školy</h1>
       
     </div>
     <div style="display:flex;flex-direction:column;gap:14px">
-      <div onclick="selectStage('zs')" style="background:#141414;border:1.5px solid #2a2a2a;border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center" onmouseover="this.style.borderColor='#378ADD';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+      <div onclick="selectStage('zs')" style="background:var(--bg2);border:1.5px solid var(--border);border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center" onmouseover="this.style.borderColor='#378ADD';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
         <div style="font-size:34px;margin-bottom:8px">📚</div>
-        <div style="font-size:18px;font-weight:700;color:#e8e8e8;margin-bottom:4px">Základná škola</div>
-        <div style="font-size:11px;color:#888">Čoskoro · pripravujeme obsah</div>
+        <div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px">Základná škola</div>
+        <div style="font-size:11px;color:var(--text2)">Čoskoro · pripravujeme obsah</div>
       </div>
-      <div onclick="selectStage('ss')" style="background:#141414;border:1.5px solid #378ADD;border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center;position:relative" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div onclick="selectStage('ss')" style="background:var(--bg2);border:1.5px solid #378ADD;border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center;position:relative" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
         <div style="position:absolute;top:12px;right:12px;font-size:9px;font-weight:600;color:#9FE1CB;background:#085041;border:0.5px solid #1D9E75;border-radius:20px;padding:3px 10px">DOSTUPNÉ</div>
         <div style="font-size:34px;margin-bottom:8px">🎓</div>
         <div style="font-size:18px;font-weight:700;color:#378ADD;margin-bottom:4px">Stredná škola</div>
-        <div style="font-size:11px;color:#888">Maturita · 96 kvízov · oficiálne testy</div>
+        <div style="font-size:11px;color:var(--text2)">Maturita · 96 kvízov · oficiálne testy</div>
       </div>
-      <div onclick="selectStage('vs')" style="background:#141414;border:1.5px solid #2a2a2a;border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center" onmouseover="this.style.borderColor='#7F77DD';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+      <div onclick="selectStage('vs')" style="background:var(--bg2);border:1.5px solid var(--border);border-radius:14px;padding:24px;cursor:pointer;transition:all 0.15s;text-align:center" onmouseover="this.style.borderColor='#7F77DD';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
         <div style="font-size:34px;margin-bottom:8px">🏛️</div>
-        <div style="font-size:18px;font-weight:700;color:#e8e8e8;margin-bottom:4px">Vysoká škola</div>
-        <div style="font-size:11px;color:#888">Čoskoro · pripravujeme obsah</div>
+        <div style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px">Vysoká škola</div>
+        <div style="font-size:11px;color:var(--text2)">Čoskoro · pripravujeme obsah</div>
       </div>
     </div>
   </div>
@@ -137,11 +138,12 @@
 <!-- ══ LANDING PAGE ══ -->
 <div id="page-landing" class="page">
   <!-- Minimálny navbar -->
-  <nav style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:0.5px solid #2a2a2a;background:#0f0f0f;position:sticky;top:0;z-index:100">
-    <div style="font-size:16px;font-weight:700;color:#e8e8e8;cursor:pointer" onclick="goToStageSelect()">🎓 Educast</div>
+  <nav style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:0.5px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:100">
+    <div style="font-size:16px;font-weight:700;color:var(--text);cursor:pointer" onclick="goToStageSelect()">🎓 Educast</div>
     <div style="display:flex;gap:8px;align-items:center">
-      <span id="nav-auth-label" style="font-size:11px;color:#888"></span>
-      <button onclick="openAuth()" id="nav-auth-btn" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
+      <span id="nav-auth-label" style="font-size:11px;color:var(--text2)"></span>
+      <button class="theme-toggle-btn" onclick="toggleTheme()" style="font-size:14px;padding:6px 10px;border-radius:20px;border:0.5px solid var(--border);background:var(--bg2);cursor:pointer;font-family:inherit;margin-right:4px">☀️</button>
+      <button onclick="openAuth()" id="nav-auth-btn" style="font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid var(--border);background:var(--bg2);color:var(--text);cursor:pointer;font-family:inherit">🔑 Prihlásiť sa</button>
     </div>
   </nav>
 
@@ -151,13 +153,13 @@
     <!-- Hero mini -->
     <div style="text-align:center;margin-bottom:24px;padding-top:8px">
       <div style="font-size:11px;color:#378ADD;font-weight:600;letter-spacing:0.05em;margin-bottom:6px">PRE SLOVENSKÉ STREDNÉ ŠKOLY</div>
-      <h1 style="font-size:clamp(22px,5vw,32px);font-weight:700;color:#e8e8e8;margin:0 0 6px;line-height:1.2">Priprav sa na <span style="color:#378ADD">maturitu</span> hravejšie</h1>
-      <p style="font-size:12px;color:#888;margin:0">96 kvízov · 768 otázok · všetky predmety</p>
+      <h1 style="font-size:clamp(22px,5vw,32px);font-weight:700;color:var(--text);margin:0 0 6px;line-height:1.2">Priprav sa na <span style="color:#378ADD">maturitu</span> hravejšie</h1>
+      <p style="font-size:12px;color:var(--text2);margin:0">96 kvízov · 768 otázok · všetky predmety</p>
     </div>
 
     <!-- Výber úrovne -->
     <div id="lv-select-screen">
-      <p style="font-size:11px;color:#888;text-align:center;margin:0 0 12px">Vyber svoju úroveň:</p>
+      <p style="font-size:11px;color:var(--text2);text-align:center;margin:0 0 12px">Vyber svoju úroveň:</p>
       <div class="lv-select-wrap">
         <div class="lv-select-card lv-card-free" onclick="lwChooseLevel('r')">
           <div style="font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;background:linear-gradient(135deg,#378ADD,#B5D4F4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">EDUCAST free</div>
@@ -173,7 +175,7 @@
     </div>
 
     <!-- Wizard A inline -->
-    <div id="lv-wizard-screen" style="display:none;background:#1a1a1a;border:0.5px solid #2a2a2a;border-radius:14px;padding:16px">
+    <div id="lv-wizard-screen" style="display:none;background:var(--bg2);border:0.5px solid var(--border);border-radius:14px;padding:16px">
 
       <!-- Top bar: späť + úroveň + režim -->
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap">
@@ -213,13 +215,13 @@
 
       <!-- Krok 1: Predmet -->
       <div id="lw-step1">
-        <p style="font-size:11px;color:#888;margin:0 0 10px">Vyber predmet:</p>
+        <p style="font-size:11px;color:var(--text2);margin:0 0 10px">Vyber predmet:</p>
         <div class="wiz-subj-grid" id="lw-subj-grid"></div>
       </div>
 
       <!-- Krok 2: Ročník -->
       <div id="lw-step2" style="display:none">
-        <p style="font-size:11px;color:#888;margin:0 0 10px">Vyber ročník — <span id="lw-subj-label" style="color:#e8e8e8;font-weight:500"></span>:</p>
+        <p style="font-size:11px;color:var(--text2);margin:0 0 10px">Vyber ročník — <span id="lw-subj-label" style="color:var(--text);font-weight:500"></span>:</p>
         <div class="wiz-roc-grid">
           <div class="wiz-roc-btn" id="lr-1" onclick="lwSetRoc(1)">1. ročník</div>
           <div class="wiz-roc-btn" id="lr-2" onclick="lwSetRoc(2)">2. ročník</div>
@@ -235,7 +237,7 @@
 
     <!-- Footer mini -->
     </div>
-    <p style="text-align:center;font-size:10px;color:#555;margin-top:20px">© 2025 Educast · <a href="#" onclick="showLandingInfo();return false" style="color:#888;text-decoration:none">O projekte</a></p>
+    <p style="text-align:center;font-size:10px;color:#555;margin-top:20px">© 2025 Educast · <a href="#" onclick="showLandingInfo();return false" style="color:var(--text2);text-decoration:none">O projekte</a></p>
   </div>
 </div>
 
@@ -444,29 +446,29 @@
       <button class="detail-back" onclick="goToPortal()">← Späť</button>
       <div class="detail-title">👤 Môj profil</div>
     </div>
-    <div id="profile-loading" style="text-align:center;color:#888;font-size:13px;padding:24px">Načítavam…</div>
+    <div id="profile-loading" style="text-align:center;color:var(--text2);font-size:13px;padding:24px">Načítavam…</div>
     <div id="profile-content" style="display:none">
       <div id="profile-status-card" style="background:#042C53;border:0.5px solid #185FA5;border-radius:12px;padding:16px 18px;margin-bottom:14px">
         <div style="font-size:11px;color:#85B7EB;margin-bottom:4px">Stav predplatného</div>
         <div id="profile-status-title" style="font-size:18px;font-weight:500;color:#B5D4F4;margin-bottom:6px">—</div>
         <div id="profile-status-sub" style="font-size:12px;color:#85B7EB">—</div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:1px;background:#2a2a2a;border-radius:10px;overflow:hidden;margin-bottom:14px">
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#1a1a1a">
-          <span style="font-size:12px;color:#888">📧 E-mail</span>
-          <span id="profile-email" style="font-size:12px;color:#e8e8e8">—</span>
+      <div style="display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:10px;overflow:hidden;margin-bottom:14px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--bg2)">
+          <span style="font-size:12px;color:var(--text2)">📧 E-mail</span>
+          <span id="profile-email" style="font-size:12px;color:var(--text)">—</span>
         </div>
-        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#1a1a1a">
-          <span style="font-size:12px;color:#888">🔑 Prístupový kód</span>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:var(--bg2)">
+          <span style="font-size:12px;color:var(--text2)">🔑 Prístupový kód</span>
           <span style="display:flex;align-items:center;gap:8px">
-            <span id="profile-code" style="font-size:12px;color:#e8e8e8;font-family:ui-monospace,Menlo,monospace">••••••••••</span>
-            <button id="profile-code-toggle" onclick="toggleProfileCode()" style="background:transparent;border:0.5px solid #2a2a2a;color:#85B7EB;font-size:10px;padding:3px 8px;border-radius:5px;cursor:pointer;font-family:inherit">👁 Zobraziť</button>
+            <span id="profile-code" style="font-size:12px;color:var(--text);font-family:ui-monospace,Menlo,monospace">••••••••••</span>
+            <button id="profile-code-toggle" onclick="toggleProfileCode()" style="background:transparent;border:0.5px solid var(--border);color:#85B7EB;font-size:10px;padding:3px 8px;border-radius:5px;cursor:pointer;font-family:inherit">👁 Zobraziť</button>
           </span>
         </div>
       </div>
       <button id="profile-cancel-btn" onclick="cancelSubscription()" style="width:100%;background:transparent;border:0.5px solid #5a2a2a;color:#c97070;font-size:12px;font-weight:500;padding:11px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.12s" onmouseover="this.style.borderColor='#e74c3c';this.style.color='#e74c3c'" onmouseout="this.style.borderColor='#5a2a2a';this.style.color='#c97070'">Zrušiť predplatné</button>
-      <div style="font-size:11px;color:#888;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin:22px 0 8px">História platieb</div>
-      <div id="profile-history-list" style="display:flex;flex-direction:column;gap:1px;background:#2a2a2a;border-radius:10px;overflow:hidden"></div>
+      <div style="font-size:11px;color:var(--text2);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin:22px 0 8px">História platieb</div>
+      <div id="profile-history-list" style="display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:10px;overflow:hidden"></div>
     </div>
   </div>
 </div>
