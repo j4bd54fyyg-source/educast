@@ -3218,13 +3218,10 @@ function lwSetRoc(r){
     var b = document.getElementById('lr-'+n);
     if(b) b.className = 'wiz-roc-btn'+(parseInt(n)===r?' sel':'');
   });
-  // Namiesto priameho startu zobraz cestu levelov
+  // Po vybere rocnika prejdi na samostatny krok Level
   var sb = document.getElementById('lw-start-btn');
   if(sb) sb.className = 'wiz-start-btn';
-  var lvlStep = document.getElementById('lw-step-level');
-  if(lvlStep){ lvlStep.style.display = 'block'; }
-  renderLevelPath();
-  lwUpdateSteps(3);
+  lwGoStepLevel();
 }
 
 function lwSelectMaturita(){
@@ -3405,11 +3402,22 @@ function lwBack(){
 }
 
 function lwUpdateSteps(active){
-  [1,2,3].forEach(function(i){
+  [1,2,3,4].forEach(function(i){
     var s = document.getElementById('lw-s'+i);
     if(!s) return;
     s.className = 'wiz-step'+(i===active?' active':i<active?' done':'');
   });
+}
+function lwGoStepLevel(){
+  // Klik na krok Level - zobraz cestu levelov (len ak je zvoleny predmet aj rocnik)
+  if(!lwSubj){ lwGoStep1(); return; }
+  if(lwRoc===null){ lwGoStep2(); return; }
+  document.getElementById('lw-step1').style.display = 'none';
+  document.getElementById('lw-step2').style.display = 'none';
+  var lvl = document.getElementById('lw-step-level');
+  if(lvl) lvl.style.display = 'block';
+  renderLevelPath();
+  lwUpdateSteps(3);
 }
 
 function lwStart(){
