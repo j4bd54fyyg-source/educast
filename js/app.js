@@ -4,6 +4,10 @@ function scoreContinueL2(){
   sessionUnlockedL2 = true;
   lwPlayLevel(2, 'v');
 }
+function scoreRetryL1(){
+  // Opakuj Level 1 (znova ten isty kviz)
+  lwPlayLevel(1, 'r');
+}
 var sessionUnlockedL2 = false; // odomknutie Level 2 cez 100% (len session)
 
 // ── Navigacia cez kroky wizardu (Predmet / Rocnik = spat) ──
@@ -32,46 +36,33 @@ function lwGoStep2(){
 
 // ── CESTA LEVELOV (gamifikacia) ──
 var lwChosenLvlNum = 1;
-function renderLevelPath(targetId, scoreMode){
+function renderLevelPath(targetId, scoreMode, scorePct){
   var path = document.getElementById(targetId || 'lw-level-path');
   if(!path) return;
   var hasPlus = hasAccess('v');
-  // Zatial 2 levely: L1 (free), L2 (PLUS kvizy)
+  var perfect = (scorePct===100);
   var levels = [
     {num:1, name:'Level 1', sub:'Základná výzva · zadarmo', lvCode:'r'},
-    {num:2, name:'Level 2', sub:'Pokročilá výzva', lvCode:'v'}
+    {num:2, name:'Level 2', sub:'Pokročilá výzva', lvCode:'v'},
+    {num:3, name:'Level 3', sub:'Majstrovská výzva', lvCode:'v'}
   ];
-  // Zisti ci je L1 dokonceny (z progressu)
   var html = '';
   levels.forEach(function(L, idx){
     var unlocked = (L.num===1) || hasPlus || (L.num===2 && sessionUnlockedL2);
     var bonusUnlock = (L.num===2 && sessionUnlockedL2 && !hasPlus);
-    var state = unlocked ? 'active' : 'locked';
-    // konektor nad kartou (okrem prvej)
+    var lit = (hasPlus || sessionUnlockedL2) && L.num<=2;
     if(idx>0){
-      html += '<div class="level-connector'+((hasPlus||sessionUnlockedL2)?' lit':'')+'"></div>';
+      html += '<div class="level-connector'+(lit?' lit':'')+'"></div>';
     }
     var iconBadge, title, sub, cta, cardCls, onclick;
     if(unlocked){
-      cardCls='active-lvl'; 
+      cardCls='active-lvl';
       iconBadge='<div class="level-icon-badge lib-active">'+L.num+'</div>';
       title='<div class="level-title2 lt-active">'+L.name+'</div>';
       sub='<div class="level-sub2 ls-active">'+L.sub+'</div>';
       cta='<div class="level-cta lc-start">'+(bonusUnlock?'🎉 HRAŤ →':'HRAŤ →')+'</div>';
       if(bonusUnlock){ sub='<div class="level-sub2 ls-active">🎉 Odomknuté za 100 % · len teraz</div>'; }
       onclick='lwPlayLevel('+L.num+",'"+L.lvCode+"')";
-      if(scoreMode && L.num===1){
-        cardCls='done-lvl';
-        iconBadge='<div class="level-icon-badge lib-done">✓</div>';
-        title='<div class="level-title2 lt-done">'+L.name+'</div>';
-        sub='<div class="level-sub2 ls-done">Dokončené na 100 %</div>';
-        cta='<div class="level-cta lc-done">✓ HOTOVO</div>';
-        onclick='';
-      }
-      if(scoreMode && L.num===2){
-        cardCls='active-lvl just-unlocked';
-        iconBadge='<div class="level-icon-badge lib-active"><span class="lock-icon-anim">🔒</span><span class="num-reveal-anim">'+L.num+'</span></div>';
-      }
     } else {
       cardCls='locked-lvl';
       iconBadge='<div class="level-icon-badge lib-locked">🔒</div>';
@@ -79,6 +70,43 @@ function renderLevelPath(targetId, scoreMode){
       sub='<div class="level-sub2 ls-locked">Odomkni s EDUCAST PLUS</div>';
       cta='<div class="level-cta lc-locked">🔒 PREMIUM</div>';
       onclick='lcOpen('+L.num+')';
+    }
+    // SCORE MODE - po dokonceni kvizu
+    if(scoreMode && L.num===1){
+      cardCls='done-lvl';
+      iconBadge='<div class="level-icon-badge lib-done">✓</div>';
+      title='<div class="level-title2 lt-done">'+L.name+'</div>';
+      if(perfect){
+        sub='<div class="level-sub2 ls-done">Dokončené na 100 %</div>';
+        cta='<div class="level-cta lc-done">✓ HOTOVO</div>';
+        onclick='';
+      } else {
+        sub='<div class="level-sub2 ls-done">Dokončené na '+(scorePct||0)+' % · skús 100 %</div>';
+        cta='<div class="level-cta lc-start">🔁 OPAKUJ</div>';
+        onclick='scoreRetryL1()';
+      }
+    }
+    if(scoreMode && L.num===2){
+      if(perfect){
+        cardCls='active-lvl just-unlocked';
+        iconBadge='<div class="level-icon-badge lib-active"><span class="lock-icon-anim">🔒</span><span class="num-reveal-anim">'+L.num+'</span></div>';
+        onclick='lwPlayLevel(2,\'v\')';
+      } else {
+        cardCls='locked-lvl';
+        iconBadge='<div class="level-icon-badge lib-locked">🔒</div>';
+        title='<div class="level-title2 lt-locked">'+L.name+'</div>';
+        sub='<div class="level-sub2 ls-locked">Zvládni Level 1 na 100 %</div>';
+        cta='<div class="level-cta lc-locked">🔒 ZAMKNUTÉ</div>';
+        onclick='';
+      }
+    }
+    if(scoreMode && L.num===3){
+      cardCls='locked-lvl';
+      iconBadge='<div class="level-icon-badge lib-locked">🔒</div>';
+      title='<div class="level-title2 lt-locked">'+L.name+'</div>';
+      sub='<div class="level-sub2 ls-locked">Odomkni s EDUCAST PLUS</div>';
+      cta='<div class="level-cta lc-locked">🔒 PREMIUM</div>';
+      onclick='lcOpen(3)';
     }
     html += '<div class="level-node"><div class="level-card2 '+cardCls+'" onclick="'+onclick+'">'
       + iconBadge
@@ -2761,11 +2789,16 @@ function showScore(){
   var plusBanner=el('score-plus-banner');
   if(plusBanner){
     var l2btn = el('score-l2-unlock');
-    if(pct===100 && lv==='r' && !hasAccess('v')){
-      sessionUnlockedL2 = true; // odomkni Level 2 v ramci tejto session
+    if(lv==='r' && !hasAccess('v')){
+      // Po kazdom kvize v Leveli 1 zobraz cestu levelov
+      if(pct===100){ sessionUnlockedL2 = true; }
+      // Nadpis podla vysledku
+      var l2title = el('score-l2-title');
+      var l2subt = el('score-l2-subt');
+      if(l2title) l2title.textContent = (pct===100 ? '🎉 Odomkol si nový level!' : '🎯 Tvoja cesta');
+      if(l2subt) l2subt.textContent = (pct===100 ? 'Zvládol si Level 1 na 100 % — pokračuj ďalej' : 'Zvládni Level 1 na 100 % a odomkni Level 2');
       if(l2btn) l2btn.style.display='block';
-      // Vykresli rovnaku cestu levelov ako vo wizarde (scoreMode = animacia odomknutia)
-      renderLevelPath('score-level-path', true);
+      renderLevelPath('score-level-path', true, pct);
       plusBanner.style.display='none';
     } else {
       if(l2btn) l2btn.style.display='none';
