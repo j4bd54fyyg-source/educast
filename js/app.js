@@ -1,4 +1,28 @@
 
+// ── Navigacia cez kroky wizardu (Predmet / Rocnik = spat) ──
+function lwGoStep1(){
+  // Spat na vyber predmetu
+  document.getElementById('lw-step1').style.display = 'block';
+  document.getElementById('lw-step2').style.display = 'none';
+  var lvl = document.getElementById('lw-step-level');
+  if(lvl) lvl.style.display = 'none';
+  var sb = document.getElementById('lw-start-btn');
+  if(sb) sb.className = 'wiz-start-btn';
+  lwRoc = null;
+  lwUpdateSteps(1);
+}
+function lwGoStep2(){
+  // Spat na vyber rocnika (len ak je uz zvoleny predmet)
+  if(!lwSubj){ lwGoStep1(); return; }
+  document.getElementById('lw-step1').style.display = 'none';
+  document.getElementById('lw-step2').style.display = 'block';
+  var lvl = document.getElementById('lw-step-level');
+  if(lvl) lvl.style.display = 'none';
+  var sb = document.getElementById('lw-start-btn');
+  if(sb) sb.className = 'wiz-start-btn';
+  lwUpdateSteps(2);
+}
+
 // ── CESTA LEVELOV (gamifikacia) ──
 var lwChosenLvlNum = 1;
 function renderLevelPath(){
