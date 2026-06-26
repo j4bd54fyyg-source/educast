@@ -2908,7 +2908,7 @@ function showScore(){
       var l2subt = el('score-l2-subt');
       if(l2title) l2title.textContent = (pct===100 ? '🎉 Nový level odomknutý!' : '');
       if(l2subt){
-        l2subt.textContent = (pct===100) ? 'Pokračuj ďalej' : '🪙 '+coins+' · skús to znova na 100 %';
+        l2subt.textContent = '';
       }
       if(l2btn) l2btn.style.display='block';
       renderLevelPath('score-level-path', true, pct);
