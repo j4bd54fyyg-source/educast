@@ -2902,7 +2902,7 @@ function showScore(){
       }
       var l2title = el('score-l2-title');
       var l2subt = el('score-l2-subt');
-      if(l2title) l2title.textContent = (pct===100 ? '🎉 Nový level odomknutý!' : '🎯 Tvoja cesta');
+      if(l2title) l2title.textContent = (pct===100 ? '🎉 Nový level odomknutý!' : '');
       if(l2subt){
         l2subt.textContent = (pct===100) ? 'Pokračuj ďalej' : '🪙 '+coins+' · skús to znova na 100 %';
       }
