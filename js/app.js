@@ -3802,3 +3802,24 @@ function spLoadForCurrent(){
   if(_spOpen && _spMode==='draw') spInitCanvas();
 }
 
+
+
+// ── KONTAKTNY FORMULAR (zatial placeholder, backend doplnit neskor) ──
+function openContact(){
+  var m = document.getElementById('contact-modal');
+  if(m) m.classList.add('show');
+}
+function closeContact(){
+  var m = document.getElementById('contact-modal');
+  if(m) m.classList.remove('show');
+}
+function sendContact(){
+  var st = document.getElementById('contact-status');
+  var email = (document.getElementById('contact-email')||{}).value || '';
+  var msg = (document.getElementById('contact-msg')||{}).value || '';
+  if(!email || !msg){
+    if(st){ st.style.display='block'; st.style.color='#F7C1C1'; st.textContent='Vyplň e-mail aj správu.'; }
+    return;
+  }
+  if(st){ st.style.display='block'; st.style.color='#9FE1CB'; st.textContent='Odosielanie zatiaľ nie je aktívne — čoskoro.'; }
+}
