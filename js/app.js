@@ -2868,7 +2868,7 @@ function showScore(){
   elSet('scb','textContent',md==='s'?'⚔️ Súťaž':'📋 Test');
   elSet('sc','innerHTML','<div class="'+c.cc+'"><div class="scvl '+c.sv+'">'+scr+'</div><div class="slb">správnych</div></div><div class="'+c.cc+'"><div class="scvl '+c.sv+'">'+(sub.qs.length-scr)+'</div><div class="slb">nesprávnych</div></div>');
   elSet('si','textContent',md==='s'?('⚔️ Súťaž · '+roc+'. ročník · '+sub.name):('📋 Test · Čas: '+fmt(tot)+' · '+sub.name));
-  var msgs=[[100,'Perfektný výsledok! 🏆'],[80,'Výborný výkon!'],[50,'Dobre, ešte precvičiť.'],[0,'Zopakuj si látku.']];
+  var msgs=[[100,''],[80,''],[50,''],[0,'']];
   if(pct>=80) setTimeout(launchConfetti, 200);
   elSet('sm','textContent',msgs.filter(function(m){return pct>=m[0];})[0][1]);
   elSet('rb','className','rbtn '+c.rb);
