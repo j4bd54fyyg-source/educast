@@ -654,6 +654,11 @@ function renderHistory(){
   }).join('');
 }
 
+function backFromDetail(){
+  // Spat z detailu na score obrazovku kvizu
+  showPage('page-quiz');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 function showDetail(idx){
   var r = quizHistory[idx];
   if(!r) return;
