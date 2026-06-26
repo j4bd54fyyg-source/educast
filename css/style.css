@@ -469,7 +469,7 @@ html,body{background:#0f0f0f}
 .sbr::before,.sbv::before,.sbm::before{background:#378ADD!important}
 
 /* Kvíz pozadie */
-.bgv,.bgm{background:#0f0f0f!important}
+.bgr,.bgv,.bgm{background:#0f0f0f!important}
 
 /* Hist */
 .hist-item:hover{border-color:#378ADD!important}
