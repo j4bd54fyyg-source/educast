@@ -53,7 +53,7 @@ function closeCoinInfo(){
   if(m) m.classList.remove('show');
 }
 function syncCoinPills(){
-  ['coin-pill1-n','coin-pill2-n'].forEach(function(id){
+  ['coin-pill1-n','coin-pill2-n','coin-counter-n'].forEach(function(id){
     var e = document.getElementById(id);
     if(e) e.textContent = coins + '/' + MAX_COINS;
   });
@@ -2839,6 +2839,10 @@ function retryWrong(){
 
 function showScore(){
   clearInterval(tT);clearInterval(tTot);tck=false;
+  // Zobraz coin-pill na score obrazovke + aktualizuj pocet
+  var ccEl = document.getElementById('coin-counter');
+  if(ccEl) ccEl.style.display = 'inline-flex';
+  if(typeof syncCoinPills === 'function') syncCoinPills();
   // Vymaž uložený stav po dokončení
   if(window._saveKey){try{localStorage.removeItem(window._saveKey);}catch(e){}window._saveKey=null;}
   var stageEl=document.querySelector('.stage');if(stageEl)stageEl.classList.remove('mat-mode');
