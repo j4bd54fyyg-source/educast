@@ -2034,6 +2034,20 @@ function loadPaymentHistory(){
     wrap.innerHTML = '<div style="font-size:11px;color:#c97070;padding:8px 0">Históriu sa nepodarilo načítať.</div>';
   });
 }
+function goToPredmety(){
+  clearInterval(tT);clearInterval(tTot);tck=false;
+  showPage('page-landing');
+  lwSubj=null;lwRoc=null;lwMatPred=null;lwMatRok=null;lwChosenLevel=null;
+  var ls=document.getElementById('lv-select-screen');
+  var ws=document.getElementById('lv-wizard-screen');
+  var mw=document.getElementById('lw-mat-wiz');
+  if(ls)ls.style.display='none';
+  if(ws)ws.style.display='block';
+  if(mw)mw.style.display='none';
+  if(typeof renderLandingWizard==='function') renderLandingWizard();
+  lwGoStep1();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 function goToLanding(){
   clearInterval(tT);clearInterval(tTot);tck=false;
   // Vzdy na rozcestnik stupnov (nova vstupna stranka)
