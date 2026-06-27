@@ -560,11 +560,11 @@ html,body{background:#E9E4DA}
 .mat-chevron{font-size:10px;color:var(--text2);transition:transform 0.2s;margin-left:auto}
 .mat-chevron.open{transform:rotate(180deg)}
 
-.ctx-panel{background:transparent;border:none;border-bottom:0.5px solid #5E787330;padding:0 0 20px 0;font-size:13px;color:#3E5A55;line-height:1.65;max-height:35vh;overflow-y:auto;width:100%;max-width:800px;box-sizing:border-box}
+.ctx-panel{background:rgba(255,255,255,0.07);border:none;border-bottom:0.5px solid #DDE7E230;border-radius:10px;padding:14px 16px;font-size:13px;color:#EDEFEA;line-height:1.65;max-height:35vh;overflow-y:auto;width:100%;max-width:800px;box-sizing:border-box}
 
 .ctx-header{display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:6px;font-weight:600;font-size:11px;color:#5E7873}
 .ctx-toggle{font-size:10px;color:#5E7873;background:transparent;border:none;cursor:pointer;font-family:inherit;padding:0}
-.ctx-text{white-space:pre-wrap;font-size:10px;color:#3E5A55;line-height:1.65}
+.ctx-text{white-space:pre-wrap;font-size:13px;color:#EDEFEA;line-height:1.65}
 
 
 /* ── WIZARD A ── */
