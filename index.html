@@ -167,7 +167,7 @@
       <p style="font-size:11px;color:#888;text-align:center;margin:0 0 12px">Vyber svoju úroveň:</p>
       <div class="lv-select-wrap">
         <div class="lv-select-card lv-card-free" onclick="lwChooseLevel('r')">
-          <div style="font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;background:linear-gradient(135deg,#378ADD,#B5D4F4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">EDUCAST free</div>
+          <div style="font-size:22px;font-weight:800;letter-spacing:-0.5px;margin-bottom:4px;background:linear-gradient(135deg,#5E7873,#9FB5AE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">EDUCAST free</div>
           <div class="lv-card-title">Zadarmo</div>
           <div class="lv-card-desc">32 kvízov · 256 otázok · všetky predmety<br>1.–4. ročník · bez registrácie</div>
         </div>
@@ -370,8 +370,8 @@
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
               <div class="ctx-label" id="ctx-title">📖 Ukážka</div>
               <div style="display:flex;gap:4px">
-                <button onclick="ctxFontChange(-1)" style="background:transparent;border:0.5px solid #378ADD55;color:#378ADD;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A−</button>
-                <button onclick="ctxFontChange(1)" style="background:transparent;border:0.5px solid #378ADD55;color:#378ADD;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A+</button>
+                <button onclick="ctxFontChange(-1)" style="background:transparent;border:0.5px solid #5E7873;color:#DDE7E2;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A−</button>
+                <button onclick="ctxFontChange(1)" style="background:transparent;border:0.5px solid #5E7873;color:#DDE7E2;font-size:11px;font-weight:600;width:24px;height:24px;border-radius:5px;cursor:pointer;font-family:inherit;line-height:1">A+</button>
               </div>
             </div>
             <div class="ctx-text" id="ctx-text"></div>
@@ -401,7 +401,7 @@
         <div class="sbig" id="sp"></div>
         <div class="scards" id="sc"></div>
         <div class="sti" id="si"></div>
-        <button onclick="showDetail(0)" style="background:transparent;border:0.5px solid #378ADD;color:#378ADD;font-size:11px;font-weight:500;padding:7px 18px;border-radius:8px;cursor:pointer;font-family:inherit;margin-top:2px">🔍 Detail kvízu</button>
+        <button onclick="showDetail(0)" style="background:transparent;border:0.5px solid #5E7873;color:#5E7873;font-size:11px;font-weight:500;padding:7px 18px;border-radius:8px;cursor:pointer;font-family:inherit;margin-top:2px">🔍 Detail kvízu</button>
         <div class="smsg" id="sm"></div>
 
         <!-- Bonus: cesta levelov po 100% (rovnaka grafika ako vo wizarde) -->
@@ -432,7 +432,7 @@
     </div>
     <div class="ctrls">
       <button class="ctb" onclick="goToPredmety()">← Predmety</button>
-      <button class="ctb" id="btn-save-quiz" onclick="saveQuizState()" style="display:none;border-color:#378ADD;color:#378ADD">Uložiť</button>
+      <button class="ctb" id="btn-save-quiz" onclick="saveQuizState()" style="display:none;border-color:#5E7873;color:#5E7873">Uložiť</button>
       <div class="pips" id="pips-regular"></div>
 
       <button class="nxt nxr" id="nb-finish" onclick="matFinish()" style="display:none;margin-top:0;padding:7px 16px;font-size:12px;max-width:160px">Dokončiť test</button>
@@ -513,7 +513,7 @@
 
 <!-- ══ MODAL: volba levelu ══ -->
 <div id="level-choice-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:3000;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(6px)">
-  <div style="background:var(--bg2);border:1px solid #378ADD55;border-radius:18px;padding:28px 24px;max-width:360px;width:100%;text-align:center;position:relative">
+  <div style="background:var(--bg2);border:1px solid #D8D0C1;border-radius:18px;padding:28px 24px;max-width:360px;width:100%;text-align:center;position:relative">
     <div style="font-size:36px;margin-bottom:10px">🔒</div>
     <div style="font-size:17px;font-weight:700;color:#43403A;margin-bottom:8px">Tento level je zamknutý</div>
     <div style="font-size:12px;color:#888;line-height:1.6;margin-bottom:22px">Odomkni ho <strong style="color:#5E7873">zvládnutím predošlého levelu na 100 %</strong> — zadarmo. Alebo si sprístupni všetky levely naraz s EDUCAST PLUS.</div>
@@ -561,7 +561,7 @@
       <textarea id="contact-msg" rows="4" placeholder="Napíš svoju správu…" style="width:100%;background:#0f0f0f;border:0.5px solid #2a2a2a;border-radius:8px;padding:10px 12px;color:#e8e8e8;font-size:13px;margin-bottom:12px;outline:none;font-family:inherit;resize:vertical"></textarea>
       <label style="font-size:11px;color:#888;display:block;margin-bottom:4px">Príloha (voliteľné)</label>
       <input type="file" id="contact-file" style="width:100%;font-size:12px;color:#888;margin-bottom:16px;font-family:inherit">
-      <button onclick="sendContact()" style="width:100%;padding:12px;border-radius:10px;border:none;background:linear-gradient(135deg,#185FA5,#378ADD);color:#fff;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit">Odoslať</button>
+      <button onclick="sendContact()" style="width:100%;padding:12px;border-radius:10px;border:none;background:linear-gradient(135deg,#4A615C,#5E7873);color:#fff;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit">Odoslať</button>
       <div id="contact-status" style="font-size:11px;color:#888;text-align:center;margin-top:10px;display:none"></div>
     </div>
   </div>
