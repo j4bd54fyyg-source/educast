@@ -875,11 +875,11 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 /* ── COIN PILL + MODAL ── */
 .coin-pill{
   font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;
-  border:1px solid #C9A84C66;background:#2a2418;color:#C9A84C;
+  border:1px solid #D8D0C1;background:#EFEAE0;color:#A8843C;
   cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px;
   transition:all 0.15s;
 }
-.coin-pill:hover{border-color:#C9A84C;background:#332b1c;transform:translateY(-1px)}
+.coin-pill:hover{border-color:#A8843C;background:#F4F1EA;transform:translateY(-1px)}
 
 .coin-modal-icon{font-size:40px;margin-bottom:8px;text-align:center}
 .coin-modal-title{font-size:18px;font-weight:700;color:#C9A84C;text-align:center;margin-bottom:6px}
