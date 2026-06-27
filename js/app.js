@@ -3321,9 +3321,9 @@ function lwUpdateNav(){
     if(btn){
       btn.textContent = '🚪 Odhlásiť sa';
       btn.onclick = authLogout;
-      btn.style.cssText = 'font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;border:none;background:transparent;color:#e74c3c;cursor:pointer;font-family:inherit;transition:all 0.12s';
-      btn.onmouseover = function(){ this.style.background='#e74c3c'; this.style.color='#fff'; };
-      btn.onmouseout = function(){ this.style.background='transparent'; this.style.color='#e74c3c'; };
+      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #C8907066;background:transparent;color:#B07355;cursor:pointer;font-family:inherit;transition:all 0.12s';
+      btn.onmouseover = function(){ this.style.background='#B07355'; this.style.color='#fff'; };
+      btn.onmouseout = function(){ this.style.background='transparent'; this.style.color='#B07355'; };
     }
     if(lbl){
       lbl.textContent = '👤 ' + authState.email.split('@')[0];
@@ -3335,9 +3335,9 @@ function lwUpdateNav(){
     if(btn){
       btn.textContent = '🔑 Prihlásiť sa';
       btn.onclick = openAuth;
-      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit;transition:border-color 0.12s ease';
+      btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #D8D0C1;background:#EFEAE0;color:#43403A;cursor:pointer;font-family:inherit;transition:border-color 0.12s ease';
       btn.onmouseover = function(){ this.style.borderColor='#5E7873'; };
-      btn.onmouseout = function(){ this.style.borderColor='#2a2a2a'; };
+      btn.onmouseout = function(){ this.style.borderColor='#D8D0C1'; };
     }
     if(lbl){ lbl.textContent = ''; lbl.onclick = null; lbl.style.cursor = 'default'; }
   }
