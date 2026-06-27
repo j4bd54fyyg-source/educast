@@ -579,7 +579,7 @@ html,body{background:#E9E4DA}
 .wiz-subj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
 .wiz-subj-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;transition:all 0.12s}
 .wiz-subj-card:hover{border-color:#5E7873;transform:translateY(-1px)}
-.wiz-subj-card.sel{background:#3E5A55;border-color:#5E7873}
+.wiz-subj-card.sel{background:#3E5A55;border-color:#5E7873;color:#fff}
 .wiz-subj-icon{font-size:22px;margin-bottom:4px}
 .wiz-subj-name{font-size:11px;font-weight:500;color:var(--text2)}
 .wiz-subj-card.sel .wiz-subj-name{color:#3E5A55}
@@ -591,7 +591,7 @@ html,body{background:#E9E4DA}
 .wiz-roc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
 .wiz-roc-btn{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:14px 8px;text-align:center;cursor:pointer;font-size:13px;font-weight:600;color:var(--text2);transition:all 0.12s}
 .wiz-roc-btn:hover{border-color:#5E7873;color:var(--text)}
-.wiz-roc-btn.sel{background:#3E5A55;border-color:#5E7873;color:#3E5A55}
+.wiz-roc-btn.sel{background:#3E5A55;border-color:#5E7873;color:#fff}
 .wiz-settings{display:flex;gap:8px;margin-bottom:16px;align-items:center;flex-wrap:wrap}
 .wiz-toggle{display:flex;background:var(--bg2);border:0.5px solid var(--border);border-radius:20px;padding:2px;gap:2px;transition:border-color 0.2s}
 .wiz-tog-btn{font-size:10px;padding:4px 10px;border-radius:16px;cursor:pointer;border:none;background:transparent;color:var(--text2);font-family:inherit;transition:all 0.12s}
