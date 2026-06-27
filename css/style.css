@@ -759,27 +759,27 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .level-connector.lit{background:linear-gradient(180deg,#5E7873,#4A615C);box-shadow:0 0 8px #5E787366}
 .level-card2{width:100%;border-radius:16px;padding:18px 20px;cursor:pointer;transition:all 0.2s cubic-bezier(0.34,1.56,0.64,1);position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;border:1.5px solid}
 /* Level 1 - aktivny, ziariaci */
-.level-card2.active-lvl{background:linear-gradient(135deg,#0A2238,#11335a);border-color:#5E7873;box-shadow:0 0 0 0 #5E787366;animation:lvlPulse 2.2s ease-in-out infinite}
+.level-card2.active-lvl{background:#EFEAE0;border-color:#5E7873;box-shadow:0 0 0 0 #5E787366;animation:lvlPulse 2.2s ease-in-out infinite}
 .level-card2.active-lvl:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 8px 28px #5E787355}
 @keyframes lvlPulse{0%,100%{box-shadow:0 0 0 0 #5E787344}50%{box-shadow:0 0 22px 2px #5E787355}}
 /* Zamknuty level - poklad */
-.level-card2.locked-lvl{background:linear-gradient(135deg,#1a1712,#221d14);border-color:#3a3220;cursor:pointer;opacity:0.92}
+.level-card2.locked-lvl{background:#F4F1EA;border-color:#D8D0C1;cursor:pointer;opacity:0.92}
 .level-card2.locked-lvl:hover{border-color:#C9A84C;box-shadow:0 4px 18px #C9A84C33;transform:translateY(-1px)}
 /* Dokonceny level */
-.level-card2.done-lvl{background:linear-gradient(135deg,#0a2a1e,#0d3326);border-color:#1D9E75}
+.level-card2.done-lvl{background:#E2EAE7;border-color:#5E7873}
 .level-icon-badge{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;font-weight:700}
 .lib-active{background:linear-gradient(135deg,#5E7873,#4A615C);color:#fff;box-shadow:0 0 12px #5E787388}
-.lib-locked{background:#2a2418;color:#C9A84C}
+.lib-locked{background:#EAE3D2;color:#A8843C}
 .lib-done{background:linear-gradient(135deg,#1D9E75,#0F6E56);color:#fff}
 .level-info2{flex:1;min-width:0}
 .level-title2{font-size:15px;font-weight:700;margin-bottom:2px}
-.lt-active{color:#9FC9F4}.lt-locked{color:#C9A84C}.lt-done{color:#9FE1CB}
+.lt-active{color:#3E5A55}.lt-locked{color:#A8843C}.lt-done{color:#3E5A55}
 .level-sub2{font-size:11px;line-height:1.4}
 .ls-active{color:#6FA8DC}.ls-locked{color:#8a7d5a}.ls-done{color:#5FB89A}
 .level-cta{font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
 .lc-start{background:#5E7873;color:#fff;animation:ctaBlink 1.8s ease-in-out infinite}
 @keyframes ctaBlink{0%,100%{opacity:1}50%{opacity:0.6}}
-.lc-locked{background:#2a2418;color:#C9A84C;border:0.5px solid #C9A84C66}
+.lc-locked{background:#EAE3D2;color:#A8843C;border:0.5px solid #C9A84C66}
 .lc-done{background:#1D9E75;color:#fff}
 .level-path-title{font-size:13px;font-weight:600;color:#43403A;text-align:center;margin-bottom:4px}
 .level-path-sub{font-size:11px;color:#8C887A;text-align:center;margin-bottom:14px}
