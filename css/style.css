@@ -856,13 +856,13 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
   transition:all 0.15s;
 }
 .wiz-step:hover{
-  border-color:#5B8DEE;
-  background:#1a2332;
+  border-color:#5E7873;
+  background:#E2EAE7;
   transform:translateY(-1px);
 }
 .wiz-step.active{
-  border-color:#5B8DEE;
-  background:#16243a;
+  border-color:#5E7873;
+  background:#E2EAE7;
 }
 .wiz-step.done{
   border-color:#1D9E75;
@@ -919,3 +919,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 html{background:#E9E4DA!important}
 .page{background:#E9E4DA}
 #page-landing,#page-stage-select{background:#E9E4DA!important;min-height:100vh}
+
+/* Landing wizard: Test/Sutaz aktivny mod do greige palety */
+.wiz-tog-btn.active-t{background:#5E7873!important;color:#fff!important;border-color:#5E7873!important}
+.wiz-tog-btn.active-s{background:#5E7873!important;color:#fff!important;border-color:#5E7873!important}
