@@ -842,7 +842,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .level-path-sub-big{
   font-size:15px!important;
   font-weight:600!important;
-  color:#9FE1CB!important;
+  color:#5E7873!important;
   margin-top:4px!important;
 }
 
@@ -896,7 +896,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 /* Texty v lištách kvízu */
 .quiz-topbar .qnum,.quiz-topbar .mbadge{color:#E8EFEC!important}
 .ctb{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
-.ctb:hover{border-color:#9FE1CB!important;color:#fff!important}
+.ctb:hover{border-color:#5E7873!important;color:#fff!important}
 .quiz-back{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
 
 /* ── LANDING WIZARD: greige prvky (Test/Sutaz, kroky) ── */
