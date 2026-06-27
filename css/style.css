@@ -574,7 +574,7 @@ html,body{background:#E9E4DA}
 .wiz-step.done{color:#5E7873}
 .wiz-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;background:var(--bg3);color:var(--text2);flex-shrink:0}
 .wiz-step.active .wiz-num{background:#5E7873;color:#fff}
-.wiz-step.done .wiz-num{background:#3E5A55;color:#3E5A55}
+.wiz-step.done .wiz-num{background:#3E5A55;color:#fff}
 .wiz-sep{flex:1;height:1px;background:var(--border);margin:0 6px}
 .wiz-subj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
 .wiz-subj-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:10px;padding:12px 8px;text-align:center;cursor:pointer;transition:all 0.12s}
@@ -775,7 +775,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .level-title2{font-size:15px;font-weight:700;margin-bottom:2px}
 .lt-active{color:#3E5A55}.lt-locked{color:#A8843C}.lt-done{color:#3E5A55}
 .level-sub2{font-size:11px;line-height:1.4}
-.ls-active{color:#6FA8DC}.ls-locked{color:#8a7d5a}.ls-done{color:#5FB89A}
+.ls-active{color:#5E7873}.ls-locked{color:#A8843C}.ls-done{color:#5E7873}
 .level-cta{font-size:10px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
 .lc-start{background:#5E7873;color:#fff;animation:ctaBlink 1.8s ease-in-out infinite}
 @keyframes ctaBlink{0%,100%{opacity:1}50%{opacity:0.6}}
@@ -908,7 +908,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .wiz-step.done{border-color:#5E7873!important;color:#5E7873!important}
 .wiz-num{background:#D8D0C1!important;color:#8C887A!important}
 .wiz-step.active .wiz-num{background:#5E7873!important;color:#fff!important}
-.wiz-step.done .wiz-num{background:#3E5A55!important;color:#3E5A55!important}
+.wiz-step.done .wiz-num{background:#3E5A55!important;color:#fff!important}
 .wiz-sep{background:#D8D0C1!important}
 
 /* Landing + stage-select pozadie (prebije vsetko) */
