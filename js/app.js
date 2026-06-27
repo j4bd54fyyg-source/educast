@@ -2000,9 +2000,9 @@ function loadPaymentHistory(){
           cbtn.disabled = false;
           cbtn.textContent = 'Obnoviť predplatné';
           cbtn.onclick = resumeSubscription;
-          cbtn.style.cssText = 'width:100%;background:transparent;border:0.5px solid #185FA5;color:#378ADD;font-size:12px;font-weight:500;padding:11px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.12s';
-          cbtn.onmouseover = function(){ this.style.borderColor='#378ADD'; };
-          cbtn.onmouseout = function(){ this.style.borderColor='#185FA5'; };
+          cbtn.style.cssText = 'width:100%;background:transparent;border:0.5px solid #5E7873;color:#5E7873;font-size:12px;font-weight:500;padding:11px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.12s';
+          cbtn.onmouseover = function(){ this.style.borderColor='#4A615C'; };
+          cbtn.onmouseout = function(){ this.style.borderColor='#5E7873'; };
         }
       } else {
         // AKTIVNE
@@ -2027,7 +2027,7 @@ function loadPaymentHistory(){
       var datum = d.toLocaleDateString('sk-SK', {day:'numeric', month:'long', year:'numeric'});
       var suma = (inv.amount/100).toFixed(2).replace('.', ',') + ' ' + (inv.currency==='eur'?'€':inv.currency.toUpperCase());
       var stav = inv.status==='paid' ? '<span style="color:#2ecc71">✓ Zaplatené</span>' : ('<span style="color:#888">'+inv.status+'</span>');
-      var odkaz = inv.pdf ? ('<a href="'+inv.pdf+'" target="_blank" style="color:#378ADD;text-decoration:none;font-size:11px">PDF ↗</a>') : '';
+      var odkaz = inv.pdf ? ('<a href="'+inv.pdf+'" target="_blank" style="color:#5E7873;text-decoration:none;font-size:11px">PDF ↗</a>') : '';
       return '<div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#1a1a1a">'
         + '<div><div style="font-size:12px;color:#e8e8e8">'+datum+'</div><div style="font-size:10px;margin-top:2px">'+stav+'</div></div>'
         + '<div style="display:flex;align-items:center;gap:12px"><span style="font-size:13px;font-weight:600;color:#e8e8e8">'+suma+'</span>'+odkaz+'</div>'
@@ -3336,7 +3336,7 @@ function lwUpdateNav(){
       btn.textContent = '🔑 Prihlásiť sa';
       btn.onclick = openAuth;
       btn.style.cssText = 'font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #2a2a2a;background:#1a1a1a;color:#e8e8e8;cursor:pointer;font-family:inherit;transition:border-color 0.12s ease';
-      btn.onmouseover = function(){ this.style.borderColor='#378ADD'; };
+      btn.onmouseover = function(){ this.style.borderColor='#5E7873'; };
       btn.onmouseout = function(){ this.style.borderColor='#2a2a2a'; };
     }
     if(lbl){ lbl.textContent = ''; lbl.onclick = null; lbl.style.cursor = 'default'; }
@@ -3482,7 +3482,7 @@ var MAT_PREDS = MAT_CATS.reduce(function(acc, cat){ return acc.concat(cat.preds)
 var MAT_ROKY = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
 
 function lwMatWizHTML(){
-  return '<button style="font-size:12px;font-weight:600;color:#fff;background:#5E7873;border:0.5px solid #5E7873;border-radius:20px;cursor:pointer;padding:6px 14px;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background=\'#0C3257\'" onmouseout="this.style.background=\'#0A2238\'" onclick="navBack()">← Späť na predmety</button>'
+  return '<button style="font-size:12px;font-weight:600;color:#fff;background:#5E7873;border:0.5px solid #5E7873;border-radius:20px;cursor:pointer;padding:6px 14px;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background=\'#4A615C\'" onmouseout="this.style.background=\'#5E7873\'" onclick="navBack()">← Späť na predmety</button>'
     +'<div id="lw-mat-pred-grid"></div>'
     +'<div id="lw-mat-rok-wrap" style="display:none">'
     +'<p style="font-size:11px;color:#5E7873;margin:0 0 8px">Vyber rok:</p>'
