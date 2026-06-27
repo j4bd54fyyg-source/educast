@@ -923,3 +923,7 @@ html{background:#E9E4DA!important}
 /* Landing wizard: Test/Sutaz aktivny mod do greige palety */
 .wiz-tog-btn.active-t{background:#5E7873!important;color:#fff!important;border-color:#5E7873!important}
 .wiz-tog-btn.active-s{background:#5E7873!important;color:#fff!important;border-color:#5E7873!important}
+
+/* page-landing greige - silny selektor + body poistka */
+div#page-landing.page{background:#E9E4DA!important;min-height:100vh!important}
+body{background:#E9E4DA!important}
