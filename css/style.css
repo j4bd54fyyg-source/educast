@@ -887,3 +887,14 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .coin-modal-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:13px;color:#b8b8b8;line-height:1.5}
 .coin-modal-row .cm-ic{font-size:18px;flex-shrink:0}
 .coin-modal-row b{color:#43403A}
+
+/* ── KVÍZ: jednotná tmavá šalvia (topbar + spodný pás) ── */
+.quiz-wrap{background:#4A615C!important}
+.quiz-topbar{background:#4A615C!important;border-bottom-color:#3A4E49!important}
+.ctrls{background:#4A615C!important;border-top-color:#3A4E49!important}
+.mat-pips-bar{background:#4A615C!important;border-top-color:#3A4E49!important}
+/* Texty v lištách kvízu */
+.quiz-topbar .qnum,.quiz-topbar .mbadge{color:#E8EFEC!important}
+.ctb{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
+.ctb:hover{border-color:#9FE1CB!important;color:#fff!important}
+.quiz-back{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
