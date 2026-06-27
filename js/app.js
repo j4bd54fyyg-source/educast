@@ -2150,9 +2150,9 @@ function renderWizSubjects(){
       : 'wizSelectSubj(\'' +s.id+ '\')';
     return '<div class="wiz-subj-card'+(isV?' v-mode':'')+(sel?' sel':'')+'" onclick="'+onclick+'" style="'+(s.special?'position:relative':'')+'">'
       +(locked?'<div style="position:absolute;top:4px;right:6px;font-size:10px">🔒</div>':'')
-      +(s.special && !locked?'<div style="position:absolute;top:4px;right:6px;font-size:9px;color:#6B847E;background:#E2EAE7;padding:1px 5px;border-radius:8px">E+</div>':'')
+      +(s.special && !locked?'<div style="position:absolute;top:4px;right:6px;font-size:9px;color:#4A615C;background:#E2EAE7;padding:1px 5px;border-radius:8px">E+</div>':'')
       +'<div class="wiz-subj-icon">'+s.icon+'</div>'
-      +'<div class="wiz-subj-name" style="'+(s.special?'color:#DDE7E2':'')+'">'+('maturita'===s.id?'Maturitné testy':s.id.toUpperCase())+'</div>'
+      +'<div class="wiz-subj-name" style="'+(s.special?'color:#3E5A55':'')+'">'+('maturita'===s.id?'Maturitné testy':s.id.toUpperCase())+'</div>'
       +'</div>';
   }).join('');
 }
@@ -3113,7 +3113,7 @@ function renderMatGrid(){
         +'<div class="mat-lock-overlay">🔒</div>'
         +'<div class="mat-year">Maturita '+rok+'</div>'
         +'<div class="mat-label">'+matPredmet.toUpperCase()+' · Externá časť</div>'
-        +'<div style="font-size:10px;color:#6B847E;margin-top:6px">Odomknúť EDUCAST PLUS →</div>'
+        +'<div style="font-size:10px;color:#4A615C;margin-top:6px">Odomknúť EDUCAST PLUS →</div>'
         +'</div>';
     }
     var oc='launchMatTest(\'' +matPredmet+ '\',' +rok+ ')';
@@ -3304,9 +3304,9 @@ function renderLandingWizard(){
       : 'lwSelectSubj(\'' +s.id+ '\')';
     return '<div class="'+cardClass+'" onclick="'+onclick+'" style="'+(s.special?'position:relative':'')+'">'
       +(locked?'<div style="position:absolute;top:4px;right:6px;font-size:10px">🔒</div>':'')
-      +(s.special && !locked?'<div style="position:absolute;top:4px;right:6px;font-size:9px;color:#6B847E;background:#E2EAE7;padding:1px 5px;border-radius:8px">EDUCAST PLUS</div>':'')
+      +(s.special && !locked?'<div style="position:absolute;top:4px;right:6px;font-size:9px;color:#4A615C;background:#E2EAE7;padding:1px 5px;border-radius:8px">EDUCAST PLUS</div>':'')
       +'<div class="wiz-subj-icon">'+s.icon+'</div>'
-      +'<div class="wiz-subj-name" style="'+(s.special?'color:#DDE7E2 font-size:9px':'')+'">'+s.name+'</div>'
+      +'<div class="wiz-subj-name" style="'+(s.special?'color:#3E5A55 font-size:9px':'')+'">'+s.name+'</div>'
       +'</div>';
   }).join('');
   // Aktualizuj navbar
@@ -3485,7 +3485,7 @@ function lwMatWizHTML(){
   return '<button style="font-size:12px;font-weight:600;color:#378ADD;background:#0A2238;border:0.5px solid #378ADD55;border-radius:20px;cursor:pointer;padding:6px 14px;font-family:inherit;margin-bottom:10px;transition:all 0.15s" onmouseover="this.style.background=\'#0C3257\'" onmouseout="this.style.background=\'#0A2238\'" onclick="navBack()">← Späť na predmety</button>'
     +'<div id="lw-mat-pred-grid"></div>'
     +'<div id="lw-mat-rok-wrap" style="display:none">'
-    +'<p style="font-size:11px;color:#9FB5AE;margin:0 0 8px">Vyber rok:</p>'
+    +'<p style="font-size:11px;color:#5E7873;margin:0 0 8px">Vyber rok:</p>'
     +'<div class="mat-rok-grid" id="lw-mat-rok-grid"></div>'
     +'</div>';
 }
@@ -3525,7 +3525,7 @@ function renderLwMatWiz(){
       var hint = document.createElement('div');
       hint.id = 'mat-paywall-hint';
       hint.style.cssText = 'grid-column:1/-1;text-align:center;padding:10px;background:#E2EAE7;border:0.5px solid #5E7873;border-radius:8px;cursor:pointer';
-      hint.innerHTML = '<div style="font-size:12px;color:#DDE7E2;font-weight:500">🔒 Maturitné testy sú pre EDUCAST PLUS</div><div style="font-size:10px;color:#6B847E;margin-top:3px">Klikni pre získanie prístupu →</div>';
+      hint.innerHTML = '<div style="font-size:12px;color:#3E5A55;font-weight:500">🔒 Maturitné testy sú pre EDUCAST PLUS</div><div style="font-size:10px;color:#4A615C;margin-top:3px">Klikni pre získanie prístupu →</div>';
       hint.onclick = function(){ showPaywall(); };
       pg2.parentNode.insertBefore(hint, pg2.nextSibling);
     }
@@ -3670,15 +3670,15 @@ function spInjectUI(){
   if(document.getElementById('sp-fab')) return;
   var css = document.createElement('style');
   css.textContent =
-    '#sp-fab{position:fixed;right:14px;bottom:64px;z-index:900;background:linear-gradient(135deg,#5E7873,#6B847E);color:#fff;border:none;border-radius:24px;padding:10px 16px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,0.4);display:none}'
+    '#sp-fab{position:fixed;right:14px;bottom:64px;z-index:900;background:linear-gradient(135deg,#5E7873,#4A615C);color:#fff;border:none;border-radius:24px;padding:10px 16px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,0.4);display:none}'
   + '#sp-fab:hover{opacity:0.92}'
   + '#sp-panel{position:fixed;right:14px;bottom:108px;z-index:901;width:min(380px,92vw);background:#161616;border:1px solid #2a2a2a;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,0.6);display:none;flex-direction:column;overflow:hidden}'
   + '#sp-panel.open{display:flex}'
   + '.sp-head{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid #2a2a2a}'
-  + '.sp-title{font-size:11px;color:#DDE7E2;font-weight:600;letter-spacing:0.04em}'
+  + '.sp-title{font-size:11px;color:#3E5A55;font-weight:600;letter-spacing:0.04em}'
   + '.sp-tabs{display:flex;gap:4px}'
   + '.sp-tab{font-size:10px;padding:4px 10px;border-radius:14px;border:1px solid #2a2a2a;background:transparent;color:#888;cursor:pointer;font-family:inherit}'
-  + '.sp-tab.active{background:#E2EAE7;border-color:#5E7873;color:#DDE7E2}'
+  + '.sp-tab.active{background:#E2EAE7;border-color:#5E7873;color:#3E5A55}'
   + '.sp-close{background:transparent;border:none;color:#888;font-size:16px;cursor:pointer;line-height:1;padding:0 4px}'
   + '.sp-body{padding:10px}'
   + '#sp-text{width:100%;height:180px;background:#0f0f0f;border:1px solid #2a2a2a;border-radius:8px;color:#e8e8e8;font-family:ui-monospace,Menlo,monospace;font-size:13px;padding:10px;resize:vertical;outline:none;box-sizing:border-box}'
@@ -3687,7 +3687,7 @@ function spInjectUI(){
   + '#sp-canvas{width:100%;height:200px;background:#fff;border-radius:8px;border:1px solid #2a2a2a;touch-action:none;cursor:crosshair;display:block}'
   + '.sp-canvas-tools{display:flex;gap:6px;margin-top:6px}'
   + '.sp-btn{font-size:10px;padding:5px 10px;border-radius:6px;border:1px solid #2a2a2a;background:#1a1a1a;color:#aaa;cursor:pointer;font-family:inherit}'
-  + '.sp-btn:hover{border-color:#5E7873;color:#DDE7E2}'
+  + '.sp-btn:hover{border-color:#5E7873;color:#3E5A55}'
   + '@media(max-width:600px){#sp-fab{bottom:58px;padding:8px 13px}#sp-panel{bottom:100px;width:94vw;right:3vw}#sp-text{height:140px}#sp-canvas{height:160px}}';
   document.head.appendChild(css);
 
