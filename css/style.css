@@ -898,3 +898,15 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .ctb{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
 .ctb:hover{border-color:#9FE1CB!important;color:#fff!important}
 .quiz-back{background:transparent!important;border-color:#6B847E!important;color:#D8E2DF!important}
+
+/* ── LANDING WIZARD: greige prvky (Test/Sutaz, kroky) ── */
+.wiz-toggle{background:#EFEAE0!important;border-color:#D8D0C1!important}
+.wiz-tog-btn{color:#8C887A!important}
+.wiz-tog-btn.active{background:#5E7873!important;color:#fff!important}
+.wiz-step{background:#EFEAE0!important;border-color:#D8D0C1!important;color:#8C887A!important}
+.wiz-step.active{background:#E2EAE7!important;border-color:#5E7873!important;color:#43403A!important}
+.wiz-step.done{border-color:#5E7873!important;color:#5E7873!important}
+.wiz-num{background:#D8D0C1!important;color:#8C887A!important}
+.wiz-step.active .wiz-num{background:#5E7873!important;color:#fff!important}
+.wiz-step.done .wiz-num{background:#3E5A55!important;color:#DDE7E2!important}
+.wiz-sep{background:#D8D0C1!important}
