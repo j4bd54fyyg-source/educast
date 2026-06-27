@@ -441,7 +441,7 @@ html,body{background:#E9E4DA}
 .btn-secondary:hover{border-color:#5E7873!important;color:#5E7873!important}
 
 /* Quiz options rovnaké */
-.or,.ov,.om{background:#F4F1EA!important;border-color:#D8D0C1!important;color:#43403A!important}
+.or,.ov,.om{background:#5A736D!important;border-color:#6B847E!important;color:#FFFFFF!important}
 .or:hover:not(:disabled),.ov:hover:not(:disabled),.om:hover:not(:disabled){border-color:#5E7873!important;background:#4A615C!important}
 
 /* Score */
@@ -469,7 +469,7 @@ html,body{background:#E9E4DA}
 .sbr::before,.sbv::before,.sbm::before{background:#5E7873!important}
 
 /* Kvíz pozadie */
-.bgr,.bgv,.bgm{background:#E9E4DA!important}
+.bgr,.bgv,.bgm{background:#4A615C!important}
 
 /* Hist */
 .hist-item:hover{border-color:#5E7873!important}
