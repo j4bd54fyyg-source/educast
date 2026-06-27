@@ -914,3 +914,8 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 /* Landing + stage-select pozadie (prebije vsetko) */
 #page-landing{background:#E9E4DA!important}
 #page-stage-select{background:#E9E4DA!important}
+
+/* Vynutene greige pozadie vsade - ziadna cierna */
+html{background:#E9E4DA!important}
+.page{background:#E9E4DA}
+#page-landing,#page-stage-select{background:#E9E4DA!important;min-height:100vh}
