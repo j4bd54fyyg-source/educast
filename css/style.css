@@ -910,3 +910,7 @@ body .lv-card-plus .lv-card-desc{color:#8C887A !important}
 .wiz-step.active .wiz-num{background:#5E7873!important;color:#fff!important}
 .wiz-step.done .wiz-num{background:#3E5A55!important;color:#DDE7E2!important}
 .wiz-sep{background:#D8D0C1!important}
+
+/* Landing + stage-select pozadie (prebije vsetko) */
+#page-landing{background:#E9E4DA!important}
+#page-stage-select{background:#E9E4DA!important}
