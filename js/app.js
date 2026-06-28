@@ -3341,6 +3341,22 @@ function lwUpdateNav(){
     }
     if(lbl){ lbl.textContent = ''; lbl.onclick = null; lbl.style.cursor = 'default'; }
   }
+  // Synchronizuj stage-select tlacidla (btn2/lbl2) s landing (btn/lbl)
+  var btn2 = document.getElementById('nav-auth-btn2');
+  var lbl2 = document.getElementById('nav-auth-label2');
+  if(btn2 && btn){
+    btn2.textContent = btn.textContent;
+    btn2.onclick = btn.onclick;
+    btn2.style.cssText = btn.style.cssText;
+    btn2.onmouseover = btn.onmouseover;
+    btn2.onmouseout = btn.onmouseout;
+  }
+  if(lbl2 && lbl){
+    lbl2.textContent = lbl.textContent;
+    lbl2.onclick = lbl.onclick;
+    lbl2.style.cursor = lbl.style.cursor;
+    lbl2.title = lbl.title;
+  }
 }
 
 function lwUpdateSettings(){
