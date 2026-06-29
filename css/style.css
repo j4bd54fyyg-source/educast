@@ -445,7 +445,7 @@ html,body{background:#E9E4DA}
 .or:hover:not(:disabled),.ov:hover:not(:disabled),.om:hover:not(:disabled){border-color:#5E7873!important;background:#4A615C!important}
 
 /* Score */
-.sbr2,.sbv2,.sbm2{color:#3E5A55!important}
+.sbr2,.sbv2,.sbm2{color:#EDEFEA!important}
 .ccr,.ccv,.ccm{background:#F4F1EA!important}
 .svr,.svv,.svm{color:#5E7873!important}
 .rr,.rv,.rm{border-color:#D8D0C1!important;color:#43403A!important}
