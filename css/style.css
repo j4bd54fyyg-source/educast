@@ -210,7 +210,7 @@ button{font-family:var(--font);cursor:pointer}
 .opt.missed{background:#0a5c35!important;border-color:#2ecc71!important;color:#ffffff!important;opacity:1;box-shadow:0 0 0 3px #2ecc7166;animation:highlight 0.4s ease}
 @keyframes highlight{0%{box-shadow:0 0 0 0 #2ecc7188}50%{box-shadow:0 0 0 6px #2ecc7166}100%{box-shadow:0 0 0 3px #2ecc7144}}
 .ltr{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:500;flex-shrink:0}
-.lrr{background:#4A615C;color:#3E5A55}.lrv{background:#3E5A55;color:#5E7873}.lrm{background:#EFEAE0;color:#8C887A}
+.lrr{background:#DDE7E2;color:#3E5A55}.lrv{background:#DDE7E2;color:#3E5A55}.lrm{background:#EFEAE0;color:#8C887A}
 .opt.correct .ltr{background:#2ecc71!important;color:#0a3d1f!important;font-weight:700!important}.opt.missed .ltr{background:#2ecc71!important;color:#0a3d1f!important;font-weight:700!important}
 .opt.wrong .ltr{background:#791F1F!important;color:#F7C1C1!important}
 @keyframes popIn{0%{transform:scale(0.95)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
