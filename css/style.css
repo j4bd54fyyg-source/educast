@@ -452,8 +452,8 @@ html,body{background:#E9E4DA}
 
 /* Badge v kvíze */
 .mbsr,.mbsv,.mbsm,.mbtr,.mbtm{background:#4A615C!important;color:#5E7873!important}
-.ttr,.ttv,.ttm{background:#4A615C!important;color:#5E7873!important}
-.cdr,.cdv,.cdm{color:#5E7873!important}
+.ttr,.ttv,.ttm{background:#3E5A55!important;color:#EDEFEA!important}
+.cdr,.cdv,.cdm{color:#EDEFEA!important}
 
 /* Nxt farby */
 .nxr,.nxv,.nxm{background:#5E7873!important;color:#fff!important}
